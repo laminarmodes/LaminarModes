@@ -9,11 +9,13 @@ import SwiftUI
 
 struct RingView: View {
     
+    @Environment(\.colorScheme) var colorScheme
+    
 //    var color1 = "plasma-2"
 //    var color2 = "plasma-7"
     
-    var color1 = "viridis-2"
-    var color2 = "viridis-7"
+//    var color1 =
+//    var color2 = "viridis-7"
     
 //    var color1 = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
 //    var color2 = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)
@@ -41,6 +43,8 @@ struct RingView: View {
 //    var color3 = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
 //
 
+    @EnvironmentObject private var reference: Reference
+    @State var projectID: Int
     
     
     var width: CGFloat = 300
@@ -86,17 +90,17 @@ struct RingView: View {
                 // progress ring
                 .trim(from: show ? progress : 1, to: 1)
                 // circle properties
-                .stroke(LinearGradient(gradient: Gradient(colors: [Color(color1), Color(color2)]), startPoint: .topTrailing, endPoint: .bottomLeading),
+                .stroke(LinearGradient(gradient: Gradient(colors: [(colorScheme == .dark ? Colors().pLight[2] : Colors().pDark[2]), (colorScheme == .dark ? Colors().pLight[7] : Colors().pDark[7])]), startPoint: .topTrailing, endPoint: .bottomLeading),
                         style: StrokeStyle(lineWidth: 5 * multiplier, lineCap: .round, lineJoin: .round, miterLimit: .infinity, dash: [20, 0], dashPhase: 0)
                 )
                 .rotationEffect(Angle(degrees: 90))
                 .rotation3DEffect(Angle(degrees: 180), axis: (x: 1, y: 0, z: 0))
                 .frame(width: width, height: height)
-                .shadow(color: Color(color2).opacity(0.3), radius: 3 * multiplier, x: 0, y: 3 * multiplier)
+                .shadow(color: (colorScheme == .dark ? Colors().pLight[2] : Colors().pDark[2]).opacity(0.3), radius: 3 * multiplier, x: 0, y: 3 * multiplier)
             
             Text("new\n item")
                 .font(.system(size: 7 * multiplier))
-                .foregroundColor(Color("gray-text"))
+                .foregroundColor(Color.gray)
                 .multilineTextAlignment(.center)
                 .frame(width: 200, height: 200)
                 
@@ -291,7 +295,7 @@ struct RingView: View {
 
 struct RingView_Previews: PreviewProvider {
     static var previews: some View {
-        RingView(show: .constant(true)) // necessary only when you have a preview
+        RingView(projectID: 1, show: .constant(true)) // necessary only when you have a preview
     }
 }
 

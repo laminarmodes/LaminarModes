@@ -53,7 +53,7 @@ struct MainView: View
     @State var isFocused = false
     @State var projectName: String?
     
-    
+    @State var show = false
     
 //    @State var showModal = false
     
@@ -94,7 +94,7 @@ struct MainView: View
     {
         TabView
         {
-            home
+            RingView(projectID: projectID, show: $show).environmentObject(reference)
                 .tabItem {
                     Image(systemName: "pencil")
                     Text("New Data")
@@ -140,18 +140,7 @@ struct MainView: View
         //.navigationTitle("Test")
     } // tabbar
     
-    //MARK: - Home
-    
-    var home: some View
-    {
-        ZStack
-        {
-            
-            RingView(width: 300, height: 300, percent: 88, show: .constant(true))
-                .zIndex(1)
-        }
-        .navigationTitle("User Research")
-    }
+
     
     @ViewBuilder
     var addThemeMode: some View
@@ -170,28 +159,6 @@ struct MainView: View
         }
     }
     
-
-    
-
-
-    
-//    @ViewBuilder
-//    var analytics: some View
-//    {
-//        VStack
-//        {
-//            HStack
-//            {
-//                BarChartView(data: ChartData(points: [55.0,48.0,46.0,32.0,28.0,20.0,12.0,4.0,3.0]), title: "Chart Data is WIP", legend: "role", style: Styles.barChartStyleNeonBlueLight, form: CGSize(width: CGFloat(screenWidth-16), height: CGFloat(220)), dropShadow: false)
-//
-//            }
-//            .padding(.top, 16)
-//            .padding(.bottom,16)
-//
-//            LineChartView(data: [8,23,54,32,12,37,7,23,43], title: "Chart Data is WIP", form: CGSize(width: screenWidth-16, height: 220), dropShadow: false)
-//                .frame(maxWidth: 640)
-//        }
-//    }
     
 } // AccountsVLiew
 
@@ -485,4 +452,36 @@ struct MainView_Previews: PreviewProvider {
 //            } // SCrollView
 //        }
 //        .zIndex(1) // bottom of transactionsView
+//    }
+
+
+//    @ViewBuilder
+//    var analytics: some View
+//    {
+//        VStack
+//        {
+//            HStack
+//            {
+//                BarChartView(data: ChartData(points: [55.0,48.0,46.0,32.0,28.0,20.0,12.0,4.0,3.0]), title: "Chart Data is WIP", legend: "role", style: Styles.barChartStyleNeonBlueLight, form: CGSize(width: CGFloat(screenWidth-16), height: CGFloat(220)), dropShadow: false)
+//
+//            }
+//            .padding(.top, 16)
+//            .padding(.bottom,16)
+//
+//            LineChartView(data: [8,23,54,32,12,37,7,23,43], title: "Chart Data is WIP", form: CGSize(width: screenWidth-16, height: 220), dropShadow: false)
+//                .frame(maxWidth: 640)
+//        }
+//    }
+
+//MARK: - Home
+
+//    var home: some View
+//    {
+//        ZStack
+//        {
+//
+//            RingView(width: 300, height: 300, percent: 88, show: .constant(true))
+//                .zIndex(1)
+//        }
+//        .navigationTitle("User Research")
 //    }

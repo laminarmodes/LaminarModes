@@ -230,7 +230,6 @@
 				E803C64826BEAE9E00C41AA6 /* GradientTextField.swift */,
 				E803C64226BEAE9E00C41AA6 /* NewViewOne.swift */,
 				E803C63D26BEAE9E00C41AA6 /* NewViewTwo.swift */,
-				E803C63C26BEAE9E00C41AA6 /* RingView.swift */,
 				E803C64626BEAE9E00C41AA6 /* RowHeaderView.swift */,
 				E803C64426BEAE9E00C41AA6 /* TextFieldIcon.swift */,
 				E803C64726BEAE9E00C41AA6 /* ThemeHeader.swift */,
@@ -282,6 +281,7 @@
 		E8DFB49C26BEE546008BA2BD /* MainViews */ = {
 			isa = PBXGroup;
 			children = (
+				E803C63C26BEAE9E00C41AA6 /* RingView.swift */,
 				E803C6C126BEC3D700C41AA6 /* AffinityMap.swift */,
 				E8DFB49926BEE532008BA2BD /* ThemeList.swift */,
 				E8DFB49D26BEE791008BA2BD /* LazyThemes.swift */,
