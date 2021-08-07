@@ -74,6 +74,12 @@
 		E803C69226BEB63100C41AA6 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E803C69026BEB63100C41AA6 /* Colors.swift */; };
 		E803C6C226BEC3D700C41AA6 /* AffinityMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = E803C6C126BEC3D700C41AA6 /* AffinityMap.swift */; };
 		E803C6C326BEC3D700C41AA6 /* AffinityMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = E803C6C126BEC3D700C41AA6 /* AffinityMap.swift */; };
+		E8DFB49A26BEE532008BA2BD /* ThemeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DFB49926BEE532008BA2BD /* ThemeList.swift */; };
+		E8DFB49B26BEE532008BA2BD /* ThemeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DFB49926BEE532008BA2BD /* ThemeList.swift */; };
+		E8DFB49E26BEE791008BA2BD /* LazyThemes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DFB49D26BEE791008BA2BD /* LazyThemes.swift */; };
+		E8DFB49F26BEE791008BA2BD /* LazyThemes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DFB49D26BEE791008BA2BD /* LazyThemes.swift */; };
+		E8DFB4A126BEEA75008BA2BD /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DFB4A026BEEA75008BA2BD /* Analytics.swift */; };
+		E8DFB4A226BEEA75008BA2BD /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DFB4A026BEEA75008BA2BD /* Analytics.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -116,6 +122,9 @@
 		E803C68826BEB12700C41AA6 /* VisualEffectBlur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualEffectBlur.swift; sourceTree = "<group>"; };
 		E803C69026BEB63100C41AA6 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		E803C6C126BEC3D700C41AA6 /* AffinityMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffinityMap.swift; sourceTree = "<group>"; };
+		E8DFB49926BEE532008BA2BD /* ThemeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeList.swift; sourceTree = "<group>"; };
+		E8DFB49D26BEE791008BA2BD /* LazyThemes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyThemes.swift; sourceTree = "<group>"; };
+		E8DFB4A026BEEA75008BA2BD /* Analytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,7 +236,6 @@
 				E803C64726BEAE9E00C41AA6 /* ThemeHeader.swift */,
 				E803C64126BEAE9E00C41AA6 /* UserStoryCluster.swift */,
 				E803C64026BEAE9E00C41AA6 /* UserStoryList.swift */,
-				E803C6C126BEC3D700C41AA6 /* AffinityMap.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -266,8 +274,20 @@
 				E803C60426BE9FBB00C41AA6 /* LaminarModesApp.swift */,
 				E803C60526BE9FBB00C41AA6 /* ContentView.swift */,
 				E803C63926BEAE9E00C41AA6 /* MainView.swift */,
+				E8DFB49C26BEE546008BA2BD /* MainViews */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		E8DFB49C26BEE546008BA2BD /* MainViews */ = {
+			isa = PBXGroup;
+			children = (
+				E803C6C126BEC3D700C41AA6 /* AffinityMap.swift */,
+				E8DFB49926BEE532008BA2BD /* ThemeList.swift */,
+				E8DFB49D26BEE791008BA2BD /* LazyThemes.swift */,
+				E8DFB4A026BEEA75008BA2BD /* Analytics.swift */,
+			);
+			path = MainViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -374,12 +394,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E803C65C26BEAE9E00C41AA6 /* NewViewOne.swift in Sources */,
+				E8DFB49A26BEE532008BA2BD /* ThemeList.swift in Sources */,
 				E803C64A26BEAE9E00C41AA6 /* MainView.swift in Sources */,
 				E803C67D26BEAFD000C41AA6 /* StoryMode.swift in Sources */,
 				E803C65426BEAE9E00C41AA6 /* EditStoryView.swift in Sources */,
 				E803C6C226BEC3D700C41AA6 /* AffinityMap.swift in Sources */,
 				E803C62F26BEA77B00C41AA6 /* Reference.swift in Sources */,
 				E803C65A26BEAE9E00C41AA6 /* UserStoryCluster.swift in Sources */,
+				E8DFB4A126BEEA75008BA2BD /* Analytics.swift in Sources */,
 				E803C66026BEAE9E00C41AA6 /* TextFieldIcon.swift in Sources */,
 				E803C67526BEAFD000C41AA6 /* CloseButton.swift in Sources */,
 				E803C66226BEAE9E00C41AA6 /* AddStoryView.swift in Sources */,
@@ -387,6 +409,7 @@
 				E803C65226BEAE9E00C41AA6 /* NewViewTwo.swift in Sources */,
 				E803C66A26BEAE9E00C41AA6 /* GradientText.swift in Sources */,
 				E803C65626BEAE9E00C41AA6 /* AddThemeView.swift in Sources */,
+				E8DFB49E26BEE791008BA2BD /* LazyThemes.swift in Sources */,
 				E803C67326BEAFD000C41AA6 /* StoryCardItem.swift in Sources */,
 				E803C64E26BEAE9E00C41AA6 /* GradientButtonView.swift in Sources */,
 				E803C64C26BEAE9E00C41AA6 /* DetailsView.swift in Sources */,
@@ -413,12 +436,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E803C65D26BEAE9E00C41AA6 /* NewViewOne.swift in Sources */,
+				E8DFB49B26BEE532008BA2BD /* ThemeList.swift in Sources */,
 				E803C64B26BEAE9E00C41AA6 /* MainView.swift in Sources */,
 				E803C67E26BEAFD000C41AA6 /* StoryMode.swift in Sources */,
 				E803C65526BEAE9E00C41AA6 /* EditStoryView.swift in Sources */,
 				E803C6C326BEC3D700C41AA6 /* AffinityMap.swift in Sources */,
 				E803C63026BEA77B00C41AA6 /* Reference.swift in Sources */,
 				E803C65B26BEAE9E00C41AA6 /* UserStoryCluster.swift in Sources */,
+				E8DFB4A226BEEA75008BA2BD /* Analytics.swift in Sources */,
 				E803C66126BEAE9E00C41AA6 /* TextFieldIcon.swift in Sources */,
 				E803C67626BEAFD000C41AA6 /* CloseButton.swift in Sources */,
 				E803C66326BEAE9E00C41AA6 /* AddStoryView.swift in Sources */,
@@ -426,6 +451,7 @@
 				E803C65326BEAE9E00C41AA6 /* NewViewTwo.swift in Sources */,
 				E803C66B26BEAE9E00C41AA6 /* GradientText.swift in Sources */,
 				E803C65726BEAE9E00C41AA6 /* AddThemeView.swift in Sources */,
+				E8DFB49F26BEE791008BA2BD /* LazyThemes.swift in Sources */,
 				E803C67426BEAFD000C41AA6 /* StoryCardItem.swift in Sources */,
 				E803C64F26BEAE9E00C41AA6 /* GradientButtonView.swift in Sources */,
 				E803C64D26BEAE9E00C41AA6 /* DetailsView.swift in Sources */,
