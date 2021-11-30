@@ -30,13 +30,17 @@ struct ThemeList: View
                             HStack
                             {
                                 ThemeCard(theme: item)
-                                    .padding()
+                                    //.padding()
+                                    .padding([.top, .bottom], 8)
+                                    .padding([.leading, .trailing], 16)
                                     .environmentObject(reference)
                             }
+                            //.padding([.leading, .trailing], 10)
                         }
                     } // ForEach
                 } // VStack
             } // SCrollView
+            
         }
         .zIndex(1) // bottom of transactionsView
     }
@@ -44,6 +48,6 @@ struct ThemeList: View
 
 struct ThemeList_Previews: PreviewProvider {
     static var previews: some View {
-        ThemeList(projectID: 1)
+        ThemeList(projectID: 1).environmentObject(Reference())
     }
 }

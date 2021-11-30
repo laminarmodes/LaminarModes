@@ -82,6 +82,7 @@ struct MainView: View
                     Text("+ New List")
                 }))
             
+            
             addThemeMode
             
         } // ZStack

@@ -11,8 +11,8 @@ struct RingView: View {
     
     @Environment(\.colorScheme) var colorScheme
     
-//    var color1 = "plasma-2"
-//    var color2 = "plasma-7"
+    var color1 = "plasma-2"
+    var color2 = "plasma-7"
     
 //    var color1 =
 //    var color2 = "viridis-7"

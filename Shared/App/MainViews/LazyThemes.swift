@@ -24,13 +24,16 @@ struct LazyThemes: View
             
             ScrollView(.vertical, showsIndicators: false) // Make entire view scrollable
             {
+                
+                
                 VStack // Stack of account cards
                 {
                     LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 8)
                     {
                         ForEach(reference.themes.reversed(), id: \.id) { item in
                             
-                            NavigationLink( destination: UserStoryList(projectID: projectID, theme: item, themeId: item.id).environmentObject(reference))
+//                            NavigationLink( destination: UserStoryList(projectID: projectID, theme: item, themeId: item.id).environmentObject(reference))
+                            NavigationLink( destination: ThemeLazyStories(projectID: projectID, themeId: item.id))
                             {
                                 HStack
                                 {
@@ -52,5 +55,6 @@ struct LazyThemes: View
 struct LazyThemes_Previews: PreviewProvider {
     static var previews: some View {
         LazyThemes(projectID: 1)
+            .environmentObject(Reference())
     }
 }

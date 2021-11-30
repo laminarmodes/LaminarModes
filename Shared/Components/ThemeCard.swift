@@ -51,13 +51,14 @@ struct ThemeCard: View
             .padding()
         } // HStack
         .frame(height: 220, alignment: .leading)
-        .frame(maxWidth: .infinity, alignment: .leading)
+//        .frame(maxWidth: .infinity, alignment: .leading)
+        .frame(maxWidth: 600, alignment: .leading)
         .background(theme?.color ?? Color.gray)
         //.background(Color("off-white"))
         .clipShape(RoundedRectangle(cornerRadius: 22))
         //.shadow(color: theme?.color?.opacity(0.3) ?? Color.gray.opacity(0.3), radius: 10, x: 0, y: 10)
         .shadow(color: Color.black.opacity(0.2), radius: 10, x: 10, y: 10)
-        .shadow(color: Color.white.opacity(0.7), radius: 10, x: -5, y: -5)
+        //.shadow(color: Color.white.opacity(0.7), radius: 10, x: -5, y: -5)
     }
 }
 
