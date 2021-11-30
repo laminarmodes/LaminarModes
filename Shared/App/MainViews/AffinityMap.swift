@@ -83,7 +83,7 @@ struct AffinityMap: View {
                                                     ZStack(alignment: .topTrailing) {
                                                         StoryCardItem(story: item)
                                                             .sheet(isPresented: $showModal) {
-                                                                DetailsView(story: currentStory, closeButton: true, themeId: currentTheme?.id ?? 1).environmentObject(reference)
+                                                                DetailsView(story: currentStory, closeButton: true, themeId: currentTheme?.id ?? 1, storyId: currentStory?.id ?? 1).environmentObject(reference)
                                                             } // StoryCard Item
                                                             .onTapGesture {
                                                                 currentStory = item
@@ -103,7 +103,7 @@ struct AffinityMap: View {
                                                         }, label: {
                                                             Image(systemName: "ellipsis")
                                                                 //.foregroundColor(Color.white.opacity(0.9))
-                                                                .foregroundColor(Color("gray-text"))
+                                                                .foregroundColor(Color.gray)
                                                                 .padding([.top, .trailing], 16)
                                                         })
                                                     } // ZStack
@@ -124,9 +124,7 @@ struct AffinityMap: View {
                 .onAppear() {
                     DispatchQueue.main.async {
                         self.reference.referenceProjectID = self.projectID
-                    }
-                    
-                    
+                    } 
                 }
     }
     

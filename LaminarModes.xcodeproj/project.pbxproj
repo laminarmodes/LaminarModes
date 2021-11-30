@@ -228,7 +228,6 @@
 			children = (
 				E803C64526BEAE9E00C41AA6 /* AddStoryView.swift */,
 				E803C63F26BEAE9E00C41AA6 /* AddThemeView.swift */,
-				E803C63A26BEAE9E00C41AA6 /* DetailsView.swift */,
 				E803C63E26BEAE9E00C41AA6 /* EditStoryView.swift */,
 				E803C63B26BEAE9E00C41AA6 /* GradientButtonView.swift */,
 				E803C64326BEAE9E00C41AA6 /* GradientLargeTextField.swift */,
@@ -240,8 +239,6 @@
 				E803C64426BEAE9E00C41AA6 /* TextFieldIcon.swift */,
 				E803C64726BEAE9E00C41AA6 /* ThemeHeader.swift */,
 				E803C64126BEAE9E00C41AA6 /* UserStoryCluster.swift */,
-				E803C64026BEAE9E00C41AA6 /* UserStoryList.swift */,
-				E810EAF7275604D500CBAEF8 /* ThemeLazyStories.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -286,14 +283,25 @@
 			path = App;
 			sourceTree = "<group>";
 		};
+		E810EAFD27564C6900CBAEF8 /* Secondary Views */ = {
+			isa = PBXGroup;
+			children = (
+				E803C64026BEAE9E00C41AA6 /* UserStoryList.swift */,
+				E810EAF7275604D500CBAEF8 /* ThemeLazyStories.swift */,
+				E803C63A26BEAE9E00C41AA6 /* DetailsView.swift */,
+			);
+			path = "Secondary Views";
+			sourceTree = "<group>";
+		};
 		E8DFB49C26BEE546008BA2BD /* MainViews */ = {
 			isa = PBXGroup;
 			children = (
 				E803C63C26BEAE9E00C41AA6 /* RingView.swift */,
 				E803C6C126BEC3D700C41AA6 /* AffinityMap.swift */,
-				E8DFB49926BEE532008BA2BD /* ThemeList.swift */,
 				E8DFB49D26BEE791008BA2BD /* LazyThemes.swift */,
+				E8DFB49926BEE532008BA2BD /* ThemeList.swift */,
 				E8DFB4A026BEEA75008BA2BD /* Analytics.swift */,
+				E810EAFD27564C6900CBAEF8 /* Secondary Views */,
 			);
 			path = MainViews;
 			sourceTree = "<group>";

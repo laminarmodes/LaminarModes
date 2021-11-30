@@ -180,11 +180,7 @@ struct AddStoryView: View {
                         .shadow(color: Color("shadow-color"), radius: 60, x: 0, y: 30)
         )
         .cornerRadius(30)
-
-        
-        
     }
-    
 }
 
 struct AddStoryView_Previews: PreviewProvider {

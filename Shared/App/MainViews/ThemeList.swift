@@ -43,6 +43,11 @@ struct ThemeList: View
             
         }
         .zIndex(1) // bottom of transactionsView
+        .onAppear() {
+            DispatchQueue.main.async {
+                self.reference.referenceProjectID = self.projectID
+            }
+        }
     }
 }
 

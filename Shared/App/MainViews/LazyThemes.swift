@@ -21,10 +21,8 @@ struct LazyThemes: View
             Color("off-white")
                 .edgesIgnoringSafeArea(.all)
             
-            
             ScrollView(.vertical, showsIndicators: false) // Make entire view scrollable
             {
-                
                 
                 VStack // Stack of account cards
                 {
@@ -32,7 +30,6 @@ struct LazyThemes: View
                     {
                         ForEach(reference.themes.reversed(), id: \.id) { item in
                             
-//                            NavigationLink( destination: UserStoryList(projectID: projectID, theme: item, themeId: item.id).environmentObject(reference))
                             NavigationLink( destination: ThemeLazyStories(projectID: projectID, themeId: item.id))
                             {
                                 HStack
@@ -47,8 +44,14 @@ struct LazyThemes: View
                     .padding()
                 } // VStack
             } // SCrollView
+            .onAppear() {
+                DispatchQueue.main.async {
+                    self.reference.referenceProjectID = self.projectID
+                }
+            }
         }
         .zIndex(1) // bottom of transactionsView
+        
     }
 }
 

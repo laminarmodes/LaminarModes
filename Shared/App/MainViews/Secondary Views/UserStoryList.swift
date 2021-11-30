@@ -54,7 +54,7 @@ struct UserStoryList: View
                 {
                     ForEach(reference.stories, id: \.id) { item in
                         
-                        NavigationLink(destination: DetailsView(story: item, closeButton: false, themeId: themeId).environmentObject(reference)) {
+                        NavigationLink(destination: DetailsView(story: item, closeButton: false, themeId: themeId, storyId: item.id).environmentObject(reference)) {
                             HStack
                             {
                                 StoryRow(story: item, storyId: item.id)

@@ -29,7 +29,7 @@ struct ThemeLazyStories: View {
                     {
                         ForEach(reference.readTheme(inputThemeId: themeId).stories.reversed(), id: \.id) { story in
                             
-                            NavigationLink( destination: DetailsView(story: story, closeButton: true, themeId: reference.readTheme(inputThemeId: themeId).id).environmentObject(reference))
+                            NavigationLink( destination: DetailsView(story: story, closeButton: true, themeId: reference.readTheme(inputThemeId: themeId).id, storyId: story.id).environmentObject(reference))
                             {
                                 HStack
                                 {
@@ -48,7 +48,7 @@ struct ThemeLazyStories: View {
     }
 }
 
-struct ThemeTabView_Previews: PreviewProvider {
+struct ThemeLazyStories_Previews: PreviewProvider {
     static var previews: some View {
         ThemeLazyStories(projectID: 1, themeId: 1).environmentObject(Reference())
     }

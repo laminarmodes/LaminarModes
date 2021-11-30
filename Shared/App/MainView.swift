@@ -53,7 +53,7 @@ struct MainView: View
     @State var isFocused = false
     @State var projectName: String?
     
-    @State var show = false
+    @State var show = true
     
 //    @State var showModal = false
     
@@ -131,13 +131,6 @@ struct MainView: View
                 }
             
         } // TabView
-        .onAppear() {
-            DispatchQueue.main.async {
-                self.reference.referenceProjectID = self.projectID
-            }
-            
-            
-        }
         //.navigationTitle("Test")
     } // tabbar
     

@@ -11,15 +11,15 @@ struct RingView: View {
     
     @Environment(\.colorScheme) var colorScheme
     
-    var color1 = "plasma-2"
-    var color2 = "plasma-7"
+//    var color1 = "plasma-2"
+//    var color2 = "plasma-7"
     
 //    var color1 =
 //    var color2 = "viridis-7"
     
-//    var color1 = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
-//    var color2 = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)
-//    var color3 = #colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)
+    var color1 = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
+    var color2 = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)
+    var color3 = #colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)
     
 //    var color1 = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
 //    var color2 = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
@@ -93,6 +93,9 @@ struct RingView: View {
                 .stroke(LinearGradient(gradient: Gradient(colors: [(colorScheme == .dark ? Colors().pLight[2] : Colors().pDark[2]), (colorScheme == .dark ? Colors().pLight[7] : Colors().pDark[7])]), startPoint: .topTrailing, endPoint: .bottomLeading),
                         style: StrokeStyle(lineWidth: 5 * multiplier, lineCap: .round, lineJoin: .round, miterLimit: .infinity, dash: [20, 0], dashPhase: 0)
                 )
+//                .stroke(LinearGradient(gradient: Gradient(colors: [Color.pink, Color.yellow]), startPoint: .topTrailing, endPoint: .bottomLeading),
+//                        style: StrokeStyle(lineWidth: 5 * multiplier, lineCap: .round, lineJoin: .round, miterLimit: .infinity, dash: [20, 0], dashPhase: 0)
+//                )
                 .rotationEffect(Angle(degrees: 90))
                 .rotation3DEffect(Angle(degrees: 180), axis: (x: 1, y: 0, z: 0))
                 .frame(width: width, height: height)

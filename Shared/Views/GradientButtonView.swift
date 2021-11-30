@@ -61,7 +61,6 @@ struct GradientButtonView: View {
         } // GeometryReader
         .frame(height: 50)
         
-        
     }
 }
 
