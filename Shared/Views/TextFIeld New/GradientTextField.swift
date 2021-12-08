@@ -22,9 +22,11 @@ struct GradientTextField: View
     
     var body: some View
     {
+        
         TextField(textfieldPlaceholder, text: $textfieldString)
-            .padding(.bottom, 4)
+        //.padding(.bottom, 4)
         Divider()
+            .padding(.bottom, 10)
     }
 }
 
@@ -40,3 +42,4 @@ struct GradientTextField_Previews: PreviewProvider
             textfieldIconString: "textformat.alt")
     }
 }
+

@@ -7,11 +7,9 @@
 
 import SwiftUI
 
-struct ThemeHeader: View
+struct BookHeaderLarge: View
 {
-    
-    var theme: iTheme?
-    
+    var theme: Book?
     @EnvironmentObject private var reference: Reference
     
     var body: some View {
@@ -42,7 +40,6 @@ struct ThemeHeader: View
                     .font(.caption)
                     .foregroundColor(Color.white.opacity(0.9))
             }
-            //.padding()
         } // HStack
         .padding()
         .frame(height: 250, alignment: .leading)
@@ -51,9 +48,9 @@ struct ThemeHeader: View
     }
 }
 
-struct ThemeHeader_Previews: PreviewProvider {
+struct BookHeaderLarge_Previews: PreviewProvider {
     static var previews: some View {
-        ThemeHeader()
+        BookHeaderLarge()
             .previewLayout(.sizeThatFits)
     }
 }

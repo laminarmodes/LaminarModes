@@ -1,6 +1,6 @@
 //
-//  ThemeTabView.swift
-//  LaminarModes
+//  ThemeLazyStories.swift
+//  OnlineBankingBusiness
 //
 //  Created by Anya Traille on 30/11/21.
 //
@@ -9,65 +9,49 @@ import SwiftUI
 
 struct ThemeLazyStories: View {
     
-    //var theme: iTheme?
-    
-    @State var projectID: Int
-    var themeId: Int
     @EnvironmentObject private var reference: Reference
+    @State var projectID: UUID
+    var themeId: UUID
+    
     
     var body: some View {
-        //TabView {
-            //ForEach(reference.themes.reversed(), id: \.id) { theme in
+        
+        VStack {
+            BookCardLargeView(theme: reference.findBookById(inputThemeId: themeId))
+                .padding([.top], 8)
+                .padding([.leading, .trailing], 16)
+                .environmentObject(reference)
+            
+            ScrollView(.vertical, showsIndicators: false) {
                 
-                VStack {
-                    ThemeCard(theme: reference.readTheme(inputThemeId: themeId))
-                        .padding([.top], 8)
-                        .padding([.leading, .trailing], 16)
-                    .environmentObject(reference)
-                    
-                    LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 8)
-                    {
-                        ForEach(reference.readTheme(inputThemeId: themeId).stories.reversed(), id: \.id) { story in
-                            
-                            NavigationLink( destination: DetailsView(story: story, closeButton: true, themeId: reference.readTheme(inputThemeId: themeId).id, storyId: story.id).environmentObject(reference))
+                LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 8)
+                {
+                    ForEach(reference.findBookById(inputThemeId: themeId).chapters.reversed(), id: \.uniqueID) { story in
+                        
+                        NavigationLink( destination: DetailsView(themeId: reference.findBookById(inputThemeId: themeId).uniqueID, story: story, closeButton: true).environmentObject(reference))
+                        {
+                            HStack
                             {
-                                HStack
-                                {
-                                    StoryCardLazy(story: story)
-                                        .padding(4)
-                                        .environmentObject(reference)
-                                }
+                                ChapterCardSmallHeightInfiniteWidthView(story: story)
+                                    .padding(4)
+                                    .environmentObject(reference)
                             }
-                        } // ForEach
-                    }
-                    .padding()
-                } //: VStack
-                
-            //}
-        //}
+                        }
+                    } // ForEach
+                }
+                .padding(.horizontal)
+            }
+            
+            Spacer()
+        } //: VStack
+        .onAppear() {
+            self.reference.referenceProjectID = self.projectID
+        }
     }
 }
 
 struct ThemeLazyStories_Previews: PreviewProvider {
     static var previews: some View {
-        ThemeLazyStories(projectID: 1, themeId: 1).environmentObject(Reference())
+        ThemeLazyStories(projectID: Reference().libraries[0].uniqueID, themeId: Reference().libraries[0].books[0].uniqueID).environmentObject(Reference())
     }
 }
-
-
-//LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 8)
-//{
-//    ForEach(reference.themes.reversed(), id: \.id) { item in
-//
-//        NavigationLink( destination: UserStoryList(projectID: projectID, theme: item, themeId: item.id).environmentObject(reference))
-//        {
-//            HStack
-//            {
-//                ThemeCardMini(theme: item)
-//                    .padding(4)
-//                    .environmentObject(reference)
-//            }
-//        }
-//    } // ForEach
-//}
-//.padding()

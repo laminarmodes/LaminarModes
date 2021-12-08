@@ -11,19 +11,18 @@ import CoreData
 struct ContentView: View {
     
     @EnvironmentObject private var reference: Reference
-
+    
     var body: some View
     {
-        
         NavigationView {
             List {
-                ForEach(reference.projects, id: \.id) { project in
-                    NavigationLink(destination: MainView(projectID: project.id, projectName: project.title).environmentObject(reference)) {
+                ForEach(reference.libraries, id: \.uniqueID) { project in
+                    NavigationLink(destination: MainView(projectID: project.uniqueID, projectName: project.title).environmentObject(reference)) {
                         HStack
                         {
                             Text(project.title)
                             Spacer()
-                            Text(self.reference.totalThemes(for: project))
+                            Text(self.reference.totalBooks(for: project))
                         }
                     }
                 }
@@ -31,13 +30,8 @@ struct ContentView: View {
             .navigationTitle("Projects")
         } // NavigationView
         .navigationViewStyle(StackNavigationViewStyle())
-        
     }
-
-
 }
-
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

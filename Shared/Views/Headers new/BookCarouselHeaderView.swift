@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct RowHeaderView: View
+struct BookCarouselHeaderView: View
 {
     @State var themeName: String?
     @State var numberOfStories: Int?
@@ -16,7 +16,7 @@ struct RowHeaderView: View
     {
         HStack
         {
-            Text(themeName ?? "No name")
+            Text(themeName ?? "No book name")
                 .font(Font.custom("noteworthy", size: 28))
                 .fontWeight(.semibold)
                 .padding(.leading, 20)
@@ -30,12 +30,11 @@ struct RowHeaderView: View
             Text(String(numberOfStories ?? 0) )
                 .foregroundColor(Color.gray)
         }
-        //.padding(.bottom, 1)
     }
 }
 
-struct RowHeaderView_Previews: PreviewProvider {
+struct BookCarouselHeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        RowHeaderView()
+        BookCarouselHeaderView()
     }
 }

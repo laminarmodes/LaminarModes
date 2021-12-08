@@ -6,48 +6,44 @@
 //
 
 import SwiftUI
-import SwiftUICharts
 
 struct UserStoryList: View
 {
-    
-    var projectID: Int
+    @EnvironmentObject private var reference: Reference
+    var projectID: UUID
+    let themeId: UUID
     
     // Injecting iTheme for now but can remove this later because passing in environment
-    var theme: iTheme?
+    var theme: Book?
     
-    @EnvironmentObject private var reference: Reference
-    let themeId: Int
+    
+    
     
     @State private var newItem: String?
     @State private var loaded = false
     @State var showModal = false
     @State var showData = false
+    @State var barChart = true
     
     let screenWidth = UIScreen.main.bounds.size.width
-    
-    //var namespace: Namespace.ID
     var columnWidth: CGFloat = 100.0
-    
     var body: some View
     {
         VStack()
         {
-
-                ThemeHeader(theme: reference.readTheme(inputThemeId: themeId)).environmentObject(reference)
-//                    .matchedGeometryEffect(id: reference.readTheme(inputThemeId: themeId).id, in: namespace)
-
+            BookHeaderLarge(theme: reference.findBookById(inputThemeId: themeId)).environmentObject(reference)
+                .zIndex(1)
             
             List
             {
                 if (loaded == true)
                 {
-                    ForEach(reference.stories, id: \.id) { item in
+                    ForEach(reference.chapters, id: \.uniqueID) { item in
                         
-                        NavigationLink(destination: DetailsView(story: item, closeButton: false, themeId: themeId, storyId: item.id).environmentObject(reference)) {
+                        NavigationLink(destination: DetailsView(themeId: themeId, story: item, closeButton: false).environmentObject(reference)) {
                             HStack
                             {
-                                StoryRow(story: item, storyId: item.id)
+                                ChapterListRowView(storyId: item.uniqueID, story: item)
                                     .padding(.vertical,4)
                                     .environmentObject(reference)
                             }
@@ -55,10 +51,9 @@ struct UserStoryList: View
                     } // ForEach
                 } // if loaded == true
             } // ScrollView
-            //.navigationTitle("Story List")
             .onAppear {
                 DispatchQueue.main.async {
-                    self.reference.referenceThemeID = self.themeId
+                    self.reference.referenceBookID = self.themeId
                     self.loaded = true
                     self.reference.referenceProjectID = self.projectID
                 }
@@ -73,9 +68,8 @@ struct UserStoryList: View
 } // struct TransactionsView
 
 struct TransactionsView_Previews: PreviewProvider {
-    //@Namespace static var namespace
     static var previews: some View {
-        UserStoryList(projectID: 1, themeId: 1)
+        UserStoryList(projectID: Reference().libraries[0].uniqueID, themeId: Reference().libraries[0].books[0].uniqueID)
             .environmentObject(Reference())
         
     }

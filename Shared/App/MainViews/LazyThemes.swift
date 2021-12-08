@@ -7,36 +7,27 @@
 
 import SwiftUI
 
-struct LazyThemes: View
-{
-    @EnvironmentObject private var reference: Reference
-    @State var projectID: Int
+struct LazyThemes: View {
     
-    var body: some View
-    {
-        var columns: [GridItem] =
-            Array(repeating: .init(.flexible()), count: 2)
-        
+    @EnvironmentObject private var reference: Reference
+    @State var projectID: UUID
+    
+    var body: some View {
         ZStack {
             Color("off-white")
                 .edgesIgnoringSafeArea(.all)
-            
-            ScrollView(.vertical, showsIndicators: false) // Make entire view scrollable
-            {
-                
-                VStack // Stack of account cards
-                {
-                    LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 8)
-                    {
-                        ForEach(reference.themes.reversed(), id: \.id) { item in
-                            
-                            NavigationLink( destination: ThemeLazyStories(projectID: projectID, themeId: item.id))
-                            {
-                                HStack
+            ScrollView(.vertical, showsIndicators: false) {
+                VStack {
+                    LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 8) {
+                        ForEach(reference.books.reversed(), id: \.uniqueID) { item in
+                            if let item = item {
+                                NavigationLink( destination: ThemeLazyStories(projectID: projectID, themeId: item.uniqueID))
                                 {
-                                    ThemeCardMini(theme: item)
-                                        .padding(4)
-                                        .environmentObject(reference)
+                                    HStack {
+                                        BookCardSmallHeightInfiniteWidthView(theme: item)
+                                            .padding(4)
+                                            .environmentObject(reference)
+                                    }
                                 }
                             }
                         } // ForEach
@@ -50,14 +41,11 @@ struct LazyThemes: View
                 }
             }
         }
-        .zIndex(1) // bottom of transactionsView
-        
     }
 }
 
 struct LazyThemes_Previews: PreviewProvider {
     static var previews: some View {
-        LazyThemes(projectID: 1)
-            .environmentObject(Reference())
+        LazyThemes(projectID: Reference().libraries[0].uniqueID).environmentObject(Reference())
     }
 }

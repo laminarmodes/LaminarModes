@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import SwiftUICharts
+//import SwiftUICharts
 
 extension Color {
     static let offWhite = Color(red: 225 / 255, green: 225 / 255, blue: 235 / 255)
@@ -16,48 +16,37 @@ struct MainView: View
 {
     //MARK: - Properties
     
-    @State var projectID: Int
-
+    @State var projectID: UUID
+    
     @EnvironmentObject private var reference: Reference
     
     @State var showStories = false
     @State var showStoryDetail = false
     @State var isDisabled = false
-    @State var selectedTheme: iTheme?
+    @State var selectedTheme: Book?
     @State var selectedThemeId: Int?
-    @State var selectedStory: iStory?
-    
-    
+    @State var selectedStory: Chapter?
     @State var addingTheme = false
-
-    
     @State var themeNameInput = ""
     @State var themeDescriptionInput = ""
     @State var showAffinityMap = false
-    
     @State var isFocused = false
     @State var projectName: String?
-    
     @State var show = true
-    
-//    @State var showModal = false
     
     
     @Namespace var namespace
     let screenWidth = UIScreen.main.bounds.size.width
-    //var namespace: Namespace.ID
     var columnWidth: CGFloat = 100.0
     
     @Environment(\.presentationMode) var presentationMode
     
     
     //MARK: - Body
-    
     var body: some View
     {
         ZStack
         {
-            
             tabbar // This is the main view
                 .navigationTitle(self.projectName ?? "Sample Project")
                 .navigationBarItems(trailing: Button(action: {
@@ -66,71 +55,63 @@ struct MainView: View
                 }, label: {
                     Text("+ New List")
                 }))
-            
-            
             addThemeMode
-            
         } // ZStack
-        
     } // var body
     
     //MARK: - Tab Bar
-    
     var tabbar: some View
     {
         TabView
         {
             RingView(projectID: projectID, show: $show).environmentObject(reference)
                 .tabItem {
-                    Image(systemName: "pencil")
-                    Text("New Data")
+                    Image(systemName: "plus.circle")
+                    Text("Quick Add")
                 }
             
             AffinityMap(projectID: projectID).environmentObject(reference)
                 .tabItem {
-                    Image(systemName: "wand.and.rays")
-                    Text("Organize")
-                }
-            
-//            addThemeMode
-            
-            LazyThemes(projectID: projectID).environmentObject(reference)
-            //lazyThemes
-                .tabItem {
-                    Image(systemName: "square.grid.2x2")
-                    Text("Browse")
+                    Image(systemName: "square.and.pencil")
+                    Text("Tasks")
                 }
             
             ThemeList(projectID: projectID).environmentObject(reference)
-            //themeList
                 .tabItem {
-                    Image(systemName: "desktopcomputer")
-                    Text("Present")
+                    Image(systemName: "list.bullet.below.rectangle")
+                    Text("Report")
                 }
             
-            Analytics(projectID: projectID).environmentObject(reference)
-            //analytics
+            LazyThemes(projectID: projectID).environmentObject(reference)
                 .tabItem {
-                    Image(systemName: "chart.bar")
-                    Text("Data")
+                    Image(systemName: "lightbulb")
+                    Text("Plan")
+                }
+            
+            UITrendsView(projectID: projectID).environmentObject(reference)
+                .tabItem {
+                    Image(systemName: "info.circle")
+                    Text("Info")
                 }
             
         } // TabView
-        //.navigationTitle("Test")
+        .onAppear() {
+            DispatchQueue.main.async {
+                self.reference.referenceProjectID = self.projectID
+            }
+        }
     } // tabbar
-    
-
     
     @ViewBuilder
     var addThemeMode: some View
     {
         if (addingTheme)
         {
-            AddThemeView(
+            AddBookView(
+                libraryID: projectID,
                 themeNameInput: $themeNameInput,
                 themeDescriptionInput: $themeDescriptionInput,
-                addingTheme: $addingTheme,
-                projectID: projectID)
+                addingTheme: $addingTheme)
                 .environmentObject(reference)
                 .zIndex(2)
                 .background(VisualEffectBlur().edgesIgnoringSafeArea(.all))
@@ -142,12 +123,11 @@ struct MainView: View
 } // AccountsVLiew
 
 //MARK: - Preview
-
 struct MainView_Previews: PreviewProvider {
     @Namespace static var namespace
     static var previews: some View {
         
-        MainView(projectID: 1)
+        MainView(projectID: Reference().libraries[0].uniqueID)
             .environmentObject(Reference())
     }
 }
