@@ -35,6 +35,7 @@ struct ThemeCardMini: View
             Text("Description: \(theme?.description ?? "No Data")" )
                 .font(.subheadline)
                 .foregroundColor(Color.white.opacity(0.9))
+                .multilineTextAlignment(.leading)
                 //.foregroundColor(Color("gray-text"))
             
             VStack(alignment: .leading)

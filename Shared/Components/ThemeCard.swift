@@ -37,6 +37,7 @@ struct ThemeCard: View
                 Text("Description: \(theme?.description ?? "No Data")" )
                     .font(.subheadline)
                     .foregroundColor(Color.white.opacity(0.9))
+                    .multilineTextAlignment(.leading)
                     //.foregroundColor(Color("gray-text"))
                 Spacer()
                 Text("Number of users: \(theme?.numberOfUsers ?? 0)")

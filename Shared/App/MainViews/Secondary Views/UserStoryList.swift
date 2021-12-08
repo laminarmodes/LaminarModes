@@ -33,20 +33,10 @@ struct UserStoryList: View
     {
         VStack()
         {
-            if(!showData)
-            {
-                
-                ThemeCard(theme: reference.readTheme(inputThemeId: themeId))
+
+                ThemeHeader(theme: reference.readTheme(inputThemeId: themeId)).environmentObject(reference)
 //                    .matchedGeometryEffect(id: reference.readTheme(inputThemeId: themeId).id, in: namespace)
-            } else
-            {
-                HStack{
-                    BarChartView(data: ChartData(points: [55.0,48.0,46.0,32.0,28.0,20.0,12.0,4.0,3.0]), title: "Chart Data is WIP", legend: "role", style: Styles.barChartStyleNeonBlueLight, form: CGSize(width: CGFloat(screenWidth-16), height: CGFloat(220)), dropShadow: false)
-                    
-                }
-                .padding(.top, 16)
-                .padding(.bottom,16)
-            }
+
             
             List
             {

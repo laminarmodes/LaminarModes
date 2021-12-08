@@ -74,6 +74,8 @@
 		E803C69226BEB63100C41AA6 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E803C69026BEB63100C41AA6 /* Colors.swift */; };
 		E803C6C226BEC3D700C41AA6 /* AffinityMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = E803C6C126BEC3D700C41AA6 /* AffinityMap.swift */; };
 		E803C6C326BEC3D700C41AA6 /* AffinityMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = E803C6C126BEC3D700C41AA6 /* AffinityMap.swift */; };
+		E80F31CA27605E6300689092 /* StoryModeTestFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F31C927605E6300689092 /* StoryModeTestFile.swift */; };
+		E80F31CB27605E6300689092 /* StoryModeTestFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F31C927605E6300689092 /* StoryModeTestFile.swift */; };
 		E810EAF8275604D500CBAEF8 /* ThemeLazyStories.swift in Sources */ = {isa = PBXBuildFile; fileRef = E810EAF7275604D500CBAEF8 /* ThemeLazyStories.swift */; };
 		E810EAF9275604D500CBAEF8 /* ThemeLazyStories.swift in Sources */ = {isa = PBXBuildFile; fileRef = E810EAF7275604D500CBAEF8 /* ThemeLazyStories.swift */; };
 		E810EAFB275633A100CBAEF8 /* StoryCardLazy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E810EAFA275633A100CBAEF8 /* StoryCardLazy.swift */; };
@@ -126,6 +128,7 @@
 		E803C68826BEB12700C41AA6 /* VisualEffectBlur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualEffectBlur.swift; sourceTree = "<group>"; };
 		E803C69026BEB63100C41AA6 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		E803C6C126BEC3D700C41AA6 /* AffinityMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffinityMap.swift; sourceTree = "<group>"; };
+		E80F31C927605E6300689092 /* StoryModeTestFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryModeTestFile.swift; sourceTree = "<group>"; };
 		E810EAF7275604D500CBAEF8 /* ThemeLazyStories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeLazyStories.swift; sourceTree = "<group>"; };
 		E810EAFA275633A100CBAEF8 /* StoryCardLazy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCardLazy.swift; sourceTree = "<group>"; };
 		E8DFB49926BEE532008BA2BD /* ThemeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeList.swift; sourceTree = "<group>"; };
@@ -226,6 +229,7 @@
 		E803C63826BEADC700C41AA6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E80F31C927605E6300689092 /* StoryModeTestFile.swift */,
 				E803C64526BEAE9E00C41AA6 /* AddStoryView.swift */,
 				E803C63F26BEAE9E00C41AA6 /* AddThemeView.swift */,
 				E803C63E26BEAE9E00C41AA6 /* EditStoryView.swift */,
@@ -411,6 +415,7 @@
 			files = (
 				E803C65C26BEAE9E00C41AA6 /* NewViewOne.swift in Sources */,
 				E8DFB49A26BEE532008BA2BD /* ThemeList.swift in Sources */,
+				E80F31CA27605E6300689092 /* StoryModeTestFile.swift in Sources */,
 				E803C64A26BEAE9E00C41AA6 /* MainView.swift in Sources */,
 				E803C67D26BEAFD000C41AA6 /* StoryMode.swift in Sources */,
 				E803C65426BEAE9E00C41AA6 /* EditStoryView.swift in Sources */,
@@ -455,6 +460,7 @@
 			files = (
 				E803C65D26BEAE9E00C41AA6 /* NewViewOne.swift in Sources */,
 				E8DFB49B26BEE532008BA2BD /* ThemeList.swift in Sources */,
+				E80F31CB27605E6300689092 /* StoryModeTestFile.swift in Sources */,
 				E803C64B26BEAE9E00C41AA6 /* MainView.swift in Sources */,
 				E803C67E26BEAFD000C41AA6 /* StoryMode.swift in Sources */,
 				E803C65526BEAE9E00C41AA6 /* EditStoryView.swift in Sources */,
