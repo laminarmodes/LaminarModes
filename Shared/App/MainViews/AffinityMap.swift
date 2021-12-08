@@ -55,7 +55,7 @@ struct AffinityMap: View {
                 } else
                 {
                     ZStack {
-                        ForEach(reference.books.reversed(), id: \.id) { themeItem in
+                        ForEach(reference.books.reversed(), id: \.uniqueID) { themeItem in
                             
                             let dummyNumbers = (0..<8).map{ _ in Double.random(in: 1 ... 112) }
                             
@@ -73,7 +73,7 @@ struct AffinityMap: View {
                     // Stack each row vertically
                     VStack {
                         // For each row
-                        ForEach(reference.books.reversed(), id: \.id) { themeItem in
+                        ForEach(reference.books.reversed(), id: \.uniqueID) { themeItem in
                             // Stack each ellipsis on each story
                             ZStack {
                                 // Stack a row header on each story
@@ -100,18 +100,25 @@ struct AffinityMap: View {
                                     ScrollView(.horizontal, showsIndicators: false) {
                                         // Stack cards horizontally
                                         HStack(spacing: 20) {
-                                            // For each card
-                                            //                                            ForEach(themeItem.stories.reversed(), id: \.id) { item in
+                                            
                                             ForEach(themeItem.chapters.reversed(), id: \.uniqueID) { item in
                                                 
                                                 ZStack(alignment: .topTrailing) {
                                                     ChapterCardSmallView(story: item)
-                                                        .sheet(isPresented: $showModal) {
+                                                        .sheet(isPresented: $showModal)
+                                                        {
                                                             DetailsView(themeId: currentTheme?.uniqueID ?? reference.libraries[0].books[0].uniqueID, story: currentStory, closeButton: true).environmentObject(reference)
                                                         } // StoryCard Item
                                                         .onTapGesture {
-                                                            currentStory = item
-                                                            currentTheme = themeItem
+                                                            DispatchQueue.main.async {
+                                                                currentStory = item
+                                                                currentTheme = themeItem
+                                                                
+//                                                                let _ = print(themeItem.name)
+//                                                                let _ = print(themeItem.uniqueID)
+                                                                let _ = print(currentTheme!.name)
+                                                                let _ = print(currentTheme!.uniqueID)
+                                                            }
                                                             withAnimation(.spring()) {
                                                                 showModal = true
                                                             }
@@ -125,6 +132,7 @@ struct AffinityMap: View {
                                                         currentTheme = themeItem
                                                         themeID = themeItem.uniqueID
                                                         
+                                                        
                                                     }, label: {
                                                         Image(systemName: "ellipsis")
                                                         //.foregroundColor(Color.white.opacity(0.9))
@@ -132,6 +140,8 @@ struct AffinityMap: View {
                                                             .padding([.top, .trailing], 16)
                                                     })
                                                 } // ZStack
+//
+                                                
                                             } // ForEach
                                         } // HStack
                                         .padding(.bottom, 28) // prevents shadow from being cut off
@@ -148,12 +158,15 @@ struct AffinityMap: View {
                 
             } // VStack
             
+            
+            
         } // ZStack
         .onAppear() {
             DispatchQueue.main.async {
                 self.reference.referenceProjectID = self.projectID
             }
         }
+        
     }
     
     @ViewBuilder

@@ -1407,6 +1407,38 @@ class Reference: ObservableObject {
 //
 //        libraries[referenceProjectID - 1].books[referenceBookID - 1].chapters.remove(at: removeIndex)
         
+        var readIndexLibraries = 0
+        var countLibraries = 0
+        
+        for library in libraries
+        {
+            if library.uniqueID == referenceProjectID
+            {
+                readIndexLibraries = countLibraries
+            }
+            countLibraries += 1
+        }
+        
+        var readIndexBooks = 0
+        var countBooks = 0
+        for book in libraries[readIndexLibraries].books {
+            if book.uniqueID == referenceBookID {
+                readIndexBooks = countBooks
+            }
+            countBooks += 1
+        }
+        
+        var readIndexChapters = 0
+        var countChapters = 0
+        for chapter in libraries[readIndexLibraries].books[readIndexBooks].chapters {
+            if chapter.uniqueID == referenceStoryID {
+                readIndexChapters = countChapters
+            }
+            countChapters += 1
+        }
+        
+        libraries[readIndexLibraries].books[readIndexBooks].chapters.remove(at: readIndexChapters)
+        
     }
     
     //    func readStory(storyIdToRead: Int) -> iStory
