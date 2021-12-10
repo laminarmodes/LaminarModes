@@ -38,7 +38,7 @@ struct ThemeList: View
                 } else
                 {
                     ZStack {
-                        ForEach(reference.books.reversed(), id: \.id) { themeItem in
+                        ForEach(reference.books.reversed(), id: \.uniqueID) { themeItem in
                             
                             let dummyNumbers = (0..<8).map{ _ in Double.random(in: 1 ... 112) }
                             

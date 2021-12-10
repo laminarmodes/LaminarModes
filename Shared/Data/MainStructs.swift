@@ -10,7 +10,7 @@ import SwiftUI
 
 // MARK: - Structures
 struct Library {
-    var id: Int
+    //var id: Int
     var title: String
     var books: [Book]
     
@@ -18,7 +18,7 @@ struct Library {
 }
 
 struct Book {
-    var id: Int
+    //var id: Int
     var image: String
     var name: String // Type
     var description: String // Description
@@ -27,7 +27,7 @@ struct Book {
     var color: Color?
     
     var chapters: [Chapter]
-    var projectId: Int
+    //var projectId: Int
     
     var uniqueID = UUID()
 }
@@ -45,7 +45,7 @@ struct Chapter {
     var storyLocation: String? // Location
     var storyDate: String? // Month
     var storyTime: String? // Year
-    var themeId: Int
+    //var themeId: Int
     
     var uniqueID = UUID()
 }

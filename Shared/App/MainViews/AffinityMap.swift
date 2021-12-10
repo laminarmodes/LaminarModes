@@ -25,6 +25,7 @@ struct AffinityMap: View {
     @State var currentTheme: Book?
     
     @State var currentStoryID: UUID?
+    @State var selected: String?
     
     
     let screenWidth = UIScreen.main.bounds.size.width
@@ -105,10 +106,7 @@ struct AffinityMap: View {
                                                 
                                                 ZStack(alignment: .topTrailing) {
                                                     ChapterCardSmallView(story: item)
-                                                        .sheet(isPresented: $showModal)
-                                                        {
-                                                            DetailsView(themeId: currentTheme?.uniqueID ?? reference.libraries[0].books[0].uniqueID, story: currentStory, closeButton: true).environmentObject(reference)
-                                                        } // StoryCard Item
+                                                        
                                                         .onTapGesture {
                                                             DispatchQueue.main.async {
                                                                 currentStory = item
@@ -121,8 +119,18 @@ struct AffinityMap: View {
                                                             }
                                                             withAnimation(.spring()) {
                                                                 showModal = true
+                                                                selected = "Hello"
                                                             }
                                                         } // onTapGesture
+//                                                        .sheet(isPresented: $showModal)
+//                                                        {
+//                                                            DetailsView(themeId: currentTheme?.uniqueID ?? reference.libraries[0].books[0].uniqueID, story: currentStory, closeButton: true).environmentObject(reference)
+//                                                        } // StoryCard Item
+                                                        .sheet(item: $selected, content: { oneSelection in
+                                                            DetailsView(themeId: currentTheme?.uniqueID ?? reference.libraries[0].books[0].uniqueID, story: currentStory, closeButton: true).environmentObject(reference)
+                                                            
+                                                                })
+                                                        
                                                     
                                                     Button(action: {
                                                         editingStory = true
@@ -200,6 +208,10 @@ struct AffinityMap: View {
                 .clipShape(RoundedRectangle(cornerRadius: 30))
         }
     }
+}
+
+extension String: Identifiable {
+    public var id: String { self }
 }
 
 struct AffinityMap_Previews: PreviewProvider {

@@ -74,8 +74,8 @@ class Reference: ObservableObject {
     
     
     @Published var libraries = [
-        Library(id: 1, title: "Book 1", books: [
-            Book(id: 1, image: "book.fill", name: "facilisis magna etiam", description: "Elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Nunc lobortis mattis aliquam faucibus purus in massa tempor. Molestie at elementum eu facilisis sed. Velit euismod in pellentesque massa. Commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae. Amet facilisis magna etiam tempor orci eu lobortis elementum nibh. Arcu dictum varius duis at consectetur lorem donec. Aenean pharetra magna ac placerat. Posuere urna nec tincidunt praesent semper feugiat nibh sed pulvinar. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend. Vitae justo eget magna fermentum. Ut sem viverra aliquet eget. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Libero nunc consequat interdum varius sit amet mattis vulputate enim. Suspendisse interdum consectetur libero id faucibus nisl. Tellus molestie nunc non blandit massa enim nec. Amet aliquam id diam maecenas ultricies. Praesent tristique magna sit amet purus gravida quis blandit turpis.", numberOfUsers: 5, numberOfStories: 22, color: Color(UIColor.systemGray2), chapters: [
+        Library(title: "Book 1", books: [
+            Book(image: "book.fill", name: "facilisis magna etiam", description: "Elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Nunc lobortis mattis aliquam faucibus purus in massa tempor. Molestie at elementum eu facilisis sed. Velit euismod in pellentesque massa. Commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae. Amet facilisis magna etiam tempor orci eu lobortis elementum nibh. Arcu dictum varius duis at consectetur lorem donec. Aenean pharetra magna ac placerat. Posuere urna nec tincidunt praesent semper feugiat nibh sed pulvinar. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend. Vitae justo eget magna fermentum. Ut sem viverra aliquet eget. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Libero nunc consequat interdum varius sit amet mattis vulputate enim. Suspendisse interdum consectetur libero id faucibus nisl. Tellus molestie nunc non blandit massa enim nec. Amet aliquam id diam maecenas ultricies. Praesent tristique magna sit amet purus gravida quis blandit turpis.", numberOfUsers: 5, numberOfStories: 22, color: Color(UIColor.systemGray2), chapters: [
                 Chapter(
                     icon: "person.fill",
                     role: "Donec Ultrices",
@@ -87,8 +87,7 @@ class Reference: ObservableObject {
                     interviewer: "Charlene",
                     storyLocation: "Paris, France",
                     storyDate: "Nov 20, 2021",
-                    storyTime: "10:00 AM",
-                    themeId: 1),
+                    storyTime: "10:00 AM"),
                 Chapter(
                     icon: "person.fill",
                     role: "Nisl Tincidunt",
@@ -100,8 +99,7 @@ class Reference: ObservableObject {
                     interviewer: "Anya",
                     storyLocation: "Training Center",
                     storyDate: "5 Oct 2020",
-                    storyTime: "1100 SGT",
-                    themeId: 1),
+                    storyTime: "1100 SGT"),
                 Chapter(
                     icon: "person.fill",
                     role: "Ligula Ullamcorper",
@@ -113,10 +111,8 @@ class Reference: ObservableObject {
                     interviewer: "Anya",
                     storyLocation: "A diam maecenas",
                     storyDate: "5 Oct 2020",
-                    storyTime: "1100 SGT",
-                    themeId: 1)],
-                   projectId: 1),
-            Book(id: 2,
+                    storyTime: "1100 SGT")]),
+            Book(
                    image: "person.crop.circle.fill.badge.minus",
                    name: "Tristique sollicitudin",
                    description: "Tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula. Sagittis eu volutpat odio facilisis mauris sit amet. Ultricies tristique nulla aliquet enim tortor at. Nunc pulvinar sapien et ligula ullamcorper. Aliquam faucibus purus in massa tempor nec. Adipiscing commodo elit at imperdiet dui accumsan. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor. Condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus. A diam sollicitudin tempor id. A cras semper auctor neque. Dui vivamus arcu felis bibendum ut tristique et egestas. Fermentum iaculis eu non diam phasellus vestibulum. Et malesuada fames ac turpis. Vitae congue eu consequat ac felis donec et odio. Velit egestas dui id ornare arcu odio. Praesent tristique magna sit amet. A arcu cursus vitae congue mauris rhoncus aenean.",
@@ -135,8 +131,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 2),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Euismod",
@@ -148,8 +143,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 2),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Tincidunt Vitae",
@@ -161,8 +155,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 2),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Tellus",
@@ -174,8 +167,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 2),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Ullamcorper Morbi",
@@ -187,8 +179,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 2),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Tempor Orci",
@@ -200,8 +191,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 1),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Quam Pellentesque",
@@ -213,10 +203,8 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 1)],
-                   projectId: 1),
-            Book(id: 3,
+                        storyTime: "10:00 AM")]),
+            Book(
                    image: "waveform.path.ecg",
                    name: "Quis commodo odio",
                    description: "Sagittis purus sit amet volutpat consequat mauris nunc. Morbi blandit cursus risus at ultrices mi tempus imperdiet nulla. Condimentum id venenatis a condimentum. In fermentum et sollicitudin ac orci phasellus egestas tellus rutrum. A diam maecenas sed enim ut sem viverra aliquet. Aliquam eleifend mi in nulla posuere. A diam sollicitudin tempor id eu nisl nunc mi ipsum. Faucibus ornare suspendisse sed nisi lacus sed viverra tellus. Consequat ac felis donec et odio pellentesque diam volutpat commodo. Turpis in eu mi bibendum. In hac habitasse platea dictumst vestibulum. Sit amet porttitor eget dolor morbi non arcu risus. Neque volutpat ac tincidunt vitae semper quis lectus. Quis commodo odio aenean sed adipiscing. Pulvinar sapien et ligula ullamcorper malesuada proin libero. Diam in arcu cursus euismod quis viverra nibh. Dis parturient montes nascetur ridiculus mus. Vulputate dignissim suspendisse in est ante. Aliquam sem et tortor consequat id porta nibh.", numberOfUsers: 5,
@@ -234,8 +222,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 3),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Ipsum Faucibus",
@@ -247,8 +234,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 3),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Bibendum Enim",
@@ -260,8 +246,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 3),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Egestas Fringilla",
@@ -273,10 +258,8 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 3)],
-                   projectId: 1),
-            Book(id: 4,
+                        storyTime: "10:00 AM")]),
+            Book(
                    image: "globe",
                    name: "Nec Sagittis",
                    description: "Viverra orci sagittis eu volutpat odio facilisis mauris. Nunc sed id semper risus. In hac habitasse platea dictumst. Sapien nec sagittis aliquam malesuada bibendum arcu vitae. Congue nisi vitae suscipit tellus mauris. Gravida rutrum quisque non tellus orci ac. Integer quis auctor elit sed vulputate mi sit. Gravida in fermentum et sollicitudin ac orci. Diam maecenas ultricies mi eget mauris pharetra. Nec sagittis aliquam malesuada bibendum. Amet purus gravida quis blandit turpis. Risus ultricies tristique nulla aliquet enim tortor at. Faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget. Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi.",
@@ -295,8 +278,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 4),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Amet Consectetur",
@@ -308,8 +290,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 4),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Cras Adipiscing",
@@ -321,8 +302,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 4),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Nunc Consequat",
@@ -334,8 +314,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 4),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Potenti Nullam",
@@ -347,8 +326,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 4),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Pharetra Vel",
@@ -360,10 +338,8 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 3)],
-                   projectId: 1),
-            Book(id: 5,
+                        storyTime: "10:00 AM")]),
+            Book(
                    image: "exclamationmark.bubble.fill",
                    name: "Elit pellentesque",
                    description: "Sed vulputate odio ut enim blandit volutpat. Nunc vel risus commodo viverra maecenas. Etiam dignissim diam quis enim lobortis scelerisque fermentum. Consectetur adipiscing elit duis tristique sollicitudin nibh sit. Libero justo laoreet sit amet cursus sit amet dictum sit. Penatibus et magnis dis parturient. A pellentesque sit amet porttitor eget dolor morbi non. Leo vel fringilla est ullamcorper. Velit euismod in pellentesque massa placerat duis. Netus et malesuada fames ac turpis. Risus quis varius quam quisque id diam. Adipiscing elit pellentesque habitant morbi tristique senectus et. Non arcu risus quis varius quam quisque id diam vel. Ut venenatis tellus in metus.",
@@ -382,8 +358,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 5),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Amet Commodo",
@@ -395,8 +370,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 5),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Pulvinar Sapien",
@@ -408,8 +382,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 5),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Posuere Lorem",
@@ -421,8 +394,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 5),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Blandit Cursus",
@@ -434,10 +406,8 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 5)],
-                   projectId: 1),
-            Book(id: 6,
+                        storyTime: "10:00 AM")]),
+            Book(
                    image: "chart.bar.fill",
                    name: "Elementum curabitur",
                    description: "Non consectetur a erat nam at lectus urna duis. Nibh venenatis cras sed felis eget velit aliquet sagittis. Viverra nam libero justo laoreet sit amet cursus. Erat imperdiet sed euismod nisi. Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae. Cursus vitae congue mauris rhoncus aenean. Pellentesque nec nam aliquam sem et tortor consequat id porta. Massa tempor nec feugiat nisl. Tristique senectus et netus et malesuada. Nullam Elementum curabitur arcu. Praesent semper feugiat nibh sed pulvinar proin. Mauris ultrices eros in cursus turpis. Imperdiet massa tincidunt nunc pulvinar sapien et ligula ullamcorper. Accumsan tortor posuere ac ut consequat semper. Lacus viverra vitae congue eu. Neque vitae tempus quam pellentesque.",
@@ -456,8 +426,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 6),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Scelerisque",
@@ -469,8 +438,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 6),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Amet Dictum",
@@ -482,8 +450,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 6),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Nisl Rhoncus",
@@ -495,8 +462,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 6),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Consectetur",
@@ -508,8 +474,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 6),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Nec Sagittis",
@@ -521,8 +486,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 7),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Diam In",
@@ -534,7 +498,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM", themeId: 7),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Consequat",
@@ -546,10 +510,8 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 7)],
-                   projectId: 1),
-            Book(id: 7,
+                        storyTime: "10:00 AM")]),
+            Book(
                    image: "person.3.fill",
                    name: "Dui faucibus in",
                    description: "Tincidunt tortor aliquam nulla facilisi cras fermentum odio eu feugiat. Congue eu consequat ac felis donec et odio. Enim praesent elementum facilisis leo vel fringilla. Scelerisque eu ultrices vitae auctor eu augue. Egestas fringilla phasellus faucibus scelerisque. Placerat orci nulla pellentesque dignissim enim sit amet venenatis urna. Vel quam elementum pulvinar etiam non quam lacus. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Sit amet consectetur adipiscing elit pellentesque. Dui faucibus in ornare quam viverra. Amet risus nullam eget felis eget. Enim sed faucibus turpis in eu mi bibendum neque egestas. Fringilla ut morbi tincidunt augue interdum. Risus at ultrices mi tempus imperdiet nulla. Ac feugiat sed lectus vestibulum mattis. Quam pellentesque nec nam aliquam sem et tortor consequat id. Dolor sit amet consectetur adipiscing.",
@@ -568,8 +530,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 7),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Tincidunt",
@@ -581,8 +542,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 7),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Porttitor",
@@ -594,10 +554,8 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 7)],
-                   projectId: 1),
-            Book(id: 8,
+                        storyTime: "10:00 AM")]),
+            Book(
                    image: "hand.thumbsup.fill",
                    name: "Tortor pretium",
                    description: "Amet mattis vulputate enim nulla aliquet. Odio aenean sed adipiscing diam donec adipiscing tristique risus nec. Quis auctor elit sed vulputate mi sit amet mauris. Quis ipsum suspendisse ultrices gravida. Lorem mollis aliquam ut porttitor leo a diam. Placerat vestibulum lectus mauris ultrices. Aliquet eget sit amet tellus cras. Tempor orci eu lobortis elementum nibh tellus. Nec tincidunt praesent semper feugiat nibh sed. Pharetra convallis posuere morbi leo. Donec ultrices tincidunt arcu non sodales. Nulla at volutpat diam ut venenatis tellus. Tortor pretium viverra suspendisse potenti. Elementum pulvinar etiam non quam lacus suspendisse faucibus interdum posuere. Suscipit adipiscing bibendum est ultricies integer quis.",
@@ -616,8 +574,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 8),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Iaculis Urna",
@@ -629,8 +586,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 8),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Pellentesque",
@@ -642,8 +598,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 8),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Ullamcorper",
@@ -655,8 +610,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 8),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Ultricies Et",
@@ -668,9 +622,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 8)],
-                   projectId: 1),]),
+                        storyTime: "10:00 AM")])]),
         
         
         
@@ -686,8 +638,8 @@ class Reference: ObservableObject {
         
         
         
-        Library(id: 2, title: "Book 2", books: [
-            Book(id: 1, image: "book.fill", name: "facilisis magna etiam", description: "Elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Nunc lobortis mattis aliquam faucibus purus in massa tempor. Molestie at elementum eu facilisis sed. Velit euismod in pellentesque massa. Commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae. Amet facilisis magna etiam tempor orci eu lobortis elementum nibh. Arcu dictum varius duis at consectetur lorem donec. Aenean pharetra magna ac placerat. Posuere urna nec tincidunt praesent semper feugiat nibh sed pulvinar. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend. Vitae justo eget magna fermentum. Ut sem viverra aliquet eget. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Libero nunc consequat interdum varius sit amet mattis vulputate enim. Suspendisse interdum consectetur libero id faucibus nisl. Tellus molestie nunc non blandit massa enim nec. Amet aliquam id diam maecenas ultricies. Praesent tristique magna sit amet purus gravida quis blandit turpis.", numberOfUsers: 5, numberOfStories: 22, color: Color(UIColor.systemGray2), chapters: [
+        Library(title: "Book 2", books: [
+            Book(image: "book.fill", name: "facilisis magna etiam", description: "Elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Nunc lobortis mattis aliquam faucibus purus in massa tempor. Molestie at elementum eu facilisis sed. Velit euismod in pellentesque massa. Commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae. Amet facilisis magna etiam tempor orci eu lobortis elementum nibh. Arcu dictum varius duis at consectetur lorem donec. Aenean pharetra magna ac placerat. Posuere urna nec tincidunt praesent semper feugiat nibh sed pulvinar. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend. Vitae justo eget magna fermentum. Ut sem viverra aliquet eget. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Libero nunc consequat interdum varius sit amet mattis vulputate enim. Suspendisse interdum consectetur libero id faucibus nisl. Tellus molestie nunc non blandit massa enim nec. Amet aliquam id diam maecenas ultricies. Praesent tristique magna sit amet purus gravida quis blandit turpis.", numberOfUsers: 5, numberOfStories: 22, color: Color(UIColor.systemGray2), chapters: [
                 Chapter(
                     icon: "person.fill",
                     role: "Donec Ultrices",
@@ -699,8 +651,7 @@ class Reference: ObservableObject {
                     interviewer: "Charlene",
                     storyLocation: "Paris, France",
                     storyDate: "Nov 20, 2021",
-                    storyTime: "10:00 AM",
-                    themeId: 1),
+                    storyTime: "10:00 AM"),
                 Chapter(
                     icon: "person.fill",
                     role: "Nisl Tincidunt",
@@ -712,8 +663,7 @@ class Reference: ObservableObject {
                     interviewer: "Anya",
                     storyLocation: "Training Center",
                     storyDate: "5 Oct 2020",
-                    storyTime: "1100 SGT",
-                    themeId: 1),
+                    storyTime: "1100 SGT"),
                 Chapter(
                     icon: "person.fill",
                     role: "Ligula Ullamcorper",
@@ -725,8 +675,7 @@ class Reference: ObservableObject {
                     interviewer: "Anya",
                     storyLocation: "A diam maecenas",
                     storyDate: "5 Oct 2020",
-                    storyTime: "1100 SGT",
-                    themeId: 1),
+                    storyTime: "1100 SGT"),
                 Chapter(
                     icon: "person.fill",
                     role: "Tempor Orci",
@@ -738,8 +687,7 @@ class Reference: ObservableObject {
                     interviewer: "Charlene",
                     storyLocation: "Paris, France",
                     storyDate: "Nov 20, 2021",
-                    storyTime: "10:00 AM",
-                    themeId: 1),
+                    storyTime: "10:00 AM"),
                 Chapter(
                     icon: "person.fill",
                     role: "Quam Pellentesque",
@@ -751,10 +699,8 @@ class Reference: ObservableObject {
                     interviewer: "Charlene",
                     storyLocation: "Paris, France",
                     storyDate: "Nov 20, 2021",
-                    storyTime: "10:00 AM",
-                    themeId: 1)],
-                   projectId: 2),
-            Book(id: 2,
+                    storyTime: "10:00 AM")]),
+            Book(
                    image: "person.crop.circle.fill.badge.minus",
                    name: "Tristique sollicitudin",
                    description: "Tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula. Sagittis eu volutpat odio facilisis mauris sit amet. Ultricies tristique nulla aliquet enim tortor at. Nunc pulvinar sapien et ligula ullamcorper. Aliquam faucibus purus in massa tempor nec. Adipiscing commodo elit at imperdiet dui accumsan. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor. Condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus. A diam sollicitudin tempor id. A cras semper auctor neque. Dui vivamus arcu felis bibendum ut tristique et egestas. Fermentum iaculis eu non diam phasellus vestibulum. Et malesuada fames ac turpis. Vitae congue eu consequat ac felis donec et odio. Velit egestas dui id ornare arcu odio. Praesent tristique magna sit amet. A arcu cursus vitae congue mauris rhoncus aenean.",
@@ -773,8 +719,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 2),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Euismod",
@@ -786,8 +731,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 2),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Tincidunt Vitae",
@@ -799,8 +743,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 2),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Tellus",
@@ -812,8 +755,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 2),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Ullamcorper Morbi",
@@ -825,10 +767,8 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 2)],
-                   projectId: 2),
-            Book(id: 3,
+                        storyTime: "10:00 AM")]),
+            Book(
                    image: "waveform.path.ecg",
                    name: "Quis commodo odio",
                    description: "Sagittis purus sit amet volutpat consequat mauris nunc. Morbi blandit cursus risus at ultrices mi tempus imperdiet nulla. Condimentum id venenatis a condimentum. In fermentum et sollicitudin ac orci phasellus egestas tellus rutrum. A diam maecenas sed enim ut sem viverra aliquet. Aliquam eleifend mi in nulla posuere. A diam sollicitudin tempor id eu nisl nunc mi ipsum. Faucibus ornare suspendisse sed nisi lacus sed viverra tellus. Consequat ac felis donec et odio pellentesque diam volutpat commodo. Turpis in eu mi bibendum. In hac habitasse platea dictumst vestibulum. Sit amet porttitor eget dolor morbi non arcu risus. Neque volutpat ac tincidunt vitae semper quis lectus. Quis commodo odio aenean sed adipiscing. Pulvinar sapien et ligula ullamcorper malesuada proin libero. Diam in arcu cursus euismod quis viverra nibh. Dis parturient montes nascetur ridiculus mus. Vulputate dignissim suspendisse in est ante. Aliquam sem et tortor consequat id porta nibh.", numberOfUsers: 5,
@@ -846,8 +786,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 3),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Ipsum Faucibus",
@@ -859,8 +798,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 3),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Bibendum Enim",
@@ -872,8 +810,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 3),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Egestas Fringilla",
@@ -885,8 +822,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 3),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Pharetra Vel",
@@ -898,10 +834,8 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 3)],
-                   projectId: 2),
-            Book(id: 4,
+                        storyTime: "10:00 AM")]),
+            Book(
                    image: "globe",
                    name: "Nec Sagittis",
                    description: "Viverra orci sagittis eu volutpat odio facilisis mauris. Nunc sed id semper risus. In hac habitasse platea dictumst. Sapien nec sagittis aliquam malesuada bibendum arcu vitae. Congue nisi vitae suscipit tellus mauris. Gravida rutrum quisque non tellus orci ac. Integer quis auctor elit sed vulputate mi sit. Gravida in fermentum et sollicitudin ac orci. Diam maecenas ultricies mi eget mauris pharetra. Nec sagittis aliquam malesuada bibendum. Amet purus gravida quis blandit turpis. Risus ultricies tristique nulla aliquet enim tortor at. Faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget. Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi.",
@@ -920,8 +854,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 4),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Amet Consectetur",
@@ -933,8 +866,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 4),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Cras Adipiscing",
@@ -946,8 +878,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 4),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Nunc Consequat",
@@ -959,8 +890,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 4),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Potenti Nullam",
@@ -972,10 +902,8 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 4)],
-                   projectId: 2),
-            Book(id: 5,
+                        storyTime: "10:00 AM")]),
+            Book(
                    image: "exclamationmark.bubble.fill",
                    name: "Elit pellentesque",
                    description: "Sed vulputate odio ut enim blandit volutpat. Nunc vel risus commodo viverra maecenas. Etiam dignissim diam quis enim lobortis scelerisque fermentum. Consectetur adipiscing elit duis tristique sollicitudin nibh sit. Libero justo laoreet sit amet cursus sit amet dictum sit. Penatibus et magnis dis parturient. A pellentesque sit amet porttitor eget dolor morbi non. Leo vel fringilla est ullamcorper. Velit euismod in pellentesque massa placerat duis. Netus et malesuada fames ac turpis. Risus quis varius quam quisque id diam. Adipiscing elit pellentesque habitant morbi tristique senectus et. Non arcu risus quis varius quam quisque id diam vel. Ut venenatis tellus in metus.",
@@ -994,8 +922,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 5),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Amet Commodo",
@@ -1007,8 +934,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 5),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Pulvinar Sapien",
@@ -1020,8 +946,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 5),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Posuere Lorem",
@@ -1033,8 +958,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 5),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Blandit Cursus",
@@ -1046,10 +970,8 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 5)],
-                   projectId: 2),
-            Book(id: 6,
+                        storyTime: "10:00 AM")]),
+            Book(
                    image: "chart.bar.fill",
                    name: "Elementum curabitur",
                    description: "Non consectetur a erat nam at lectus urna duis. Nibh venenatis cras sed felis eget velit aliquet sagittis. Viverra nam libero justo laoreet sit amet cursus. Erat imperdiet sed euismod nisi. Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae. Cursus vitae congue mauris rhoncus aenean. Pellentesque nec nam aliquam sem et tortor consequat id porta. Massa tempor nec feugiat nisl. Tristique senectus et netus et malesuada. Nullam Elementum curabitur arcu. Praesent semper feugiat nibh sed pulvinar proin. Mauris ultrices eros in cursus turpis. Imperdiet massa tincidunt nunc pulvinar sapien et ligula ullamcorper. Accumsan tortor posuere ac ut consequat semper. Lacus viverra vitae congue eu. Neque vitae tempus quam pellentesque.",
@@ -1068,8 +990,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 6),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Scelerisque",
@@ -1081,8 +1002,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 6),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Amet Dictum",
@@ -1094,8 +1014,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 6),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Nisl Rhoncus",
@@ -1107,8 +1026,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 6),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Consectetur",
@@ -1120,10 +1038,8 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 6)],
-                   projectId: 2),
-            Book(id: 7,
+                        storyTime: "10:00 AM")]),
+            Book(
                    image: "person.3.fill",
                    name: "Dui faucibus in",
                    description: "Tincidunt tortor aliquam nulla facilisi cras fermentum odio eu feugiat. Congue eu consequat ac felis donec et odio. Enim praesent elementum facilisis leo vel fringilla. Scelerisque eu ultrices vitae auctor eu augue. Egestas fringilla phasellus faucibus scelerisque. Placerat orci nulla pellentesque dignissim enim sit amet venenatis urna. Vel quam elementum pulvinar etiam non quam lacus. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Sit amet consectetur adipiscing elit pellentesque. Dui faucibus in ornare quam viverra. Amet risus nullam eget felis eget. Enim sed faucibus turpis in eu mi bibendum neque egestas. Fringilla ut morbi tincidunt augue interdum. Risus at ultrices mi tempus imperdiet nulla. Ac feugiat sed lectus vestibulum mattis. Quam pellentesque nec nam aliquam sem et tortor consequat id. Dolor sit amet consectetur adipiscing.",
@@ -1142,8 +1058,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 7),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Tincidunt",
@@ -1155,8 +1070,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 7),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Porttitor",
@@ -1168,8 +1082,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 7),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Nec Sagittis",
@@ -1181,8 +1094,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 7),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Diam In",
@@ -1194,7 +1106,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM", themeId: 7),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Consequat",
@@ -1206,10 +1118,8 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 7)],
-                   projectId: 2),
-            Book(id: 8,
+                        storyTime: "10:00 AM")]),
+            Book(
                    image: "hand.thumbsup.fill",
                    name: "Tortor pretium",
                    description: "Amet mattis vulputate enim nulla aliquet. Odio aenean sed adipiscing diam donec adipiscing tristique risus nec. Quis auctor elit sed vulputate mi sit amet mauris. Quis ipsum suspendisse ultrices gravida. Lorem mollis aliquam ut porttitor leo a diam. Placerat vestibulum lectus mauris ultrices. Aliquet eget sit amet tellus cras. Tempor orci eu lobortis elementum nibh tellus. Nec tincidunt praesent semper feugiat nibh sed. Pharetra convallis posuere morbi leo. Donec ultrices tincidunt arcu non sodales. Nulla at volutpat diam ut venenatis tellus. Tortor pretium viverra suspendisse potenti. Elementum pulvinar etiam non quam lacus suspendisse faucibus interdum posuere. Suscipit adipiscing bibendum est ultricies integer quis.",
@@ -1228,8 +1138,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 8),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Iaculis Urna",
@@ -1241,8 +1150,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 8),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Pellentesque",
@@ -1254,8 +1162,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 8),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Ullamcorper",
@@ -1267,8 +1174,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 8),
+                        storyTime: "10:00 AM"),
                     Chapter(
                         icon: "person.fill",
                         role: "Ultricies Et",
@@ -1280,9 +1186,7 @@ class Reference: ObservableObject {
                         interviewer: "Charlene",
                         storyLocation: "Paris, France",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM",
-                        themeId: 8)],
-                   projectId: 2),])]
+                        storyTime: "10:00 AM")])])]
     
     var books: [Book] {
         
