@@ -39,11 +39,6 @@ struct LazyThemes: View {
             } // SCrollView
             
         } //: ZStack
-//        .onAppear() {
-//            DispatchQueue.main.async {
-//                self.reference.referenceProjectID = self.projectID
-//            }
-//        }
     }
 }
 
