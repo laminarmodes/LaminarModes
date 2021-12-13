@@ -22,32 +22,28 @@
 		E803C68726BEB11400C41AA6 /* VisualEffectBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = E803C68626BEB11400C41AA6 /* VisualEffectBlur.swift */; };
 		E803C68926BEB12700C41AA6 /* VisualEffectBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = E803C68826BEB12700C41AA6 /* VisualEffectBlur.swift */; };
 		E803C68C26BEB1BA00C41AA6 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = E803C68B26BEB1BA00C41AA6 /* SwiftUICharts */; };
-		E80F31DD27607A9000689092 /* LazyThemes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F31D827607A9000689092 /* LazyThemes.swift */; };
-		E80F31DE27607A9000689092 /* LazyThemes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F31D827607A9000689092 /* LazyThemes.swift */; };
-		E80F31DF27607A9000689092 /* CreateGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F31D927607A9000689092 /* CreateGroup.swift */; };
-		E80F31E027607A9000689092 /* CreateGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F31D927607A9000689092 /* CreateGroup.swift */; };
+		E80F31DD27607A9000689092 /* LazyBooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F31D827607A9000689092 /* LazyBooks.swift */; };
+		E80F31DE27607A9000689092 /* LazyBooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F31D827607A9000689092 /* LazyBooks.swift */; };
 		E80F31E127607A9000689092 /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F31DA27607A9000689092 /* RingView.swift */; };
 		E80F31E227607A9000689092 /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F31DA27607A9000689092 /* RingView.swift */; };
-		E80F31E327607A9000689092 /* CreateFolderReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F31DB27607A9000689092 /* CreateFolderReference.swift */; };
-		E80F31E427607A9000689092 /* CreateFolderReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F31DB27607A9000689092 /* CreateFolderReference.swift */; };
 		E80F31E527607A9000689092 /* AffinityMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F31DC27607A9000689092 /* AffinityMap.swift */; };
 		E80F31E627607A9000689092 /* AffinityMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F31DC27607A9000689092 /* AffinityMap.swift */; };
-		E80F31E927607A9800689092 /* ThemeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F31E727607A9800689092 /* ThemeList.swift */; };
-		E80F31EA27607A9800689092 /* ThemeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F31E727607A9800689092 /* ThemeList.swift */; };
+		E80F31E927607A9800689092 /* BookList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F31E727607A9800689092 /* BookList.swift */; };
+		E80F31EA27607A9800689092 /* BookList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F31E727607A9800689092 /* BookList.swift */; };
 		E80F31EB27607A9800689092 /* UITrendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F31E827607A9800689092 /* UITrendsView.swift */; };
 		E80F31EC27607A9800689092 /* UITrendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F31E827607A9800689092 /* UITrendsView.swift */; };
 		E80F31F427607AB700689092 /* GlassmorphicColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F31ED27607AB700689092 /* GlassmorphicColorView.swift */; };
 		E80F31F527607AB700689092 /* GlassmorphicColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F31ED27607AB700689092 /* GlassmorphicColorView.swift */; };
 		E80F31F627607AB700689092 /* ChapterListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F31EE27607AB700689092 /* ChapterListRowView.swift */; };
 		E80F31F727607AB700689092 /* ChapterListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F31EE27607AB700689092 /* ChapterListRowView.swift */; };
-		E80F31F827607AB700689092 /* UserStoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F31EF27607AB700689092 /* UserStoryList.swift */; };
-		E80F31F927607AB700689092 /* UserStoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F31EF27607AB700689092 /* UserStoryList.swift */; };
+		E80F31F827607AB700689092 /* ChapterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F31EF27607AB700689092 /* ChapterList.swift */; };
+		E80F31F927607AB700689092 /* ChapterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F31EF27607AB700689092 /* ChapterList.swift */; };
 		E80F31FA27607AB700689092 /* NeumorphicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F31F027607AB700689092 /* NeumorphicView.swift */; };
 		E80F31FB27607AB700689092 /* NeumorphicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F31F027607AB700689092 /* NeumorphicView.swift */; };
 		E80F31FC27607AB700689092 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F31F127607AB700689092 /* DetailsView.swift */; };
 		E80F31FD27607AB700689092 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F31F127607AB700689092 /* DetailsView.swift */; };
-		E80F31FE27607AB700689092 /* ThemeLazyStories.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F31F227607AB700689092 /* ThemeLazyStories.swift */; };
-		E80F31FF27607AB700689092 /* ThemeLazyStories.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F31F227607AB700689092 /* ThemeLazyStories.swift */; };
+		E80F31FE27607AB700689092 /* BookWithLazyChapters.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F31F227607AB700689092 /* BookWithLazyChapters.swift */; };
+		E80F31FF27607AB700689092 /* BookWithLazyChapters.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F31F227607AB700689092 /* BookWithLazyChapters.swift */; };
 		E80F320027607AB700689092 /* GlassmorphicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F31F327607AB700689092 /* GlassmorphicView.swift */; };
 		E80F320127607AB700689092 /* GlassmorphicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F31F327607AB700689092 /* GlassmorphicView.swift */; };
 		E80F321627607B4F00689092 /* BookCardLargeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F321227607B4F00689092 /* BookCardLargeView.swift */; };
@@ -68,8 +64,6 @@
 		E80F322B27607B7900689092 /* AddBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F322527607B7900689092 /* AddBookView.swift */; };
 		E80F322C27607B7900689092 /* AddChapterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F322627607B7900689092 /* AddChapterView.swift */; };
 		E80F322D27607B7900689092 /* AddChapterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F322627607B7900689092 /* AddChapterView.swift */; };
-		E80F322E27607B7900689092 /* StoryModeTestFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F322727607B7900689092 /* StoryModeTestFile.swift */; };
-		E80F322F27607B7900689092 /* StoryModeTestFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F322727607B7900689092 /* StoryModeTestFile.swift */; };
 		E80F323327607B8300689092 /* GradientLargeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F323027607B8300689092 /* GradientLargeTextField.swift */; };
 		E80F323427607B8300689092 /* GradientLargeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F323027607B8300689092 /* GradientLargeTextField.swift */; };
 		E80F323527607B8300689092 /* GradientText.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F323127607B8300689092 /* GradientText.swift */; };
@@ -120,19 +114,17 @@
 		E803C63926BEAE9E00C41AA6 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		E803C68626BEB11400C41AA6 /* VisualEffectBlur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualEffectBlur.swift; sourceTree = "<group>"; };
 		E803C68826BEB12700C41AA6 /* VisualEffectBlur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualEffectBlur.swift; sourceTree = "<group>"; };
-		E80F31D827607A9000689092 /* LazyThemes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LazyThemes.swift; sourceTree = "<group>"; };
-		E80F31D927607A9000689092 /* CreateGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateGroup.swift; sourceTree = "<group>"; };
+		E80F31D827607A9000689092 /* LazyBooks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LazyBooks.swift; sourceTree = "<group>"; };
 		E80F31DA27607A9000689092 /* RingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RingView.swift; sourceTree = "<group>"; };
-		E80F31DB27607A9000689092 /* CreateFolderReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateFolderReference.swift; sourceTree = "<group>"; };
 		E80F31DC27607A9000689092 /* AffinityMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AffinityMap.swift; sourceTree = "<group>"; };
-		E80F31E727607A9800689092 /* ThemeList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeList.swift; sourceTree = "<group>"; };
+		E80F31E727607A9800689092 /* BookList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookList.swift; sourceTree = "<group>"; };
 		E80F31E827607A9800689092 /* UITrendsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITrendsView.swift; sourceTree = "<group>"; };
 		E80F31ED27607AB700689092 /* GlassmorphicColorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlassmorphicColorView.swift; sourceTree = "<group>"; };
 		E80F31EE27607AB700689092 /* ChapterListRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterListRowView.swift; sourceTree = "<group>"; };
-		E80F31EF27607AB700689092 /* UserStoryList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserStoryList.swift; sourceTree = "<group>"; };
+		E80F31EF27607AB700689092 /* ChapterList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterList.swift; sourceTree = "<group>"; };
 		E80F31F027607AB700689092 /* NeumorphicView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeumorphicView.swift; sourceTree = "<group>"; };
 		E80F31F127607AB700689092 /* DetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
-		E80F31F227607AB700689092 /* ThemeLazyStories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeLazyStories.swift; sourceTree = "<group>"; };
+		E80F31F227607AB700689092 /* BookWithLazyChapters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookWithLazyChapters.swift; sourceTree = "<group>"; };
 		E80F31F327607AB700689092 /* GlassmorphicView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlassmorphicView.swift; sourceTree = "<group>"; };
 		E80F321227607B4F00689092 /* BookCardLargeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookCardLargeView.swift; sourceTree = "<group>"; };
 		E80F321327607B4F00689092 /* ChapterCardSmallView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterCardSmallView.swift; sourceTree = "<group>"; };
@@ -143,7 +135,6 @@
 		E80F322427607B7900689092 /* DeleteChapterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteChapterView.swift; sourceTree = "<group>"; };
 		E80F322527607B7900689092 /* AddBookView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddBookView.swift; sourceTree = "<group>"; };
 		E80F322627607B7900689092 /* AddChapterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddChapterView.swift; sourceTree = "<group>"; };
-		E80F322727607B7900689092 /* StoryModeTestFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryModeTestFile.swift; sourceTree = "<group>"; };
 		E80F323027607B8300689092 /* GradientLargeTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientLargeTextField.swift; sourceTree = "<group>"; };
 		E80F323127607B8300689092 /* GradientText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientText.swift; sourceTree = "<group>"; };
 		E80F323227607B8300689092 /* GradientTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientTextField.swift; sourceTree = "<group>"; };
@@ -326,7 +317,6 @@
 				E80F322527607B7900689092 /* AddBookView.swift */,
 				E80F322627607B7900689092 /* AddChapterView.swift */,
 				E80F322427607B7900689092 /* DeleteChapterView.swift */,
-				E80F322727607B7900689092 /* StoryModeTestFile.swift */,
 			);
 			path = "Modal Windows";
 			sourceTree = "<group>";
@@ -349,8 +339,8 @@
 				E80F31F327607AB700689092 /* GlassmorphicView.swift */,
 				E80F31ED27607AB700689092 /* GlassmorphicColorView.swift */,
 				E80F31F027607AB700689092 /* NeumorphicView.swift */,
-				E80F31F227607AB700689092 /* ThemeLazyStories.swift */,
-				E80F31EF27607AB700689092 /* UserStoryList.swift */,
+				E80F31F227607AB700689092 /* BookWithLazyChapters.swift */,
+				E80F31EF27607AB700689092 /* ChapterList.swift */,
 			);
 			path = "Secondary Views";
 			sourceTree = "<group>";
@@ -359,11 +349,9 @@
 			isa = PBXGroup;
 			children = (
 				E80F31DC27607A9000689092 /* AffinityMap.swift */,
-				E80F31DB27607A9000689092 /* CreateFolderReference.swift */,
-				E80F31D927607A9000689092 /* CreateGroup.swift */,
-				E80F31D827607A9000689092 /* LazyThemes.swift */,
+				E80F31D827607A9000689092 /* LazyBooks.swift */,
 				E80F31DA27607A9000689092 /* RingView.swift */,
-				E80F31E727607A9800689092 /* ThemeList.swift */,
+				E80F31E727607A9800689092 /* BookList.swift */,
 				E80F31E827607A9800689092 /* UITrendsView.swift */,
 				E810EAFD27564C6900CBAEF8 /* Secondary Views */,
 			);
@@ -482,7 +470,7 @@
 				E80F322027607B6F00689092 /* BookCarouselHeaderView.swift in Sources */,
 				E80F324E27607BF100689092 /* LineCustom.swift in Sources */,
 				E80F325A27607BF100689092 /* LabelViewCustom.swift in Sources */,
-				E80F31FE27607AB700689092 /* ThemeLazyStories.swift in Sources */,
+				E80F31FE27607AB700689092 /* BookWithLazyChapters.swift in Sources */,
 				E80F323527607B8300689092 /* GradientText.swift in Sources */,
 				E80F321C27607B4F00689092 /* ChapterCardSmallHeightInfiniteWidthView.swift in Sources */,
 				E80F325627607BF100689092 /* IndicatorPointCustom.swift in Sources */,
@@ -491,9 +479,8 @@
 				E80F323B27607BA800689092 /* CloseButton.swift in Sources */,
 				E80F321827607B4F00689092 /* ChapterCardSmallView.swift in Sources */,
 				E80F324327607BC200689092 /* MainStructs.swift in Sources */,
-				E80F31DD27607A9000689092 /* LazyThemes.swift in Sources */,
-				E80F322E27607B7900689092 /* StoryModeTestFile.swift in Sources */,
-				E80F31F827607AB700689092 /* UserStoryList.swift in Sources */,
+				E80F31DD27607A9000689092 /* LazyBooks.swift in Sources */,
+				E80F31F827607AB700689092 /* ChapterList.swift in Sources */,
 				E80F323D27607BA800689092 /* GradientButtonView.swift in Sources */,
 				E80F322227607B6F00689092 /* BookHeaderLarge.swift in Sources */,
 				E80F31E527607A9000689092 /* AffinityMap.swift in Sources */,
@@ -517,9 +504,7 @@
 				E80F321A27607B4F00689092 /* BookCardSmallHeightInfiniteWidthView.swift in Sources */,
 				E803C61C26BE9FBC00C41AA6 /* ContentView.swift in Sources */,
 				E80F321627607B4F00689092 /* BookCardLargeView.swift in Sources */,
-				E80F31E327607A9000689092 /* CreateFolderReference.swift in Sources */,
-				E80F31E927607A9800689092 /* ThemeList.swift in Sources */,
-				E80F31DF27607A9000689092 /* CreateGroup.swift in Sources */,
+				E80F31E927607A9800689092 /* BookList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,7 +521,7 @@
 				E80F322127607B6F00689092 /* BookCarouselHeaderView.swift in Sources */,
 				E80F324F27607BF100689092 /* LineCustom.swift in Sources */,
 				E80F325B27607BF100689092 /* LabelViewCustom.swift in Sources */,
-				E80F31FF27607AB700689092 /* ThemeLazyStories.swift in Sources */,
+				E80F31FF27607AB700689092 /* BookWithLazyChapters.swift in Sources */,
 				E80F323627607B8300689092 /* GradientText.swift in Sources */,
 				E80F321D27607B4F00689092 /* ChapterCardSmallHeightInfiniteWidthView.swift in Sources */,
 				E80F325727607BF100689092 /* IndicatorPointCustom.swift in Sources */,
@@ -545,9 +530,8 @@
 				E80F323C27607BA800689092 /* CloseButton.swift in Sources */,
 				E80F321927607B4F00689092 /* ChapterCardSmallView.swift in Sources */,
 				E80F324427607BC200689092 /* MainStructs.swift in Sources */,
-				E80F31DE27607A9000689092 /* LazyThemes.swift in Sources */,
-				E80F322F27607B7900689092 /* StoryModeTestFile.swift in Sources */,
-				E80F31F927607AB700689092 /* UserStoryList.swift in Sources */,
+				E80F31DE27607A9000689092 /* LazyBooks.swift in Sources */,
+				E80F31F927607AB700689092 /* ChapterList.swift in Sources */,
 				E80F323E27607BA800689092 /* GradientButtonView.swift in Sources */,
 				E80F322327607B6F00689092 /* BookHeaderLarge.swift in Sources */,
 				E80F31E627607A9000689092 /* AffinityMap.swift in Sources */,
@@ -571,9 +555,7 @@
 				E80F321B27607B4F00689092 /* BookCardSmallHeightInfiniteWidthView.swift in Sources */,
 				E803C61D26BE9FBC00C41AA6 /* ContentView.swift in Sources */,
 				E80F321727607B4F00689092 /* BookCardLargeView.swift in Sources */,
-				E80F31E427607A9000689092 /* CreateFolderReference.swift in Sources */,
-				E80F31EA27607A9800689092 /* ThemeList.swift in Sources */,
-				E80F31E027607A9000689092 /* CreateGroup.swift in Sources */,
+				E80F31EA27607A9800689092 /* BookList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

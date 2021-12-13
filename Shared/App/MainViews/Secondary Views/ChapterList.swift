@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-struct UserStoryList: View
+struct ChapterList: View
 {
     @EnvironmentObject private var reference: Reference
-    var projectID: UUID
-    let themeId: UUID
+    var libraryID: UUID
+    let bookID: UUID
     
     // Injecting iTheme for now but can remove this later because passing in environment
     var theme: Book?
@@ -31,7 +31,7 @@ struct UserStoryList: View
     {
         VStack()
         {
-            BookHeaderLarge(theme: reference.findBookById(inputThemeId: themeId)).environmentObject(reference)
+            BookHeaderLarge(book: reference.findBookById(inputThemeId: bookID)).environmentObject(reference)
                 .zIndex(1)
             
             List
@@ -40,10 +40,10 @@ struct UserStoryList: View
                 {
                     ForEach(reference.chapters, id: \.uniqueID) { item in
                         
-                        NavigationLink(destination: DetailsView(themeId: themeId, story: item, closeButton: false).environmentObject(reference)) {
+                        NavigationLink(destination: DetailsView(bookID: bookID, chapter: item, closeButton: false).environmentObject(reference)) {
                             HStack
                             {
-                                ChapterListRowView(storyId: item.uniqueID, story: item)
+                                ChapterListRowView(chapterID: item.uniqueID, chapter: item)
                                     .padding(.vertical,4)
                                     .environmentObject(reference)
                             }
@@ -53,15 +53,15 @@ struct UserStoryList: View
             } // ScrollView
             .onAppear {
                 DispatchQueue.main.async {
-                    self.reference.referenceBookID = self.themeId
+                    self.reference.referenceBookID = self.bookID
                     self.loaded = true
-                    self.reference.referenceProjectID = self.projectID
+                    self.reference.referenceProjectID = self.libraryID
                 }
             }
             Spacer()
         } // VStack
         .onAppear() {
-            self.reference.referenceProjectID = self.projectID
+            self.reference.referenceProjectID = self.libraryID
         }
         .navigationBarTitle("Story List", displayMode: .inline)
     } // body
@@ -69,7 +69,7 @@ struct UserStoryList: View
 
 struct TransactionsView_Previews: PreviewProvider {
     static var previews: some View {
-        UserStoryList(projectID: Reference().libraries[0].uniqueID, themeId: Reference().libraries[0].books[0].uniqueID)
+        ChapterList(libraryID: Reference().libraries[0].uniqueID, bookID: Reference().libraries[0].books[0].uniqueID)
             .environmentObject(Reference())
         
     }

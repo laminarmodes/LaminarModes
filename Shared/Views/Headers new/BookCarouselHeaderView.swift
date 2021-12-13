@@ -9,14 +9,14 @@ import SwiftUI
 
 struct BookCarouselHeaderView: View
 {
-    @State var themeName: String?
+    @State var bookName: String?
     @State var numberOfStories: Int?
     
     var body: some View
     {
         HStack
         {
-            Text(themeName ?? "No book name")
+            Text(bookName ?? "No book name")
                 .font(Font.custom("noteworthy", size: 28))
                 .fontWeight(.semibold)
                 .padding(.leading, 20)

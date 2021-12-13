@@ -15,7 +15,7 @@ struct RingView: View {
     var color2 = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)
     
     @EnvironmentObject private var reference: Reference
-    @State var projectID: UUID
+    @State var libraryID: UUID
     
     var width: CGFloat = 300
     var height: CGFloat = 300
@@ -194,7 +194,7 @@ struct RingView: View {
 
 struct RingView_Previews: PreviewProvider {
     static var previews: some View {
-        RingView(projectID: Reference().libraries[0].uniqueID, show: .constant(true)) // necessary only when you have a preview
+        RingView(libraryID: Reference().libraries[0].uniqueID, show: .constant(true)) // necessary only when you have a preview
     }
 }
 

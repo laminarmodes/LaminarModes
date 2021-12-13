@@ -11,9 +11,9 @@ import SwiftUI
 struct DetailsView: View
 {
     @Environment(\.presentationMode) var presentationMode
-    var themeId: UUID
+    var bookID: UUID
     
-    var story: Chapter?
+    var chapter: Chapter?
     var details: String?
     var closeButton = true
     let screenWidth = UIScreen.main.bounds.size.width
@@ -28,7 +28,7 @@ struct DetailsView: View
         {
             VStack
             {
-                BookHeaderLarge(theme: reference.findBookById(inputThemeId: themeId)).environmentObject(reference)
+                BookHeaderLarge(book: reference.findBookById(inputThemeId: bookID)).environmentObject(reference)
                     .zIndex(1)
                 
                 ZStack(alignment: .topTrailing)
@@ -39,12 +39,12 @@ struct DetailsView: View
                         {
                             VStack(alignment: .leading, spacing: 20)
                             {
-                                Text(story?.role ?? "No data")
+                                Text(chapter?.role ?? "No data")
                                     .font(.largeTitle)
                                     .fontWeight(.bold)
                                 //.padding(.horizontal)
-                                    .foregroundColor(story?.color)
-                                Text(story?.description ?? "No data")
+                                    .foregroundColor(chapter?.color)
+                                Text(chapter?.description ?? "No data")
                                     .font(.headline)
                                     .multilineTextAlignment(.leading)
                                     .multilineTextAlignment(.leading)
@@ -52,9 +52,9 @@ struct DetailsView: View
                                 
                                 Text("Details".uppercased())
                                     .fontWeight(.bold)
-                                    .foregroundColor(story?.color)
+                                    .foregroundColor(chapter?.color)
                                 
-                                Text(story?.details ?? "No data")
+                                Text(chapter?.details ?? "No data")
                                     .font(.body)
                             }
                         } // VStack
@@ -67,7 +67,7 @@ struct DetailsView: View
             } // VStack
         } // ZStack
         .onAppear() {
-            self.reference.referenceBookID = self.themeId
+            self.reference.referenceBookID = self.bookID
         }
     } // body
 } // Detail View
@@ -76,6 +76,6 @@ struct DetailsView_Previews: PreviewProvider
 {
     static var previews: some View
     {
-        DetailsView(themeId: Reference().libraries[0].books[0].uniqueID).environmentObject(Reference())
+        DetailsView(bookID: Reference().libraries[0].books[0].uniqueID).environmentObject(Reference())
     }
 }

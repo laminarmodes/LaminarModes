@@ -10,7 +10,7 @@ import SwiftUI
 struct UITrendsView: View {
     
     @EnvironmentObject private var reference: Reference
-    @State var projectID: UUID
+    @State var libraryID: UUID
     
     let screenWidth = UIScreen.main.bounds.size.width
     var columnWidth: CGFloat = 100.0
@@ -19,7 +19,7 @@ struct UITrendsView: View {
         List
         {
 
-            NavigationLink(destination: NeumorphicView(projectID: projectID).environmentObject(reference)) {
+            NavigationLink(destination: NeumorphicView(libraryID: libraryID).environmentObject(reference)) {
                 HStack
                 {
                     Text("Neumorphism")
@@ -27,7 +27,7 @@ struct UITrendsView: View {
                     Text("See sample")
                 }
             }
-            NavigationLink(destination: GlassmorphicView(projectID: projectID)) {
+            NavigationLink(destination: GlassmorphicView(libraryID: libraryID)) {
                 HStack
                 {
                     Text("Glassmorphism")
@@ -35,7 +35,7 @@ struct UITrendsView: View {
                     Text("See sample")
                 }
             }
-            NavigationLink(destination: GlassmorphicColorView(projectID: projectID)) {
+            NavigationLink(destination: GlassmorphicColorView(libraryID: libraryID)) {
                 HStack
                 {
                     Text("Gradient")
@@ -47,7 +47,7 @@ struct UITrendsView: View {
         } // ScrollView
         .onAppear() {
             DispatchQueue.main.async {
-                self.reference.referenceProjectID = self.projectID
+                self.reference.referenceProjectID = self.libraryID
             }
         }
     }
@@ -55,6 +55,6 @@ struct UITrendsView: View {
 
 struct UITrendsView_Previews: PreviewProvider {
     static var previews: some View {
-        UITrendsView(projectID: Reference().libraries[0].uniqueID).environmentObject(Reference())
+        UITrendsView(libraryID: Reference().libraries[0].uniqueID).environmentObject(Reference())
     }
 }

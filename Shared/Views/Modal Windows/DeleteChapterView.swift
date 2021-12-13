@@ -12,9 +12,9 @@ struct DeleteChapterView: View {
     @EnvironmentObject private var reference: Reference
     @State var libraryID: UUID?
     @State var bookID: UUID?
-    @State var currentStoryID: UUID
+    @State var currentChapterID: UUID
     
-    @Binding var editingStory: Bool
+    @Binding var editingChapter: Bool
     
     
     
@@ -34,8 +34,8 @@ struct DeleteChapterView: View {
                     self.reference.referenceProjectID = self.libraryID ?? reference.libraries[0].uniqueID
                     self.reference.referenceBookID = self.bookID ?? reference.libraries[0].books[0].uniqueID
                     
-                    self.reference.deleteChapter(storyIdToRemove: currentStoryID)
-                    editingStory = false
+                    self.reference.deleteChapter(storyIdToRemove: currentChapterID)
+                    editingChapter = false
                     
                 }, label: {
                     
@@ -49,7 +49,7 @@ struct DeleteChapterView: View {
             .clipShape(RoundedRectangle(cornerRadius: 70))
             
             Button(action: {
-                editingStory = false
+                editingChapter = false
                 
             }, label: {
                 CloseButton()
@@ -69,6 +69,6 @@ struct DeleteChapterView: View {
 
 struct DelteChapterView_Previews: PreviewProvider {
     static var previews: some View {
-        DeleteChapterView(currentStoryID: Reference().chapters[0].uniqueID, editingStory: .constant(true))
+        DeleteChapterView(currentChapterID: Reference().chapters[0].uniqueID, editingChapter: .constant(true))
     }
 }

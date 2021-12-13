@@ -7,18 +7,18 @@
 
 import SwiftUI
 
-struct ThemeLazyStories: View {
+struct BookWithLazyChapters: View {
     
     @EnvironmentObject private var reference: Reference
     //    @State var projectID: UUID
-    var projectID: UUID
-    let themeId: UUID
+    var libraryID: UUID
+    let bookID: UUID
     
     
     var body: some View {
         
         VStack {
-            BookCardLargeView(theme: reference.findBookById(inputThemeId: themeId))
+            BookCardLargeView(book: reference.findBookById(inputThemeId: bookID))
                 .environmentObject(reference)
                 .padding([.top], 8)
                 .padding([.leading, .trailing], 16)
@@ -28,14 +28,14 @@ struct ThemeLazyStories: View {
                 LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 8)
                 {
                     
-                    ForEach(reference.findBookById(inputThemeId: themeId).chapters.reversed(), id: \.uniqueID) { story in
+                    ForEach(reference.findBookById(inputThemeId: bookID).chapters.reversed(), id: \.uniqueID) { story in
                         
                         
-                        NavigationLink( destination: DetailsView(themeId: themeId, story: story, closeButton: true).environmentObject(reference))
+                        NavigationLink( destination: DetailsView(bookID: bookID, chapter: story, closeButton: true).environmentObject(reference))
                         {
                             HStack
                             {
-                                ChapterCardSmallHeightInfiniteWidthView(story: story)
+                                ChapterCardSmallHeightInfiniteWidthView(chapter: story)
                                     .padding(4)
                                     .environmentObject(reference)
                             }
@@ -51,8 +51,8 @@ struct ThemeLazyStories: View {
         } //: VStack
         .onAppear() {
             DispatchQueue.main.async {
-                self.reference.referenceBookID = self.themeId
-                self.reference.referenceProjectID = self.projectID
+                self.reference.referenceBookID = self.bookID
+                self.reference.referenceProjectID = self.libraryID
                 let _ = print("Hi")
             }
         }
@@ -62,7 +62,7 @@ struct ThemeLazyStories: View {
 
 struct ThemeLazyStories_Previews: PreviewProvider {
     static var previews: some View {
-        ThemeLazyStories(projectID: Reference().libraries[0].uniqueID, themeId: Reference().libraries[0].books[0].uniqueID).environmentObject(Reference())
+        BookWithLazyChapters(libraryID: Reference().libraries[0].uniqueID, bookID: Reference().libraries[0].books[0].uniqueID).environmentObject(Reference())
     }
 }
 

@@ -28,11 +28,11 @@ struct AddChapterView: View {
     @Binding var detailsInput: String
     @Binding var priorityInput: String
     
-    @Binding var addingStory: Bool
+    @Binding var addingChapter: Bool
     
     
     
-    @State var storyColor: Color?
+    @State var chapterColor: Color?
     
     @State var isFocused = false
     
@@ -115,9 +115,9 @@ struct AddChapterView: View {
                         self.reference.referenceProjectID = self.libraryID ?? reference.libraries[0].uniqueID
                         self.reference.referenceBookID = self.bookID ?? reference.libraries[0].books[0].uniqueID
                         
-                        self.reference.addChapter(image: "person.fill", role: self.roleInput, description: self.descriptionInput, date: "add later", priority: self.priorityInput, details: self.detailsInput, color: storyColor ?? Color.gray)
+                        self.reference.addChapter(image: "person.fill", role: self.roleInput, description: self.descriptionInput, date: "add later", priority: self.priorityInput, details: self.detailsInput, color: chapterColor ?? Color.gray)
                         
-                        addingStory = false
+                        addingChapter = false
                         roleInput = ""
                         descriptionInput = ""
                         priorityInput = ""
@@ -137,7 +137,7 @@ struct AddChapterView: View {
             
             
             Button(action: {
-                addingStory = false
+                addingChapter = false
                 roleInput = ""
                 descriptionInput = ""
                 priorityInput = ""
@@ -159,6 +159,6 @@ struct AddChapterView: View {
 
 struct AddChapterView_Previews: PreviewProvider {
     static var previews: some View {
-        AddChapterView(bookID: Reference().libraries[0].books[0].uniqueID, roleInput: .constant("Test Role"), descriptionInput: .constant("Test Description"), detailsInput: .constant("Test Details"), priorityInput: .constant("Test priority"), addingStory: .constant(true),  storyColor: Color.gray).previewLayout(.sizeThatFits)
+        AddChapterView(bookID: Reference().libraries[0].books[0].uniqueID, roleInput: .constant("Test Role"), descriptionInput: .constant("Test Description"), detailsInput: .constant("Test Details"), priorityInput: .constant("Test priority"), addingChapter: .constant(true),  chapterColor: Color.gray).previewLayout(.sizeThatFits)
     }
 }

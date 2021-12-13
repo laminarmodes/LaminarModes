@@ -64,31 +64,31 @@ struct MainView: View
     {
         TabView
         {
-            RingView(projectID: projectID, show: $show).environmentObject(reference)
+            RingView(libraryID: projectID, show: $show).environmentObject(reference)
                 .tabItem {
                     Image(systemName: "plus.circle")
                     Text("Quick Add")
                 }
             
-            AffinityMap(projectID: projectID).environmentObject(reference)
+            AffinityMap(libraryID: projectID).environmentObject(reference)
                 .tabItem {
                     Image(systemName: "square.and.pencil")
                     Text("Tasks")
                 }
             
-            ThemeList(projectID: projectID).environmentObject(reference)
+            BookList(libraryID: projectID).environmentObject(reference)
                 .tabItem {
                     Image(systemName: "list.bullet.below.rectangle")
                     Text("Report")
                 }
             
-            LazyThemes(projectID: projectID).environmentObject(reference)
+            LazyBooks(libraryID: projectID).environmentObject(reference)
                 .tabItem {
                     Image(systemName: "lightbulb")
                     Text("Plan")
                 }
             
-            UITrendsView(projectID: projectID).environmentObject(reference)
+            UITrendsView(libraryID: projectID).environmentObject(reference)
                 .tabItem {
                     Image(systemName: "info.circle")
                     Text("Info")
@@ -109,9 +109,9 @@ struct MainView: View
         {
             AddBookView(
                 libraryID: projectID,
-                themeNameInput: $themeNameInput,
-                themeDescriptionInput: $themeDescriptionInput,
-                addingTheme: $addingTheme)
+                bookNameInput: $themeNameInput,
+                bookDescriptionInput: $themeDescriptionInput,
+                addingBook: $addingTheme)
                 .environmentObject(reference)
                 .zIndex(2)
                 .background(VisualEffectBlur().edgesIgnoringSafeArea(.all))

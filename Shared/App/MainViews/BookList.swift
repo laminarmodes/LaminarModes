@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-struct ThemeList: View
+struct BookList: View
 {
     @EnvironmentObject private var reference: Reference
-    @State var projectID: UUID
+    @State var libraryID: UUID
     
     
     @State var barChart = true
@@ -57,11 +57,11 @@ struct ThemeList: View
                     {
                         ForEach(reference.books.reversed(), id: \.uniqueID) { item in
                             
-                            NavigationLink( destination: UserStoryList(projectID: projectID, themeId: item.uniqueID, theme: item).environmentObject(reference))
+                            NavigationLink( destination: ChapterList(libraryID: libraryID, bookID: item.uniqueID, theme: item).environmentObject(reference))
                             {
                                 HStack
                                 {
-                                    BookCardLargeView(theme: item)
+                                    BookCardLargeView(book: item)
                                     //.padding()
                                         .padding([.top, .bottom], 8)
                                         .padding([.leading, .trailing], 16)
@@ -79,7 +79,7 @@ struct ThemeList: View
 
 struct ThemeList_Previews: PreviewProvider {
     static var previews: some View {
-        ThemeList(projectID: Reference().libraries[0].uniqueID).environmentObject(Reference())
+        BookList(libraryID: Reference().libraries[0].uniqueID).environmentObject(Reference())
     }
 }
 

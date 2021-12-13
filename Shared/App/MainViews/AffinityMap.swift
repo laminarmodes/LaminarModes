@@ -10,21 +10,21 @@ import SwiftUI
 struct AffinityMap: View {
     
     @EnvironmentObject private var reference: Reference
-    @State var projectID: UUID
+    @State var libraryID: UUID
     @State var themeID: UUID?
     
-    @State private var addingStory = false
-    @State private var editingStory = false
+    @State private var addingChapter = false
+    @State private var editingChapter = false
     @State private var roleInput = ""
     @State private var descriptionInpt = ""
     @State private var date = Date()
     @State private var priorityInput = ""
     @State private var detailsInput = ""
     @State var showModal = false
-    @State var currentStory: Chapter?
-    @State var currentTheme: Book?
+    @State var currentChapter: Chapter?
+    @State var currentBook: Book?
     
-    @State var currentStoryID: UUID?
+    @State var currrentChapterID: UUID?
     @State var selected: String?
     
     
@@ -81,13 +81,13 @@ struct AffinityMap: View {
                                 VStack(alignment: .leading) {
                                     // Place a header and button horizontally
                                     HStack {
-                                        BookCarouselHeaderView(themeName: themeItem.name, numberOfStories: self.reference.totalChaptersInt(for: themeItem))
+                                        BookCarouselHeaderView(bookName: themeItem.name, numberOfStories: self.reference.totalChaptersInt(for: themeItem))
                                         
                                         Spacer()
                                         
                                         Button(action:
                                                 {
-                                            addingStory = true
+                                            addingChapter = true
                                             themeID = themeItem.uniqueID
                                             
                                         }, label: {
@@ -105,17 +105,17 @@ struct AffinityMap: View {
                                             ForEach(themeItem.chapters.reversed(), id: \.uniqueID) { item in
                                                 
                                                 ZStack(alignment: .topTrailing) {
-                                                    ChapterCardSmallView(story: item)
+                                                    ChapterCardSmallView(chapter: item)
                                                         
                                                         .onTapGesture {
                                                             DispatchQueue.main.async {
-                                                                currentStory = item
-                                                                currentTheme = themeItem
+                                                                currentChapter = item
+                                                                currentBook = themeItem
                                                                 
 //                                                                let _ = print(themeItem.name)
 //                                                                let _ = print(themeItem.uniqueID)
-                                                                let _ = print(currentTheme!.name)
-                                                                let _ = print(currentTheme!.uniqueID)
+                                                                let _ = print(currentBook!.name)
+                                                                let _ = print(currentBook!.uniqueID)
                                                             }
                                                             withAnimation(.spring()) {
                                                                 showModal = true
@@ -127,17 +127,17 @@ struct AffinityMap: View {
 //                                                            DetailsView(themeId: currentTheme?.uniqueID ?? reference.libraries[0].books[0].uniqueID, story: currentStory, closeButton: true).environmentObject(reference)
 //                                                        } // StoryCard Item
                                                         .sheet(item: $selected, content: { oneSelection in
-                                                            DetailsView(themeId: currentTheme?.uniqueID ?? reference.libraries[0].books[0].uniqueID, story: currentStory, closeButton: true).environmentObject(reference)
+                                                            DetailsView(bookID: currentBook?.uniqueID ?? reference.libraries[0].books[0].uniqueID, chapter: currentChapter, closeButton: true).environmentObject(reference)
                                                             
                                                                 })
                                                         
                                                     
                                                     Button(action: {
-                                                        editingStory = true
-                                                        currentStory = item
+                                                        editingChapter = true
+                                                        currentChapter = item
                                                         //                                                        currentStoryID = item.id
-                                                        currentStoryID = item.uniqueID
-                                                        currentTheme = themeItem
+                                                        currrentChapterID = item.uniqueID
+                                                        currentBook = themeItem
                                                         themeID = themeItem.uniqueID
                                                         
                                                         
@@ -171,7 +171,7 @@ struct AffinityMap: View {
         } // ZStack
         .onAppear() {
             DispatchQueue.main.async {
-                self.reference.referenceProjectID = self.projectID
+                self.reference.referenceProjectID = self.libraryID
             }
         }
         
@@ -180,17 +180,17 @@ struct AffinityMap: View {
     @ViewBuilder
     var addStoryMode: some View
     {
-        if (addingStory)
+        if (addingChapter)
         {
             AddChapterView(
-                libraryID: projectID,
+                libraryID: libraryID,
                 bookID: themeID,
                 roleInput: $roleInput,
                 descriptionInput: $descriptionInpt,
                 detailsInput: $detailsInput,
                 priorityInput: $priorityInput,
-                addingStory: $addingStory,
-                storyColor: currentTheme?.color)
+                addingChapter: $addingChapter,
+                chapterColor: currentBook?.color)
                 .environmentObject(reference)
                 .zIndex(2)
         }
@@ -199,9 +199,9 @@ struct AffinityMap: View {
     @ViewBuilder
     var editStoryMode: some View
     {
-        if (editingStory)
+        if (editingChapter)
         {
-            DeleteChapterView(libraryID: projectID, bookID: themeID, currentStoryID: currentStoryID ?? reference.chapters[0].uniqueID, editingStory: $editingStory)
+            DeleteChapterView(libraryID: libraryID, bookID: themeID, currentChapterID: currrentChapterID ?? reference.chapters[0].uniqueID, editingChapter: $editingChapter)
                 .environmentObject(reference)
                 .zIndex(2)
                 .background(VisualEffectBlur().edgesIgnoringSafeArea(.all))
@@ -216,7 +216,7 @@ extension String: Identifiable {
 
 struct AffinityMap_Previews: PreviewProvider {
     static var previews: some View {
-        AffinityMap(projectID: Reference().libraries[0].uniqueID).environmentObject(Reference())
+        AffinityMap(libraryID: Reference().libraries[0].uniqueID).environmentObject(Reference())
     }
 }
 
