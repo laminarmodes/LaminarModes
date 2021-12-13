@@ -19,7 +19,7 @@ struct UITrendsView: View {
         List
         {
 
-            NavigationLink(destination: NeumorphicView()) {
+            NavigationLink(destination: NeumorphicView(projectID: projectID).environmentObject(reference)) {
                 HStack
                 {
                     Text("Neumorphism")
@@ -27,7 +27,7 @@ struct UITrendsView: View {
                     Text("See sample")
                 }
             }
-            NavigationLink(destination: GlassmorphicView()) {
+            NavigationLink(destination: GlassmorphicView(projectID: projectID)) {
                 HStack
                 {
                     Text("Glassmorphism")
@@ -35,7 +35,7 @@ struct UITrendsView: View {
                     Text("See sample")
                 }
             }
-            NavigationLink(destination: GradientView()) {
+            NavigationLink(destination: GlassmorphicColorView(projectID: projectID)) {
                 HStack
                 {
                     Text("Gradient")

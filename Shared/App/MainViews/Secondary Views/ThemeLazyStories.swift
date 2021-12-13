@@ -10,25 +10,28 @@ import SwiftUI
 struct ThemeLazyStories: View {
     
     @EnvironmentObject private var reference: Reference
-    @State var projectID: UUID
-    var themeId: UUID
+    //    @State var projectID: UUID
+    var projectID: UUID
+    let themeId: UUID
     
     
     var body: some View {
         
         VStack {
             BookCardLargeView(theme: reference.findBookById(inputThemeId: themeId))
+                .environmentObject(reference)
                 .padding([.top], 8)
                 .padding([.leading, .trailing], 16)
-                .environmentObject(reference)
             
             ScrollView(.vertical, showsIndicators: false) {
                 
                 LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 8)
                 {
+                    
                     ForEach(reference.findBookById(inputThemeId: themeId).chapters.reversed(), id: \.uniqueID) { story in
                         
-                        NavigationLink( destination: DetailsView(themeId: reference.findBookById(inputThemeId: themeId).uniqueID, story: story, closeButton: true).environmentObject(reference))
+                        
+                        NavigationLink( destination: DetailsView(themeId: themeId, story: story, closeButton: true).environmentObject(reference))
                         {
                             HStack
                             {
@@ -39,15 +42,22 @@ struct ThemeLazyStories: View {
                         }
                     } // ForEach
                 }
+
+                
                 .padding(.horizontal)
             }
             
             Spacer()
         } //: VStack
         .onAppear() {
-            self.reference.referenceProjectID = self.projectID
+            DispatchQueue.main.async {
+                self.reference.referenceBookID = self.themeId
+                self.reference.referenceProjectID = self.projectID
+                let _ = print("Hi")
+            }
         }
     }
+    
 }
 
 struct ThemeLazyStories_Previews: PreviewProvider {
@@ -55,3 +65,9 @@ struct ThemeLazyStories_Previews: PreviewProvider {
         ThemeLazyStories(projectID: Reference().libraries[0].uniqueID, themeId: Reference().libraries[0].books[0].uniqueID).environmentObject(Reference())
     }
 }
+
+
+
+//                    ForEach(reference.findBookById(inputThemeId: themeId).chapters.reversed(), id: \.uniqueID) { story in
+
+//                        NavigationLink( destination: DetailsView(themeId: reference.findBookById(inputThemeId: themeId).uniqueID, story: story, closeButton: true).environmentObject(reference))

@@ -16,12 +16,15 @@ struct LazyThemes: View {
         ZStack {
             Color("off-white")
                 .edgesIgnoringSafeArea(.all)
-            ScrollView(.vertical, showsIndicators: false) {
-                VStack {
+            
+            ScrollView(.vertical, showsIndicators: false)
+            {
+                VStack
+                {
                     LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 8) {
                         ForEach(reference.books.reversed(), id: \.uniqueID) { item in
-                            if let item = item {
-                                NavigationLink( destination: ThemeLazyStories(projectID: projectID, themeId: item.uniqueID))
+                            
+                                NavigationLink(destination: ThemeLazyStories(projectID: projectID, themeId: item.uniqueID).environmentObject(reference))
                                 {
                                     HStack {
                                         BookCardSmallHeightInfiniteWidthView(theme: item)
@@ -29,18 +32,18 @@ struct LazyThemes: View {
                                             .environmentObject(reference)
                                     }
                                 }
-                            }
                         } // ForEach
                     }
                     .padding()
                 } // VStack
             } // SCrollView
-            .onAppear() {
-                DispatchQueue.main.async {
-                    self.reference.referenceProjectID = self.projectID
-                }
-            }
-        }
+            
+        } //: ZStack
+//        .onAppear() {
+//            DispatchQueue.main.async {
+//                self.reference.referenceProjectID = self.projectID
+//            }
+//        }
     }
 }
 

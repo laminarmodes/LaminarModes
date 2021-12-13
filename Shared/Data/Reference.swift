@@ -1250,7 +1250,6 @@ class Reference: ObservableObject {
     func findBookById(inputThemeId: UUID) -> Book
     {
 
-    
         var readIndexLibraries = 0
         var countLibraries = 0
         
@@ -1267,7 +1266,8 @@ class Reference: ObservableObject {
         var readIndexBooks = 0
         var countBooks = 0
         for book in libraries[readIndexLibraries].books {
-            if book.uniqueID == referenceBookID {
+//            if book.uniqueID == referenceBookID {
+            if book.uniqueID == inputThemeId {
                 readIndexBooks = countBooks
             }
             
@@ -1335,7 +1335,8 @@ class Reference: ObservableObject {
         var readIndexChapters = 0
         var countChapters = 0
         for chapter in libraries[readIndexLibraries].books[readIndexBooks].chapters {
-            if chapter.uniqueID == referenceStoryID {
+//            if chapter.uniqueID == referenceStoryID {
+            if chapter.uniqueID == storyIdToRemove {
                 readIndexChapters = countChapters
             }
             countChapters += 1
@@ -1373,7 +1374,8 @@ class Reference: ObservableObject {
         var readIndexChapters = 0
         var countChapters = 0
         for chapter in libraries[readIndexLibraries].books[readIndexBooks].chapters {
-            if chapter.uniqueID == referenceStoryID {
+//            if chapter.uniqueID == referenceStoryID {
+            if chapter.uniqueID == storyIdToRead {
                 readIndexChapters = countChapters
             }
             countChapters += 1

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct BookHeaderLarge: View
 {
+    
     var theme: Book?
     @EnvironmentObject private var reference: Reference
     

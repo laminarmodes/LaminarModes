@@ -1,5 +1,5 @@
 //
-//  GlassmorphicView.swift
+//  GradientView.swift
 //  OnlineBankingBusiness
 //
 //  Created by Anya Traille on 7/12/21.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct GlassmorphicView: View {
+struct GlassmorphicColorView: View {
     
     @EnvironmentObject private var reference: Reference
     //    @State var projectID: UUID
@@ -59,8 +59,8 @@ struct GlassmorphicView: View {
     }
 }
 
-struct GlassmorphicView_Previews: PreviewProvider {
+struct GlassmorphicColorView_Previews: PreviewProvider {
     static var previews: some View {
-        GlassmorphicView(projectID: Reference().libraries[0].uniqueID, themeId: Reference().libraries[0].books[0].uniqueID).environmentObject(Reference())
+        GlassmorphicColorView(projectID: Reference().libraries[0].uniqueID, themeId: Reference().libraries[0].books[0].uniqueID).environmentObject(Reference())
     }
 }

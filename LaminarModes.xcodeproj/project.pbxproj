@@ -36,8 +36,8 @@
 		E80F31EA27607A9800689092 /* ThemeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F31E727607A9800689092 /* ThemeList.swift */; };
 		E80F31EB27607A9800689092 /* UITrendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F31E827607A9800689092 /* UITrendsView.swift */; };
 		E80F31EC27607A9800689092 /* UITrendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F31E827607A9800689092 /* UITrendsView.swift */; };
-		E80F31F427607AB700689092 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F31ED27607AB700689092 /* GradientView.swift */; };
-		E80F31F527607AB700689092 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F31ED27607AB700689092 /* GradientView.swift */; };
+		E80F31F427607AB700689092 /* GlassmorphicColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F31ED27607AB700689092 /* GlassmorphicColorView.swift */; };
+		E80F31F527607AB700689092 /* GlassmorphicColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F31ED27607AB700689092 /* GlassmorphicColorView.swift */; };
 		E80F31F627607AB700689092 /* ChapterListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F31EE27607AB700689092 /* ChapterListRowView.swift */; };
 		E80F31F727607AB700689092 /* ChapterListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F31EE27607AB700689092 /* ChapterListRowView.swift */; };
 		E80F31F827607AB700689092 /* UserStoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F31EF27607AB700689092 /* UserStoryList.swift */; };
@@ -127,7 +127,7 @@
 		E80F31DC27607A9000689092 /* AffinityMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AffinityMap.swift; sourceTree = "<group>"; };
 		E80F31E727607A9800689092 /* ThemeList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeList.swift; sourceTree = "<group>"; };
 		E80F31E827607A9800689092 /* UITrendsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITrendsView.swift; sourceTree = "<group>"; };
-		E80F31ED27607AB700689092 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		E80F31ED27607AB700689092 /* GlassmorphicColorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlassmorphicColorView.swift; sourceTree = "<group>"; };
 		E80F31EE27607AB700689092 /* ChapterListRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterListRowView.swift; sourceTree = "<group>"; };
 		E80F31EF27607AB700689092 /* UserStoryList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserStoryList.swift; sourceTree = "<group>"; };
 		E80F31F027607AB700689092 /* NeumorphicView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeumorphicView.swift; sourceTree = "<group>"; };
@@ -347,7 +347,7 @@
 				E80F31EE27607AB700689092 /* ChapterListRowView.swift */,
 				E80F31F127607AB700689092 /* DetailsView.swift */,
 				E80F31F327607AB700689092 /* GlassmorphicView.swift */,
-				E80F31ED27607AB700689092 /* GradientView.swift */,
+				E80F31ED27607AB700689092 /* GlassmorphicColorView.swift */,
 				E80F31F027607AB700689092 /* NeumorphicView.swift */,
 				E80F31F227607AB700689092 /* ThemeLazyStories.swift */,
 				E80F31EF27607AB700689092 /* UserStoryList.swift */,
@@ -473,7 +473,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E80F31F427607AB700689092 /* GradientView.swift in Sources */,
+				E80F31F427607AB700689092 /* GlassmorphicColorView.swift in Sources */,
 				E80F324127607BC200689092 /* Reference.swift in Sources */,
 				E803C64A26BEAE9E00C41AA6 /* MainView.swift in Sources */,
 				E80F31F627607AB700689092 /* ChapterListRowView.swift in Sources */,
@@ -527,7 +527,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E80F31F527607AB700689092 /* GradientView.swift in Sources */,
+				E80F31F527607AB700689092 /* GlassmorphicColorView.swift in Sources */,
 				E80F324227607BC200689092 /* Reference.swift in Sources */,
 				E803C64B26BEAE9E00C41AA6 /* MainView.swift in Sources */,
 				E80F31F727607AB700689092 /* ChapterListRowView.swift in Sources */,
