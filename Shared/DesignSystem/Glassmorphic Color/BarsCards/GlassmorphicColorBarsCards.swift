@@ -1,13 +1,13 @@
 //
-//  ThemeList.swift
+//  GlassmorphicColorBarsCards.swift
 //  LaminarModes
 //
-//  Created by Anya Traille on 7/8/21.
+//  Created by Anya Traille on 16/12/21.
 //
 
 import SwiftUI
 
-struct BookList: View
+struct GlassmorphicColorBarsCards: View
 {
     @EnvironmentObject private var reference: Reference
     @State var libraryID: UUID
@@ -20,6 +20,10 @@ struct BookList: View
     var body: some View {
         ZStack
         {
+            Color("off-white")
+                .edgesIgnoringSafeArea(.all)
+            
+            
             VStack {
                 
                 let noStories = (0..<(reference.books.count)).map{ _ in Double.random(in: 1 ... 20) }
@@ -73,9 +77,8 @@ struct BookList: View
     }
 }
 
-struct ThemeList_Previews: PreviewProvider {
+struct GlassmorphicColorBarsCards_Previews: PreviewProvider {
     static var previews: some View {
-        BookList(libraryID: Reference().libraries[0].uniqueID).environmentObject(Reference())
+        GlassmorphicColorBarsCards(libraryID: Reference().libraries[0].uniqueID).environmentObject(Reference())
     }
 }
-

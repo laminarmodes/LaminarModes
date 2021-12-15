@@ -16,40 +16,112 @@ struct UITrendsView: View {
     var columnWidth: CGFloat = 100.0
     
     var body: some View {
-        List
+        VStack
         {
-
-            NavigationLink(destination: NeumorphicView(libraryID: libraryID).environmentObject(reference)) {
-                HStack
+            List
+            {
+                Section(header: Text("Basic Layouts"))
                 {
-                    Text("Neumorphism")
-                    Spacer()
-                    Text("See sample")
+                    NavigationLink(destination: NeumorphicView(libraryID: libraryID).environmentObject(reference)) {
+                        HStack
+                        {
+                            Text("Neumorphism")
+                            Spacer()
+                            Text("See sample")
+                        }
+                    }
+                    .navigationTitle("Design Trends")
+                    
+                    NavigationLink(destination: GlassmorphicView(libraryID: libraryID)) {
+                        HStack
+                        {
+                            Text("Glassmorphism")
+                            Spacer()
+                            Text("See sample")
+                        }
+                    }
+                    .navigationTitle("Design Trends")
+                    
+                    NavigationLink(destination: GlassmorphicColorView(libraryID: libraryID)) {
+                        HStack
+                        {
+                            Text("Glassmorphism (Color)")
+                            Spacer()
+                            Text("See sample")
+                        }
+                    }
+                    .navigationTitle("Design Trends")
                 }
-            }
-            .navigationTitle("Design Trends")
-            
-            NavigationLink(destination: GlassmorphicView(libraryID: libraryID)) {
-                HStack
+                
+                Section(header: Text("Line Charts & Carousel"))
                 {
-                    Text("Glassmorphism")
-                    Spacer()
-                    Text("See sample")
+                    NavigationLink(destination: NeumorphicCarousels(libraryID: libraryID).environmentObject(reference)) {
+                        HStack
+                        {
+                            Text("Neumorphism")
+                            Spacer()
+                            Text("See sample")
+                        }
+                    }
+                    .navigationTitle("Design Trends")
+                    
+                    NavigationLink(destination: GlassmorphicCarousels(libraryID: libraryID)) {
+                        HStack
+                        {
+                            Text("Glassmorphism")
+                            Spacer()
+                            Text("See sample")
+                        }
+                    }
+                    .navigationTitle("Design Trends")
+                    
+                    NavigationLink(destination: GlassmorphicColorCarousels(libraryID: libraryID)) {
+                        HStack
+                        {
+                            Text("Glassmorphism (Color)")
+                            Spacer()
+                            Text("See sample")
+                        }
+                    }
+                    .navigationTitle("Design Trends")
                 }
-            }
-            .navigationTitle("Design Trends")
-            
-            NavigationLink(destination: GlassmorphicColorView(libraryID: libraryID)) {
-                HStack
+                
+                Section(header: Text("Bar Charts & Card"))
                 {
-                    Text("Glassmorphism (Color)")
-                    Spacer()
-                    Text("See sample")
+                    NavigationLink(destination: NeumorphicBarsCards(libraryID: libraryID).environmentObject(reference)) {
+                        HStack
+                        {
+                            Text("Neumorphism")
+                            Spacer()
+                            Text("See sample")
+                        }
+                    }
+                    .navigationTitle("Design Trends")
+                    
+                    NavigationLink(destination: GlassmorphicBarsCards(libraryID: libraryID)) {
+                        HStack
+                        {
+                            Text("Glassmorphism")
+                            Spacer()
+                            Text("See sample")
+                        }
+                    }
+                    .navigationTitle("Design Trends")
+                    
+                    NavigationLink(destination: GlassmorphicColorBarsCards(libraryID: libraryID)) {
+                        HStack
+                        {
+                            Text("Glassmorphism (Color)")
+                            Spacer()
+                            Text("See sample")
+                        }
+                    }
+                    .navigationTitle("Design Trends")
                 }
-            }
-            .navigationTitle("Design Trends")
+                
+            } // List
             
-        } // ScrollView
+        } //: VStack
         .onAppear() {
             DispatchQueue.main.async {
                 self.reference.referenceProjectID = self.libraryID

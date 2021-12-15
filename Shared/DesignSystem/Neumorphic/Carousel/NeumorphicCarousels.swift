@@ -1,13 +1,13 @@
 //
-//  AffinityMap.swift
+//  NeumorphicCarousels.swift
 //  LaminarModes
 //
-//  Created by Anya Traille on 7/8/21.
+//  Created by Anya Traille on 15/12/21.
 //
 
 import SwiftUI
 
-struct AffinityMap: View {
+struct NeumorphicCarousels: View {
     
     @EnvironmentObject private var reference: Reference
     @State var libraryID: UUID
@@ -36,24 +36,14 @@ struct AffinityMap: View {
     var body: some View {
         ZStack
         {
-            
+            Color("off-white")
+                .edgesIgnoringSafeArea(.all)
             
             addStoryMode
             editStoryMode
             
             VStack
             {
-                let noStories = (0..<(reference.books.count)).map{ _ in Double.random(in: 1 ... 20) }
-                if(barChart)
-                {
-                    BarChartViewCustomNew(data: ChartData(points: noStories),
-                                          title: "Chart Data is WIP",
-                                          form: CGSize(width: CGFloat(screenWidth-16),
-                                                       height: CGFloat(220)),
-                                          dropShadow: false,
-                                          animatedToBack: true).environmentObject(reference)
-                } else
-                {
                     ZStack {
                         ForEach(reference.books.reversed(), id: \.uniqueID) { themeItem in
                             
@@ -66,7 +56,7 @@ struct AffinityMap: View {
                                                      title: "Activity over time", form: CGSize(width: CGFloat(screenWidth-16), height: CGFloat(220)), dropShadow: false)
                         }
                     }
-                }
+                
                 
                 ScrollView(.vertical, showsIndicators: false)
                 {
@@ -104,7 +94,7 @@ struct AffinityMap: View {
                                             ForEach(themeItem.chapters.reversed(), id: \.uniqueID) { item in
                                                 
                                                 ZStack(alignment: .topTrailing) {
-                                                    ChapterCardSmallView(chapter: item)
+                                                    NeumorphicCardSmallView(chapter: item)
                                                         
                                                         .onTapGesture {
                                                             DispatchQueue.main.async {
@@ -138,7 +128,7 @@ struct AffinityMap: View {
                                                     }, label: {
                                                         Image(systemName: "ellipsis")
                                                         //.foregroundColor(Color.white.opacity(0.9))
-                                                            .foregroundColor(Color.white)
+                                                            .foregroundColor(Color.gray)
                                                             .padding([.top, .trailing], 16)
                                                     })
                                                 } // ZStack
@@ -204,13 +194,8 @@ struct AffinityMap: View {
     }
 }
 
-extension String: Identifiable {
-    public var id: String { self }
-}
-
-struct AffinityMap_Previews: PreviewProvider {
+struct NeumorphicCarousels_Previews: PreviewProvider {
     static var previews: some View {
-        AffinityMap(libraryID: Reference().libraries[0].uniqueID).environmentObject(Reference())
+        NeumorphicCarousels(libraryID: Reference().libraries[0].uniqueID).environmentObject(Reference())
     }
 }
-

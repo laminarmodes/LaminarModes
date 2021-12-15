@@ -1,13 +1,13 @@
 //
-//  AffinityMap.swift
+//  GlassmorphicCarousels.swift
 //  LaminarModes
 //
-//  Created by Anya Traille on 7/8/21.
+//  Created by Anya Traille on 15/12/21.
 //
 
 import SwiftUI
 
-struct AffinityMap: View {
+struct GlassmorphicCarousels: View {
     
     @EnvironmentObject private var reference: Reference
     @State var libraryID: UUID
@@ -43,17 +43,7 @@ struct AffinityMap: View {
             
             VStack
             {
-                let noStories = (0..<(reference.books.count)).map{ _ in Double.random(in: 1 ... 20) }
-                if(barChart)
-                {
-                    BarChartViewCustomNew(data: ChartData(points: noStories),
-                                          title: "Chart Data is WIP",
-                                          form: CGSize(width: CGFloat(screenWidth-16),
-                                                       height: CGFloat(220)),
-                                          dropShadow: false,
-                                          animatedToBack: true).environmentObject(reference)
-                } else
-                {
+
                     ZStack {
                         ForEach(reference.books.reversed(), id: \.uniqueID) { themeItem in
                             
@@ -66,7 +56,7 @@ struct AffinityMap: View {
                                                      title: "Activity over time", form: CGSize(width: CGFloat(screenWidth-16), height: CGFloat(220)), dropShadow: false)
                         }
                     }
-                }
+                
                 
                 ScrollView(.vertical, showsIndicators: false)
                 {
@@ -204,13 +194,10 @@ struct AffinityMap: View {
     }
 }
 
-extension String: Identifiable {
-    public var id: String { self }
-}
 
-struct AffinityMap_Previews: PreviewProvider {
+
+struct GlassmorphicCarousels_Previews: PreviewProvider {
     static var previews: some View {
-        AffinityMap(libraryID: Reference().libraries[0].uniqueID).environmentObject(Reference())
+        GlassmorphicCarousels(libraryID: Reference().libraries[0].uniqueID).environmentObject(Reference())
     }
 }
-
