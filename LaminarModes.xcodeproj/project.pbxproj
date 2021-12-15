@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,7 +21,6 @@
 		E803C64B26BEAE9E00C41AA6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E803C63926BEAE9E00C41AA6 /* MainView.swift */; };
 		E803C68726BEB11400C41AA6 /* VisualEffectBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = E803C68626BEB11400C41AA6 /* VisualEffectBlur.swift */; };
 		E803C68926BEB12700C41AA6 /* VisualEffectBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = E803C68826BEB12700C41AA6 /* VisualEffectBlur.swift */; };
-		E803C68C26BEB1BA00C41AA6 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = E803C68B26BEB1BA00C41AA6 /* SwiftUICharts */; };
 		E80F31DD27607A9000689092 /* LazyBooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F31D827607A9000689092 /* LazyBooks.swift */; };
 		E80F31DE27607A9000689092 /* LazyBooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F31D827607A9000689092 /* LazyBooks.swift */; };
 		E80F31E127607A9000689092 /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F31DA27607A9000689092 /* RingView.swift */; };
@@ -98,6 +97,8 @@
 		E80F325F27607BF100689092 /* BarChartRowCustomNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F324D27607BF100689092 /* BarChartRowCustomNew.swift */; };
 		E80F326127607C0B00689092 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F326027607C0B00689092 /* Colors.swift */; };
 		E80F326227607C0B00689092 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F326027607C0B00689092 /* Colors.swift */; };
+		E8DF79592769F05D00B10B38 /* NeumorphicLazyCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DF79582769F05D00B10B38 /* NeumorphicLazyCards.swift */; };
+		E8DF795A2769F05D00B10B38 /* NeumorphicLazyCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DF79582769F05D00B10B38 /* NeumorphicLazyCards.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -152,6 +153,7 @@
 		E80F324C27607BF000689092 /* BarChartCellCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartCellCustom.swift; sourceTree = "<group>"; };
 		E80F324D27607BF100689092 /* BarChartRowCustomNew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartRowCustomNew.swift; sourceTree = "<group>"; };
 		E80F326027607C0B00689092 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		E8DF79582769F05D00B10B38 /* NeumorphicLazyCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphicLazyCards.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,7 +161,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E803C68C26BEB1BA00C41AA6 /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +276,10 @@
 		E803C68D26BEB3DB00C41AA6 /* DesignSystem */ = {
 			isa = PBXGroup;
 			children = (
+				E8DF79582769F05D00B10B38 /* NeumorphicLazyCards.swift */,
+				E80F31F027607AB700689092 /* NeumorphicView.swift */,
+				E80F31ED27607AB700689092 /* GlassmorphicColorView.swift */,
+				E80F31F327607AB700689092 /* GlassmorphicView.swift */,
 				E80F326027607C0B00689092 /* Colors.swift */,
 			);
 			path = DesignSystem;
@@ -336,9 +341,6 @@
 			children = (
 				E80F31EE27607AB700689092 /* ChapterListRowView.swift */,
 				E80F31F127607AB700689092 /* DetailsView.swift */,
-				E80F31F327607AB700689092 /* GlassmorphicView.swift */,
-				E80F31ED27607AB700689092 /* GlassmorphicColorView.swift */,
-				E80F31F027607AB700689092 /* NeumorphicView.swift */,
 				E80F31F227607AB700689092 /* BookWithLazyChapters.swift */,
 				E80F31EF27607AB700689092 /* ChapterList.swift */,
 			);
@@ -375,7 +377,6 @@
 			);
 			name = "LaminarModes (iOS)";
 			packageProductDependencies = (
-				E803C68B26BEB1BA00C41AA6 /* SwiftUICharts */,
 			);
 			productName = "LaminarModes (iOS)";
 			productReference = E803C60C26BE9FBC00C41AA6 /* LaminarModes.app */;
@@ -425,7 +426,6 @@
 			);
 			mainGroup = E803C5FC26BE9FBB00C41AA6;
 			packageReferences = (
-				E803C68A26BEB1BA00C41AA6 /* XCRemoteSwiftPackageReference "ChartView" */,
 			);
 			productRefGroup = E803C60D26BE9FBC00C41AA6 /* Products */;
 			projectDirPath = "";
@@ -485,6 +485,7 @@
 				E80F322227607B6F00689092 /* BookHeaderLarge.swift in Sources */,
 				E80F31E527607A9000689092 /* AffinityMap.swift in Sources */,
 				E80F325427607BF100689092 /* MultiLineChartViewCustom.swift in Sources */,
+				E8DF79592769F05D00B10B38 /* NeumorphicLazyCards.swift in Sources */,
 				E80F326127607C0B00689092 /* Colors.swift in Sources */,
 				E80F325E27607BF100689092 /* BarChartRowCustomNew.swift in Sources */,
 				E80F325827607BF100689092 /* BarChartViewCustomNew.swift in Sources */,
@@ -536,6 +537,7 @@
 				E80F322327607B6F00689092 /* BookHeaderLarge.swift in Sources */,
 				E80F31E627607A9000689092 /* AffinityMap.swift in Sources */,
 				E80F325527607BF100689092 /* MultiLineChartViewCustom.swift in Sources */,
+				E8DF795A2769F05D00B10B38 /* NeumorphicLazyCards.swift in Sources */,
 				E80F326227607C0B00689092 /* Colors.swift in Sources */,
 				E80F325F27607BF100689092 /* BarChartRowCustomNew.swift in Sources */,
 				E80F325927607BF100689092 /* BarChartViewCustomNew.swift in Sources */,
@@ -799,25 +801,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		E803C68A26BEB1BA00C41AA6 /* XCRemoteSwiftPackageReference "ChartView" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/AppPear/ChartView";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.5.5;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		E803C68B26BEB1BA00C41AA6 /* SwiftUICharts */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E803C68A26BEB1BA00C41AA6 /* XCRemoteSwiftPackageReference "ChartView" */;
-			productName = SwiftUICharts;
-		};
-/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		E803C60226BE9FBB00C41AA6 /* LaminarModes.xcdatamodeld */ = {

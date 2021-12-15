@@ -14,7 +14,6 @@ struct BookWithLazyChapters: View {
     var libraryID: UUID
     let bookID: UUID
     
-    
     var body: some View {
         
         VStack {
@@ -42,11 +41,8 @@ struct BookWithLazyChapters: View {
                         }
                     } // ForEach
                 }
-
-                
                 .padding(.horizontal)
             }
-            
             Spacer()
         } //: VStack
         .onAppear() {
@@ -57,7 +53,6 @@ struct BookWithLazyChapters: View {
             }
         }
     }
-    
 }
 
 struct ThemeLazyStories_Previews: PreviewProvider {

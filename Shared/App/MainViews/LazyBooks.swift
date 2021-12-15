@@ -14,8 +14,7 @@ struct LazyBooks: View {
     
     var body: some View {
         ZStack {
-            Color("off-white")
-                .edgesIgnoringSafeArea(.all)
+            
             
             ScrollView(.vertical, showsIndicators: false)
             {

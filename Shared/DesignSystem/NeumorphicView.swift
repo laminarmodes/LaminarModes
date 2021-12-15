@@ -27,7 +27,7 @@ struct NeumorphicView: View {
                                 NavigationLink(destination: BookWithLazyChapters(libraryID: libraryID, bookID: item.uniqueID).environmentObject(reference))
                                 {
                                     HStack {
-                                        BookCardSmallHeightInfiniteWidthView(book: item)
+                                        NeumorphicLazyCards(book: item)
                                             .padding(4)
                                             .environmentObject(reference)
                                     }
