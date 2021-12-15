@@ -30,6 +30,7 @@ struct BookCardLargeView: View
                 Text(book?.name ?? "Checking Account (SGD)")
                     .font(Font.headline.bold())
                     .foregroundColor(Color.white.opacity(0.9))
+                    .multilineTextAlignment(.leading)
                 Spacer()
                 Text("Description: \(book?.description ?? "No Data")" )
                     .font(.subheadline)
@@ -39,9 +40,11 @@ struct BookCardLargeView: View
                 Text("Number of users: \(book?.numberOfUsers ?? 0)")
                     .font(.footnote)
                     .foregroundColor(Color.white.opacity(0.9))
+                    .multilineTextAlignment(.leading)
                 Text("Number of stories: \(book?.numberOfStories ?? 0)")
                     .font(.caption)
                     .foregroundColor(Color.white.opacity(0.9))
+                    .multilineTextAlignment(.leading)
             }
             .padding()
         } // HStack

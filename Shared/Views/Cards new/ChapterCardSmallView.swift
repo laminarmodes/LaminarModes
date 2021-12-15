@@ -25,6 +25,8 @@ struct ChapterCardSmallView: View
                     .fontWeight(.bold)
                     .foregroundColor(Color.white.opacity(0.9))
                     .lineLimit(1)
+                    .multilineTextAlignment(.leading)
+                
                 
                 Text(chapter?.description ?? "No data")
                     .multilineTextAlignment(.leading)

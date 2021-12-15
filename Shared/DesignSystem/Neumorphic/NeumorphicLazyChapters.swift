@@ -24,6 +24,7 @@ struct NeumorphicLazyChapters: View {
                     .fontWeight(.bold)
                     .foregroundColor(chapter?.color ?? Color.gray)
                     .lineLimit(1)
+                    .multilineTextAlignment(.leading)
                 
                 Text(chapter?.description ?? "No data")
                     .multilineTextAlignment(.leading)

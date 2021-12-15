@@ -27,11 +27,13 @@ struct NeumorphicLazyCard: View
                 Text(book?.name ?? "Checking Account (SGD)")
                     .font(Font.headline.bold())
                     .foregroundColor(book?.color ?? Color.blue)
+                    .multilineTextAlignment(.leading)
             }
             
             Text("Description: \(book?.description ?? "No Data")" )
                 .font(.subheadline)
                 .foregroundColor(book?.color ?? Color.blue)
+                .multilineTextAlignment(.leading)
             
             Spacer()
         } // HStack

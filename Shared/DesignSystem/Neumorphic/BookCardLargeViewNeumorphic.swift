@@ -30,6 +30,7 @@ struct BookCardLargeViewNeumorphic: View
                 Text(book?.name ?? "Checking Account (SGD)")
                     .font(Font.headline.bold())
                     .foregroundColor(book?.color ?? Color.gray)
+                    .multilineTextAlignment(.leading)
                 Spacer()
                 Text("Description: \(book?.description ?? "No Data")" )
                     .font(.subheadline)
@@ -39,9 +40,11 @@ struct BookCardLargeViewNeumorphic: View
                 Text("Number of users: \(book?.numberOfUsers ?? 0)")
                     .font(.footnote)
                     .foregroundColor(book?.color ?? Color.gray)
+                    .multilineTextAlignment(.leading)
                 Text("Number of stories: \(book?.numberOfStories ?? 0)")
                     .font(.caption)
                     .foregroundColor(book?.color ?? Color.gray)
+                    .multilineTextAlignment(.leading)
             }
             .padding()
         } // HStack

@@ -286,6 +286,8 @@
 			isa = PBXGroup;
 			children = (
 				E81EE70F276A033E0040A19D /* Neumorphic */,
+				E8EB362A276A1557000CCF20 /* Glassmorphic */,
+				E8EB362B276A157D000CCF20 /* Glassmorphic Color */,
 				E80F31ED27607AB700689092 /* GlassmorphicColorView.swift */,
 				E80F31F327607AB700689092 /* GlassmorphicView.swift */,
 				E80F326027607C0B00689092 /* Colors.swift */,
@@ -378,6 +380,20 @@
 				E810EAFD27564C6900CBAEF8 /* Secondary Views */,
 			);
 			path = MainViews;
+			sourceTree = "<group>";
+		};
+		E8EB362A276A1557000CCF20 /* Glassmorphic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Glassmorphic;
+			sourceTree = "<group>";
+		};
+		E8EB362B276A157D000CCF20 /* Glassmorphic Color */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Glassmorphic Color";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

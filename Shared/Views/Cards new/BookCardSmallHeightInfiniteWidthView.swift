@@ -27,11 +27,13 @@ struct BookCardSmallHeightInfiniteWidthView: View
                 Text(book?.name ?? "Checking Account (SGD)")
                     .font(Font.headline.bold())
                     .foregroundColor(Color.white.opacity(0.9))
+                    .multilineTextAlignment(.leading)
             }
             
             Text("Description: \(book?.description ?? "No Data")" )
                 .font(.subheadline)
                 .foregroundColor(Color.white.opacity(0.9))
+                .multilineTextAlignment(.leading)
             
             Spacer()
         } // HStack
