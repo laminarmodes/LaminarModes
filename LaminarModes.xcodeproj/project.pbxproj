@@ -428,7 +428,6 @@
 		E8EB3638276A49C9000CCF20 /* Carousel */ = {
 			isa = PBXGroup;
 			children = (
-				E8EB3627276A0CD7000CCF20 /* NeumorphicLazyChapters.swift */,
 				E8EB362C276A3D5E000CCF20 /* NeumorphicCarousels.swift */,
 				E8EB3635276A4751000CCF20 /* NeumorphicCardSmallView.swift */,
 			);
@@ -440,6 +439,7 @@
 			children = (
 				E80F31F027607AB700689092 /* NeumorphicView.swift */,
 				E8DF79582769F05D00B10B38 /* NeumorphicLazyCard.swift */,
+				E8EB3627276A0CD7000CCF20 /* NeumorphicLazyChapters.swift */,
 				E81EE70C276A02BC0040A19D /* BookLazyChaptersNeumorphic.swift */,
 				E81EE710276A03F10040A19D /* BookCardLargeViewNeumorphic.swift */,
 			);
