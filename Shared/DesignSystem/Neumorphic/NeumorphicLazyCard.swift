@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct NeumorphicLazyCards: View
+struct NeumorphicLazyCard: View
 {
     
     var book: Book?
@@ -45,9 +45,9 @@ struct NeumorphicLazyCards: View
     }
 }
 
-struct NeumorphicLazyCards_Previews: PreviewProvider {
+struct NeumorphicLazyCard_Previews: PreviewProvider {
     static var previews: some View {
-        NeumorphicLazyCards()
+        NeumorphicLazyCard()
             .previewLayout(.sizeThatFits)
     }
 }

@@ -24,10 +24,10 @@ struct NeumorphicView: View {
                     LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 8) {
                         ForEach(reference.books.reversed(), id: \.uniqueID) { item in
                             
-                                NavigationLink(destination: BookWithLazyChapters(libraryID: libraryID, bookID: item.uniqueID).environmentObject(reference))
+                                NavigationLink(destination: BookLazyChaptersNeumorphic(libraryID: libraryID, bookID: item.uniqueID).environmentObject(reference))
                                 {
                                     HStack {
-                                        NeumorphicLazyCards(book: item)
+                                        NeumorphicLazyCard(book: item)
                                             .padding(4)
                                             .environmentObject(reference)
                                     }
@@ -39,6 +39,7 @@ struct NeumorphicView: View {
             } // SCrollView
             
         } //: ZStack
+        .navigationTitle("Neumorphism")
     }
 }
 

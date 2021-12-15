@@ -97,8 +97,14 @@
 		E80F325F27607BF100689092 /* BarChartRowCustomNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F324D27607BF100689092 /* BarChartRowCustomNew.swift */; };
 		E80F326127607C0B00689092 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F326027607C0B00689092 /* Colors.swift */; };
 		E80F326227607C0B00689092 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F326027607C0B00689092 /* Colors.swift */; };
-		E8DF79592769F05D00B10B38 /* NeumorphicLazyCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DF79582769F05D00B10B38 /* NeumorphicLazyCards.swift */; };
-		E8DF795A2769F05D00B10B38 /* NeumorphicLazyCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DF79582769F05D00B10B38 /* NeumorphicLazyCards.swift */; };
+		E81EE70D276A02BC0040A19D /* BookLazyChaptersNeumorphic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81EE70C276A02BC0040A19D /* BookLazyChaptersNeumorphic.swift */; };
+		E81EE70E276A02BC0040A19D /* BookLazyChaptersNeumorphic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81EE70C276A02BC0040A19D /* BookLazyChaptersNeumorphic.swift */; };
+		E81EE711276A03F10040A19D /* BookCardLargeViewNeumorphic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81EE710276A03F10040A19D /* BookCardLargeViewNeumorphic.swift */; };
+		E81EE712276A03F10040A19D /* BookCardLargeViewNeumorphic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81EE710276A03F10040A19D /* BookCardLargeViewNeumorphic.swift */; };
+		E8DF79592769F05D00B10B38 /* NeumorphicLazyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DF79582769F05D00B10B38 /* NeumorphicLazyCard.swift */; };
+		E8DF795A2769F05D00B10B38 /* NeumorphicLazyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DF79582769F05D00B10B38 /* NeumorphicLazyCard.swift */; };
+		E8EB3628276A0CD7000CCF20 /* NeumorphicLazyChapters.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EB3627276A0CD7000CCF20 /* NeumorphicLazyChapters.swift */; };
+		E8EB3629276A0CD7000CCF20 /* NeumorphicLazyChapters.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EB3627276A0CD7000CCF20 /* NeumorphicLazyChapters.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -153,7 +159,10 @@
 		E80F324C27607BF000689092 /* BarChartCellCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartCellCustom.swift; sourceTree = "<group>"; };
 		E80F324D27607BF100689092 /* BarChartRowCustomNew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartRowCustomNew.swift; sourceTree = "<group>"; };
 		E80F326027607C0B00689092 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		E8DF79582769F05D00B10B38 /* NeumorphicLazyCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphicLazyCards.swift; sourceTree = "<group>"; };
+		E81EE70C276A02BC0040A19D /* BookLazyChaptersNeumorphic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookLazyChaptersNeumorphic.swift; sourceTree = "<group>"; };
+		E81EE710276A03F10040A19D /* BookCardLargeViewNeumorphic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCardLargeViewNeumorphic.swift; sourceTree = "<group>"; };
+		E8DF79582769F05D00B10B38 /* NeumorphicLazyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphicLazyCard.swift; sourceTree = "<group>"; };
+		E8EB3627276A0CD7000CCF20 /* NeumorphicLazyChapters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphicLazyChapters.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -276,8 +285,7 @@
 		E803C68D26BEB3DB00C41AA6 /* DesignSystem */ = {
 			isa = PBXGroup;
 			children = (
-				E8DF79582769F05D00B10B38 /* NeumorphicLazyCards.swift */,
-				E80F31F027607AB700689092 /* NeumorphicView.swift */,
+				E81EE70F276A033E0040A19D /* Neumorphic */,
 				E80F31ED27607AB700689092 /* GlassmorphicColorView.swift */,
 				E80F31F327607AB700689092 /* GlassmorphicView.swift */,
 				E80F326027607C0B00689092 /* Colors.swift */,
@@ -345,6 +353,18 @@
 				E80F31EF27607AB700689092 /* ChapterList.swift */,
 			);
 			path = "Secondary Views";
+			sourceTree = "<group>";
+		};
+		E81EE70F276A033E0040A19D /* Neumorphic */ = {
+			isa = PBXGroup;
+			children = (
+				E80F31F027607AB700689092 /* NeumorphicView.swift */,
+				E8DF79582769F05D00B10B38 /* NeumorphicLazyCard.swift */,
+				E81EE70C276A02BC0040A19D /* BookLazyChaptersNeumorphic.swift */,
+				E81EE710276A03F10040A19D /* BookCardLargeViewNeumorphic.swift */,
+				E8EB3627276A0CD7000CCF20 /* NeumorphicLazyChapters.swift */,
+			);
+			path = Neumorphic;
 			sourceTree = "<group>";
 		};
 		E8DFB49C26BEE546008BA2BD /* MainViews */ = {
@@ -467,6 +487,7 @@
 				E80F31F627607AB700689092 /* ChapterListRowView.swift in Sources */,
 				E80F322A27607B7900689092 /* AddBookView.swift in Sources */,
 				E80F325027607BF100689092 /* Path+QuadCurveCustom.swift in Sources */,
+				E81EE711276A03F10040A19D /* BookCardLargeViewNeumorphic.swift in Sources */,
 				E80F322027607B6F00689092 /* BookCarouselHeaderView.swift in Sources */,
 				E80F324E27607BF100689092 /* LineCustom.swift in Sources */,
 				E80F325A27607BF100689092 /* LabelViewCustom.swift in Sources */,
@@ -485,7 +506,7 @@
 				E80F322227607B6F00689092 /* BookHeaderLarge.swift in Sources */,
 				E80F31E527607A9000689092 /* AffinityMap.swift in Sources */,
 				E80F325427607BF100689092 /* MultiLineChartViewCustom.swift in Sources */,
-				E8DF79592769F05D00B10B38 /* NeumorphicLazyCards.swift in Sources */,
+				E8DF79592769F05D00B10B38 /* NeumorphicLazyCard.swift in Sources */,
 				E80F326127607C0B00689092 /* Colors.swift in Sources */,
 				E80F325E27607BF100689092 /* BarChartRowCustomNew.swift in Sources */,
 				E80F325827607BF100689092 /* BarChartViewCustomNew.swift in Sources */,
@@ -503,6 +524,8 @@
 				E803C68726BEB11400C41AA6 /* VisualEffectBlur.swift in Sources */,
 				E80F322C27607B7900689092 /* AddChapterView.swift in Sources */,
 				E80F321A27607B4F00689092 /* BookCardSmallHeightInfiniteWidthView.swift in Sources */,
+				E8EB3628276A0CD7000CCF20 /* NeumorphicLazyChapters.swift in Sources */,
+				E81EE70D276A02BC0040A19D /* BookLazyChaptersNeumorphic.swift in Sources */,
 				E803C61C26BE9FBC00C41AA6 /* ContentView.swift in Sources */,
 				E80F321627607B4F00689092 /* BookCardLargeView.swift in Sources */,
 				E80F31E927607A9800689092 /* BookList.swift in Sources */,
@@ -519,6 +542,7 @@
 				E80F31F727607AB700689092 /* ChapterListRowView.swift in Sources */,
 				E80F322B27607B7900689092 /* AddBookView.swift in Sources */,
 				E80F325127607BF100689092 /* Path+QuadCurveCustom.swift in Sources */,
+				E81EE712276A03F10040A19D /* BookCardLargeViewNeumorphic.swift in Sources */,
 				E80F322127607B6F00689092 /* BookCarouselHeaderView.swift in Sources */,
 				E80F324F27607BF100689092 /* LineCustom.swift in Sources */,
 				E80F325B27607BF100689092 /* LabelViewCustom.swift in Sources */,
@@ -537,7 +561,7 @@
 				E80F322327607B6F00689092 /* BookHeaderLarge.swift in Sources */,
 				E80F31E627607A9000689092 /* AffinityMap.swift in Sources */,
 				E80F325527607BF100689092 /* MultiLineChartViewCustom.swift in Sources */,
-				E8DF795A2769F05D00B10B38 /* NeumorphicLazyCards.swift in Sources */,
+				E8DF795A2769F05D00B10B38 /* NeumorphicLazyCard.swift in Sources */,
 				E80F326227607C0B00689092 /* Colors.swift in Sources */,
 				E80F325F27607BF100689092 /* BarChartRowCustomNew.swift in Sources */,
 				E80F325927607BF100689092 /* BarChartViewCustomNew.swift in Sources */,
@@ -555,6 +579,8 @@
 				E803C68926BEB12700C41AA6 /* VisualEffectBlur.swift in Sources */,
 				E80F322D27607B7900689092 /* AddChapterView.swift in Sources */,
 				E80F321B27607B4F00689092 /* BookCardSmallHeightInfiniteWidthView.swift in Sources */,
+				E8EB3629276A0CD7000CCF20 /* NeumorphicLazyChapters.swift in Sources */,
+				E81EE70E276A02BC0040A19D /* BookLazyChaptersNeumorphic.swift in Sources */,
 				E803C61D26BE9FBC00C41AA6 /* ContentView.swift in Sources */,
 				E80F321727607B4F00689092 /* BookCardLargeView.swift in Sources */,
 				E80F31EA27607A9800689092 /* BookList.swift in Sources */,

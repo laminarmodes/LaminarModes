@@ -27,6 +27,8 @@ struct UITrendsView: View {
                     Text("See sample")
                 }
             }
+            .navigationTitle("Design Trends")
+            
             NavigationLink(destination: GlassmorphicView(libraryID: libraryID)) {
                 HStack
                 {
@@ -35,14 +37,17 @@ struct UITrendsView: View {
                     Text("See sample")
                 }
             }
+            .navigationTitle("Design Trends")
+            
             NavigationLink(destination: GlassmorphicColorView(libraryID: libraryID)) {
                 HStack
                 {
-                    Text("Gradient")
+                    Text("Glassmorphism (Color)")
                     Spacer()
                     Text("See sample")
                 }
             }
+            .navigationTitle("Design Trends")
             
         } // ScrollView
         .onAppear() {
