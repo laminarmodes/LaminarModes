@@ -37,9 +37,10 @@ struct NeumorphicView: View {
                     .padding()
                 } // VStack
             } // SCrollView
+            .navigationTitle("Neumorphism")
             
         } //: ZStack
-        .navigationTitle("Neumorphism")
+        
     }
 }
 

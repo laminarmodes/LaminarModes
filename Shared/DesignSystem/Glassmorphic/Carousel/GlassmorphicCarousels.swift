@@ -53,7 +53,7 @@ struct GlassmorphicCarousels: View {
                                                         [
                                                             (dummyNumbers, GradientColor(start: (themeItem.color ?? Color.gray).opacity(0.3), end: (themeItem.color ?? Color.gray))),
                                                         ],
-                                                     title: "Activity over time", form: CGSize(width: CGFloat(screenWidth-16), height: CGFloat(220)), dropShadow: false)
+                                                     title: "Amount per chapter", form: CGSize(width: CGFloat(screenWidth-16), height: CGFloat(220)), dropShadow: false)
                         }
                     }
                 
@@ -149,10 +149,8 @@ struct GlassmorphicCarousels: View {
                 } // Scrollview
                 
             } // VStack
-            
-            
-            
         } // ZStack
+        .navigationTitle("Glassmorphism")
         .onAppear() {
             DispatchQueue.main.async {
                 self.reference.referenceProjectID = self.libraryID

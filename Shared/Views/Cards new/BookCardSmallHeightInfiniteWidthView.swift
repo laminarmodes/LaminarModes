@@ -24,7 +24,7 @@ struct BookCardSmallHeightInfiniteWidthView: View
                     .frame(width: 25, height: 25, alignment: .leading)
                     .foregroundColor(Color.white.opacity(0.9))
                 
-                Text(book?.name ?? "Checking Account (SGD)")
+                Text(book?.name ?? "Book 1")
                     .font(Font.headline.bold())
                     .foregroundColor(Color.white.opacity(0.9))
                     .multilineTextAlignment(.leading)

@@ -53,7 +53,7 @@ struct NeumorphicCarousels: View {
                                                         [
                                                             (dummyNumbers, GradientColor(start: (themeItem.color ?? Color.gray).opacity(0.3), end: (themeItem.color ?? Color.gray))),
                                                         ],
-                                                     title: "Activity over time", form: CGSize(width: CGFloat(screenWidth-16), height: CGFloat(220)), dropShadow: false)
+                                                     title: "Amount per chapter", form: CGSize(width: CGFloat(screenWidth-16), height: CGFloat(220)), dropShadow: false)
                         }
                     }
                 
@@ -151,10 +151,8 @@ struct NeumorphicCarousels: View {
                 } // Scrollview
                 
             } // VStack
-            
-            
-            
         } // ZStack
+        .navigationTitle("Neumorphism")
         .onAppear() {
             DispatchQueue.main.async {
                 self.reference.referenceProjectID = self.libraryID
@@ -162,6 +160,7 @@ struct NeumorphicCarousels: View {
         }
         
     }
+        
     
     @ViewBuilder
     var addStoryMode: some View

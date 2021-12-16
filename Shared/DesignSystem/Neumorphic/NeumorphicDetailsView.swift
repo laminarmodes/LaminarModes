@@ -1,14 +1,13 @@
 //
-//  DetailsView.swift
-//  UserStoryMap
+//  NeumorphicDetailsView.swift
+//  LaminarModes (iOS)
 //
-//  Created by Anya Traille on 19/1/21.
+//  Created by Anya Traille on 16/12/21.
 //
 
 import SwiftUI
-//import SwiftUICharts
 
-struct DetailsView: View
+struct NeumorphicDetailsView: View
 {
     @Environment(\.presentationMode) var presentationMode
     var bookID: UUID
@@ -149,10 +148,10 @@ struct DetailsView: View
     } // body
 } // Detail View
 
-struct DetailsView_Previews: PreviewProvider
+struct NeumorphicDetailsView_Previews: PreviewProvider
 {
     static var previews: some View
     {
-        DetailsView(bookID: Reference().libraries[0].books[0].uniqueID).environmentObject(Reference())
+        NeumorphicDetailsView(bookID: Reference().libraries[0].books[0].uniqueID).environmentObject(Reference())
     }
 }

@@ -34,6 +34,7 @@ struct NeumorphicChapterListRowView: View {
                 Text(reference.findChapterById(storyIdToRead: chapterID).role )
                     .font(.title2)
                     .fontWeight(.bold)
+                    .foregroundColor(Color.gray)
                 Text(reference.findChapterById(storyIdToRead: chapterID).description )
                     .font(.title3)
                     .foregroundColor(Color.secondary)

@@ -30,7 +30,7 @@ struct NeumorphicBarsCards: View
                 if(barChart)
                 {
                     BarChartViewCustomNew(data: ChartData(points: noStories),
-                                          title: "Total no. of Studies",
+                                          title: "Total per Book",
                                           form: CGSize(width: CGFloat(screenWidth-16),
                                                        height: CGFloat(220)),
                                           dropShadow: false,
@@ -73,7 +73,9 @@ struct NeumorphicBarsCards: View
                     } // VStack
                 } // SCrollView
             }
+            .navigationTitle("Neumorphism")
         }
+        
     }
 }
 

@@ -22,9 +22,9 @@ struct NeumorphicLazyCard: View
                 Image(systemName: book?.image ?? "person.fill")
                     .resizable()
                     .frame(width: 25, height: 25, alignment: .leading)
-                    .foregroundColor(book?.color ?? Color.blue)
+                    .foregroundColor(book?.color ?? Color.gray)
                 
-                Text(book?.name ?? "Checking Account (SGD)")
+                Text(book?.name ?? "Book 1")
                     .font(Font.headline.bold())
                     .foregroundColor(book?.color ?? Color.blue)
                     .multilineTextAlignment(.leading)
@@ -32,7 +32,7 @@ struct NeumorphicLazyCard: View
             
             Text("Description: \(book?.description ?? "No Data")" )
                 .font(.subheadline)
-                .foregroundColor(book?.color ?? Color.blue)
+                .foregroundColor(Color.gray)
                 .multilineTextAlignment(.leading)
             
             Spacer()

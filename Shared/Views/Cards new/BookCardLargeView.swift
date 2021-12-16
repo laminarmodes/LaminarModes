@@ -27,7 +27,7 @@ struct BookCardLargeView: View
             
             VStack(alignment: .leading)
             {
-                Text(book?.name ?? "Checking Account (SGD)")
+                Text(book?.name ?? "Book One")
                     .font(Font.headline.bold())
                     .foregroundColor(Color.white.opacity(0.9))
                     .multilineTextAlignment(.leading)
@@ -37,7 +37,7 @@ struct BookCardLargeView: View
                     .foregroundColor(Color.white.opacity(0.9))
                     .multilineTextAlignment(.leading)
                 Spacer()
-                Text("Number of users: \(book?.numberOfUsers ?? 0)")
+                Text("Number of chapters: \(book?.numberOfUsers ?? 0)")
                     .font(.footnote)
                     .foregroundColor(Color.white.opacity(0.9))
                     .multilineTextAlignment(.leading)

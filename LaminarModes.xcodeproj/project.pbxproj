@@ -103,6 +103,7 @@
 		E81EE712276A03F10040A19D /* BookCardLargeViewNeumorphic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81EE710276A03F10040A19D /* BookCardLargeViewNeumorphic.swift */; };
 		E8DF79592769F05D00B10B38 /* NeumorphicLazyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DF79582769F05D00B10B38 /* NeumorphicLazyCard.swift */; };
 		E8DF795A2769F05D00B10B38 /* NeumorphicLazyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DF79582769F05D00B10B38 /* NeumorphicLazyCard.swift */; };
+		E8E4F7F0276B90C100087BED /* NeumorphicDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E4F7EF276B90C100087BED /* NeumorphicDetailsView.swift */; };
 		E8EB3628276A0CD7000CCF20 /* NeumorphicLazyChapters.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EB3627276A0CD7000CCF20 /* NeumorphicLazyChapters.swift */; };
 		E8EB3629276A0CD7000CCF20 /* NeumorphicLazyChapters.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EB3627276A0CD7000CCF20 /* NeumorphicLazyChapters.swift */; };
 		E8EB362D276A3D5E000CCF20 /* NeumorphicCarousels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EB362C276A3D5E000CCF20 /* NeumorphicCarousels.swift */; };
@@ -180,6 +181,7 @@
 		E81EE70C276A02BC0040A19D /* BookLazyChaptersNeumorphic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookLazyChaptersNeumorphic.swift; sourceTree = "<group>"; };
 		E81EE710276A03F10040A19D /* BookCardLargeViewNeumorphic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCardLargeViewNeumorphic.swift; sourceTree = "<group>"; };
 		E8DF79582769F05D00B10B38 /* NeumorphicLazyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphicLazyCard.swift; sourceTree = "<group>"; };
+		E8E4F7EF276B90C100087BED /* NeumorphicDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphicDetailsView.swift; sourceTree = "<group>"; };
 		E8EB3627276A0CD7000CCF20 /* NeumorphicLazyChapters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphicLazyChapters.swift; sourceTree = "<group>"; };
 		E8EB362C276A3D5E000CCF20 /* NeumorphicCarousels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphicCarousels.swift; sourceTree = "<group>"; };
 		E8EB362F276A3D86000CCF20 /* GlassmorphicCarousels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassmorphicCarousels.swift; sourceTree = "<group>"; };
@@ -388,6 +390,7 @@
 				E8EB363E276A4AE0000CCF20 /* BarsCards */,
 				E8EB3639276A49DB000CCF20 /* LazyGrid */,
 				E8EB3638276A49C9000CCF20 /* Carousel */,
+				E8E4F7EF276B90C100087BED /* NeumorphicDetailsView.swift */,
 			);
 			path = Neumorphic;
 			sourceTree = "<group>";
@@ -449,7 +452,7 @@
 		E8EB363A276A49EA000CCF20 /* Carousel */ = {
 			isa = PBXGroup;
 			children = (
-				E80F31F327607AB700689092 /* GlassmorphicView.swift */,
+				E8EB362F276A3D86000CCF20 /* GlassmorphicCarousels.swift */,
 			);
 			path = Carousel;
 			sourceTree = "<group>";
@@ -457,7 +460,7 @@
 		E8EB363B276A49F1000CCF20 /* LazyGrid */ = {
 			isa = PBXGroup;
 			children = (
-				E8EB362F276A3D86000CCF20 /* GlassmorphicCarousels.swift */,
+				E80F31F327607AB700689092 /* GlassmorphicView.swift */,
 			);
 			path = LazyGrid;
 			sourceTree = "<group>";
@@ -654,6 +657,7 @@
 				E80F320027607AB700689092 /* GlassmorphicView.swift in Sources */,
 				E803C68726BEB11400C41AA6 /* VisualEffectBlur.swift in Sources */,
 				E80F322C27607B7900689092 /* AddChapterView.swift in Sources */,
+				E8E4F7F0276B90C100087BED /* NeumorphicDetailsView.swift in Sources */,
 				E80F321A27607B4F00689092 /* BookCardSmallHeightInfiniteWidthView.swift in Sources */,
 				E8EB3628276A0CD7000CCF20 /* NeumorphicLazyChapters.swift in Sources */,
 				E81EE70D276A02BC0040A19D /* BookLazyChaptersNeumorphic.swift in Sources */,

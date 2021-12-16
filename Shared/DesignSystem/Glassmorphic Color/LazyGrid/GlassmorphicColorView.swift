@@ -37,9 +37,8 @@ struct GlassmorphicColorView: View {
                     .padding()
                 } // VStack
             } // SCrollView
-            
+            .navigationTitle("Glassmorphism (Color)")
         } //: ZStack
-        .navigationTitle("Glassmorphism")
     }
 }
 
