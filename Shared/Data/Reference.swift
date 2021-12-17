@@ -29,14 +29,14 @@ class Reference: ObservableObject {
         {
             //            projects[currentProjectIndex].themes[currentThemeIndex].color = Color(themeColors[currentThemeIndex])
             
-            libraries[currentProjectIndex].books[currentThemeIndex].color = (colorScheme == .dark ? Colors().vLight[currentThemeIndex] : Colors().vDark[currentThemeIndex])
+            libraries[currentProjectIndex].books[currentThemeIndex].color = (colorScheme == .dark ? Colors().vDark[currentThemeIndex] : Colors().vLight[currentThemeIndex])
             
             //.opacity(0.3)
             
             currentStoryIndex = 0
             for _ in libraries[currentProjectIndex].books[currentThemeIndex].chapters
             {
-                libraries[currentProjectIndex].books[currentThemeIndex].chapters[currentStoryIndex].color = (colorScheme == .dark ? Colors().vLight[currentThemeIndex] : Colors().vDark[currentThemeIndex])
+                libraries[currentProjectIndex].books[currentThemeIndex].chapters[currentStoryIndex].color = (colorScheme == .dark ? Colors().vDark[currentThemeIndex] : Colors().vLight[currentThemeIndex])
                 //.opacity(0.3)
                 
                 currentStoryIndex += 1

@@ -129,9 +129,9 @@ struct NeumorphicCarousels: View {
                                                         Image(systemName: "ellipsis")
                                                         //.foregroundColor(Color.white.opacity(0.9))
                                                             .foregroundColor(Color.gray)
-//                                                            .padding([.top, .trailing], 16)
-                                                            .padding(.trailing, 16)
-                                                            .padding(.top, 32)
+                                                            .padding([.top, .trailing], 16)
+                                                            //.padding(.trailing, 16)
+                                                            .padding(.top, 16)
                                                     })
                                                 } // ZStack
 //

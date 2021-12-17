@@ -16,17 +16,17 @@ public struct BarChartViewCustomNew : View {
     public var legend: String?
 //    public var style: ChartStyle
 //    public var darkModeStyle: ChartStyle
-    public var form:CGSize
+    public var formSize:CGSize
     public var dropShadow: Bool
-//    public var cornerImage: Image?
-//    @State var valueSpecifier:String = "%.1f"
+    public var cornerImage: Image?
+    public var valueSpecifier:String
     public var animatedToBack: Bool
     
 //    public var allColorsLight: [Color]
 //    public var allColorsDark: [Color]
     
-    @State var formSize = ChartForm.medium
-    @State var cornerImage = Image(systemName: "waveform.path.ecg")
+    //@State var formSize = ChartForm.medium
+//    @State var cornerImage = Image(systemName: "waveform.path.ecg")
     
     @State private var touchLocation: CGFloat = -1.0
     @State private var showValue: Bool = false
@@ -45,21 +45,20 @@ public struct BarChartViewCustomNew : View {
     
     var isFullWidth = true
     
-    
-//    public init(data:ChartData, title: String, legend: String? = nil, form: CGSize? = ChartForm.medium, dropShadow: Bool? = true, cornerImage:Image? = Image(systemName: "waveform.path.ecg"), valueSpecifier: String? = "%.1f", animatedToBack: Bool = false){
-//        self.data = data
-//        self.title = title
-//        self.legend = legend
-////        self.style = style
-////        self.darkModeStyle = style.darkModeStyle != nil ?  Color.red : Color.blue
-//        self.formSize = form!
-//        self.dropShadow = dropShadow!
-//        self.cornerImage = cornerImage
-//        self.valueSpecifier = valueSpecifier!
-//        self.animatedToBack = animatedToBack
+    public init(data:ChartData, title: String, legend: String? = nil, form: CGSize? = ChartForm.medium, dropShadow: Bool? = true, cornerImage:Image? = Image(systemName: "waveform.path.ecg"), valueSpecifier: String? = "%.1f", animatedToBack: Bool = false){
+        self.data = data
+        self.title = title
+        self.legend = legend
+//        self.style = style
+//        self.darkModeStyle = style.darkModeStyle != nil ?  Color.red : Color.blue
+        self.formSize = form!
+        self.dropShadow = dropShadow!
+        self.cornerImage = cornerImage!
+        self.valueSpecifier = valueSpecifier!
+        self.animatedToBack = animatedToBack
 //        self.allColorsLight = allColorsLight
 //        self.allColorsDark = allColorsDark
-//    }
+    }
     
     public var body: some View {
         ZStack{

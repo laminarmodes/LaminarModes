@@ -20,37 +20,42 @@ struct GlassmorphicBarsCards: View
     var body: some View {
         ZStack
         {
-            Color("off-white")
+            LinearGradient(gradient: Gradient(colors: [Color.blue, Color.purple]), startPoint: .topTrailing, endPoint: .bottomLeading)
+                .edgesIgnoringSafeArea(.vertical)
+            
+            VisualEffectBlur(blurStyle: .systemUltraThinMaterial)
                 .edgesIgnoringSafeArea(.all)
             
             
             VStack {
                 
                 let noStories = (0..<(reference.books.count)).map{ _ in Double.random(in: 1 ... 20) }
-                if(barChart)
-                {
+                
                     BarChartViewCustomNew(data: ChartData(points: noStories),
                                           title: "Total per Book",
-                                          form: CGSize(width: CGFloat(screenWidth-16),
-                                                       height: CGFloat(220)),
+                                          form: CGSize(width: CGFloat(screenWidth-40),
+                                                       height: CGFloat(210)),
                                           dropShadow: false,
-                                          animatedToBack: true).environmentObject(reference)
-                } else
-                {
-                    ZStack {
-                        ForEach(reference.books.reversed(), id: \.uniqueID) { themeItem in
+                                          animatedToBack: true).environmentObject(reference).padding(8)
+                    .background(
+                        ZStack {
                             
-                            let dummyNumbers = (0..<8).map{ _ in Double.random(in: 1 ... 112) }
-                            
-                            MultiLineChartViewCustom(data:
-                                                        [
-                                                            (dummyNumbers, GradientColor(start: (themeItem.color ?? Color.gray).opacity(0.3), end: (themeItem.color ?? Color.gray))),
-                                                        ],
-                                                     title: "Balance", form: CGSize(width: CGFloat(screenWidth-16), height: CGFloat(220)), dropShadow: false)
+                            LinearGradient(gradient: Gradient(colors: [Color(.systemBackground).opacity(1), Color(.systemBackground).opacity(0.6)]), startPoint: .top, endPoint: .bottom)
+                                .cornerRadius(20)
+                                .blendMode(.softLight)
                         }
-                    }
-                }
+                    )
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 20)
+                            .stroke(.linearGradient(colors: [.white.opacity(0.8), .black.opacity(0.2)], startPoint: .top, endPoint: .bottom))
+                            .blendMode(.overlay)
+                    )
+                    .frame(height: 210) // same as passed into MultiLineChartViewCustom (check)
+                    .accentColor(.primary.opacity(0.7))
+                    .padding(.bottom, 24)
+                    .padding(.top, 8)
                 
+
                 ScrollView(.vertical, showsIndicators: false) // Make entire view scrollable
                 {
                     VStack // Stack of account cards
@@ -61,7 +66,7 @@ struct GlassmorphicBarsCards: View
                             {
                                 HStack
                                 {
-                                    BookCardLargeView(book: item)
+                                    BookCardLargeViewGlassmorphic(book: item)
                                     //.padding()
                                         .padding([.top, .bottom], 8)
                                         .padding([.leading, .trailing], 16)

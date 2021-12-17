@@ -73,18 +73,12 @@ public struct MultiLineChartViewCustom: View {
     
     public var body: some View {
         ZStack(alignment: .center){
-            
-            
-            
-            
+             
 //            RoundedRectangle(cornerRadius: 20)
 //                .fill(self.colorScheme == .dark ? self.darkModeStyle.backgroundColor : self.style.backgroundColor)
 ////                .frame(width: frame.width, height: 240, alignment: .center)
 //                .frame(width: frame.width, height: 150, alignment: .center)
 //                .shadow(radius: self.dropShadow ? 8 : 0)
-            
-            
-            
             ZStack(alignment: .leading){
 //                if(!self.showIndicatorDot){
 //                    VStack(alignment: .leading, spacing: 8){
@@ -98,41 +92,7 @@ public struct MultiLineChartViewCustom: View {
                         .padding(.leading, 16)
                     
                     Spacer()
-                    
                 }
-                
-//
-//
-////                        if (self.legend != nil){
-////                            Text(self.legend!)
-////                                .font(.callout)
-////                                .foregroundColor(self.colorScheme == .dark ? self.darkModeStyle.legendTextColor : self.style.legendTextColor)
-////                        }
-//
-//
-////                        HStack {
-////                            if (rateValue ?? 0 >= 0){
-////                                Image(systemName: "arrow.up")
-////                            }else{
-////                                Image(systemName: "arrow.down")
-////                            }
-////                            Text("\(rateValue ?? 0)%")
-////                        }
-//                    }
-//                    .transition(.opacity)
-//                    .animation(.easeIn(duration: 0.1))
-//                    .padding([.leading, .top])
-//                }else{
-//                    HStack{
-//                        Spacer()
-//                        Text("\(self.currentValue, specifier: self.valueSpecifier)")
-//                            .font(.system(size: 41, weight: .bold, design: .default))
-//                            .offset(x: 0, y: 30)
-//                        Spacer()
-//                    }
-//                    .transition(.scale)
-//                }
-                //Spacer()
                 GeometryReader{ geometry in
                     ZStack{
                         ForEach(0..<self.data.count) { i in
@@ -155,6 +115,7 @@ public struct MultiLineChartViewCustom: View {
             .frame(width: self.formSize.width, height: self.formSize.height) // comment to make narrower
             //.frame(width: self.formSize.width, height: 150) // uncomment to make narrower
         }
+        
         .gesture(DragGesture()
         .onChanged({ value in
 //            self.touchLocation = value.location
@@ -167,18 +128,6 @@ public struct MultiLineChartViewCustom: View {
         )
     }
     
-//    @discardableResult func getClosestDataPoint(toPoint: CGPoint, width:CGFloat, height: CGFloat) -> CGPoint {
-//        let points = self.data.onlyPoints()
-//        let stepWidth: CGFloat = width / CGFloat(points.count-1)
-//        let stepHeight: CGFloat = height / CGFloat(points.max()! + points.min()!)
-//
-//        let index:Int = Int(round((toPoint.x)/stepWidth))
-//        if (index >= 0 && index < points.count){
-//            self.currentValue = points[index]
-//            return CGPoint(x: CGFloat(index)*stepWidth, y: CGFloat(points[index])*stepHeight)
-//        }
-//        return .zero
-//    }
 }
 
 struct MultiWidgetViewCustom_Previews: PreviewProvider {

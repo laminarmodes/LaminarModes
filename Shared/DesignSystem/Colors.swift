@@ -99,8 +99,17 @@ extension Color
         static let shade04 = Color(hue: 205/360, saturation: 0.65, brightness: 0.56)
         static let shade05 = Color(hue: 187/360, saturation: 0.73, brightness: 0.56)
         static let shade06 = Color(hue: 170/360, saturation: 0.80, brightness: 0.62)
-        static let shade07 = Color(hue: 151/360, saturation: 0.71, brightness: 0.72)
-        static let shade08 = Color(hue: 110/360, saturation: 0.57, brightness: 0.80)
+        
+        
+        
+//        static let shade07 = Color(hue: 151/360, saturation: 0.71, brightness: 0.72)
+//        static let shade08 = Color(hue: 110/360, saturation: 0.57, brightness: 0.80)
+        static let shade07 = Color(hue: 151/360, saturation: 0.71, brightness: 0.52)
+        static let shade08 = Color(hue: 110/360, saturation: 0.57, brightness: 0.60)
+        
+        
+        
+        
         static let shade09 = Color(hue: 74/360, saturation: 0.80, brightness: 0.87)
         static let shade10 = Color(hue: 54/360, saturation: 0.85, brightness: 0.99)
     }
@@ -126,8 +135,15 @@ extension Color
         static let shade04 = Color(hue: 299/360, saturation: 0.85, brightness: 0.62)
         static let shade05 = Color(hue: 325/360, saturation: 0.71, brightness: 0.74)
         static let shade06 = Color(hue: 351/360, saturation: 0.60, brightness: 0.85)
-        static let shade07 = Color(hue: 15/360, saturation: 0.65, brightness: 0.93)
-        static let shade08 = Color(hue: 31/360, saturation: 0.76, brightness: 0.98)
+        
+        
+//        static let shade07 = Color(hue: 15/360, saturation: 0.65, brightness: 0.93)
+//        static let shade08 = Color(hue: 31/360, saturation: 0.76, brightness: 0.98)
+        static let shade07 = Color(hue: 15/360, saturation: 0.65, brightness: 0.63)
+        static let shade08 = Color(hue: 31/360, saturation: 0.76, brightness: 0.78)
+        
+        
+        
         static let shade09 = Color(hue: 45/360, saturation: 0.85, brightness: 0.99)
         static let shade10 = Color(hue: 63/360, saturation: 0.87, brightness: 0.98)
     }

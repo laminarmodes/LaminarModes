@@ -36,7 +36,11 @@ struct GlassmorphicCarousels: View {
     var body: some View {
         ZStack
         {
+            LinearGradient(gradient: Gradient(colors: [Color.blue, Color.purple]), startPoint: .topTrailing, endPoint: .bottomLeading)
+                .edgesIgnoringSafeArea(.vertical)
             
+            VisualEffectBlur(blurStyle: .systemUltraThinMaterial)
+                .edgesIgnoringSafeArea(.all)
             
             addStoryMode
             editStoryMode
@@ -45,6 +49,7 @@ struct GlassmorphicCarousels: View {
             {
 
                     ZStack {
+                        
                         ForEach(reference.books.reversed(), id: \.uniqueID) { themeItem in
                             
                             let dummyNumbers = (0..<8).map{ _ in Double.random(in: 1 ... 112) }
@@ -53,9 +58,27 @@ struct GlassmorphicCarousels: View {
                                                         [
                                                             (dummyNumbers, GradientColor(start: (themeItem.color ?? Color.gray).opacity(0.3), end: (themeItem.color ?? Color.gray))),
                                                         ],
-                                                     title: "Amount per chapter", form: CGSize(width: CGFloat(screenWidth-16), height: CGFloat(220)), dropShadow: false)
+                                                     title: "Amount per chapter", form: CGSize(width: CGFloat(screenWidth-24), height: CGFloat(210)), dropShadow: false).padding(8)
+                                
                         }
                     }
+                    .background(
+                        ZStack {
+                            
+                            LinearGradient(gradient: Gradient(colors: [Color(.systemBackground).opacity(1), Color(.systemBackground).opacity(0.6)]), startPoint: .top, endPoint: .bottom)
+                                .cornerRadius(20)
+                                .blendMode(.softLight)
+                        }
+                    )
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 20)
+                            .stroke(.linearGradient(colors: [.white.opacity(0.8), .black.opacity(0.2)], startPoint: .top, endPoint: .bottom))
+                            .blendMode(.overlay)
+                    )
+                    .frame(height: 210) // same as passed into MultiLineChartViewCustom (check)
+                    .accentColor(.primary.opacity(0.7))
+                    .padding(.bottom, 24)
+                    
                 
                 
                 ScrollView(.vertical, showsIndicators: false)
@@ -70,7 +93,7 @@ struct GlassmorphicCarousels: View {
                                 VStack(alignment: .leading) {
                                     // Place a header and button horizontally
                                     HStack {
-                                        BookCarouselHeaderView(bookName: themeItem.name, numberOfStories: self.reference.totalChaptersInt(for: themeItem))
+                                        GlassmorphicCarouselHeaderView(bookName: themeItem.name, numberOfStories: self.reference.totalChaptersInt(for: themeItem))
                                         
                                         Spacer()
                                         
@@ -82,7 +105,7 @@ struct GlassmorphicCarousels: View {
                                         }, label: {
                                             
                                             Text("+ New Item")
-                                                .foregroundColor(themeItem.color)
+                                                .foregroundColor(Color.white.opacity(0.8))
                                         }).padding(.trailing, 8)
                                     } // HStack
                                     
@@ -94,7 +117,7 @@ struct GlassmorphicCarousels: View {
                                             ForEach(themeItem.chapters.reversed(), id: \.uniqueID) { item in
                                                 
                                                 ZStack(alignment: .topTrailing) {
-                                                    ChapterCardSmallView(chapter: item)
+                                                    GlassmorphicCardSmallView(chapter: item)
                                                         
                                                         .onTapGesture {
                                                             DispatchQueue.main.async {
@@ -130,6 +153,7 @@ struct GlassmorphicCarousels: View {
                                                         //.foregroundColor(Color.white.opacity(0.9))
                                                             .foregroundColor(Color.white)
                                                             .padding([.top, .trailing], 16)
+                                                            //.padding(.top, 16)
                                                     })
                                                 } // ZStack
 //

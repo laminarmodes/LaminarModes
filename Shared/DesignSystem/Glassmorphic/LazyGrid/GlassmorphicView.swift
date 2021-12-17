@@ -7,38 +7,51 @@
 
 import SwiftUI
 
+
+
+
+
+
+
 struct GlassmorphicView: View {
     
     @EnvironmentObject private var reference: Reference
     @State var libraryID: UUID
     
-    var body: some View {
-        ZStack {
-            Color("off-white")
-                .edgesIgnoringSafeArea(.all)
-            
-            ScrollView(.vertical, showsIndicators: false)
+    var body: some View
+    {
+            ZStack
             {
-                VStack
+                
+                LinearGradient(gradient: Gradient(colors: [Color.blue, Color.purple]), startPoint: .topTrailing, endPoint: .bottomLeading)
+                    .edgesIgnoringSafeArea(.vertical)
+                
+                VisualEffectBlur(blurStyle: .systemUltraThinMaterial)
+                    .edgesIgnoringSafeArea(.all)
+                
+                ScrollView(.vertical, showsIndicators: false)
                 {
-                    LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 8) {
-                        ForEach(reference.books.reversed(), id: \.uniqueID) { item in
-                            
-                                NavigationLink(destination: BookWithLazyChapters(libraryID: libraryID, bookID: item.uniqueID).environmentObject(reference))
+                    VStack
+                    {
+                        LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 8) {
+                            ForEach(reference.books.reversed(), id: \.uniqueID) { item in
+                                
+                                NavigationLink(destination: BookLazyChaptersGlassmorphic(libraryID: libraryID, bookID: item.uniqueID).environmentObject(reference))
                                 {
                                     HStack {
-                                        BookCardSmallHeightInfiniteWidthView(book: item)
+                                        GlassmorphicLazyCard(book: item)
                                             .padding(4)
                                             .environmentObject(reference)
                                     }
                                 }
-                        } // ForEach
-                    }
-                    .padding()
-                } // VStack
-            } // SCrollView
-            .navigationTitle("Glassmorphism")
-        } //: ZStack
+                            } // ForEach
+                        }
+                        .padding()
+                    } // VStack
+                } // SCrollView
+                .navigationTitle("Glassmorphism")
+            }
+        //} //: ZStack
     }
 }
 
@@ -47,3 +60,63 @@ struct GlassmorphicView_Previews: PreviewProvider {
         GlassmorphicView(libraryID: Reference().libraries[0].uniqueID).environmentObject(Reference())
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//struct GlassmorphicView: View {
+//
+//    @EnvironmentObject private var reference: Reference
+//    @State var libraryID: UUID
+//
+//    var body: some View {
+//        ZStack {
+////            Color("off-white")
+////                .edgesIgnoringSafeArea(.all)
+//
+//            LinearGradient(gradient: Gradient(colors: [Color.red, Color.purple]), startPoint: .top, endPoint: .bottom)
+//                        .edgesIgnoringSafeArea(.vertical)
+//
+//            ScrollView(.vertical, showsIndicators: false)
+//            {
+//                VStack
+//                {
+//                    LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 8) {
+//                        ForEach(reference.books.reversed(), id: \.uniqueID) { item in
+//
+//                                NavigationLink(destination: BookWithLazyChapters(libraryID: libraryID, bookID: item.uniqueID).environmentObject(reference))
+//                                {
+//                                    HStack {
+//                                        GlassmorphicLazyCard(book: item)
+//                                            .padding(4)
+//                                            .environmentObject(reference)
+//                                    }
+//                                }
+//                        } // ForEach
+//                    }
+//                    .padding()
+//                } // VStack
+//            } // SCrollView
+//            .navigationTitle("Glassmorphism")
+//            .background(VisualEffectBlur(blurStyle: .systemUltraThinMaterial))
+//
+//        } //: ZStack
+//    }
+//}
+//
+//struct GlassmorphicView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        GlassmorphicView(libraryID: Reference().libraries[0].uniqueID).environmentObject(Reference())
+//    }
+//}
