@@ -32,7 +32,7 @@ struct GlassmorphicLazyCard: View
             
             Text("Description: \(book?.description ?? "No Data")" )
                 .font(.subheadline)
-                .foregroundColor(Color.gray)
+                .foregroundColor(Color("dark-text"))
                 .multilineTextAlignment(.leading)
             
             Spacer()

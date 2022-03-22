@@ -36,8 +36,11 @@ struct GlassmorphicCarousels: View {
     var body: some View {
         ZStack
         {
-            LinearGradient(gradient: Gradient(colors: [Color.blue, Color.purple]), startPoint: .topTrailing, endPoint: .bottomLeading)
-                .edgesIgnoringSafeArea(.vertical)
+                        LinearGradient(gradient: Gradient(colors: [Color.green, Color.blue, Color.purple]), startPoint: .topTrailing, endPoint: .bottomLeading)
+                            .edgesIgnoringSafeArea(.all)
+                        
+//                        LinearGradient(gradient: Gradient(colors: [Color.yellow, Color.orange, Color.red]), startPoint: .topTrailing, endPoint: .bottomLeading)
+//                            .edgesIgnoringSafeArea(.all)
             
             VisualEffectBlur(blurStyle: .systemUltraThinMaterial)
                 .edgesIgnoringSafeArea(.all)
@@ -58,7 +61,7 @@ struct GlassmorphicCarousels: View {
                                                         [
                                                             (dummyNumbers, GradientColor(start: (themeItem.color ?? Color.gray).opacity(0.3), end: (themeItem.color ?? Color.gray))),
                                                         ],
-                                                     title: "Amount per chapter", form: CGSize(width: CGFloat(screenWidth-24), height: CGFloat(210)), dropShadow: false).padding(8)
+                                                     title: "Amount per chapter", form: CGSize(width: CGFloat(screenWidth-48), height: CGFloat(210)), dropShadow: false).padding(16)
                                 
                         }
                     }
@@ -78,6 +81,7 @@ struct GlassmorphicCarousels: View {
                     .frame(height: 210) // same as passed into MultiLineChartViewCustom (check)
                     .accentColor(.primary.opacity(0.7))
                     .padding(.bottom, 24)
+                    .padding(.top, 16)
                     
                 
                 
@@ -151,7 +155,7 @@ struct GlassmorphicCarousels: View {
                                                     }, label: {
                                                         Image(systemName: "ellipsis")
                                                         //.foregroundColor(Color.white.opacity(0.9))
-                                                            .foregroundColor(Color.white)
+                                                            .foregroundColor(Color("dark-text"))
                                                             .padding([.top, .trailing], 16)
                                                             //.padding(.top, 16)
                                                     })

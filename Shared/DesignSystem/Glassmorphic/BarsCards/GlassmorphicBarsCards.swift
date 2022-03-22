@@ -20,8 +20,11 @@ struct GlassmorphicBarsCards: View
     var body: some View {
         ZStack
         {
-            LinearGradient(gradient: Gradient(colors: [Color.blue, Color.purple]), startPoint: .topTrailing, endPoint: .bottomLeading)
-                .edgesIgnoringSafeArea(.vertical)
+            LinearGradient(gradient: Gradient(colors: [Color.green, Color.blue, Color.purple]), startPoint: .topTrailing, endPoint: .bottomLeading)
+                .edgesIgnoringSafeArea(.all)
+            
+//            LinearGradient(gradient: Gradient(colors: [Color.yellow, Color.orange, Color.red]), startPoint: .topTrailing, endPoint: .bottomLeading)
+//                .edgesIgnoringSafeArea(.all)
             
             VisualEffectBlur(blurStyle: .systemUltraThinMaterial)
                 .edgesIgnoringSafeArea(.all)
@@ -37,23 +40,23 @@ struct GlassmorphicBarsCards: View
                                                        height: CGFloat(210)),
                                           dropShadow: false,
                                           animatedToBack: true).environmentObject(reference).padding(8)
-                    .background(
-                        ZStack {
-                            
-                            LinearGradient(gradient: Gradient(colors: [Color(.systemBackground).opacity(1), Color(.systemBackground).opacity(0.6)]), startPoint: .top, endPoint: .bottom)
-                                .cornerRadius(20)
-                                .blendMode(.softLight)
-                        }
-                    )
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 20)
-                            .stroke(.linearGradient(colors: [.white.opacity(0.8), .black.opacity(0.2)], startPoint: .top, endPoint: .bottom))
-                            .blendMode(.overlay)
-                    )
-                    .frame(height: 210) // same as passed into MultiLineChartViewCustom (check)
-                    .accentColor(.primary.opacity(0.7))
-                    .padding(.bottom, 24)
-                    .padding(.top, 8)
+//                    .background(
+//                        ZStack {
+//
+//                            LinearGradient(gradient: Gradient(colors: [Color(.systemBackground).opacity(1), Color(.systemBackground).opacity(0.6)]), startPoint: .top, endPoint: .bottom)
+//                                .cornerRadius(20)
+//                                .blendMode(.softLight)
+//                        }
+//                    )
+//                    .overlay(
+//                        RoundedRectangle(cornerRadius: 20)
+//                            .stroke(.linearGradient(colors: [.white.opacity(0.8), .black.opacity(0.2)], startPoint: .top, endPoint: .bottom))
+//                            .blendMode(.overlay)
+//                    )
+//                    .frame(height: 210) // same as passed into MultiLineChartViewCustom (check)
+//                    .accentColor(.primary.opacity(0.7))
+//                    .padding(.bottom, 24)
+//                    .padding(.top, 8)
                 
 
                 ScrollView(.vertical, showsIndicators: false) // Make entire view scrollable

@@ -137,10 +137,10 @@ extension Color
         static let shade06 = Color(hue: 351/360, saturation: 0.60, brightness: 0.85)
         
         
-//        static let shade07 = Color(hue: 15/360, saturation: 0.65, brightness: 0.93)
-//        static let shade08 = Color(hue: 31/360, saturation: 0.76, brightness: 0.98)
-        static let shade07 = Color(hue: 15/360, saturation: 0.65, brightness: 0.63)
-        static let shade08 = Color(hue: 31/360, saturation: 0.76, brightness: 0.78)
+        static let shade07 = Color(hue: 15/360, saturation: 0.65, brightness: 0.93)
+        static let shade08 = Color(hue: 31/360, saturation: 0.76, brightness: 0.98)
+//        static let shade07 = Color(hue: 15/360, saturation: 0.65, brightness: 0.63)
+//        static let shade08 = Color(hue: 31/360, saturation: 0.76, brightness: 0.78)
         
         
         

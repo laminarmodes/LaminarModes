@@ -18,8 +18,11 @@ struct BookLazyChaptersGlassmorphic: View {
         
         ZStack {
             
-            LinearGradient(gradient: Gradient(colors: [Color.blue, Color.purple]), startPoint: .topTrailing, endPoint: .bottomLeading)
-                .edgesIgnoringSafeArea(.vertical)
+                        LinearGradient(gradient: Gradient(colors: [Color.green, Color.blue, Color.purple]), startPoint: .topTrailing, endPoint: .bottomLeading)
+                            .edgesIgnoringSafeArea(.all)
+                        
+//                        LinearGradient(gradient: Gradient(colors: [Color.yellow, Color.orange, Color.red]), startPoint: .topTrailing, endPoint: .bottomLeading)
+//                            .edgesIgnoringSafeArea(.all)
             
             VisualEffectBlur(blurStyle: .systemUltraThinMaterial)
                 .edgesIgnoringSafeArea(.all)
@@ -62,7 +65,7 @@ struct BookLazyChaptersGlassmorphic: View {
                 }
             }
         }
-        .navigationTitle("Neumorphism")
+        .navigationTitle("Glassmorphism")
     }
 }
 

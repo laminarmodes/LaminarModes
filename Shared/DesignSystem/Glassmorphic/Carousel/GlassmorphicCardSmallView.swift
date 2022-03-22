@@ -30,7 +30,7 @@ struct GlassmorphicCardSmallView: View
                 
                 Text(chapter?.description ?? "No data")
                     .multilineTextAlignment(.leading)
-                    .foregroundColor(Color.secondary)
+                    .foregroundColor(Color("dark-text"))
                     .lineLimit(2)
                 
                 Spacer()
