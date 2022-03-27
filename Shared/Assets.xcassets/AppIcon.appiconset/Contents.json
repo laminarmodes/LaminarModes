@@ -79,31 +79,37 @@
       "size" : "20x20"
     },
     {
+      "filename" : "icon-29.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "29x29"
     },
     {
+      "filename" : "icon-29@2x.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "29x29"
     },
     {
+      "filename" : "icon-41.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "40x40"
     },
     {
+      "filename" : "icon-40@2x-1.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "40x40"
     },
     {
+      "filename" : "icon-77.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "76x76"
     },
     {
+      "filename" : "icon-76@2x-1.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "76x76"
@@ -120,62 +126,73 @@
       "size" : "1024x1024"
     },
     {
+      "filename" : "icon_16x16.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "16x16"
     },
     {
+      "filename" : "icon_16x16@2x.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "16x16"
     },
     {
+      "filename" : "icon_32x32.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "32x32"
     },
     {
+      "filename" : "icon_32x32@2x.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "32x32"
     },
     {
+      "filename" : "icon_128x128.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "128x128"
     },
     {
+      "filename" : "icon_128x128@2x.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "128x128"
     },
     {
+      "filename" : "icon_256x256.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "256x256"
     },
     {
+      "filename" : "icon_256x256@2x.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "256x256"
     },
     {
+      "filename" : "icon_512x512.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "512x512"
     },
     {
+      "filename" : "icon_512x512@2x.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "512x512"
-    },
-    {
-      "filename" : "ios-marketing.png",
-      "idiom" : "universal",
-      "scale" : "1x"
     },
     {
       "filename" : "icon-40.png",
+      "idiom" : "universal",
+      "scale" : "1x",
+      "size" : "40x40"
+    },
+    {
+      "filename" : "ios-marketing.png",
       "idiom" : "universal",
       "scale" : "1x",
       "size" : "40x40"
@@ -187,12 +204,6 @@
       "size" : "50x50"
     },
     {
-      "filename" : "icon-small-50@2x.png",
-      "idiom" : "universal",
-      "scale" : "2x",
-      "size" : "50x50"
-    },
-    {
       "filename" : "icon-72.png",
       "idiom" : "universal",
       "scale" : "1x",
@@ -200,6 +211,12 @@
     },
     {
       "filename" : "icon-72@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x",
+      "size" : "72x72"
+    },
+    {
+      "filename" : "icon-small-50@2x.png",
       "idiom" : "universal",
       "scale" : "2x",
       "size" : "72x72"
