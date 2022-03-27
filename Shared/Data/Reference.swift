@@ -74,7 +74,7 @@ class Reference: ObservableObject {
     
     
     @Published var libraries = [
-        Library(title: "Book 1", books: [
+        Library(title: "Warm Colors", books: [
             Book(image: "book.fill", name: "facilisis magna etiam", description: "Elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Nunc lobortis mattis aliquam faucibus purus in massa tempor. Molestie at elementum eu facilisis sed. Velit euismod in pellentesque massa. Commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae. Amet facilisis magna etiam tempor orci eu lobortis elementum nibh. Arcu dictum varius duis at consectetur lorem donec. Aenean pharetra magna ac placerat. Posuere urna nec tincidunt praesent semper feugiat nibh sed pulvinar. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend. Vitae justo eget magna fermentum. Ut sem viverra aliquet eget. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Libero nunc consequat interdum varius sit amet mattis vulputate enim. Suspendisse interdum consectetur libero id faucibus nisl. Tellus molestie nunc non blandit massa enim nec. Amet aliquam id diam maecenas ultricies. Praesent tristique magna sit amet purus gravida quis blandit turpis.", numberOfUsers: 5, numberOfStories: 22, color: Color(UIColor.systemGray2), chapters: [
                 Chapter(
                     icon: "person.fill",
@@ -638,7 +638,7 @@ class Reference: ObservableObject {
         
         
         
-        Library(title: "Book 2", books: [
+        Library(title: "Cold Colors", books: [
             Book(image: "book.fill", name: "facilisis magna etiam", description: "Elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Nunc lobortis mattis aliquam faucibus purus in massa tempor. Molestie at elementum eu facilisis sed. Velit euismod in pellentesque massa. Commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae. Amet facilisis magna etiam tempor orci eu lobortis elementum nibh. Arcu dictum varius duis at consectetur lorem donec. Aenean pharetra magna ac placerat. Posuere urna nec tincidunt praesent semper feugiat nibh sed pulvinar. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend. Vitae justo eget magna fermentum. Ut sem viverra aliquet eget. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Libero nunc consequat interdum varius sit amet mattis vulputate enim. Suspendisse interdum consectetur libero id faucibus nisl. Tellus molestie nunc non blandit massa enim nec. Amet aliquam id diam maecenas ultricies. Praesent tristique magna sit amet purus gravida quis blandit turpis.", numberOfUsers: 5, numberOfStories: 22, color: Color(UIColor.systemGray2), chapters: [
                 Chapter(
                     icon: "person.fill",

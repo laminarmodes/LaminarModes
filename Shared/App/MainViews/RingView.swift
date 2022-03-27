@@ -58,7 +58,7 @@ struct RingView: View {
             // progress ring
                 .trim(from: show ? progress : 1, to: 1)
             // circle properties
-                .stroke(LinearGradient(gradient: Gradient(colors: [(colorScheme == .dark ? Colors().pLight[2] : Colors().pDark[2]), (colorScheme == .dark ? Colors().pLight[7] : Colors().pDark[7])]), startPoint: .topTrailing, endPoint: .bottomLeading),
+                .stroke(LinearGradient(gradient: Gradient(colors: [(colorScheme == .dark ? Color.pink : Color.pink), (colorScheme == .dark ? Color.blue : Color.blue)]), startPoint: .topTrailing, endPoint: .bottomLeading),
                         style: StrokeStyle(lineWidth: 5 * multiplier, lineCap: .round, lineJoin: .round, miterLimit: .infinity, dash: [20, 0], dashPhase: 0)
                 )
                 .rotationEffect(Angle(degrees: 90))
@@ -66,7 +66,7 @@ struct RingView: View {
                 .frame(width: width, height: height)
                 .shadow(color: (colorScheme == .dark ? Colors().pLight[2] : Colors().pDark[2]).opacity(0.3), radius: 3 * multiplier, x: 0, y: 3 * multiplier)
             
-            Text("new\n activity")
+            Text("press\n me!")
                 .font(.system(size: 7 * multiplier))
                 .foregroundColor(Color.gray)
                 .multilineTextAlignment(.center)
@@ -96,88 +96,16 @@ struct RingView: View {
             {
                 VStack(alignment: .leading)
                 {
-                    Group {
-                        Text("Role")
-                            .font(.headline)
-                            .padding(.leading)
-                        TextField("Enter role", text: $roleInput)
-                            .font(.subheadline)
-                            .padding(.leading)
-                            .frame(height: 44)
-                            .onTapGesture {
-                                self.isFocused = true
-                            }
-                        
-                        Divider().padding(.leading)
-                        
-                        Text("Description")
-                            .font(.headline)
-                            .padding(.leading)
-                        TextField("Enter description", text: $descriptionInpt)
-                            .font(.subheadline)
-                            .padding(.leading)
-                            .frame(height: 44)
-                            .onTapGesture {
-                                self.isFocused = true
-                            }
-                        
-                        Divider().padding(.leading)
-                    }
                     
-                    Group {
-                        Text("Details")
-                            .font(.headline)
-                            .padding(.leading)
-                        TextField("Details", text: $detailsInput)
-                            .font(.subheadline)
-                            .padding(.leading)
-                            .frame(height: 44)
-                            .onTapGesture {
-                                self.isFocused = true
-                            }
-                        
-                        Divider().padding(.leading)
-                        
-                        Text("Priority")
-                            .font(.headline)
-                            .padding(.leading)
-                        TextField("Priority level", text: $priorityInput)
-                            .font(.subheadline)
-                            .padding(.leading)
-                            .frame(height: 44)
-                            .onTapGesture {
-                                self.isFocused = true
-                            }
-                        
-                        Divider().padding(.leading)
-                        
-                    }
-                    
-                    Group {
-                        //Spacer()
-                        Button(action: {
-                            
-                            //TO DO: Save data
-                            
-                            addingStory = false
-                            roleInput = ""
-                            descriptionInpt = ""
-                            priorityInput = ""
-                            detailsInput = ""
-                            //detailsInput.detailDescription = ""
-                            self.presentationMode.wrappedValue.dismiss()
-                            
-                        }, label: {
-                            Text("Save")
-                                .font(.headline)
-                                .padding(.leading)
-                        })
-                    }
+                    Text("Welcome to my demonstrator.  This is a UI flow driven by a data model and dummy data.  In the main section, you can add or delete cards and see the UI update.  You can also create a new list.  In the Design Trends section, you can explore different UI style options").foregroundColor(Color.gray).padding()
+                       
+
                 }
                 .padding()
                 .frame(maxWidth: 300)
-                .frame(maxHeight: 500)
+//                .frame(maxHeight: 500)
                 .clipShape(RoundedRectangle(cornerRadius: 70))
+                
                 
                 Button(action: {
                     addingStory = false

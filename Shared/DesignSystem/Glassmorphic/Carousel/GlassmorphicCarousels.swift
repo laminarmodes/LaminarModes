@@ -101,16 +101,16 @@ struct GlassmorphicCarousels: View {
                                         
                                         Spacer()
                                         
-                                        Button(action:
-                                                {
-                                            addingChapter = true
-                                            themeID = themeItem.uniqueID
-                                            
-                                        }, label: {
-                                            
-                                            Text("+ New Item")
-                                                .foregroundColor(Color.white.opacity(0.8))
-                                        }).padding(.trailing, 8)
+//                                        Button(action:
+//                                                {
+//                                            addingChapter = true
+//                                            themeID = themeItem.uniqueID
+//
+//                                        }, label: {
+//
+//                                            Text("+ New Item")
+//                                                .foregroundColor(Color.white.opacity(0.8))
+//                                        }).padding(.trailing, 8)
                                     } // HStack
                                     
                                     // Scroll view for all story cards
@@ -143,22 +143,22 @@ struct GlassmorphicCarousels: View {
                                                                 })
                                                         
                                                     
-                                                    Button(action: {
-                                                        editingChapter = true
-                                                        currentChapter = item
-                                                        //                                                        currentStoryID = item.id
-                                                        currrentChapterID = item.uniqueID
-                                                        currentBook = themeItem
-                                                        themeID = themeItem.uniqueID
-                                                        
-                                                        
-                                                    }, label: {
-                                                        Image(systemName: "ellipsis")
-                                                        //.foregroundColor(Color.white.opacity(0.9))
-                                                            .foregroundColor(Color("dark-text"))
-                                                            .padding([.top, .trailing], 16)
-                                                            //.padding(.top, 16)
-                                                    })
+//                                                    Button(action: {
+//                                                        editingChapter = true
+//                                                        currentChapter = item
+//                                                        //                                                        currentStoryID = item.id
+//                                                        currrentChapterID = item.uniqueID
+//                                                        currentBook = themeItem
+//                                                        themeID = themeItem.uniqueID
+//
+//
+//                                                    }, label: {
+//                                                        Image(systemName: "ellipsis")
+//                                                        //.foregroundColor(Color.white.opacity(0.9))
+//                                                            .foregroundColor(Color("dark-text"))
+//                                                            .padding([.top, .trailing], 16)
+//                                                            //.padding(.top, 16)
+//                                                    })
                                                 } // ZStack
 //
                                                 

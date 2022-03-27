@@ -166,6 +166,9 @@ struct AffinityMap: View {
         .onAppear() {
             DispatchQueue.main.async {
                 self.reference.referenceProjectID = self.libraryID
+                //UITabBar.appearance().isOpaque = true
+                //UITabBar.appearance().isTranslucent = true
+                //UITabBar.appearance().backgroundColor = UIColor(Color.white)
             }
         }
         

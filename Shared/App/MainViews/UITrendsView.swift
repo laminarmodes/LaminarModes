@@ -88,39 +88,39 @@ struct UITrendsView: View {
                     
                 }
                 
-                Section(header: Text("Glassmorphism (Color)"))
-                {
-                    
-                    NavigationLink(destination: GlassmorphicColorView(libraryID: libraryID)) {
-                        HStack
-                        {
-                            Text("Lazy Grid")
-                            Spacer()
-                            Text("Sample")
-                        }
-                    }
-                    .navigationTitle("Design Trends")
-                    
-                    NavigationLink(destination: GlassmorphicColorCarousels(libraryID: libraryID)) {
-                        HStack
-                        {
-                            Text("Carousel/Line Charts")
-                            Spacer()
-                            Text("Sample")
-                        }
-                    }
-                    .navigationTitle("Design Trends")
-                    
-                    NavigationLink(destination: GlassmorphicColorBarsCards(libraryID: libraryID)) {
-                        HStack
-                        {
-                            Text("Cards/Bar Charts")
-                            Spacer()
-                            Text("Sample")
-                        }
-                    }
-                    .navigationTitle("Design Trends")
-                }
+//                Section(header: Text("Glassmorphism (Color)"))
+//                {
+//
+//                    NavigationLink(destination: GlassmorphicColorView(libraryID: libraryID)) {
+//                        HStack
+//                        {
+//                            Text("Lazy Grid")
+//                            Spacer()
+//                            Text("Sample")
+//                        }
+//                    }
+//                    .navigationTitle("Design Trends")
+//
+//                    NavigationLink(destination: GlassmorphicColorCarousels(libraryID: libraryID)) {
+//                        HStack
+//                        {
+//                            Text("Carousel/Line Charts")
+//                            Spacer()
+//                            Text("Sample")
+//                        }
+//                    }
+//                    .navigationTitle("Design Trends")
+//
+//                    NavigationLink(destination: GlassmorphicColorBarsCards(libraryID: libraryID)) {
+//                        HStack
+//                        {
+//                            Text("Cards/Bar Charts")
+//                            Spacer()
+//                            Text("Sample")
+//                        }
+//                    }
+//                    .navigationTitle("Design Trends")
+//                }
                 
             } // List
             

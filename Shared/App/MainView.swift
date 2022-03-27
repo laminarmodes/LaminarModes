@@ -41,6 +41,9 @@ struct MainView: View
     
     @Environment(\.presentationMode) var presentationMode
     
+//    init() {
+//        UITabBar.appearance().isOpaque = false
+//    }
     
     //MARK: - Body
     var body: some View
@@ -66,8 +69,8 @@ struct MainView: View
         {
             RingView(libraryID: projectID, show: $show).environmentObject(reference)
                 .tabItem {
-                    Image(systemName: "plus.circle")
-                    Text("Quick Add")
+                    Image(systemName: "face.smiling")
+                    Text("Hello")
                 }
             
             AffinityMap(libraryID: projectID).environmentObject(reference)
@@ -99,6 +102,11 @@ struct MainView: View
             DispatchQueue.main.async {
                 self.reference.referenceProjectID = self.projectID
             }
+            //UITabBar.appearance().backgroundColor = UIColor(Color.white)
+            if #available(iOS 15.0, *) {
+                    let appearance = UITabBarAppearance()
+                    UITabBar.appearance().scrollEdgeAppearance = appearance
+                }
         }
     } // tabbar
     
