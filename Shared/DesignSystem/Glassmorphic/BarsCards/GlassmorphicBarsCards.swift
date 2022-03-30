@@ -35,7 +35,7 @@ struct GlassmorphicBarsCards: View
                 let noStories = (0..<(reference.books.count)).map{ _ in Double.random(in: 1 ... 20) }
                 
                     BarChartViewCustomNew(data: ChartData(points: noStories),
-                                          title: "Total per Book",
+                                          title: "Total per Set",
                                           form: CGSize(width: CGFloat(screenWidth-40),
                                                        height: CGFloat(210)),
                                           dropShadow: false,

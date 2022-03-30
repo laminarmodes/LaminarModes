@@ -64,7 +64,7 @@ struct DetailsView: View
                                                 
                                                 Group {
                                                     Image(systemName: "info.circle")
-                                                    Text("Person")
+                                                    Text("Type")
                                                     
                                                 }
                                                 .foregroundColor(chapter?.color ?? Color.black)

@@ -35,7 +35,7 @@ struct AddBookView: View {
                         .foregroundColor(Color.primary.opacity(0.7))
                         .font(.headline)
                     
-                    GradientTextField(editingTextField: $editingBookNameTextField, textfieldString: $bookNameInput, iconBounce: $bookIconBounce, textfieldPlaceholder: "Theme Name", textfieldIconString: "at")
+                    GradientTextField(editingTextField: $editingBookNameTextField, textfieldString: $bookNameInput, iconBounce: $bookIconBounce, textfieldPlaceholder: "Name", textfieldIconString: "at")
                 }
                 
                 Group {
@@ -43,14 +43,14 @@ struct AddBookView: View {
                         .foregroundColor(Color.primary.opacity(0.7))
                         .font(.headline)
                     
-                    GradientTextField(editingTextField: $editingBookDescriptionInput, textfieldString: $bookDescriptionInput, iconBounce: $descriptionIconBounce, textfieldPlaceholder: "Theme description", textfieldIconString: "at")
+                    GradientTextField(editingTextField: $editingBookDescriptionInput, textfieldString: $bookDescriptionInput, iconBounce: $descriptionIconBounce, textfieldPlaceholder: "Description", textfieldIconString: "at")
                 }
                 
                 Button(action: {
                     
                     self.reference.referenceProjectID = self.libraryID
                     
-                    self.reference.addBook(image: "person.fill", name: self.bookNameInput, description: self.bookDescriptionInput, color: (reference.referenceProjectID == reference.libraries[0].uniqueID) ? (colorScheme == .dark ? Colors().pLight.randomElement()! : Colors().pDark.randomElement()!) : (colorScheme == .dark ? Colors().vLight.randomElement()! : Colors().vDark.randomElement()!))
+                    self.reference.addBook(image: "lightbulb.fill", name: self.bookNameInput, description: self.bookDescriptionInput, color: (reference.referenceProjectID == reference.libraries[0].uniqueID) ? (colorScheme == .dark ? Colors().pLight.randomElement()! : Colors().pDark.randomElement()!) : (colorScheme == .dark ? Colors().vLight.randomElement()! : Colors().vDark.randomElement()!))
                     
                     addingBook = false
                     bookNameInput = ""

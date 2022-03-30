@@ -63,7 +63,7 @@ struct ChapterList: View
         .onAppear() {
             self.reference.referenceProjectID = self.libraryID
         }
-        .navigationBarTitle("Story List", displayMode: .inline)
+        .navigationBarTitle("Item List", displayMode: .inline)
     } // body
 } // struct TransactionsView
 

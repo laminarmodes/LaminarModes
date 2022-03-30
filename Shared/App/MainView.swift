@@ -51,7 +51,7 @@ struct MainView: View
         ZStack
         {
             tabbar // This is the main view
-                .navigationTitle(self.projectName ?? "Sample Project")
+                .navigationTitle(self.projectName ?? "Sample Dessert")
                 .navigationBarItems(trailing: Button(action: {
                     addingTheme = true
                     
@@ -75,26 +75,26 @@ struct MainView: View
             
             AffinityMap(libraryID: projectID).environmentObject(reference)
                 .tabItem {
-                    Image(systemName: "square.and.pencil")
-                    Text("Tasks")
+                    Image(systemName: "rectangle.grid.2x2")
+                    Text("Sliding")
                 }
             
             BookList(libraryID: projectID).environmentObject(reference)
                 .tabItem {
-                    Image(systemName: "list.bullet.below.rectangle")
-                    Text("Report")
+                    Image(systemName: "rectangle.grid.1x2")
+                    Text("Stacked")
                 }
             
             LazyBooks(libraryID: projectID).environmentObject(reference)
                 .tabItem {
-                    Image(systemName: "lightbulb")
-                    Text("Plan")
+                    Image(systemName: "square.grid.3x2")
+                    Text("Lazy")
                 }
             
             UITrendsView(libraryID: projectID).environmentObject(reference)
                 .tabItem {
-                    Image(systemName: "info.circle")
-                    Text("Info")
+                    Image(systemName: "lightbulb")
+                    Text("More")
                 }
             
         } // TabView

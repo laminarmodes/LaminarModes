@@ -30,7 +30,7 @@ struct NeumorphicBarsCards: View
                 if(barChart)
                 {
                     BarChartViewCustomNew(data: ChartData(points: noStories),
-                                          title: "Total per Book",
+                                          title: "Total per Collection",
                                           form: CGSize(width: CGFloat(screenWidth-16),
                                                        height: CGFloat(220)),
                                           dropShadow: false,
@@ -46,7 +46,7 @@ struct NeumorphicBarsCards: View
                                                         [
                                                             (dummyNumbers, GradientColor(start: (themeItem.color ?? Color.gray).opacity(0.3), end: (themeItem.color ?? Color.gray))),
                                                         ],
-                                                     title: "Balance", form: CGSize(width: CGFloat(screenWidth-16), height: CGFloat(220)), dropShadow: false)
+                                                     title: "Amount", form: CGSize(width: CGFloat(screenWidth-16), height: CGFloat(220)), dropShadow: false)
                         }
                     }
                 }

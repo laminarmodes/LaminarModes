@@ -52,7 +52,7 @@ struct AddChapterView: View {
                 
                 Group
                 {
-                    Text("Title")
+                    Text("Name")
                         .foregroundColor(Color.primary.opacity(0.7))
                         .font(.headline)
                     
@@ -60,7 +60,7 @@ struct AddChapterView: View {
                         editingTextField: $editingRoleTextField,
                         textfieldString: $roleInput,
                         iconBounce: $roleIconBounce,
-                        textfieldPlaceholder: "Enter title",
+                        textfieldPlaceholder: "Enter name",
                         textfieldIconString: "at")
                         .autocapitalization(.none)
                         .keyboardType(.twitter)
@@ -115,7 +115,7 @@ struct AddChapterView: View {
                         self.reference.referenceProjectID = self.libraryID ?? reference.libraries[0].uniqueID
                         self.reference.referenceBookID = self.bookID ?? reference.libraries[0].books[0].uniqueID
                         
-                        self.reference.addChapter(image: "person.fill", role: self.roleInput, description: self.descriptionInput, date: "add later", priority: self.priorityInput, details: self.detailsInput, color: chapterColor ?? Color.gray)
+                        self.reference.addChapter(image: "lightbulb.fill", role: self.roleInput, description: self.descriptionInput, date: "add later", priority: self.priorityInput, details: self.detailsInput, color: chapterColor ?? Color.gray)
                         
                         addingChapter = false
                         roleInput = ""

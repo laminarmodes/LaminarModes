@@ -47,7 +47,7 @@ struct AffinityMap: View {
                 if(barChart)
                 {
                     BarChartViewCustomNew(data: ChartData(points: noStories),
-                                          title: "Chart Data is WIP",
+                                          title: "Chart Data",
                                           form: CGSize(width: CGFloat(screenWidth-16),
                                                        height: CGFloat(220)),
                                           dropShadow: false,
@@ -63,7 +63,7 @@ struct AffinityMap: View {
                                                         [
                                                             (dummyNumbers, GradientColor(start: (themeItem.color ?? Color.gray).opacity(0.3), end: (themeItem.color ?? Color.gray))),
                                                         ],
-                                                     title: "Amount per chapter", form: CGSize(width: CGFloat(screenWidth-16), height: CGFloat(220)), dropShadow: false)
+                                                     title: "Amount per item", form: CGSize(width: CGFloat(screenWidth-16), height: CGFloat(220)), dropShadow: false)
                         }
                     }
                 }

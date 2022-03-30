@@ -24,7 +24,7 @@ struct DeleteChapterView: View {
         {
             VStack(alignment: .leading)
             {
-                Text("How would you like to edit?")
+                Text("Confirm delete")
                     .foregroundColor(Color.primary.opacity(0.7))
                     .font(.headline)
                 

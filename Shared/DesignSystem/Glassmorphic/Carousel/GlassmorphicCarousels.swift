@@ -61,7 +61,7 @@ struct GlassmorphicCarousels: View {
                                                         [
                                                             (dummyNumbers, GradientColor(start: (themeItem.color ?? Color.gray).opacity(0.3), end: (themeItem.color ?? Color.gray))),
                                                         ],
-                                                     title: "Amount per chapter", form: CGSize(width: CGFloat(screenWidth-48), height: CGFloat(210)), dropShadow: false).padding(16)
+                                                     title: "Amount per item", form: CGSize(width: CGFloat(screenWidth-48), height: CGFloat(210)), dropShadow: false).padding(16)
                                 
                         }
                     }

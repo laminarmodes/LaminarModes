@@ -66,7 +66,7 @@ struct RingView: View {
                 .frame(width: width, height: height)
                 .shadow(color: (colorScheme == .dark ? Colors().pLight[2] : Colors().pDark[2]).opacity(0.3), radius: 3 * multiplier, x: 0, y: 3 * multiplier)
             
-            Text("press\n me!")
+            Text("User\n guide")
                 .font(.system(size: 7 * multiplier))
                 .foregroundColor(Color.gray)
                 .multilineTextAlignment(.center)
@@ -97,7 +97,7 @@ struct RingView: View {
                 VStack(alignment: .leading)
                 {
                     
-                    Text("Welcome to my demonstrator.  This is a UI flow driven by a data model and dummy data.  In the main section, you can add or delete cards and see the UI update.  You can also create a new list.  In the Design Trends section, you can explore different UI style options").foregroundColor(Color.gray).padding()
+                    Text("This app lets you test and interact with different UI colors, styles and layouts in order to decide on which to use in new projects.  Users will be able to observe how their data can be displayed and interacted with on mobile and make decisions on what configurations might work best for their project.").foregroundColor(Color.gray).padding()
                        
 
                 }

@@ -27,7 +27,7 @@ struct ContentView: View {
                     }
                 }
             } // List
-            .navigationTitle("Projects")
+            .navigationTitle("Desserts")
         } // NavigationView
         .navigationViewStyle(StackNavigationViewStyle())
     }
