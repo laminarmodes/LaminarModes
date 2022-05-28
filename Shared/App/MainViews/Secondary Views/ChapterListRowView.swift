@@ -18,7 +18,8 @@ struct ChapterListRowView: View {
     var body: some View {
         
         HStack {
-            Image(systemName: "person.fill")
+//            Image(systemName: "person.fill")
+            Image(chapter?.icon ?? "Vector")
                 .resizable()
                 .scaledToFit()
                 .foregroundColor(Color.white)

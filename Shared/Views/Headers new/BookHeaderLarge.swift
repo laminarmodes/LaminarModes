@@ -46,6 +46,8 @@ struct BookHeaderLarge: View
         .frame(height: 250, alignment: .leading)
         .frame(maxWidth: .infinity, alignment: .leading)
         .background(book?.color ?? Color.gray)
+//        .shadow(color: book?.color ?? Color.gray.opacity(0.2), radius: 10, x: 10, y: 10)
+//        .shadow(color: Color.white.opacity(0.7), radius: 10, x: -5, y: -5)
     }
 }
 

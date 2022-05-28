@@ -74,10 +74,10 @@ class Reference: ObservableObject {
     
     
     @Published var libraries = [
-        Library(title: "Warm Colors", books: [
+        Library(title: "Theme 1", books: [
             Book(image: "fork.knife", name: "Jujubes biscuit", description: "Jujubes biscuit donut jelly cotton candy jujubes I love cake croissant. Croissant marshmallow sweet roll I love cake gummies oat cake. Carrot cake jelly beans I love jelly pie pastry. Cheesecake brownie gummi bears sweet roll jelly beans chocolate bar macaroon. Apple pie marshmallow cupcake I love jujubes candy canes. Fruitcake tart pastry chocolate cake jelly-o dessert chocolate cake brownie.", numberOfUsers: 5, numberOfStories: 22, color: Color(UIColor.systemGray2), chapters: [
                 Chapter(
-                    icon: "lightbulb.fill",
+                    icon: "vector-1",
                     role: "Donut wafer",
                     description: "Sweet roll pastry",
                     date: "",
@@ -89,7 +89,7 @@ class Reference: ObservableObject {
                     storyDate: "Nov 20, 2021",
                     storyTime: "10:00 AM"),
                 Chapter(
-                    icon: "lightbulb.fill",
+                    icon: "vector-2",
                     role: "Toffee tiramisu",
                     description: "Jelly-o toffee ",
                     date: "",
@@ -101,7 +101,7 @@ class Reference: ObservableObject {
                     storyDate: "5 Oct 2020",
                     storyTime: "1100 SGT"),
                 Chapter(
-                    icon: "lightbulb.fill",
+                    icon: "vector-3",
                     role: "Marshmallow",
                     description: "Cotton candy donut",
                     date: "",
@@ -121,7 +121,7 @@ class Reference: ObservableObject {
                    color: Color(UIColor.systemGray),
                  chapters: [
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-4",
                         role: "Jujubes soufflé",
                         description: "Apple pie I love",
                         date: "",
@@ -133,7 +133,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-5",
                         role: "Biscuit pastry",
                         description: "Shortbread candy canes",
                         date: "",
@@ -145,7 +145,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-6",
                         role: "Lollipop bonbon",
                         description: "Candy canes halvah",
                         date: "",
@@ -157,7 +157,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-7",
                         role: "Macaroon pudding",
                         description: "Pie ice cream",
                         date: "",
@@ -169,7 +169,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-8",
                         role: "Caramels jelly beans",
                         description: "aliquet nibh praesent",
                         date: "",
@@ -181,7 +181,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-9",
                         role: "Carrot cake",
                         description: "croissant danish cake",
                         date: "",
@@ -193,7 +193,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-10",
                         role: "Jelly beans",
                         description: "Soufflé gummi bears",
                         date: "",
@@ -212,7 +212,7 @@ class Reference: ObservableObject {
                    color: Color(UIColor.systemGray3),
                  chapters: [
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-11",
                         role: "Dragée carrot",
                         description: "Pastry icing sugar",
                         date: "",
@@ -224,7 +224,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-12",
                         role: "Tart",
                         description: "Powder donut",
                         date: "",
@@ -236,7 +236,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-13",
                         role: "Jelly",
                         description: "Sweet roll gummi",
                         date: "",
@@ -248,7 +248,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-14",
                         role: "Fruitcake",
                         description: "Lemon drops",
                         date: "",
@@ -268,7 +268,7 @@ class Reference: ObservableObject {
                    color: Color(UIColor.systemGray2),
                  chapters: [
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-15",
                         role: "Danish",
                         description: "Caramels chocolate",
                         date: "",
@@ -280,7 +280,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-16",
                         role: "Lemon",
                         description: "Cupcake pudding",
                         date: "",
@@ -292,7 +292,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-17",
                         role: "Jelly",
                         description: "Shortbread cupcake",
                         date: "",
@@ -304,7 +304,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-18",
                         role: "Croissant",
                         description: "Gummies cake apple",
                         date: "",
@@ -316,7 +316,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-19",
                         role: "Cheesecake",
                         description: "Powder cheesecake",
                         date: "",
@@ -328,7 +328,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-20",
                         role: "Liquorice",
                         description: "Halvah gummies",
                         date: "",
@@ -348,7 +348,7 @@ class Reference: ObservableObject {
                    color: Color(UIColor.systemGray),
                  chapters: [
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-21",
                         role: "Chocolate",
                         description: "Sweet cupcake",
                         date: "",
@@ -360,7 +360,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-22",
                         role: "Cake",
                         description: "I love topping",
                         date: "",
@@ -372,7 +372,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-23",
                         role: "Pudding",
                         description: "Cake pudding",
                         date: "",
@@ -384,7 +384,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-24",
                         role: "Cotton candy",
                         description: "I love candy",
                         date: "",
@@ -396,7 +396,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-25",
                         role: "Tiramisu",
                         description: "Candy bear claw",
                         date: "",
@@ -416,7 +416,7 @@ class Reference: ObservableObject {
                    color: Color(UIColor.systemGray3),
                  chapters: [
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-26",
                         role: "Marzipan",
                         description: "I love cake",
                         date: "",
@@ -428,7 +428,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-27",
                         role: "Cupcake",
                         description: "Cupcake toffee",
                         date: "",
@@ -440,7 +440,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-28",
                         role: "Cheesecake",
                         description: "Cake bonbon",
                         date: "",
@@ -452,7 +452,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-29",
                         role: "Gingerbread",
                         description: "I love gingerbread",
                         date: "",
@@ -464,7 +464,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-30",
                         role: "Ice cream",
                         description: "Cookie toffee",
                         date: "",
@@ -476,7 +476,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-31",
                         role: "Fruitcake",
                         description: "jelly topping",
                         date: "",
@@ -488,7 +488,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-32",
                         role: "Chocolate",
                         description: "Oat cake gummies",
                         date: "",
@@ -500,7 +500,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-33",
                         role: "Pudding",
                         description: "Pudding cake candy",
                         date: "",
@@ -520,7 +520,7 @@ class Reference: ObservableObject {
                    color: Color(UIColor.systemGray2),
                  chapters: [
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-34",
                         role: "Icing pudding",
                         description: "The best snack",
                         date: "",
@@ -532,7 +532,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-35",
                         role: "Lemon drops",
                         description: "Pastry donut cake",
                         date: "",
@@ -544,7 +544,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-36",
                         role: "Sweet roll",
                         description: "Croissant cotton candy",
                         date: "",
@@ -564,7 +564,7 @@ class Reference: ObservableObject {
                    color: Color(UIColor.systemGray),
                  chapters: [
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-37",
                         role: "Shortbread",
                         description: "Danish shortbread dessert",
                         date: "",
@@ -576,7 +576,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-38",
                         role: "Oat cake",
                         description: "I love oat cake",
                         date: "",
@@ -588,7 +588,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-39",
                         role: "Cake wafer",
                         description: "Toffee sesame snaps",
                         date: "",
@@ -600,7 +600,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-40",
                         role: "Cookie",
                         description: "The chocolate bar",
                         date: "",
@@ -612,7 +612,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-41",
                         role: "Gingerbread",
                         description: "Holiday snacks",
                         date: "",
@@ -638,10 +638,10 @@ class Reference: ObservableObject {
         
         
         
-        Library(title: "Cold Colors", books: [
+        Library(title: "Theme 2", books: [
             Book(image: "fork.knife", name: "facilisis magna etiam", description: "Jelly beans icing dessert ice cream jelly-o. Tart carrot cake jelly beans icing I love sugar plum chocolate bar wafer. Macaroon I love cotton candy chupa chups gummi bears oat cake danish gummi bears danish. Topping danish gingerbread sweet roll croissant biscuit topping topping lollipop. Danish fruitcake dragée fruitcake fruitcake. Jujubes muffin danish tootsie roll bear claw. I love pie pastry I love wafer.", numberOfUsers: 5, numberOfStories: 22, color: Color(UIColor.systemGray2), chapters: [
                 Chapter(
-                    icon: "lightbulb.fill",
+                    icon: "vector-42",
                     role: "Marzipan",
                     description: "Sweet cupcake",
                     date: "",
@@ -653,7 +653,7 @@ class Reference: ObservableObject {
                     storyDate: "Nov 20, 2021",
                     storyTime: "10:00 AM"),
                 Chapter(
-                    icon: "lightbulb.fill",
+                    icon: "vector-43",
                     role: "Croissant",
                     description: "Jujubes sweet roll",
                     date: "",
@@ -665,7 +665,7 @@ class Reference: ObservableObject {
                     storyDate: "5 Oct 2020",
                     storyTime: "1100 SGT"),
                 Chapter(
-                    icon: "lightbulb.fill",
+                    icon: "vector-44",
                     role: "Wafer",
                     description: "Love macaroon icing",
                     date: "",
@@ -677,7 +677,7 @@ class Reference: ObservableObject {
                     storyDate: "5 Oct 2020",
                     storyTime: "1100 SGT"),
                 Chapter(
-                    icon: "lightbulb.fill",
+                    icon: "vector-45",
                     role: "Lemon drops",
                     description: "Donut lemon drops",
                     date: "",
@@ -689,7 +689,7 @@ class Reference: ObservableObject {
                     storyDate: "Nov 20, 2021",
                     storyTime: "10:00 AM"),
                 Chapter(
-                    icon: "lightbulb.fill",
+                    icon: "vector-46",
                     role: "Liquorice",
                     description: "Pie chupa chups",
                     date: "",
@@ -709,7 +709,7 @@ class Reference: ObservableObject {
                    color: Color(UIColor.systemGray),
                  chapters: [
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-47",
                         role: "Brownie",
                         description: "Danish oat cake",
                         date: "",
@@ -721,7 +721,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-48",
                         role: "Jelly beans",
                         description: "Pastry ice cream",
                         date: "",
@@ -733,7 +733,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-49",
                         role: "Danish cupcake",
                         description: "Soufflé shortbread cupcake",
                         date: "",
@@ -745,7 +745,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-50",
                         role: "Sesame snaps",
                         description: "Jujubes cupcake topping",
                         date: "",
@@ -757,7 +757,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-51",
                         role: "Cheesecake",
                         description: "Cupcake cheese cake",
                         date: "",
@@ -776,7 +776,7 @@ class Reference: ObservableObject {
                    color: Color(UIColor.systemGray3),
                  chapters: [
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-52",
                         role: "Candy canes",
                         description: "Pudding candy canes",
                         date: "",
@@ -788,7 +788,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-53",
                         role: "Cheesecake",
                         description: "Chocolate lemon drops",
                         date: "",
@@ -800,7 +800,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-54",
                         role: "Candy canes",
                         description: "donut ice cream bears",
                         date: "",
@@ -812,7 +812,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-55",
                         role: "Ice cream",
                         description: "Wafer marzipan cupcake",
                         date: "",
@@ -824,7 +824,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-56",
                         role: "Tiramisu",
                         description: "Jujubes toffee tootsie",
                         date: "",
@@ -844,7 +844,7 @@ class Reference: ObservableObject {
                    color: Color(UIColor.systemGray2),
                  chapters: [
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-57",
                         role: "Apple pie",
                         description: "Sugar plum bonbon",
                         date: "",
@@ -856,7 +856,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-58",
                         role: "Lemon drops",
                         description: "Sweet roll cake drop",
                         date: "",
@@ -868,7 +868,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-59",
                         role: "Chocolate",
                         description: "Bonbon chocolate bar",
                         date: "",
@@ -880,7 +880,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-60",
                         role: "Sesame snaps",
                         description: "Love lollipop candy",
                         date: "",
@@ -892,7 +892,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-61",
                         role: "Jelly beans",
                         description: "Cotton candy jelly",
                         date: "",
@@ -912,7 +912,7 @@ class Reference: ObservableObject {
                    color: Color(UIColor.systemGray),
                  chapters: [
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-62",
                         role: "Gummi bears",
                         description: "Powder powder gummies",
                         date: "",
@@ -924,7 +924,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-63",
                         role: "Carrot cake",
                         description: "Icing carrot cake",
                         date: "",
@@ -936,7 +936,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-64",
                         role: "Chocolate Bar",
                         description: "bar toffee bonbon",
                         date: "",
@@ -948,7 +948,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-65",
                         role: "Marshmallow",
                         description: "Cake lollipop pudding",
                         date: "",
@@ -960,7 +960,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-66",
                         role: "Topping",
                         description: "Jujubes chocolate bar",
                         date: "",
@@ -980,7 +980,7 @@ class Reference: ObservableObject {
                    color: Color(UIColor.systemGray3),
                  chapters: [
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-67",
                         role: "Caramels",
                         description: "Croissant macaroon",
                         date: "",
@@ -992,7 +992,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-68",
                         role: "Cheesecake",
                         description: "Icing cheesecake biscuit",
                         date: "",
@@ -1004,7 +1004,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-69",
                         role: "Carrot cake",
                         description: "Topping muffin carrot",
                         date: "",
@@ -1016,7 +1016,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-70",
                         role: "Marzipan",
                         description: "Ice cream cookie",
                         date: "",
@@ -1028,7 +1028,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-71",
                         role: "Apple pie",
                         description: "An ice cream cake",
                         date: "",
@@ -1048,7 +1048,7 @@ class Reference: ObservableObject {
                    color: Color(UIColor.systemGray2),
                  chapters: [
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-72",
                         role: "Dragée cake",
                         description: "Carrot cake liquorice",
                         date: "",
@@ -1060,7 +1060,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-73",
                         role: "Lemon drops",
                         description: "Jelly beans topping",
                         date: "",
@@ -1072,7 +1072,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-74",
                         role: "Icing toffee",
                         description: "Dragée sugar plum",
                         date: "",
@@ -1084,7 +1084,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-75",
                         role: "Jujubes",
                         description: "Pudding cookie pie",
                         date: "",
@@ -1096,7 +1096,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-76",
                         role: "Pastry",
                         description: "Caramels wafer chupa",
                         date: "",
@@ -1108,7 +1108,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-77",
                         role: "Shortbread",
                         description: "I love my shortbread",
                         date: "",
@@ -1128,7 +1128,7 @@ class Reference: ObservableObject {
                    color: Color(UIColor.systemGray),
                  chapters: [
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-78",
                         role: "Brownie",
                         description: "Carrot cake dragée",
                         date: "",
@@ -1140,7 +1140,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-79",
                         role: "Jelly beans",
                         description: "Lemon rainbow flavor",
                         date: "",
@@ -1152,7 +1152,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-80",
                         role: "Chocolate",
                         description: "Bar brownie cupcake",
                         date: "",
@@ -1164,7 +1164,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-81",
                         role: "Cookie",
                         description: "A tiramisu marzipan",
                         date: "",
@@ -1176,7 +1176,7 @@ class Reference: ObservableObject {
                         storyDate: "Nov 20, 2021",
                         storyTime: "10:00 AM"),
                     Chapter(
-                        icon: "lightbulb.fill",
+                        icon: "vector-82",
                         role: "Soufflé",
                         description: "Jelly-o soufflé cookie",
                         date: "",

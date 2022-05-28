@@ -16,17 +16,22 @@ struct ChapterCardSmallHeightInfiniteWidthView: View {
         {
             VStack(alignment: .leading, spacing: 12.0)
             {
-                Image(systemName: chapter?.icon ?? "person.fill")
-                    .foregroundColor(Color.white.opacity(0.9))
+//                Image(systemName: chapter?.icon ?? "person.fill")
+//                    .foregroundColor(Color.white.opacity(0.9))
                 
-                Text(chapter?.role ?? "No data")
-                    .font(.title3)
-                    .fontWeight(.bold)
-                    .foregroundColor(Color.white.opacity(0.9))
-                    .lineLimit(1)
-                    .multilineTextAlignment(.leading)
+                HStack {
+                    Image(chapter?.icon ?? "Vector")
+                    
+                    Text(chapter?.role ?? "No data")
+                        .font(Font.caption.smallCaps())
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.white.opacity(0.9))
+                        .lineLimit(2)
+                        .multilineTextAlignment(.leading)
+                }
                 
                 Text(chapter?.description ?? "No data")
+                    .font(Font.callout)
                     .multilineTextAlignment(.leading)
                     .foregroundColor(Color.white.opacity(0.9))
                     .lineLimit(2)
@@ -40,8 +45,10 @@ struct ChapterCardSmallHeightInfiniteWidthView: View {
         .frame(maxWidth: .infinity, alignment: .leading)
         .background(chapter?.color ?? Color.gray)
         .clipShape(RoundedRectangle(cornerRadius: 15))
-        .shadow(color: Color.black.opacity(0.2), radius: 10, x: 10, y: 10)
+        .shadow(color: chapter?.color ?? Color.gray.opacity(0.2), radius: 10, x: 10, y: 10)
         .shadow(color: Color.white.opacity(0.7), radius: 10, x: -5, y: -5)
+//        .shadow(color: Color.black.opacity(0.2), radius: 10, x: 10, y: 10)
+//        .shadow(color: Color.white.opacity(0.7), radius: 10, x: -5, y: -5)
     }
 }
 

@@ -21,6 +21,7 @@ struct BookWithLazyChapters: View {
                 .environmentObject(reference)
                 .padding([.top], 8)
                 .padding([.leading, .trailing], 16)
+                .padding([.bottom], 8)
             
             ScrollView(.vertical, showsIndicators: false) {
                 

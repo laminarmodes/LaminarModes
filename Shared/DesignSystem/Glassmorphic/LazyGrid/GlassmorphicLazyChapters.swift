@@ -16,17 +16,22 @@ struct GlassmorphicLazyChapters: View {
         {
             VStack(alignment: .leading, spacing: 12.0)
             {
-                Image(systemName: chapter?.icon ?? "person.fill")
-                    .foregroundColor(chapter?.color ?? Color.gray)
+//                Image(systemName: chapter?.icon ?? "person.fill")
+//                    .foregroundColor(chapter?.color ?? Color.gray)
                 
-                Text(chapter?.role ?? "No data")
-                    .font(.title3)
-                    .fontWeight(.bold)
-                    .foregroundColor(chapter?.color ?? Color.gray)
-                    .lineLimit(1)
-                    .multilineTextAlignment(.leading)
+                HStack {
+                    Image(chapter?.icon ?? "Vector")
+                    
+                    Text(chapter?.role ?? "No data")
+                        .font(Font.caption.smallCaps())
+                        .fontWeight(.bold)
+                        .foregroundColor(chapter?.color ?? Color.gray)
+                        .lineLimit(2)
+                        .multilineTextAlignment(.leading)
+                }
                 
                 Text(chapter?.description ?? "No data")
+                    .font(Font.callout)
                     .multilineTextAlignment(.leading)
                     .foregroundColor(Color("dark-text"))
                     .lineLimit(2)

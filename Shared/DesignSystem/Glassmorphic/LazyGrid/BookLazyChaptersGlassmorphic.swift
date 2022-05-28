@@ -18,14 +18,12 @@ struct BookLazyChaptersGlassmorphic: View {
         
         ZStack {
             
-                        LinearGradient(gradient: Gradient(colors: [Color.green, Color.blue, Color.purple]), startPoint: .topTrailing, endPoint: .bottomLeading)
-                            .edgesIgnoringSafeArea(.all)
-                        
-//                        LinearGradient(gradient: Gradient(colors: [Color.yellow, Color.orange, Color.red]), startPoint: .topTrailing, endPoint: .bottomLeading)
+//                        LinearGradient(gradient: Gradient(colors: [Color.green, Color.blue, Color.purple]), startPoint: .topTrailing, endPoint: .bottomLeading)
 //                            .edgesIgnoringSafeArea(.all)
-            
-            VisualEffectBlur(blurStyle: .systemUltraThinMaterial)
-                .edgesIgnoringSafeArea(.all)
+//
+//
+//            VisualEffectBlur(blurStyle: .systemUltraThinMaterial)
+//                .edgesIgnoringSafeArea(.all)
             
             VStack {
                 BookCardLargeViewGlassmorphic(book: reference.findBookById(inputThemeId: bookID))
@@ -66,6 +64,12 @@ struct BookLazyChaptersGlassmorphic: View {
             }
         }
         .navigationTitle("Glassmorphism")
+        .background(
+            Image("blob-background-gray")
+                .resizable()
+                .scaledToFill()
+        )
+        
     }
 }
 

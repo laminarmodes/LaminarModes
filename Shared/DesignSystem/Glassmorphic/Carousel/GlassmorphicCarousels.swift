@@ -36,14 +36,13 @@ struct GlassmorphicCarousels: View {
     var body: some View {
         ZStack
         {
-                        LinearGradient(gradient: Gradient(colors: [Color.green, Color.blue, Color.purple]), startPoint: .topTrailing, endPoint: .bottomLeading)
-                            .edgesIgnoringSafeArea(.all)
-                        
-//                        LinearGradient(gradient: Gradient(colors: [Color.yellow, Color.orange, Color.red]), startPoint: .topTrailing, endPoint: .bottomLeading)
+//                        LinearGradient(gradient: Gradient(colors: [Color.green, Color.blue, Color.purple]), startPoint: .topTrailing, endPoint: .bottomLeading)
 //                            .edgesIgnoringSafeArea(.all)
-            
-            VisualEffectBlur(blurStyle: .systemUltraThinMaterial)
-                .edgesIgnoringSafeArea(.all)
+//
+//
+//
+//            VisualEffectBlur(blurStyle: .systemUltraThinMaterial)
+//                .edgesIgnoringSafeArea(.all)
             
             addStoryMode
             editStoryMode
@@ -184,8 +183,15 @@ struct GlassmorphicCarousels: View {
                 self.reference.referenceProjectID = self.libraryID
             }
         }
+        .background(
+            Image("blob-background-gray")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .scaledToFill()
+        )
         
     }
+        
     
     @ViewBuilder
     var addStoryMode: some View
