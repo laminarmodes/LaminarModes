@@ -23,11 +23,11 @@ struct NeumorphicChapterListRowView: View {
                 .resizable()
                 .scaledToFit()
                 .foregroundColor(Color.white)
-                .padding()
+                .padding(10)
                 .frame(width: 80, height: 80, alignment: .center)
             
                 .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.3), radius: 3, x: 2, y: 2)
-                .background(reference.findChapterById(storyIdToRead: chapterID).color ?? Color.gray)
+                .background(reference.findChapterById(storyIdToRead: chapterID).color?.opacity(0.5) ?? Color.gray)
                 .cornerRadius(4)
             
             VStack(alignment: .leading, spacing: 5) {
@@ -52,7 +52,7 @@ struct NeumorphicChapterListRowView: View {
 
 struct NeumorphicChapterListRowView_Previews: PreviewProvider {
     static var previews: some View {
-        NeumorphicChapterListRowView(chapterID: Reference().libraries[0].books[0].chapters[0].uniqueID)
+        NeumorphicChapterListRowView(chapterID: Reference().libraries[0].books.last!.chapters.last!.uniqueID, chapter: Reference().libraries[0].books.last!.chapters.last!)
             .previewLayout(.sizeThatFits)
             .environmentObject(Reference())
     }

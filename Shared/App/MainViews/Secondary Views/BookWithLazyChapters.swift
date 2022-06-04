@@ -14,6 +14,8 @@ struct BookWithLazyChapters: View {
     var libraryID: UUID
     let bookID: UUID
     
+    
+    
     var body: some View {
         
         VStack {
@@ -58,6 +60,6 @@ struct BookWithLazyChapters: View {
 
 struct ThemeLazyStories_Previews: PreviewProvider {
     static var previews: some View {
-        BookWithLazyChapters(libraryID: Reference().libraries[0].uniqueID, bookID: Reference().libraries[0].books[0].uniqueID).environmentObject(Reference())
+        BookWithLazyChapters(libraryID: Reference().libraries[0].uniqueID, bookID: Reference().libraries[0].books.last!.uniqueID).environmentObject(Reference())
     }
 }

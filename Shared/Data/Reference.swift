@@ -74,8 +74,8 @@ class Reference: ObservableObject {
     
     
     @Published var libraries = [
-        Library(title: "Theme 1", books: [
-            Book(image: "fork.knife", name: "Jujubes biscuit", description: "Jujubes biscuit donut jelly cotton candy jujubes I love cake croissant. Croissant marshmallow sweet roll I love cake gummies oat cake. Carrot cake jelly beans I love jelly pie pastry. Cheesecake brownie gummi bears sweet roll jelly beans chocolate bar macaroon. Apple pie marshmallow cupcake I love jujubes candy canes. Fruitcake tart pastry chocolate cake jelly-o dessert chocolate cake brownie.", numberOfUsers: 5, numberOfStories: 22, color: Color(UIColor.systemGray2), chapters: [
+        Library(title: "Market 1", books: [
+            Book(image: "fork.knife", name: "Blueberry", description: "Jujubes biscuit donut jelly cotton candy jujubes I love cake croissant. Croissant marshmallow sweet roll I love cake gummies oat cake. Carrot cake jelly beans I love jelly pie pastry. Cheesecake brownie gummi bears sweet roll jelly beans chocolate bar macaroon. Apple pie marshmallow cupcake I love jujubes candy canes. Fruitcake tart pastry chocolate cake jelly-o dessert chocolate cake brownie.", numberOfUsers: 5, numberOfStories: 22, color: Color(UIColor.systemGray2), chapters: [
                 Chapter(
                     icon: "vector-1",
                     role: "Donut wafer",
@@ -87,7 +87,7 @@ class Reference: ObservableObject {
                     interviewer: "Dessert",
                     storyLocation: "Singapore",
                     storyDate: "Nov 20, 2021",
-                    storyTime: "10:00 AM"),
+                    storyTime: "#124A7TB"),
                 Chapter(
                     icon: "vector-2",
                     role: "Toffee tiramisu",
@@ -99,7 +99,7 @@ class Reference: ObservableObject {
                     interviewer: "Dessert",
                     storyLocation: "Training Center",
                     storyDate: "5 Oct 2020",
-                    storyTime: "1100 SGT"),
+                    storyTime: "#124A7TB"),
                 Chapter(
                     icon: "vector-3",
                     role: "Marshmallow",
@@ -111,10 +111,10 @@ class Reference: ObservableObject {
                     interviewer: "Dessert",
                     storyLocation: "A diam maecenas",
                     storyDate: "5 Oct 2020",
-                    storyTime: "1100 SGT")]),
+                    storyTime: "#124A7TB")]),
             Book(
                    image: "fork.knife",
-                   name: "Lollipop gummi",
+                   name: "Rasberry",
                    description: "Lollipop gummi bears cupcake macaroon croissant cookie halvah carrot cake I love. Cake pie toffee candy canes bear claw pie I love lollipop cake. Bonbon biscuit oat cake donut I love I love cake. Dragée sweet tiramisu chocolate bar croissant. Toffee bear claw caramels bear claw jujubes pudding muffin cake cake. Gummies pudding lollipop I love I love I love brownie I love danish. Toffee pudding soufflé muffin pie cake powder I love carrot cake. Chocolate candy jujubes bonbon tart. Donut apple pie chocolate cake chocolate marzipan. Jelly beans marzipan sugar plum shortbread caramels danish.",
                    numberOfUsers: 5,
                    numberOfStories: 22,
@@ -131,7 +131,7 @@ class Reference: ObservableObject {
                         interviewer: "Dessert",
                         storyLocation: "Singapore",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM"),
+                        storyTime: "#124A7TB"),
                     Chapter(
                         icon: "vector-5",
                         role: "Biscuit pastry",
@@ -143,7 +143,7 @@ class Reference: ObservableObject {
                         interviewer: "Dessert",
                         storyLocation: "Singapore",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM"),
+                        storyTime: "#124A7TB"),
                     Chapter(
                         icon: "vector-6",
                         role: "Lollipop bonbon",
@@ -155,7 +155,7 @@ class Reference: ObservableObject {
                         interviewer: "Dessert",
                         storyLocation: "Singapore",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM"),
+                        storyTime: "#124A7TB"),
                     Chapter(
                         icon: "vector-7",
                         role: "Macaroon pudding",
@@ -167,7 +167,7 @@ class Reference: ObservableObject {
                         interviewer: "Dessert",
                         storyLocation: "Singapore",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM"),
+                        storyTime: "#124A7TB"),
                     Chapter(
                         icon: "vector-8",
                         role: "Caramels jelly beans",
@@ -179,7 +179,7 @@ class Reference: ObservableObject {
                         interviewer: "Dessert",
                         storyLocation: "Singapore",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM"),
+                        storyTime: "#124A7TB"),
                     Chapter(
                         icon: "vector-9",
                         role: "Carrot cake",
@@ -191,7 +191,7 @@ class Reference: ObservableObject {
                         interviewer: "Dessert",
                         storyLocation: "Singapore",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM"),
+                        storyTime: "#124A7TB"),
                     Chapter(
                         icon: "vector-10",
                         role: "Jelly beans",
@@ -203,10 +203,10 @@ class Reference: ObservableObject {
                         interviewer: "Dessert",
                         storyLocation: "Singapore",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM")]),
+                        storyTime: "#124A7TB")]),
             Book(
                    image: "fork.knife",
-                   name: "Pastry chocolate",
+                   name: "Plum",
                    description: "Pastry chocolate cake brownie carrot cake wafer gummi bears sesame snaps. Chocolate powder macaroon brownie chupa chups I love sweet roll jelly beans powder. Cheesecake cookie chocolate tiramisu bear claw toffee. Pudding lollipop icing chocolate cake oat cake fruitcake fruitcake cotton candy. Tootsie roll dragée cotton candy icing I love sugar plum carrot cake halvah fruitcake. Chupa chups cupcake icing dessert chupa chups I love fruitcake halvah pie. Brownie tart sweet sesame snaps carrot cake chocolate. Donut dragée marzipan marshmallow cupcake brownie I love pudding. Gummies chocolate cake danish carrot cake oat cake marshmallow icing caramels. Apple pie brownie soufflé marzipan chocolate soufflé marzipan.", numberOfUsers: 5,
                    numberOfStories: 22,
                    color: Color(UIColor.systemGray3),
@@ -222,7 +222,7 @@ class Reference: ObservableObject {
                         interviewer: "Dessert",
                         storyLocation: "Singapore",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM"),
+                        storyTime: "#124A7TB"),
                     Chapter(
                         icon: "vector-12",
                         role: "Tart",
@@ -234,7 +234,7 @@ class Reference: ObservableObject {
                         interviewer: "Dessert",
                         storyLocation: "Singapore",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM"),
+                        storyTime: "#124A7TB"),
                     Chapter(
                         icon: "vector-13",
                         role: "Jelly",
@@ -246,7 +246,7 @@ class Reference: ObservableObject {
                         interviewer: "Dessert",
                         storyLocation: "Singapore",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM"),
+                        storyTime: "#124A7TB"),
                     Chapter(
                         icon: "vector-14",
                         role: "Fruitcake",
@@ -258,10 +258,10 @@ class Reference: ObservableObject {
                         interviewer: "Dessert",
                         storyLocation: "Singapore",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM")]),
+                        storyTime: "#124A7TB")]),
             Book(
                    image: "fork.knife",
-                   name: "Tart",
+                   name: "Dragon Fruit",
                    description: "Tart macaroon tootsie roll gingerbread apple pie danish marzipan I love lollipop. Cupcake wafer cookie wafer brownie. Toffee shortbread sweet pudding cookie carrot cake brownie caramels. Sweet donut cake sweet roll liquorice caramels dragée. Jelly-o pastry I love pie I love halvah. Chocolate bar I love muffin topping lemon drops.",
                    numberOfUsers: 5,
                    numberOfStories: 22,
@@ -278,7 +278,7 @@ class Reference: ObservableObject {
                         interviewer: "Dessert",
                         storyLocation: "Singapore",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM"),
+                        storyTime: "#124A7TB"),
                     Chapter(
                         icon: "vector-16",
                         role: "Lemon",
@@ -290,7 +290,7 @@ class Reference: ObservableObject {
                         interviewer: "Dessert",
                         storyLocation: "Singapore",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM"),
+                        storyTime: "#124A7TB"),
                     Chapter(
                         icon: "vector-17",
                         role: "Jelly",
@@ -302,7 +302,7 @@ class Reference: ObservableObject {
                         interviewer: "Dessert",
                         storyLocation: "Singapore",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM"),
+                        storyTime: "#124A7TB"),
                     Chapter(
                         icon: "vector-18",
                         role: "Croissant",
@@ -314,7 +314,7 @@ class Reference: ObservableObject {
                         interviewer: "Dessert",
                         storyLocation: "Singapore",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM"),
+                        storyTime: "#124A7TB"),
                     Chapter(
                         icon: "vector-19",
                         role: "Cheesecake",
@@ -326,7 +326,7 @@ class Reference: ObservableObject {
                         interviewer: "Dessert",
                         storyLocation: "Singapore",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM"),
+                        storyTime: "#124A7TB"),
                     Chapter(
                         icon: "vector-20",
                         role: "Liquorice",
@@ -338,10 +338,10 @@ class Reference: ObservableObject {
                         interviewer: "Dessert",
                         storyLocation: "Singapore",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM")]),
+                        storyTime: "#124A7TB")]),
             Book(
                    image: "fork.knife",
-                   name: "Toffee cotton candy",
+                   name: "Strawberry",
                    description: "Toffee cotton candy biscuit chupa chups sweet roll tart marzipan I love I love. Brownie chocolate bar jujubes fruitcake cotton candy tiramisu oat cake chocolate bar. Brownie marshmallow I love liquorice gummies I love sweet bonbon sweet. Candy I love wafer tiramisu I love cheesecake brownie chocolate bar. Gummies caramels jujubes chocolate cake dragée powder sweet jelly brownie. Dessert oat cake cake pastry gingerbread gingerbread tiramisu I love. Gummi bears biscuit cotton candy cake sugar plum I love sugar plum apple pie marshmallow. I love carrot cake lemon drops icing chocolate bar I love muffin soufflé. Shortbread I love chocolate cake shortbread cotton candy halvah lollipop tootsie roll tart. Sweet roll chupa chups muffin icing pudding toffee I love pastry I love.",
                    numberOfUsers: 5,
                    numberOfStories: 22,
@@ -358,7 +358,7 @@ class Reference: ObservableObject {
                         interviewer: "Dessert",
                         storyLocation: "Singapore",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM"),
+                        storyTime: "#124A7TB"),
                     Chapter(
                         icon: "vector-22",
                         role: "Cake",
@@ -370,7 +370,7 @@ class Reference: ObservableObject {
                         interviewer: "Dessert",
                         storyLocation: "Singapore",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM"),
+                        storyTime: "#124A7TB"),
                     Chapter(
                         icon: "vector-23",
                         role: "Pudding",
@@ -382,7 +382,7 @@ class Reference: ObservableObject {
                         interviewer: "Dessert",
                         storyLocation: "Singapore",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM"),
+                        storyTime: "#124A7TB"),
                     Chapter(
                         icon: "vector-24",
                         role: "Cotton candy",
@@ -409,7 +409,7 @@ class Reference: ObservableObject {
                         storyTime: "10:00 AM")]),
             Book(
                    image: "fork.knife",
-                   name: "Lollipop tiramisu",
+                   name: "Watermellon",
                    description: "Lollipop tiramisu chocolate I love wafer pudding wafer. Donut I love cookie oat cake caramels apple pie. Bear claw soufflé carrot cake caramels powder danish pie. I love dessert cake cheesecake biscuit soufflé pie I love. Danish pie croissant toffee dessert cake. Tiramisu dragée jelly I love I love sweet roll topping. Donut tootsie roll liquorice I love jelly topping sesame snaps candy.",
                    numberOfUsers: 5,
                    numberOfStories: 22,
@@ -513,7 +513,7 @@ class Reference: ObservableObject {
                         storyTime: "10:00 AM")]),
             Book(
                    image: "fork.knife",
-                   name: "Chocolate croissant",
+                   name: "Orange",
                    description: "Chocolate croissant chocolate cake croissant biscuit I love soufflé tart. Sweet roll I love brownie cheesecake apple pie jujubes apple pie pastry I love. Bonbon carrot cake sweet jelly beans carrot cake danish pudding. Cake jelly-o jelly beans halvah chocolate bar I love biscuit. Dessert danish apple pie tart pastry pastry tootsie roll cake jelly-o. Jelly-o cupcake shortbread muffin donut wafer soufflé. Cake chocolate cake I love cotton candy sugar plum donut gummi bears oat cake. Sesame snaps jelly-o shortbread sesame snaps halvah.",
                    numberOfUsers: 5,
                    numberOfStories: 22,
@@ -530,7 +530,7 @@ class Reference: ObservableObject {
                         interviewer: "Dessert",
                         storyLocation: "Singapore",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM"),
+                        storyTime: "#5T71W78B"),
                     Chapter(
                         icon: "vector-35",
                         role: "Lemon drops",
@@ -542,7 +542,7 @@ class Reference: ObservableObject {
                         interviewer: "Dessert",
                         storyLocation: "Singapore",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM"),
+                        storyTime: "#1ET98EF"),
                     Chapter(
                         icon: "vector-36",
                         role: "Sweet roll",
@@ -554,19 +554,19 @@ class Reference: ObservableObject {
                         interviewer: "Dessert",
                         storyLocation: "Singapore",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM")]),
+                        storyTime: "#1GD345B")]),
             Book(
                    image: "fork.knife",
-                   name: "Cheesecake chocolate",
+                   name: "Lemon",
                    description: "Cheesecake chocolate bar bear claw pudding cupcake I love apple pie I love. Ice cream cheesecake jelly fruitcake croissant dragée halvah. Halvah cheesecake lemon drops caramels danish I love. Muffin cookie tart dragée chocolate oat cake pastry tootsie roll I love. Halvah cookie macaroon tiramisu jelly beans lemon drops cake tart macaroon. Lemon drops chupa chups pastry marshmallow candy canes I love cotton candy jelly-o cake. Tart muffin ice cream oat cake bear claw marzipan. Marzipan I love lollipop danish caramels brownie. Chocolate bar I love oat cake cookie powder dragée sweet wafer I love.",
                    numberOfUsers: 5,
                    numberOfStories: 22,
                    color: Color(UIColor.systemGray),
                  chapters: [
                     Chapter(
-                        icon: "vector-37",
-                        role: "Shortbread",
-                        description: "Danish shortbread dessert",
+                        icon: "milk-shake-1",
+                        role: "Milk Shake",
+                        description: "Dragon Fruit",
                         date: "",
                         priority: "",
                         details: "Danish shortbread dessert tiramisu liquorice chocolate I love. Cake toffee candy cake gummi bears oat cake carrot cake. Brownie pastry I love donut carrot cake lemon drops. Gummi bears lollipop sweet shortbread sweet lemon drops powder gummi bears. Bonbon caramels pudding topping apple pie I love icing. Dragée wafer halvah biscuit I love croissant sugar plum cake marzipan. I love I love caramels cake cupcake gummi bears I love marshmallow bonbon. Jujubes lollipop cake I love pie muffin.",
@@ -574,55 +574,55 @@ class Reference: ObservableObject {
                         interviewer: "Dessert",
                         storyLocation: "Singapore",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM"),
+                        storyTime: "#124A7TB"),
                     Chapter(
-                        icon: "vector-38",
-                        role: "Oat cake",
-                        description: "I love oat cake",
+                        icon: "crushed-ice-1",
+                        role: "Crushed ice",
+                        description: "Just loads of sugar",
                         date: "",
                         priority: "",
                         details: "I love oat cake bear claw danish I love wafer donut marzipan tiramisu. I love wafer brownie tart soufflé. Pie shortbread danish jujubes sugar plum I love marshmallow chupa chups. Cookie I love chocolate bar shortbread dessert biscuit soufflé. Croissant cotton candy dragée I love gummies chocolate. Croissant wafer gingerbread I love tiramisu candy canes sweet roll. Cupcake lemon drops gummies soufflé cake halvah topping pastry halvah. I love pudding dragée muffin tootsie roll caramels.",
                         color: Color(UIColor.systemGray),
                         interviewer: "Dessert",
-                        storyLocation: "Singapore",
+                        storyLocation: "48.28",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM"),
+                        storyTime: "#134RFTB"),
                     Chapter(
-                        icon: "vector-39",
-                        role: "Cake wafer",
-                        description: "Toffee sesame snaps",
+                        icon: "ice-cream-1",
+                        role: "Ice cream",
+                        description: "Blueberry",
                         date: "",
                         priority: "",
                         details: "Cake wafer I love dragée I love. Oat cake danish caramels brownie toffee sesame snaps. I love shortbread I love cotton candy cake pudding. Gingerbread bear claw cotton candy chocolate dragée soufflé. Marzipan marzipan ice cream muffin danish gingerbread. Cake soufflé I love fruitcake jelly beans I love macaroon.",
                         color: Color(UIColor.systemGray),
                         interviewer: "Dessert",
-                        storyLocation: "Singapore",
+                        storyLocation: "81.10",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM"),
+                        storyTime: "#1ET678B"),
                     Chapter(
-                        icon: "vector-40",
-                        role: "Cookie",
-                        description: "The chocolate bar",
+                        icon: "ice-lolly-1",
+                        role: "Ice Lolly",
+                        description: "Strawberry and blueberry",
                         date: "",
                         priority: "",
                         details: "Cookie chocolate bar cupcake jelly beans lollipop oat cake liquorice. Ice cream I love dragée jelly jelly beans lollipop jujubes halvah I love. Gummies sesame snaps I love I love biscuit pastry fruitcake tart bear claw. Sweet roll powder pastry candy oat cake brownie I love. Caramels jelly chocolate cake candy canes candy canes wafer liquorice. Shortbread I love sweet roll fruitcake powder. Oat cake toffee brownie pie sugar plum gummi bears toffee sweet roll. Gingerbread I love I love donut chocolate bar. Sweet roll wafer liquorice gummi bears cake oat cake tart.",
                         color: Color(UIColor.systemGray),
                         interviewer: "Dessert",
-                        storyLocation: "Singapore",
+                        storyLocation: "75.24",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM"),
+                        storyTime: "#294A73H"),
                     Chapter(
-                        icon: "vector-41",
-                        role: "Gingerbread",
-                        description: "Holiday snacks",
+                        icon: "frozen-sorbet-1",
+                        role: "Fruit Sorbet",
+                        description: "Strawberry, orange and cherry",
                         date: "",
                         priority: "",
                         details: "Gingerbread lemon drops tootsie roll gummies I love cookie biscuit jelly chupa chups. Marshmallow lemon drops pie donut pudding carrot cake fruitcake sweet roll. Lemon drops sweet roll bear claw marzipan marshmallow cake liquorice shortbread bear claw. Bonbon I love gingerbread marshmallow soufflé. I love croissant tootsie roll soufflé fruitcake. Pie macaroon jelly beans I love I love. Jelly beans gummies donut caramels pie tart brownie.",
                         color: Color(UIColor.systemGray),
                         interviewer: "Dessert",
-                        storyLocation: "Singapore",
+                        storyLocation: "38.64",
                         storyDate: "Nov 20, 2021",
-                        storyTime: "10:00 AM")])]),
+                        storyTime: "#123M7TG")])]),
         
         
         
@@ -1241,12 +1241,6 @@ class Reference: ObservableObject {
     
     func addBook(image: String, name: String, description: String, color: Color)
     {
-//        let newBookID = libraries[referenceProjectID - 1].books.count + 1 // Theme ID is
-//        let newBook = Book(id: newBookID, image: image, name: name, description: description, numberOfUsers: 0, numberOfStories: 0, color: color, chapters: [], projectId: referenceProjectID)
-//        libraries[referenceProjectID - 1].books.append(newBook)
-        
-        
-        
         var readIndexLibraries = 0
         var countLibraries = 0
         
@@ -1258,18 +1252,6 @@ class Reference: ObservableObject {
             }
             countLibraries += 1
         }
-        
-//        var readIndexBooks = 0
-//        var countBooks = 0
-//        for book in libraries[readIndexLibraries].books {
-//            if book.uniqueID == referenceBookID {
-//                readIndexBooks = countBooks
-//            }
-//            countBooks += 1
-//        }
-        
-//        let bookCurrent = libraries[readIndexLibraries].books[readIndexBooks]
-//        let newChapter = Chapter(icon: image, role: role, description: description, date: date, priority: priority, details: details, color: bookCurrent.color)
         let newBook = Book(image: image, name: name, description: description, numberOfUsers: 0, numberOfStories: 0, color: color, chapters: [])
         libraries[readIndexLibraries].books.append(newBook)
 
@@ -1301,23 +1283,11 @@ class Reference: ObservableObject {
             
             countBooks += 1
         }
-        
         return libraries[readIndexLibraries].books[readIndexBooks]
-        
-        
     }
     
     func addChapter(image: String, role: String, description: String, date: String, priority: String, details: String, color: Color?)
     {
-        
-//        let projectCurrent = libraries[referenceProjectID - 1]
-//        let bookCurrent = projectCurrent.books[referenceBookID-1]
-//        let newChapter = Chapter(icon: image, role: role, description: description, date: date, priority: priority, details: details, color: bookCurrent.color, themeId: referenceBookID)
-//        libraries[referenceProjectID - 1].books[referenceBookID - 1].chapters.append(newChapter)
-        
-        
-        
-        
         
         var readIndexLibraries = 0
         var countLibraries = 0
@@ -1348,26 +1318,6 @@ class Reference: ObservableObject {
     
     func deleteChapter(storyIdToRemove: UUID)
     {
-//        var chapters = libraries[referenceProjectID - 1].books[referenceBookID - 1].chapters
-//        var removeIndex = 0
-//        var count = 0
-//
-//        print("story id to remove is \(storyIdToRemove)")
-//
-//        for currentChapter in chapters
-//        {
-//            //if currentStory.id == storyIdToRemove
-//            if currentChapter.uniqueID == storyIdToRemove
-//            {
-//                removeIndex = count
-//            }
-//
-//            count += 1
-//        }
-//
-//
-//        libraries[referenceProjectID - 1].books[referenceBookID - 1].chapters.remove(at: removeIndex)
-        
         var readIndexLibraries = 0
         var countLibraries = 0
         

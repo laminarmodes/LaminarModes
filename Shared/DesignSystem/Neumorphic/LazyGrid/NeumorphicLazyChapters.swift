@@ -10,38 +10,88 @@ import SwiftUI
 struct NeumorphicLazyChapters: View {
     
     var chapter: Chapter?
+    var frameHeight: CGFloat = 230
+    var idWidth: CGFloat = 75
+    var idHeight: CGFloat = 24
+    var imageWidth: CGFloat = 120
+    var textColors: Color = Color(hue: 0/360, saturation: 0, brightness: 0.30)
     
     var body: some View {
-        HStack
+//        HStack
+//        {
+//            VStack(alignment: .leading, spacing: 12.0)
+//            {
+////                Image(systemName: chapter?.icon ?? "person.fill")
+////                    .foregroundColor(chapter?.color ?? Color.gray)
+//
+//                HStack {
+//                    Image(chapter?.icon ?? "Vector")
+//
+//                    Text(chapter?.role ?? "No data")
+//                        .font(Font.caption.smallCaps())
+//                        .fontWeight(.bold)
+//                        .foregroundColor(chapter?.color ?? Color.gray)
+//                        .lineLimit(2)
+//                        .multilineTextAlignment(.leading)
+//                }
+//
+//                Text(chapter?.description ?? "No data")
+//                    .font(Font.callout)
+//                    .multilineTextAlignment(.leading)
+//                    .foregroundColor(Color("dark-text"))
+//                    .lineLimit(2)
+//
+//                Spacer()
+//            }
+//            Spacer()
+//        }
+        VStack(alignment: .leading, spacing: 12.0)
         {
-            VStack(alignment: .leading, spacing: 12.0)
-            {
-//                Image(systemName: chapter?.icon ?? "person.fill")
-//                    .foregroundColor(chapter?.color ?? Color.gray)
-                
-                HStack {
-                    Image(chapter?.icon ?? "Vector")
-                    
-                    Text(chapter?.role ?? "No data")
+            Text(chapter?.storyTime ?? "No data")
+                .font(Font.caption)
+                .fontWeight(.bold)
+                .foregroundColor(Color.white)
+                .lineLimit(2)
+                .multilineTextAlignment(.leading)
+                .frame(width: idWidth, height: idHeight, alignment: .leading)
+                .padding(.leading, 16)
+                .background(chapter?.color ?? Color.gray)
+                .clipShape(RoundedRectangle(cornerRadius: 16))
+            
+            Image(chapter?.icon ?? "frozen-sorbet-1")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: imageWidth)
+            
+            HStack {
+                VStack(alignment: .leading) {
+                    Text("Price")
                         .font(Font.caption.smallCaps())
-                        .fontWeight(.bold)
-                        .foregroundColor(chapter?.color ?? Color.gray)
-                        .lineLimit(2)
+                        .foregroundColor(textColors)
+                    Text("$"+(chapter?.storyLocation ?? "No data"))
+                        .font(Font.footnote)
                         .multilineTextAlignment(.leading)
+                        .foregroundColor(textColors)
+                        .lineLimit(2)
                 }
                 
-                Text(chapter?.description ?? "No data")
-                    .font(Font.callout)
-                    .multilineTextAlignment(.leading)
-                    .foregroundColor(Color("dark-text"))
-                    .lineLimit(2)
-                
                 Spacer()
+                
+                VStack(alignment: .trailing) {
+                    Text("Last Bid")
+                        .font(Font.caption.smallCaps())
+                        .foregroundColor(textColors)
+                    Text("$"+(chapter?.storyLocation ?? "No data"))
+                        .font(Font.footnote)
+                        .multilineTextAlignment(.trailing)
+                        .foregroundColor(textColors)
+                        .lineLimit(2)
+                }
             }
-            Spacer()
+            //Spacer()
         }
         .padding()
-        .frame(height: 150, alignment: .leading)
+        .frame(height: frameHeight, alignment: .leading)
         .frame(maxWidth: .infinity, alignment: .leading)
         .background(Color("off-white"))
         .clipShape(RoundedRectangle(cornerRadius: 15))
@@ -52,7 +102,7 @@ struct NeumorphicLazyChapters: View {
 
 struct NeumorphicLazyChapters_Previews: PreviewProvider {
     static var previews: some View {
-        NeumorphicLazyChapters()
+        NeumorphicLazyChapters(chapter: Reference().libraries[0].books.last!.chapters.last!)
             .previewLayout(.sizeThatFits)
     }
 }

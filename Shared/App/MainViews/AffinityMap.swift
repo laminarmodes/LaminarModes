@@ -37,6 +37,8 @@ struct AffinityMap: View {
         ZStack
         {
             
+            //Color(hue: 0/360, saturation: 0, brightness: 0.87).edgesIgnoringSafeArea(.all)
+            
             
             addStoryMode
             editStoryMode
@@ -63,7 +65,7 @@ struct AffinityMap: View {
                                                         [
                                                             (dummyNumbers, GradientColor(start: (themeItem.color ?? Color.gray).opacity(0.3), end: (themeItem.color ?? Color.gray))),
                                                         ],
-                                                     title: "Amount per item", form: CGSize(width: CGFloat(screenWidth-16), height: CGFloat(220)), dropShadow: false)
+                                                     title: "Value over time", form: CGSize(width: CGFloat(screenWidth-16), height: CGFloat(220)), dropShadow: false)
                         }
                     }
                 }
@@ -138,7 +140,7 @@ struct AffinityMap: View {
                                                     }, label: {
                                                         Image(systemName: "ellipsis")
                                                         //.foregroundColor(Color.white.opacity(0.9))
-                                                            .foregroundColor(Color.white)
+                                                            .foregroundColor(Color.black.opacity(0.5))
                                                             .padding([.top, .trailing], 16)
                                                     })
                                                 } // ZStack

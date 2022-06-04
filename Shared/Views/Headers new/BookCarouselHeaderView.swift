@@ -17,19 +17,19 @@ struct BookCarouselHeaderView: View
         HStack
         {
             Text(bookName ?? "No book name")
-                .font(Font.custom("noteworthy", size: 28))
+                .font(Font.custom("noteworthy", size: 24))
                 .fontWeight(.semibold)
                 .padding(.leading, 20)
                 .padding(.vertical, -10)
                 //.foregroundColor(Color.primary.opacity(0.7))
-                .foregroundColor(Color.gray)
+                .foregroundColor(Color.black.opacity(0.5))
                 .lineLimit(1)
-            Image(systemName: "person.fill")
+            Image(systemName: "fork.knife")
                 .resizable()
                 .frame(width: 15.0, height: 16.0)
-                .foregroundColor(Color.gray)
+                .foregroundColor(Color.black.opacity(0.5))
             Text(String(numberOfStories ?? 0) )
-                .foregroundColor(Color.gray)
+                .foregroundColor(Color.black.opacity(0.5))
         }
     }
 }

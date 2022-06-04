@@ -10,17 +10,14 @@ import SwiftUI
 
 struct DetailsView: View
 {
+    @EnvironmentObject private var reference: Reference
     @Environment(\.presentationMode) var presentationMode
     var bookID: UUID
-    
     var chapter: Chapter?
     var details: String?
     var closeButton = true
     let screenWidth = UIScreen.main.bounds.size.width
-    
-    
-    
-    @EnvironmentObject private var reference: Reference
+    var textColors: Color = Color(hue: 0/360, saturation: 0, brightness: 0.30)
     
     var body: some View
     {
@@ -28,8 +25,13 @@ struct DetailsView: View
         {
             VStack
             {
-                BookHeaderLarge(book: reference.findBookById(inputThemeId: bookID)).environmentObject(reference)
-                    .zIndex(1)
+                Image(chapter?.icon ?? "frozen-sorbet-1")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: .infinity)
+                    .padding([.leading, .trailing], 60)
+                    .padding([.top], 24)
+                    .padding(.bottom, 10)
                 
                 ZStack(alignment: .topTrailing)
                 {
@@ -48,7 +50,7 @@ struct DetailsView: View
                                     .font(.headline)
                                     .multilineTextAlignment(.leading)
                                     .multilineTextAlignment(.leading)
-                                
+                                    .foregroundColor(textColors)
                                 
                                 
                                 GroupBox()
@@ -64,56 +66,23 @@ struct DetailsView: View
                                                 
                                                 Group {
                                                     Image(systemName: "info.circle")
-                                                    Text("Type")
+                                                    Text("Category")
                                                     
                                                 }
                                                 .foregroundColor(chapter?.color ?? Color.black)
                                                 .font(Font.system(.body).bold())
                                                 
                                                 Spacer(minLength: 20)
-                                                Text(chapter?.interviewer ?? "No data")
+                                                Text(reference.findBookById(inputThemeId: bookID).name ?? "No data")
                                                     .multilineTextAlignment(.trailing)
                                             }
-                                            
                                             
                                             Divider().padding(.vertical,2)
                                             HStack
                                             {
                                                 Group {
                                                     Image(systemName: "info.circle")
-                                                    Text("Location")
-                                                    
-                                                }
-                                                .foregroundColor(chapter?.color ?? Color.black)
-                                                .font(Font.system(.body).bold())
-                                                Spacer(minLength: 20)
-                                                Text(chapter?.storyLocation ?? "No data")
-                                                    .multilineTextAlignment(.trailing)
-                                            }
-                                            
-                                            
-                                            Divider().padding(.vertical,2)
-                                            HStack
-                                            {
-                                                Group {
-                                                    Image(systemName: "info.circle")
-                                                    Text("Date")
-                                                    
-                                                }
-                                                .foregroundColor(chapter?.color ?? Color.black)
-                                                .font(Font.system(.body).bold())
-                                                Spacer(minLength: 0)
-                                                Text(chapter?.storyDate ?? "No data")
-                                                    .multilineTextAlignment(.trailing)
-                                            }
-                                            
-                                            
-                                            Divider().padding(.vertical,2)
-                                            HStack
-                                            {
-                                                Group {
-                                                    Image(systemName: "info.circle")
-                                                    Text("Time")
+                                                    Text("ID")
                                                     
                                                 }
                                                 .foregroundColor(chapter?.color ?? Color.black)
@@ -122,6 +91,41 @@ struct DetailsView: View
                                                 Text(chapter?.storyTime ?? "No data")
                                                     .multilineTextAlignment(.trailing)
                                             }
+                                            
+                                            
+                                            Divider().padding(.vertical,2)
+                                            HStack
+                                            {
+                                                Group {
+                                                    Image(systemName: "info.circle")
+                                                    Text("Price")
+                                                    
+                                                }
+                                                .foregroundColor(chapter?.color ?? Color.black)
+                                                .font(Font.system(.body).bold())
+                                                Spacer(minLength: 20)
+                                                Text("$"+(chapter?.storyLocation ?? "No data"))
+                                                    .multilineTextAlignment(.trailing)
+                                            }
+                                            
+                                            
+                                            Divider().padding(.vertical,2)
+                                            HStack
+                                            {
+                                                Group {
+                                                    Image(systemName: "info.circle")
+                                                    Text("Highest Bid")
+                                                    
+                                                }
+                                                .foregroundColor(chapter?.color ?? Color.black)
+                                                .font(Font.system(.body).bold())
+                                                Spacer(minLength: 0)
+                                                Text("$"+(chapter?.storyLocation ?? "No data"))
+                                                    .multilineTextAlignment(.trailing)
+                                            }
+                                            
+                                            
+                                            
                                         }
                                     }
                                 }
@@ -133,6 +137,7 @@ struct DetailsView: View
                                 
                                 Text(chapter?.details ?? "No data")
                                     .font(.body)
+                                    .foregroundColor(textColors)
                             }
                         } // VStack
                     } // ScrollView
@@ -153,6 +158,9 @@ struct DetailsView_Previews: PreviewProvider
 {
     static var previews: some View
     {
-        DetailsView(bookID: Reference().libraries[0].books[0].uniqueID).environmentObject(Reference())
+        DetailsView(bookID: Reference().libraries[0].books.last!.uniqueID, chapter: Reference().libraries[0].books.last!.chapters.last!).environmentObject(Reference())
     }
 }
+
+//                BookHeaderLarge(book: reference.findBookById(inputThemeId: bookID)).environmentObject(reference)
+//                    .zIndex(1)

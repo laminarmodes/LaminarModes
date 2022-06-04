@@ -94,12 +94,8 @@ struct ContentView: View {
                         }
                     }
                     .padding(.bottom, 20)
-                    
                 }
-                
                 Spacer()
-                
-                
                 LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 8) {
                     ForEach(reference.libraries, id: \.uniqueID) { project in
                         NavigationLink(destination: MainView(projectID: project.uniqueID, projectName: project.title).environmentObject(reference))
@@ -119,42 +115,18 @@ struct ContentView: View {
             .padding([.leading, .trailing], 30)
             .padding(.top, 0)
             .padding(.bottom, 90)
-            
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
-            .environmentObject(Reference()) //TODO: Temporary persistence (remove later)
-            .previewDevice(PreviewDevice(rawValue: "iPhone 13 Pro Max"))
+//        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+//            .environmentObject(Reference()) //TODO: Temporary persistence (remove later)
+//            .previewDevice(PreviewDevice(rawValue: "iPhone 13 Pro Max"))
         
         ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
             .environmentObject(Reference()) //TODO: Temporary persistence (remove later)
             .previewDevice(PreviewDevice(rawValue: "iPhone 12 mini"))
     }
 }
-
-
-
-//    var body: some View
-//    {
-//
-//        NavigationView {
-//            List {
-//                ForEach(reference.libraries, id: \.uniqueID) { project in
-//                    NavigationLink(destination: MainView(projectID: project.uniqueID, projectName: project.title).environmentObject(reference)) {
-//                        HStack
-//                        {
-//                            Text(project.title)
-//                            Spacer()
-//                            Text(self.reference.totalBooks(for: project))
-//                        }
-//                    }
-//                }
-//            } // List
-//            .navigationTitle("UI Desserts")
-//        } // NavigationView
-//        .navigationViewStyle(StackNavigationViewStyle())
-//}
