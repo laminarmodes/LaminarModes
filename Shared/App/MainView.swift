@@ -73,16 +73,16 @@ struct MainView: View
                     Text("Hello")
                 }
             
-            AffinityMap(libraryID: projectID).environmentObject(reference)
-                .tabItem {
-                    Image(systemName: "rectangle.grid.2x2")
-                    Text("Sliding")
-                }
-            
             BookList(libraryID: projectID).environmentObject(reference)
                 .tabItem {
                     Image(systemName: "rectangle.grid.1x2")
                     Text("Stacked")
+                }
+            
+            AffinityMap(libraryID: projectID).environmentObject(reference)
+                .tabItem {
+                    Image(systemName: "rectangle.grid.2x2")
+                    Text("Sliding")
                 }
             
             LazyBooks(libraryID: projectID).environmentObject(reference)

@@ -18,7 +18,7 @@ struct ContentView: View {
             VStack(alignment: .leading, spacing: 0)
             {
                 VStack(alignment: .leading, spacing: 0) {
-                    Text("NFT Dessert Market")
+                    Text("NFT Dessert Organizer")
                         .font(.system(size: 50))
                         .fontWeight(.heavy)
                         .padding(.bottom, 25)
@@ -63,6 +63,11 @@ struct ContentView: View {
                                 .foregroundColor(Color(hue: 0/360, saturation: 0, brightness: 0.30))
                         }
                         HStack {
+                            Image(systemName: "checkmark.square").foregroundColor(Color(hue: 151/360, saturation: 0.71, brightness: 0.72))
+                            Text("Images").font(.subheadline)
+                                .foregroundColor(Color(hue: 0/360, saturation: 0, brightness: 0.30))
+                        }
+                        HStack {
                             Image(systemName: "exclamationmark.square").foregroundColor(Color(hue: 25/360, saturation: 0.71, brightness: 1))
                             Text("Layouts").font(.subheadline)
                                 .foregroundColor(Color(hue: 0/360, saturation: 0, brightness: 0.30))
@@ -77,11 +82,7 @@ struct ContentView: View {
                             Text("Icons").font(.subheadline)
                                 .foregroundColor(Color(hue: 0/360, saturation: 0, brightness: 0.30))
                         }
-                        HStack {
-                            Image(systemName: "dot.square").foregroundColor(.red)
-                            Text("Images").font(.subheadline)
-                                .foregroundColor(Color(hue: 0/360, saturation: 0, brightness: 0.30))
-                        }
+                        
                         HStack {
                             Image(systemName: "dot.square").foregroundColor(.red)
                             Text("Text Fields").font(.subheadline)

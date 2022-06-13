@@ -22,14 +22,14 @@ struct GlassmorphicCarouselHeaderView: View
                 .padding(.leading, 20)
                 .padding(.vertical, -10)
                 //.foregroundColor(Color.primary.opacity(0.7))
-                .foregroundColor(Color.white.opacity(0.8))
+                .foregroundColor(Color.black.opacity(0.6))
                 .lineLimit(1)
             Image(systemName: "person.fill")
                 .resizable()
                 .frame(width: 15.0, height: 16.0)
-                .foregroundColor(Color.white.opacity(0.8))
+                .foregroundColor(Color.black.opacity(0.6))
             Text(String(numberOfStories ?? 0) )
-                .foregroundColor(Color.white.opacity(0.8))
+                .foregroundColor(Color.black.opacity(0.6))
         }
     }
 }
