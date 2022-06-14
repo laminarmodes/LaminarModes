@@ -58,10 +58,14 @@ struct NeumorphicLazyChapters: View {
                 .background(chapter?.color ?? Color.gray)
                 .clipShape(RoundedRectangle(cornerRadius: 16))
             
-            Image(chapter?.icon ?? "frozen-sorbet-1")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: imageWidth)
+            HStack {
+                Spacer()
+                Image(chapter?.icon ?? "frozen-sorbet-1")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: imageWidth)
+                Spacer()
+            }
             
             HStack {
                 VStack(alignment: .leading) {

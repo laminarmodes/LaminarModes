@@ -20,7 +20,7 @@ struct UITrendsView: View {
         {
             List
             {
-                Section(header: Text("Neumorphism"))
+                Section(header: Text("Theme 2"))
                 {
                     NavigationLink(destination: NeumorphicView(libraryID: libraryID).environmentObject(reference)) {
                         HStack
@@ -54,7 +54,7 @@ struct UITrendsView: View {
                        
                 }
                 
-                Section(header: Text("Glassmorphism"))
+                Section(header: Text("Theme 3"))
                 {
                     NavigationLink(destination: GlassmorphicView(libraryID: libraryID)) {
                         HStack

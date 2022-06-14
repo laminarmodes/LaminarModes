@@ -177,7 +177,7 @@ struct GlassmorphicCarousels: View {
                 
             } // VStack
         } // ZStack
-        .navigationTitle("Glassmorphism")
+        .navigationTitle("Theme 2")
         .onAppear() {
             DispatchQueue.main.async {
                 self.reference.referenceProjectID = self.libraryID

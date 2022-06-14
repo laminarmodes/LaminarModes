@@ -60,10 +60,15 @@ struct ChapterCardSmallHeightInfiniteWidthView: View {
                 .background(chapter?.color ?? Color.gray)
                 .clipShape(RoundedRectangle(cornerRadius: 16))
             
-            Image(chapter?.icon ?? "frozen-sorbet-1")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: imageWidth)
+            HStack {
+                Spacer()
+                Image(chapter?.icon ?? "frozen-sorbet-1")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: imageWidth)
+                Spacer()
+            }
+                
             
             HStack {
                 VStack(alignment: .leading) {
@@ -94,15 +99,16 @@ struct ChapterCardSmallHeightInfiniteWidthView: View {
         }
         .padding()
         //.padding(.top, 20)
-        //.padding([.leading, .trailing], (frameWidth - imageWidth)/2)
+        //.padding([.leading, .trailing], (.framewidth - imageWidth)/2)
         .frame(height: frameHeight, alignment: .leading)
         .frame(maxWidth: .infinity, alignment: .leading)
-        .background(chapter?.color?.opacity(0.5) ?? Color.gray)
+        //.padding([.leading, .trailing], (.framewidth - imageWidth)/2)
+        .background(chapter?.color?.opacity(0.3) ?? Color.gray)
         .clipShape(RoundedRectangle(cornerRadius: 15))
-        .shadow(color: chapter?.color ?? Color.gray.opacity(0.2), radius: 10, x: 10, y: 10)
-        .shadow(color: Color.white.opacity(0.7), radius: 10, x: -5, y: -5)
-//        .shadow(color: Color.black.opacity(0.2), radius: 10, x: 10, y: 10)
+//        .shadow(color: chapter?.color ?? Color.gray.opacity(0.2), radius: 10, x: 10, y: 10)
 //        .shadow(color: Color.white.opacity(0.7), radius: 10, x: -5, y: -5)
+        .shadow(color: Color.black.opacity(0.2), radius: 10, x: 10, y: 10)
+        .shadow(color: Color.white.opacity(0.7), radius: 10, x: -5, y: -5)
     }
 }
 

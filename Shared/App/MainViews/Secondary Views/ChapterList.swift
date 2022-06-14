@@ -57,6 +57,8 @@ struct ChapterList: View
                     self.loaded = true
                     self.reference.referenceProjectID = self.libraryID
                 }
+                UITableView.appearance().backgroundColor = .clear
+                UITableViewCell.appearance().backgroundColor = .clear
             }
             Spacer()
         } // VStack
@@ -64,6 +66,7 @@ struct ChapterList: View
             self.reference.referenceProjectID = self.libraryID
         }
         .navigationBarTitle("Item List", displayMode: .inline)
+        
     } // body
 } // struct TransactionsView
 

@@ -26,7 +26,7 @@ struct BookList: View
                 if(barChart)
                 {
                     BarChartViewCustomNew(data: ChartData(points: noStories),
-                                          title: "Total per Set",
+                                          title: "No. Desserts per Flavour",
                                           form: CGSize(width: CGFloat(screenWidth-16),
                                                        height: CGFloat(220)),
                                           dropShadow: false,

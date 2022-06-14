@@ -19,6 +19,16 @@ struct BookWithLazyChapters: View {
     var body: some View {
         
         VStack {
+            
+//            HStack {
+//                Text(reference.findBookById(inputThemeId: bookID).name )
+//                    .font(.largeTitle)
+//                    .fontWeight(.bold)
+//                    .foregroundColor(reference.findBookById(inputThemeId: bookID).color ?? Color.gray)
+//                Spacer()
+//            }
+//            .padding(.horizontal)
+            
             BookCardLargeView(book: reference.findBookById(inputThemeId: bookID))
                 .environmentObject(reference)
                 .padding([.top], 8)
@@ -48,6 +58,7 @@ struct BookWithLazyChapters: View {
             }
             Spacer()
         } //: VStack
+        .navigationTitle(reference.findBookById(inputThemeId: bookID).name).foregroundColor(reference.findBookById(inputThemeId: bookID).color ?? Color.gray)
         .onAppear() {
             DispatchQueue.main.async {
                 self.reference.referenceBookID = self.bookID
@@ -55,6 +66,8 @@ struct BookWithLazyChapters: View {
                 let _ = print("Hi")
             }
         }
+        
+        
     }
 }
 

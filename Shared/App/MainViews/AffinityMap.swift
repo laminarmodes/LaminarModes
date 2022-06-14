@@ -36,10 +36,6 @@ struct AffinityMap: View {
     var body: some View {
         ZStack
         {
-            
-            //Color(hue: 0/360, saturation: 0, brightness: 0.87).edgesIgnoringSafeArea(.all)
-            
-            
             addStoryMode
             editStoryMode
             

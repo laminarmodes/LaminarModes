@@ -49,7 +49,7 @@ struct GlassmorphicView: View {
                         .padding()
                     } // VStack
                 } // SCrollView
-                .navigationTitle("Glassmorphism")
+                .navigationTitle("Theme 2")
             }
             .background(
                 Image("blob-background-gray")

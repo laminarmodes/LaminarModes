@@ -152,7 +152,7 @@ struct NeumorphicCarousels: View {
                 
             } // VStack
         } // ZStack
-        .navigationTitle("Neumorphism")
+        .navigationTitle("Theme 1")
         .onAppear() {
             DispatchQueue.main.async {
                 self.reference.referenceProjectID = self.libraryID

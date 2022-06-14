@@ -58,12 +58,12 @@ struct BookLazyChaptersNeumorphic: View {
                 }
             }
         }
-        .navigationTitle("Neumorphism")
+        .navigationTitle("Theme 1")
     }
 }
 
 struct BookLazyChaptersNeumorphic_Previews: PreviewProvider {
     static var previews: some View {
-        BookLazyChaptersNeumorphic(libraryID: Reference().libraries[0].uniqueID, bookID: Reference().libraries[0].books[0].uniqueID).environmentObject(Reference())
+        BookLazyChaptersNeumorphic(libraryID: Reference().libraries[1].uniqueID, bookID: Reference().libraries[1].books[0].uniqueID).environmentObject(Reference())
     }
 }
