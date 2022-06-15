@@ -10,7 +10,7 @@ import SwiftUI
 struct GlassmorphicLazyCard: View
 {
     
-    var book: Book?
+    var book: Flavour?
     
     @EnvironmentObject private var reference: Reference
     

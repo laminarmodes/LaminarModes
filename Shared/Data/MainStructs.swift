@@ -9,45 +9,41 @@ import Foundation
 import SwiftUI
 
 // MARK: - Structures
-struct Library {
+struct Market {
     var title: String
-    var books: [Book]
-    
+    var books: [Flavour]
     var uniqueID = UUID()
 }
 
-struct Book {
+struct Flavour {
     var image: String
-    var name: String // Type
-    var description: String // Description
-    var numberOfUsers: Int // Balance
-    var numberOfStories: Int // Number of transactions
+    var name: String
+    var description: String
+    var numberOfUsers: Int
+    var numberOfStories: Int
     var color: Color?
-    var chapters: [Chapter]
-    
+    var chapters: [Dessert]
     var uniqueID = UUID()
 }
 
-struct Chapter {
-    var icon: String // Category
-    var role: String // Vendor
-    var description: String // Category
-    var date: String // Day
-    var priority: String // Time
-    var details: String // Description
+struct Dessert {
+    var image: String
+    var type: String
+    var description: String
+    var date: String
+    var priority: String
+    var details: String
     var color: Color?
-    var interviewer: String? // Type
-    var storyLocation: String? // Location
-    var storyDate: String? // Month
-    var storyTime: String? // Year
-    
+    var item: String?
+    var amount: String?
+    var dateOfCreation: String?
+    var itemID: String?
     var uniqueID = UUID()
 }
 
-struct ChapterDetail: Identifiable
+struct Detail: Identifiable
 {
     var id = UUID()
     var detailDescription: String
     var location: String
-    
 }

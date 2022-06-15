@@ -13,7 +13,7 @@ struct DetailsView: View
     @EnvironmentObject private var reference: Reference
     @Environment(\.presentationMode) var presentationMode
     var bookID: UUID
-    var chapter: Chapter?
+    var chapter: Dessert?
     var details: String?
     var closeButton = true
     let screenWidth = UIScreen.main.bounds.size.width
@@ -25,7 +25,7 @@ struct DetailsView: View
         {
             VStack
             {
-                Image(chapter?.icon ?? "frozen-sorbet-1")
+                Image(chapter?.image ?? "frozen-sorbet-1")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: .infinity)
@@ -41,7 +41,7 @@ struct DetailsView: View
                         {
                             VStack(alignment: .leading, spacing: 20)
                             {
-                                Text(chapter?.role ?? "No data")
+                                Text(chapter?.type ?? "No data")
                                     .font(.largeTitle)
                                     .fontWeight(.bold)
                                 //.padding(.horizontal)
@@ -88,7 +88,7 @@ struct DetailsView: View
                                                 .foregroundColor(chapter?.color ?? Color.black)
                                                 .font(Font.system(.body).bold())
                                                 Spacer(minLength: 0)
-                                                Text(chapter?.storyTime ?? "No data")
+                                                Text(chapter?.itemID ?? "No data")
                                                     .multilineTextAlignment(.trailing)
                                             }
                                             
@@ -104,7 +104,7 @@ struct DetailsView: View
                                                 .foregroundColor(chapter?.color ?? Color.black)
                                                 .font(Font.system(.body).bold())
                                                 Spacer(minLength: 20)
-                                                Text("$"+(chapter?.storyLocation ?? "No data"))
+                                                Text("$"+(chapter?.amount ?? "No data"))
                                                     .multilineTextAlignment(.trailing)
                                             }
                                             
@@ -120,7 +120,7 @@ struct DetailsView: View
                                                 .foregroundColor(chapter?.color ?? Color.black)
                                                 .font(Font.system(.body).bold())
                                                 Spacer(minLength: 0)
-                                                Text("$"+(chapter?.storyLocation ?? "No data"))
+                                                Text("$"+(chapter?.amount ?? "No data"))
                                                     .multilineTextAlignment(.trailing)
                                             }
                                             

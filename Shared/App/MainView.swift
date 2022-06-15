@@ -23,9 +23,9 @@ struct MainView: View
     @State var showStories = false
     @State var showStoryDetail = false
     @State var isDisabled = false
-    @State var selectedTheme: Book?
+    @State var selectedTheme: Flavour?
     @State var selectedThemeId: Int?
-    @State var selectedStory: Chapter?
+    @State var selectedStory: Dessert?
     @State var addingTheme = false
     @State var themeNameInput = ""
     @State var themeDescriptionInput = ""

@@ -13,13 +13,13 @@ struct NeumorphicChapterListRowView: View {
     var chapterID: UUID
     
     // Temporafily injecting iStory this but can remove because now using reference and id
-    var chapter: Chapter?
+    var chapter: Dessert?
     var columnWidth: CGFloat = 100
     var body: some View {
         
         HStack {
 //            Image(systemName: "person.fill")
-            Image(chapter?.icon ?? "Vector")
+            Image(chapter?.image ?? "Vector")
                 .resizable()
                 .scaledToFit()
                 .foregroundColor(Color.white)
@@ -32,7 +32,7 @@ struct NeumorphicChapterListRowView: View {
             
             VStack(alignment: .leading, spacing: 5) {
                 
-                Text(reference.findChapterById(storyIdToRead: chapterID).role )
+                Text(reference.findChapterById(storyIdToRead: chapterID).type )
                     .font(.title2)
                     .fontWeight(.bold)
                     .foregroundColor(Color("dark-text"))

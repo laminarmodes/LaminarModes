@@ -10,7 +10,7 @@ import SwiftUI
 struct ChapterCardSmallView: View
 {
     @EnvironmentObject private var reference: Reference
-    var chapter: Chapter?
+    var chapter: Dessert?
     var imageWidth: CGFloat = 120
     var frameWidth: CGFloat = 150
     var frameHeight: CGFloat = 230
@@ -22,7 +22,7 @@ struct ChapterCardSmallView: View
     {
         VStack(alignment: .leading, spacing: 12.0)
         {
-            Text(chapter?.storyTime ?? "No data")
+            Text(chapter?.itemID ?? "No data")
                 .font(Font.caption)
                 .fontWeight(.bold)
                 .foregroundColor(Color.white)
@@ -35,7 +35,7 @@ struct ChapterCardSmallView: View
             
 //            HStack {
 //                Spacer()
-                Image(chapter?.icon ?? "frozen-sorbet-1")
+                Image(chapter?.image ?? "frozen-sorbet-1")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: imageWidth)
@@ -47,7 +47,7 @@ struct ChapterCardSmallView: View
                     Text("Price")
                         .font(Font.caption.smallCaps())
                         .foregroundColor(textColors)
-                    Text("$"+(chapter?.storyLocation ?? "No data"))
+                    Text("$"+(chapter?.amount ?? "No data"))
                         .font(Font.footnote)
                         .multilineTextAlignment(.leading)
                         .foregroundColor(textColors)
@@ -60,7 +60,7 @@ struct ChapterCardSmallView: View
                     Text("Last Bid")
                         .font(Font.caption.smallCaps())
                         .foregroundColor(textColors)
-                    Text("$"+(chapter?.storyLocation ?? "No data"))
+                    Text("$"+(chapter?.amount ?? "No data"))
                         .font(Font.footnote)
                         .multilineTextAlignment(.trailing)
                         .foregroundColor(textColors)

@@ -10,7 +10,7 @@ import SwiftUI
 struct BookHeaderLarge: View
 {
     
-    var book: Book?
+    var book: Flavour?
     @EnvironmentObject private var reference: Reference
     
     var body: some View {

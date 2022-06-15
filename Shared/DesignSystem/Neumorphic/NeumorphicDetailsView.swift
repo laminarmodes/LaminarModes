@@ -12,7 +12,7 @@ struct NeumorphicDetailsView: View
     @Environment(\.presentationMode) var presentationMode
     var bookID: UUID
     
-    var chapter: Chapter?
+    var chapter: Dessert?
     var details: String?
     var closeButton = true
     let screenWidth = UIScreen.main.bounds.size.width
@@ -38,7 +38,7 @@ struct NeumorphicDetailsView: View
                         {
                             VStack(alignment: .leading, spacing: 20)
                             {
-                                Text(chapter?.role ?? "No data")
+                                Text(chapter?.type ?? "No data")
                                     .font(.largeTitle)
                                     .fontWeight(.bold)
                                 //.padding(.horizontal)
@@ -70,7 +70,7 @@ struct NeumorphicDetailsView: View
                                                 .font(Font.system(.body).bold())
                                                 
                                                 Spacer(minLength: 20)
-                                                Text(chapter?.interviewer ?? "No data")
+                                                Text(chapter?.item ?? "No data")
                                                     .multilineTextAlignment(.trailing)
                                             }
                                             
@@ -86,7 +86,7 @@ struct NeumorphicDetailsView: View
                                                 .foregroundColor(chapter?.color ?? Color.black)
                                                 .font(Font.system(.body).bold())
                                                 Spacer(minLength: 20)
-                                                Text(chapter?.storyLocation ?? "No data")
+                                                Text(chapter?.amount ?? "No data")
                                                     .multilineTextAlignment(.trailing)
                                             }
                                             
@@ -102,7 +102,7 @@ struct NeumorphicDetailsView: View
                                                 .foregroundColor(chapter?.color ?? Color.black)
                                                 .font(Font.system(.body).bold())
                                                 Spacer(minLength: 0)
-                                                Text(chapter?.storyDate ?? "No data")
+                                                Text(chapter?.dateOfCreation ?? "No data")
                                                     .multilineTextAlignment(.trailing)
                                             }
                                             
@@ -118,7 +118,7 @@ struct NeumorphicDetailsView: View
                                                 .foregroundColor(chapter?.color ?? Color.black)
                                                 .font(Font.system(.body).bold())
                                                 Spacer(minLength: 0)
-                                                Text(chapter?.storyTime ?? "No data")
+                                                Text(chapter?.itemID ?? "No data")
                                                     .multilineTextAlignment(.trailing)
                                             }
                                         }

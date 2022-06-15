@@ -9,7 +9,7 @@ import SwiftUI
 
 struct GlassmorphicLazyChapters: View {
     
-    var chapter: Chapter?
+    var chapter: Dessert?
     var frameHeight: CGFloat = 230
     var idWidth: CGFloat = 75
     var idHeight: CGFloat = 24
@@ -47,7 +47,7 @@ struct GlassmorphicLazyChapters: View {
 //        }
         VStack(alignment: .leading, spacing: 12.0)
         {
-            Text(chapter?.storyTime ?? "No data")
+            Text(chapter?.itemID ?? "No data")
                 .font(Font.caption)
                 .fontWeight(.bold)
                 .foregroundColor(Color.white)
@@ -60,7 +60,7 @@ struct GlassmorphicLazyChapters: View {
             
             HStack {
                 Spacer()
-                Image(chapter?.icon ?? "frozen-sorbet-1")
+                Image(chapter?.image ?? "frozen-sorbet-1")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: imageWidth)
@@ -74,7 +74,7 @@ struct GlassmorphicLazyChapters: View {
                     Text("Price")
                         .font(Font.caption.smallCaps())
                         .foregroundColor(textColors)
-                    Text("$"+(chapter?.storyLocation ?? "No data"))
+                    Text("$"+(chapter?.amount ?? "No data"))
                         .font(Font.footnote)
                         .multilineTextAlignment(.leading)
                         .foregroundColor(textColors)
@@ -87,7 +87,7 @@ struct GlassmorphicLazyChapters: View {
                     Text("Last Bid")
                         .font(Font.caption.smallCaps())
                         .foregroundColor(textColors)
-                    Text("$"+(chapter?.storyLocation ?? "No data"))
+                    Text("$"+(chapter?.amount ?? "No data"))
                         .font(Font.footnote)
                         .multilineTextAlignment(.trailing)
                         .foregroundColor(textColors)

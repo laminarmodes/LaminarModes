@@ -21,8 +21,8 @@ struct GlassmorphicColorCarousels: View {
     @State private var priorityInput = ""
     @State private var detailsInput = ""
     @State var showModal = false
-    @State var currentChapter: Chapter?
-    @State var currentBook: Book?
+    @State var currentChapter: Dessert?
+    @State var currentBook: Flavour?
     
     @State var currrentChapterID: UUID?
     @State var selected: String?

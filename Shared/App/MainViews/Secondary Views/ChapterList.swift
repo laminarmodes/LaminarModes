@@ -14,7 +14,7 @@ struct ChapterList: View
     let bookID: UUID
     
     // Injecting iTheme for now but can remove this later because passing in environment
-    var theme: Book?
+    var theme: Flavour?
     
     
     

@@ -10,7 +10,7 @@ import SwiftUI
 struct BookCardSmallHeightInfiniteWidthView: View
 {
     
-    var book: Book?
+    var book: Flavour?
     
     @EnvironmentObject private var reference: Reference
     
