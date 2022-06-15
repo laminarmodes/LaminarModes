@@ -158,7 +158,7 @@ struct DetailsView_Previews: PreviewProvider
 {
     static var previews: some View
     {
-        DetailsView(bookID: Reference().libraries[0].books.last!.uniqueID, chapter: Reference().libraries[0].books.last!.chapters.last!).environmentObject(Reference())
+        DetailsView(bookID: Reference().libraries[0].flavours.last!.uniqueID, chapter: Reference().libraries[0].flavours.last!.desserts.last!).environmentObject(Reference())
     }
 }
 

@@ -48,7 +48,7 @@ struct ChapterListRowView: View {
 
 struct ChapterListRowView_Previews: PreviewProvider {
     static var previews: some View {
-        ChapterListRowView(chapterID: Reference().libraries[0].books.last!.chapters.last!.uniqueID, chapter: Reference().libraries[0].books.last!.chapters.last!)
+        ChapterListRowView(chapterID: Reference().libraries[0].flavours.last!.desserts.last!.uniqueID, chapter: Reference().libraries[0].flavours.last!.desserts.last!)
             .previewLayout(.sizeThatFits)
             .environmentObject(Reference())
     }

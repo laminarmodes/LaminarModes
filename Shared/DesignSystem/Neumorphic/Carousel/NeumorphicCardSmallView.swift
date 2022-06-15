@@ -79,7 +79,7 @@ struct NeumorphicCardSmallView: View
 struct NeumorphicCardSmallView_Previews: PreviewProvider
 {
     static var previews: some View {
-        NeumorphicCardSmallView(chapter: Reference().libraries[0].books.last!.chapters.last!)
+        NeumorphicCardSmallView(chapter: Reference().libraries[0].flavours.last!.desserts.last!)
             .previewLayout(.sizeThatFits)
     }
 }

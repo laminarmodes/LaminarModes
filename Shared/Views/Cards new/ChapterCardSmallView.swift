@@ -83,7 +83,7 @@ struct ChapterCardSmallView: View
 struct ChapaterCardSmallView_Previews: PreviewProvider
 {
     static var previews: some View {
-        ChapterCardSmallView(chapter: Reference().libraries[0].books.last!.chapters.last!)
+        ChapterCardSmallView(chapter: Reference().libraries[0].flavours.last!.desserts.last!)
             .previewLayout(.sizeThatFits)
     }
 }

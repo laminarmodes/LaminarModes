@@ -114,7 +114,7 @@ struct ChapterCardSmallHeightInfiniteWidthView: View {
 
 struct ChapterCardSmallHeightInfiniteWidthView_Previews: PreviewProvider {
     static var previews: some View {
-        ChapterCardSmallHeightInfiniteWidthView(chapter: Reference().libraries[0].books.last!.chapters.last!)
+        ChapterCardSmallHeightInfiniteWidthView(chapter: Reference().libraries[0].flavours.last!.desserts.last!)
             .previewLayout(.sizeThatFits)
     }
 }

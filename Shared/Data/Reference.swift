@@ -25,18 +25,18 @@ class Reference: ObservableObject {
         
         currentProjectIndex = 1
         currentThemeIndex = 0
-        for _ in libraries[currentProjectIndex].books
+        for _ in libraries[currentProjectIndex].flavours
         {
             //            projects[currentProjectIndex].themes[currentThemeIndex].color = Color(themeColors[currentThemeIndex])
             
-            libraries[currentProjectIndex].books[currentThemeIndex].color = (colorScheme == .dark ? Colors().vDark[currentThemeIndex] : Colors().vLight[currentThemeIndex])
+            libraries[currentProjectIndex].flavours[currentThemeIndex].color = (colorScheme == .dark ? Colors().vDark[currentThemeIndex] : Colors().vLight[currentThemeIndex])
             
             //.opacity(0.3)
             
             currentStoryIndex = 0
-            for _ in libraries[currentProjectIndex].books[currentThemeIndex].chapters
+            for _ in libraries[currentProjectIndex].flavours[currentThemeIndex].desserts
             {
-                libraries[currentProjectIndex].books[currentThemeIndex].chapters[currentStoryIndex].color = (colorScheme == .dark ? Colors().vDark[currentThemeIndex] : Colors().vLight[currentThemeIndex])
+                libraries[currentProjectIndex].flavours[currentThemeIndex].desserts[currentStoryIndex].color = (colorScheme == .dark ? Colors().vDark[currentThemeIndex] : Colors().vLight[currentThemeIndex])
                 //.opacity(0.3)
                 
                 currentStoryIndex += 1
@@ -51,15 +51,15 @@ class Reference: ObservableObject {
         
         currentProjectIndex = 0
         currentThemeIndex = 0
-        for _ in libraries[currentProjectIndex].books
+        for _ in libraries[currentProjectIndex].flavours
         {
-            libraries[currentProjectIndex].books[currentThemeIndex].color = (colorScheme == .dark ? Colors().pLight[currentThemeIndex] : Colors().pDark[currentThemeIndex])
+            libraries[currentProjectIndex].flavours[currentThemeIndex].color = (colorScheme == .dark ? Colors().pLight[currentThemeIndex] : Colors().pDark[currentThemeIndex])
             //.opacity(0.3)
             
             currentStoryIndex = 0
-            for _ in libraries[currentProjectIndex].books[currentThemeIndex].chapters
+            for _ in libraries[currentProjectIndex].flavours[currentThemeIndex].desserts
             {
-                libraries[currentProjectIndex].books[currentThemeIndex].chapters[currentStoryIndex].color = (colorScheme == .dark ? Colors().pLight[currentThemeIndex] : Colors().pDark[currentThemeIndex])
+                libraries[currentProjectIndex].flavours[currentThemeIndex].desserts[currentStoryIndex].color = (colorScheme == .dark ? Colors().pLight[currentThemeIndex] : Colors().pDark[currentThemeIndex])
                 //.opacity(0.3)
                 
                 currentStoryIndex += 1
@@ -78,8 +78,8 @@ class Reference: ObservableObject {
     
     
     @Published var libraries = [
-        Market(title: "Market 1", books: [
-            Flavour(image: "fork.knife", name: "Blueberry", description: "Jujubes biscuit donut jelly cotton candy jujubes I love cake croissant. Croissant marshmallow sweet roll I love cake gummies oat cake. Carrot cake jelly beans I love jelly pie pastry. Cheesecake brownie gummi bears sweet roll jelly beans chocolate bar macaroon. Apple pie marshmallow cupcake I love jujubes candy canes. Fruitcake tart pastry chocolate cake jelly-o dessert chocolate cake brownie.", numberOfUsers: 5, numberOfStories: 22, color: Color(UIColor.systemGray2), chapters: [
+        Market(name: "Market 1", flavours: [
+            Flavour(image: "fork.knife", name: "Blueberry", description: "Jujubes biscuit donut jelly cotton candy jujubes I love cake croissant. Croissant marshmallow sweet roll I love cake gummies oat cake. Carrot cake jelly beans I love jelly pie pastry. Cheesecake brownie gummi bears sweet roll jelly beans chocolate bar macaroon. Apple pie marshmallow cupcake I love jujubes candy canes. Fruitcake tart pastry chocolate cake jelly-o dessert chocolate cake brownie.", numberOfUsers: 5, numberOfStories: 22, color: Color(UIColor.systemGray2), desserts: [
                 Dessert(
                     image: "blueberry-7",
                     type: "Candy",
@@ -123,7 +123,7 @@ class Reference: ObservableObject {
                    numberOfUsers: 5,
                    numberOfStories: 22,
                    color: Color(UIColor.systemGray),
-                 chapters: [
+                 desserts: [
                     Dessert(
                         image: "rasberry-6",
                         type: "Milk Shake",
@@ -214,7 +214,7 @@ class Reference: ObservableObject {
                    description: "Pastry chocolate cake brownie carrot cake wafer gummi bears sesame snaps. Chocolate powder macaroon brownie chupa chups I love sweet roll jelly beans powder. Cheesecake cookie chocolate tiramisu bear claw toffee. Pudding lollipop icing chocolate cake oat cake fruitcake fruitcake cotton candy. Tootsie roll dragée cotton candy icing I love sugar plum carrot cake halvah fruitcake. Chupa chups cupcake icing dessert chupa chups I love fruitcake halvah pie. Brownie tart sweet sesame snaps carrot cake chocolate. Donut dragée marzipan marshmallow cupcake brownie I love pudding. Gummies chocolate cake danish carrot cake oat cake marshmallow icing caramels. Apple pie brownie soufflé marzipan chocolate soufflé marzipan.", numberOfUsers: 5,
                    numberOfStories: 22,
                    color: Color(UIColor.systemGray3),
-                 chapters: [
+                 desserts: [
                     Dessert(
                         image: "plum-1",
                         type: "Sorbet",
@@ -270,7 +270,7 @@ class Reference: ObservableObject {
                    numberOfUsers: 5,
                    numberOfStories: 22,
                    color: Color(UIColor.systemGray2),
-                 chapters: [
+                 desserts: [
                     Dessert(
                         image: "dragonfruit-8",
                         type: "Cake",
@@ -350,7 +350,7 @@ class Reference: ObservableObject {
                    numberOfUsers: 5,
                    numberOfStories: 22,
                    color: Color(UIColor.systemGray),
-                 chapters: [
+                 desserts: [
                     Dessert(
                         image: "strawberry-8",
                         type: "Cake",
@@ -418,7 +418,7 @@ class Reference: ObservableObject {
                    numberOfUsers: 5,
                    numberOfStories: 22,
                    color: Color(UIColor.systemGray3),
-                 chapters: [
+                 desserts: [
                     Dessert(
                         image: "watermellon-1",
                         type: "Sorbet",
@@ -522,7 +522,7 @@ class Reference: ObservableObject {
                    numberOfUsers: 5,
                    numberOfStories: 22,
                    color: Color(UIColor.systemGray2),
-                 chapters: [
+                 desserts: [
                     Dessert(
                         image: "orange-1",
                         type: "Sorbet",
@@ -566,7 +566,7 @@ class Reference: ObservableObject {
                    numberOfUsers: 5,
                    numberOfStories: 22,
                    color: Color(UIColor.systemGray),
-                 chapters: [
+                 desserts: [
                     Dessert(
                         image: "lemon-5",
                         type: "Crushed Ice",
@@ -642,8 +642,8 @@ class Reference: ObservableObject {
         
         
         
-        Market(title: "Market 2", books: [
-            Flavour(image: "fork.knife", name: "Blackberry", description: "Jelly beans icing dessert ice cream jelly-o. Tart carrot cake jelly beans icing I love sugar plum chocolate bar wafer. Macaroon I love cotton candy chupa chups gummi bears oat cake danish gummi bears danish. Topping danish gingerbread sweet roll croissant biscuit topping topping lollipop. Danish fruitcake dragée fruitcake fruitcake. Jujubes muffin danish tootsie roll bear claw. I love pie pastry I love wafer.", numberOfUsers: 5, numberOfStories: 22, color: Color(UIColor.systemGray2), chapters: [
+        Market(name: "Market 2", flavours: [
+            Flavour(image: "fork.knife", name: "Blackberry", description: "Jelly beans icing dessert ice cream jelly-o. Tart carrot cake jelly beans icing I love sugar plum chocolate bar wafer. Macaroon I love cotton candy chupa chups gummi bears oat cake danish gummi bears danish. Topping danish gingerbread sweet roll croissant biscuit topping topping lollipop. Danish fruitcake dragée fruitcake fruitcake. Jujubes muffin danish tootsie roll bear claw. I love pie pastry I love wafer.", numberOfUsers: 5, numberOfStories: 22, color: Color(UIColor.systemGray2), desserts: [
                 Dessert(
                     image: "blackberry-7",
                     type: "Candy",
@@ -711,7 +711,7 @@ class Reference: ObservableObject {
                    numberOfUsers: 5,
                    numberOfStories: 22,
                    color: Color(UIColor.systemGray),
-                 chapters: [
+                 desserts: [
                     Dessert(
                         image: "lavendar-5",
                         type: "Crushed Ice",
@@ -778,7 +778,7 @@ class Reference: ObservableObject {
                    description: "I love lollipop caramels chupa chups I love chocolate candy canes. Fruitcake apple pie chupa chups marshmallow lollipop jelly-o gingerbread. Marzipan candy I love jelly beans soufflé topping gummi bears brownie danish. Croissant I love oat cake wafer caramels pie toffee pudding. Sugar plum jelly-o sesame snaps toffee danish muffin. Jelly beans tiramisu pudding donut lollipop brownie.", numberOfUsers: 5,
                    numberOfStories: 22,
                    color: Color(UIColor.systemGray3),
-                 chapters: [
+                 desserts: [
                     Dessert(
                         image: "concordegrape-7",
                         type: "Candy",
@@ -846,7 +846,7 @@ class Reference: ObservableObject {
                    numberOfUsers: 5,
                    numberOfStories: 22,
                    color: Color(UIColor.systemGray2),
-                 chapters: [
+                 desserts: [
                     Dessert(
                         image: "elderberry-2",
                         type: "Ice Cream",
@@ -914,7 +914,7 @@ class Reference: ObservableObject {
                    numberOfUsers: 5,
                    numberOfStories: 22,
                    color: Color(UIColor.systemGray),
-                 chapters: [
+                 desserts: [
                     Dessert(
                         image: "mint-3",
                         type: "Ice Lolly",
@@ -982,7 +982,7 @@ class Reference: ObservableObject {
                    numberOfUsers: 5,
                    numberOfStories: 22,
                    color: Color(UIColor.systemGray3),
-                 chapters: [
+                 desserts: [
                     Dessert(
                         image: "apple-4",
                         type: "Cookies",
@@ -1050,7 +1050,7 @@ class Reference: ObservableObject {
                    numberOfUsers: 5,
                    numberOfStories: 22,
                    color: Color(UIColor.systemGray2),
-                 chapters: [
+                 desserts: [
                     Dessert(
                         image: "lime-7",
                         type: "Candy",
@@ -1130,7 +1130,7 @@ class Reference: ObservableObject {
                    numberOfUsers: 5,
                    numberOfStories: 22,
                    color: Color(UIColor.systemGray),
-                 chapters: [
+                 desserts: [
                     Dessert(
                         image: "avocado-4",
                         type: "Cookies",
@@ -1192,7 +1192,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#MLTGH")])])]
     
-    var books: [Flavour] {
+    var flavours: [Flavour] {
         
         var readIndex = 0
         var count = 0
@@ -1207,10 +1207,10 @@ class Reference: ObservableObject {
             count += 1
         }
         
-        return libraries[readIndex].books
+        return libraries[readIndex].flavours
     }
     
-    var chapters: [Dessert]
+    var desserts: [Dessert]
     {
         var readIndexLibraries = 0
         var countLibraries = 0
@@ -1227,7 +1227,7 @@ class Reference: ObservableObject {
         
         var readIndexBooks = 0
         var countBooks = 0
-        for book in libraries[readIndexLibraries].books {
+        for book in libraries[readIndexLibraries].flavours {
             if book.uniqueID == referenceBookID {
                 readIndexBooks = countBooks
             }
@@ -1235,7 +1235,7 @@ class Reference: ObservableObject {
             countBooks += 1
         }
         
-        return libraries[readIndexLibraries].books[readIndexBooks].chapters
+        return libraries[readIndexLibraries].flavours[readIndexBooks].desserts
     }
     
     
@@ -1256,8 +1256,8 @@ class Reference: ObservableObject {
             }
             countLibraries += 1
         }
-        let newBook = Flavour(image: image, name: name, description: description, numberOfUsers: 0, numberOfStories: 0, color: color, chapters: [])
-        libraries[readIndexLibraries].books.append(newBook)
+        let newBook = Flavour(image: image, name: name, description: description, numberOfUsers: 0, numberOfStories: 0, color: color, desserts: [])
+        libraries[readIndexLibraries].flavours.append(newBook)
 
     }
     
@@ -1279,7 +1279,7 @@ class Reference: ObservableObject {
         
         var readIndexBooks = 0
         var countBooks = 0
-        for book in libraries[readIndexLibraries].books {
+        for book in libraries[readIndexLibraries].flavours {
 //            if book.uniqueID == referenceBookID {
             if book.uniqueID == inputThemeId {
                 readIndexBooks = countBooks
@@ -1287,7 +1287,7 @@ class Reference: ObservableObject {
             
             countBooks += 1
         }
-        return libraries[readIndexLibraries].books[readIndexBooks]
+        return libraries[readIndexLibraries].flavours[readIndexBooks]
     }
     
     func addChapter(image: String, role: String, description: String, date: String, priority: String, details: String, color: Color?)
@@ -1307,16 +1307,16 @@ class Reference: ObservableObject {
         
         var readIndexBooks = 0
         var countBooks = 0
-        for book in libraries[readIndexLibraries].books {
+        for book in libraries[readIndexLibraries].flavours {
             if book.uniqueID == referenceBookID {
                 readIndexBooks = countBooks
             }
             countBooks += 1
         }
         
-        let bookCurrent = libraries[readIndexLibraries].books[readIndexBooks]
+        let bookCurrent = libraries[readIndexLibraries].flavours[readIndexBooks]
         let newChapter = Dessert(image: image, type: role, description: description, date: date, priority: priority, details: details, color: bookCurrent.color)
-        libraries[readIndexLibraries].books[readIndexBooks].chapters.append(newChapter)
+        libraries[readIndexLibraries].flavours[readIndexBooks].desserts.append(newChapter)
         
     }
     
@@ -1336,7 +1336,7 @@ class Reference: ObservableObject {
         
         var readIndexBooks = 0
         var countBooks = 0
-        for book in libraries[readIndexLibraries].books {
+        for book in libraries[readIndexLibraries].flavours {
             if book.uniqueID == referenceBookID {
                 readIndexBooks = countBooks
             }
@@ -1345,7 +1345,7 @@ class Reference: ObservableObject {
         
         var readIndexChapters = 0
         var countChapters = 0
-        for chapter in libraries[readIndexLibraries].books[readIndexBooks].chapters {
+        for chapter in libraries[readIndexLibraries].flavours[readIndexBooks].desserts {
 //            if chapter.uniqueID == referenceStoryID {
             if chapter.uniqueID == storyIdToRemove {
                 readIndexChapters = countChapters
@@ -1353,7 +1353,7 @@ class Reference: ObservableObject {
             countChapters += 1
         }
         
-        libraries[readIndexLibraries].books[readIndexBooks].chapters.remove(at: readIndexChapters)
+        libraries[readIndexLibraries].flavours[readIndexBooks].desserts.remove(at: readIndexChapters)
         
     }
     
@@ -1375,7 +1375,7 @@ class Reference: ObservableObject {
         
         var readIndexBooks = 0
         var countBooks = 0
-        for book in libraries[readIndexLibraries].books {
+        for book in libraries[readIndexLibraries].flavours {
             if book.uniqueID == referenceBookID {
                 readIndexBooks = countBooks
             }
@@ -1384,7 +1384,7 @@ class Reference: ObservableObject {
         
         var readIndexChapters = 0
         var countChapters = 0
-        for chapter in libraries[readIndexLibraries].books[readIndexBooks].chapters {
+        for chapter in libraries[readIndexLibraries].flavours[readIndexBooks].desserts {
 //            if chapter.uniqueID == referenceStoryID {
             if chapter.uniqueID == storyIdToRead {
                 readIndexChapters = countChapters
@@ -1392,24 +1392,24 @@ class Reference: ObservableObject {
             countChapters += 1
         }
         
-        return libraries[readIndexLibraries].books[readIndexBooks].chapters[readIndexChapters]
+        return libraries[readIndexLibraries].flavours[readIndexBooks].desserts[readIndexChapters]
    
     }
     
     
     func totalBooks(for project: Market) -> String {
-        return "\(project.books.count) theme\(project.books.count == 1 ? "" : "s")"
+        return "\(project.flavours.count) theme\(project.flavours.count == 1 ? "" : "s")"
     }
     
     func totalChapters(for theme: Flavour) -> String {
         //return "\(theme.stories.count) story\(theme.stories.count == 1 ? "" : "s")"
-        return "\(theme.chapters.count)"
+        return "\(theme.desserts.count)"
         //        return theme.stories.count
     }
     
     func totalChaptersInt(for theme: Flavour) -> Int {
         //return "\(theme.stories.count) story\(theme.stories.count == 1 ? "" : "s")"
-        return theme.chapters.count
+        return theme.desserts.count
         //        return theme.stories.count
     }
 }

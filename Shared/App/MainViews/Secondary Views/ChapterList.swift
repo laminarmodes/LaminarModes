@@ -38,7 +38,7 @@ struct ChapterList: View
             {
                 if (loaded == true)
                 {
-                    ForEach(reference.chapters, id: \.uniqueID) { item in
+                    ForEach(reference.desserts, id: \.uniqueID) { item in
                         
                         NavigationLink(destination: DetailsView(bookID: bookID, chapter: item, closeButton: false).environmentObject(reference)) {
                             HStack
@@ -72,7 +72,7 @@ struct ChapterList: View
 
 struct TransactionsView_Previews: PreviewProvider {
     static var previews: some View {
-        ChapterList(libraryID: Reference().libraries[0].uniqueID, bookID: Reference().libraries[0].books[0].uniqueID)
+        ChapterList(libraryID: Reference().libraries[0].uniqueID, bookID: Reference().libraries[0].flavours[0].uniqueID)
             .environmentObject(Reference())
         
     }

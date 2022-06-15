@@ -45,7 +45,7 @@ struct NeumorphicCarousels: View {
             VStack
             {
                     ZStack {
-                        ForEach(reference.books.reversed(), id: \.uniqueID) { themeItem in
+                        ForEach(reference.flavours.reversed(), id: \.uniqueID) { themeItem in
                             
                             let dummyNumbers = (0..<8).map{ _ in Double.random(in: 1 ... 112) }
                             
@@ -63,7 +63,7 @@ struct NeumorphicCarousels: View {
                     // Stack each row vertically
                     VStack {
                         // For each row
-                        ForEach(reference.books.reversed(), id: \.uniqueID) { themeItem in
+                        ForEach(reference.flavours.reversed(), id: \.uniqueID) { themeItem in
                             // Stack each ellipsis on each story
                             ZStack {
                                 // Stack a row header on each story
@@ -91,7 +91,7 @@ struct NeumorphicCarousels: View {
                                         // Stack cards horizontally
                                         HStack(spacing: 20) {
                                             
-                                            ForEach(themeItem.chapters.reversed(), id: \.uniqueID) { item in
+                                            ForEach(themeItem.desserts.reversed(), id: \.uniqueID) { item in
                                                 
                                                 ZStack(alignment: .topTrailing) {
                                                     NeumorphicCardSmallView(chapter: item)
@@ -111,7 +111,7 @@ struct NeumorphicCarousels: View {
                                                         } // onTapGesture
 
                                                         .sheet(item: $selected, content: { oneSelection in
-                                                            DetailsView(bookID: currentBook?.uniqueID ?? reference.libraries[0].books[0].uniqueID, chapter: currentChapter, closeButton: true).environmentObject(reference)
+                                                            DetailsView(bookID: currentBook?.uniqueID ?? reference.libraries[0].flavours[0].uniqueID, chapter: currentChapter, closeButton: true).environmentObject(reference)
                                                             
                                                                 })
                                                         
@@ -186,7 +186,7 @@ struct NeumorphicCarousels: View {
     {
         if (editingChapter)
         {
-            DeleteChapterView(libraryID: libraryID, bookID: themeID, currentChapterID: currrentChapterID ?? reference.chapters[0].uniqueID, editingChapter: $editingChapter)
+            DeleteChapterView(libraryID: libraryID, bookID: themeID, currentChapterID: currrentChapterID ?? reference.desserts[0].uniqueID, editingChapter: $editingChapter)
                 .environmentObject(reference)
                 .zIndex(2)
                 .background(VisualEffectBlur().edgesIgnoringSafeArea(.all))

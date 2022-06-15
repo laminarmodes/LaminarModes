@@ -41,7 +41,7 @@ struct AffinityMap: View {
             
             VStack
             {
-                let noStories = (0..<(reference.books.count)).map{ _ in Double.random(in: 1 ... 20) }
+                let noStories = (0..<(reference.flavours.count)).map{ _ in Double.random(in: 1 ... 20) }
                 if(barChart)
                 {
                     BarChartViewCustomNew(data: ChartData(points: noStories),
@@ -53,7 +53,7 @@ struct AffinityMap: View {
                 } else
                 {
                     ZStack {
-                        ForEach(reference.books.reversed(), id: \.uniqueID) { themeItem in
+                        ForEach(reference.flavours.reversed(), id: \.uniqueID) { themeItem in
                             
                             let dummyNumbers = (0..<8).map{ _ in Double.random(in: 1 ... 112) }
                             
@@ -71,7 +71,7 @@ struct AffinityMap: View {
                     // Stack each row vertically
                     VStack {
                         // For each row
-                        ForEach(reference.books.reversed(), id: \.uniqueID) { themeItem in
+                        ForEach(reference.flavours.reversed(), id: \.uniqueID) { themeItem in
                             // Stack each ellipsis on each story
                             ZStack {
                                 // Stack a row header on each story
@@ -99,7 +99,7 @@ struct AffinityMap: View {
                                         // Stack cards horizontally
                                         HStack(spacing: 20) {
                                             
-                                            ForEach(themeItem.chapters.reversed(), id: \.uniqueID) { item in
+                                            ForEach(themeItem.desserts.reversed(), id: \.uniqueID) { item in
                                                 
                                                 ZStack(alignment: .topTrailing) {
                                                     ChapterCardSmallView(chapter: item)
@@ -119,7 +119,7 @@ struct AffinityMap: View {
                                                         } // onTapGesture
 
                                                         .sheet(item: $selected, content: { oneSelection in
-                                                            DetailsView(bookID: currentBook?.uniqueID ?? reference.libraries[0].books[0].uniqueID, chapter: currentChapter, closeButton: true).environmentObject(reference)
+                                                            DetailsView(bookID: currentBook?.uniqueID ?? reference.libraries[0].flavours[0].uniqueID, chapter: currentChapter, closeButton: true).environmentObject(reference)
                                                             
                                                                 })
                                                         
@@ -196,7 +196,7 @@ struct AffinityMap: View {
     {
         if (editingChapter)
         {
-            DeleteChapterView(libraryID: libraryID, bookID: themeID, currentChapterID: currrentChapterID ?? reference.chapters[0].uniqueID, editingChapter: $editingChapter)
+            DeleteChapterView(libraryID: libraryID, bookID: themeID, currentChapterID: currrentChapterID ?? reference.desserts[0].uniqueID, editingChapter: $editingChapter)
                 .environmentObject(reference)
                 .zIndex(2)
                 .background(VisualEffectBlur().edgesIgnoringSafeArea(.all))

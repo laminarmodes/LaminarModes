@@ -32,7 +32,7 @@ struct BookLazyChaptersNeumorphic: View {
                     LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 8)
                     {
                         
-                        ForEach(reference.findBookById(inputThemeId: bookID).chapters.reversed(), id: \.uniqueID) { story in
+                        ForEach(reference.findBookById(inputThemeId: bookID).desserts.reversed(), id: \.uniqueID) { story in
                             
                             
                             NavigationLink( destination: DetailsView(bookID: bookID, chapter: story, closeButton: true).environmentObject(reference))
@@ -64,6 +64,6 @@ struct BookLazyChaptersNeumorphic: View {
 
 struct BookLazyChaptersNeumorphic_Previews: PreviewProvider {
     static var previews: some View {
-        BookLazyChaptersNeumorphic(libraryID: Reference().libraries[1].uniqueID, bookID: Reference().libraries[1].books[0].uniqueID).environmentObject(Reference())
+        BookLazyChaptersNeumorphic(libraryID: Reference().libraries[1].uniqueID, bookID: Reference().libraries[1].flavours[0].uniqueID).environmentObject(Reference())
     }
 }

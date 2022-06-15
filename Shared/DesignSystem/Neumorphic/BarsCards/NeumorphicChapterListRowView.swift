@@ -52,7 +52,7 @@ struct NeumorphicChapterListRowView: View {
 
 struct NeumorphicChapterListRowView_Previews: PreviewProvider {
     static var previews: some View {
-        NeumorphicChapterListRowView(chapterID: Reference().libraries[0].books.last!.chapters.last!.uniqueID, chapter: Reference().libraries[0].books.last!.chapters.last!)
+        NeumorphicChapterListRowView(chapterID: Reference().libraries[0].flavours.last!.desserts.last!.uniqueID, chapter: Reference().libraries[0].flavours.last!.desserts.last!)
             .previewLayout(.sizeThatFits)
             .environmentObject(Reference())
     }

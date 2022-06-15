@@ -37,7 +37,7 @@ struct BookLazyChaptersGlassmorphic: View {
                     LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 8)
                     {
                         
-                        ForEach(reference.findBookById(inputThemeId: bookID).chapters.reversed(), id: \.uniqueID) { story in
+                        ForEach(reference.findBookById(inputThemeId: bookID).desserts.reversed(), id: \.uniqueID) { story in
                             
                             
                             NavigationLink( destination: DetailsView(bookID: bookID, chapter: story, closeButton: true).environmentObject(reference))
@@ -75,6 +75,6 @@ struct BookLazyChaptersGlassmorphic: View {
 
 struct BookLazyChaptersGlassmorphic_Previews: PreviewProvider {
     static var previews: some View {
-        BookLazyChaptersGlassmorphic(libraryID: Reference().libraries[0].uniqueID, bookID: Reference().libraries[0].books[0].uniqueID).environmentObject(Reference())
+        BookLazyChaptersGlassmorphic(libraryID: Reference().libraries[0].uniqueID, bookID: Reference().libraries[0].flavours[0].uniqueID).environmentObject(Reference())
     }
 }

@@ -119,7 +119,7 @@ struct GlassmorphicCardSmallView: View
 struct GlassmorphicCardSmallView_Previews: PreviewProvider
 {
     static var previews: some View {
-        GlassmorphicCardSmallView(chapter: Reference().libraries[0].books.last!.chapters.last!)
+        GlassmorphicCardSmallView(chapter: Reference().libraries[0].flavours.last!.desserts.last!)
             .previewLayout(.sizeThatFits)
     }
 }

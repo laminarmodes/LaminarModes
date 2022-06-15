@@ -152,6 +152,6 @@ struct NeumorphicDetailsView_Previews: PreviewProvider
 {
     static var previews: some View
     {
-        NeumorphicDetailsView(bookID: Reference().libraries[0].books[0].uniqueID).environmentObject(Reference())
+        NeumorphicDetailsView(bookID: Reference().libraries[0].flavours[0].uniqueID).environmentObject(Reference())
     }
 }

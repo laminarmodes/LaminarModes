@@ -42,7 +42,7 @@ struct NeumorphicChapterList: View
                     if (loaded == true) {
                         VStack
                         {
-                            ForEach(reference.chapters, id: \.uniqueID) { item in
+                            ForEach(reference.desserts, id: \.uniqueID) { item in
                                 
                                 NavigationLink(destination: DetailsView(bookID: bookID, chapter: item, closeButton: false).environmentObject(reference)) {
                                     HStack
@@ -79,7 +79,7 @@ struct NeumorphicChapterList: View
 
 struct NeumorphicChapterList_Previews: PreviewProvider {
     static var previews: some View {
-        NeumorphicChapterList(libraryID: Reference().libraries[0].uniqueID, bookID: Reference().libraries[0].books[0].uniqueID)
+        NeumorphicChapterList(libraryID: Reference().libraries[0].uniqueID, bookID: Reference().libraries[0].flavours[0].uniqueID)
             .environmentObject(Reference())
         
     }

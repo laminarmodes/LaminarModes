@@ -26,7 +26,7 @@ struct GlassmorphicColorBarsCards: View
             
             VStack {
                 
-                let noStories = (0..<(reference.books.count)).map{ _ in Double.random(in: 1 ... 20) }
+                let noStories = (0..<(reference.flavours.count)).map{ _ in Double.random(in: 1 ... 20) }
                 if(barChart)
                 {
                     BarChartViewCustomNew(data: ChartData(points: noStories),
@@ -38,7 +38,7 @@ struct GlassmorphicColorBarsCards: View
                 } else
                 {
                     ZStack {
-                        ForEach(reference.books.reversed(), id: \.uniqueID) { themeItem in
+                        ForEach(reference.flavours.reversed(), id: \.uniqueID) { themeItem in
                             
                             let dummyNumbers = (0..<8).map{ _ in Double.random(in: 1 ... 112) }
                             
@@ -55,7 +55,7 @@ struct GlassmorphicColorBarsCards: View
                 {
                     VStack // Stack of account cards
                     {
-                        ForEach(reference.books.reversed(), id: \.uniqueID) { item in
+                        ForEach(reference.flavours.reversed(), id: \.uniqueID) { item in
                             
                             NavigationLink( destination: ChapterList(libraryID: libraryID, bookID: item.uniqueID, theme: item).environmentObject(reference))
                             {

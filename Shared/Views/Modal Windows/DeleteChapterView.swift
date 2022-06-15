@@ -32,7 +32,7 @@ struct DeleteChapterView: View {
                         {
                     
                     self.reference.referenceProjectID = self.libraryID ?? reference.libraries[0].uniqueID
-                    self.reference.referenceBookID = self.bookID ?? reference.libraries[0].books[0].uniqueID
+                    self.reference.referenceBookID = self.bookID ?? reference.libraries[0].flavours[0].uniqueID
                     
                     self.reference.deleteChapter(storyIdToRemove: currentChapterID)
                     editingChapter = false
@@ -69,6 +69,6 @@ struct DeleteChapterView: View {
 
 struct DelteChapterView_Previews: PreviewProvider {
     static var previews: some View {
-        DeleteChapterView(currentChapterID: Reference().chapters[0].uniqueID, editingChapter: .constant(true))
+        DeleteChapterView(currentChapterID: Reference().desserts[0].uniqueID, editingChapter: .constant(true))
     }
 }

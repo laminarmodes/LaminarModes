@@ -121,7 +121,7 @@ struct GlassmorphicLazyChapters: View {
 
 struct GlassmorphicLazyChapters_Previews: PreviewProvider {
     static var previews: some View {
-        GlassmorphicLazyChapters(chapter: Reference().libraries[0].books.last!.chapters.last!)
+        GlassmorphicLazyChapters(chapter: Reference().libraries[0].flavours.last!.desserts.last!)
             .previewLayout(.sizeThatFits)
     }
 }

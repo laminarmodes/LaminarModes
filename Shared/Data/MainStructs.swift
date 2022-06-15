@@ -8,10 +8,10 @@
 import Foundation
 import SwiftUI
 
-// MARK: - Structures
+// MARK: - Main Structs
 struct Market {
-    var title: String
-    var books: [Flavour]
+    var name: String
+    var flavours: [Flavour]
     var uniqueID = UUID()
 }
 
@@ -22,7 +22,7 @@ struct Flavour {
     var numberOfUsers: Int
     var numberOfStories: Int
     var color: Color?
-    var chapters: [Dessert]
+    var desserts: [Dessert]
     var uniqueID = UUID()
 }
 

@@ -99,13 +99,13 @@ struct ContentView: View {
                 Spacer()
                 LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 8) {
                     ForEach(reference.libraries, id: \.uniqueID) { project in
-                        NavigationLink(destination: MainView(projectID: project.uniqueID, projectName: project.title).environmentObject(reference))
+                        NavigationLink(destination: MainView(projectID: project.uniqueID, projectName: project.name).environmentObject(reference))
                         {
                             HStack {
                                 ColorThemeView(
-                                    themeName: project.title,
+                                    themeName: project.name,
                                     totalColors: 3,
-                                    themeBackground: project.books[3].color ?? Color.gray)
+                                    themeBackground: project.flavours[3].color ?? Color.gray)
                             }
                         }
                     } // ForEach

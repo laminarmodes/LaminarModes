@@ -34,7 +34,7 @@ struct GlassmorphicView: View {
                     VStack
                     {
                         LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 8) {
-                            ForEach(reference.books.reversed(), id: \.uniqueID) { item in
+                            ForEach(reference.flavours.reversed(), id: \.uniqueID) { item in
                                 
                                 NavigationLink(destination: BookLazyChaptersGlassmorphic(libraryID: libraryID, bookID: item.uniqueID).environmentObject(reference))
                                 {
