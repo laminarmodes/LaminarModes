@@ -79,7 +79,7 @@ class Reference: ObservableObject {
     
     @Published var libraries = [
         Market(name: "Market 1", flavours: [
-            Flavour(image: "fork.knife", name: "Blueberry", description: "Jujubes biscuit donut jelly cotton candy jujubes I love cake croissant. Croissant marshmallow sweet roll I love cake gummies oat cake. Carrot cake jelly beans I love jelly pie pastry. Cheesecake brownie gummi bears sweet roll jelly beans chocolate bar macaroon. Apple pie marshmallow cupcake I love jujubes candy canes. Fruitcake tart pastry chocolate cake jelly-o dessert chocolate cake brownie.", numberOfUsers: 5, numberOfStories: 22, color: Color(UIColor.systemGray2), desserts: [
+            Flavour(image: "fork.knife", name: "Blueberry", description: "Blueberries are one of the few foods that have a naturally blue color (from the anthocyanin pigment).  They can take on a green, red and purple color before they become blue and ripe.  In the northern hemisphere, they harvest during the May to August time period and one blueberry bush can grow over 6,000 blueberries each year.  This fruit is very small and ranges from only 5-16mm in diameter.  Blueberries are used fresh, frozen, or juiced and are very popular in breakfast foods and desserts.  Blueberries are very well known for their antioxidants and also contain fiber and vitamin C", numberOfUsers: 5, numberOfStories: 22, color: Color(UIColor.systemGray2), desserts: [
                 Dessert(
                     image: "blueberry-7",
                     type: "Candy",
@@ -118,8 +118,8 @@ class Reference: ObservableObject {
                     itemID: "#164A7")]),
             Flavour(
                    image: "fork.knife",
-                   name: "Rasberry",
-                   description: "Lollipop gummi bears cupcake macaroon croissant cookie halvah carrot cake I love. Cake pie toffee candy canes bear claw pie I love lollipop cake. Bonbon biscuit oat cake donut I love I love cake. Dragée sweet tiramisu chocolate bar croissant. Toffee bear claw caramels bear claw jujubes pudding muffin cake cake. Gummies pudding lollipop I love I love I love brownie I love danish. Toffee pudding soufflé muffin pie cake powder I love carrot cake. Chocolate candy jujubes bonbon tart. Donut apple pie chocolate cake chocolate marzipan. Jelly beans marzipan sugar plum shortbread caramels danish.",
+                   name: "Raspberry",
+                   description: "The raspberry is part of the rose family and it’s name comes from raspise which means ‘a sweet rose-colored wine’.  An average raspberry has over 100 seeds.  A raspberry will not ripen once it is picked and a major part of its anatomy is different from a blackberry in that is has a hollow core because when it is picked, the stem does not stay with the fruit.  The color of raspberry can be red, purple, gold, or black.",
                    numberOfUsers: 5,
                    numberOfStories: 22,
                    color: Color(UIColor.systemGray),
@@ -211,7 +211,7 @@ class Reference: ObservableObject {
             Flavour(
                    image: "fork.knife",
                    name: "Plum",
-                   description: "Pastry chocolate cake brownie carrot cake wafer gummi bears sesame snaps. Chocolate powder macaroon brownie chupa chups I love sweet roll jelly beans powder. Cheesecake cookie chocolate tiramisu bear claw toffee. Pudding lollipop icing chocolate cake oat cake fruitcake fruitcake cotton candy. Tootsie roll dragée cotton candy icing I love sugar plum carrot cake halvah fruitcake. Chupa chups cupcake icing dessert chupa chups I love fruitcake halvah pie. Brownie tart sweet sesame snaps carrot cake chocolate. Donut dragée marzipan marshmallow cupcake brownie I love pudding. Gummies chocolate cake danish carrot cake oat cake marshmallow icing caramels. Apple pie brownie soufflé marzipan chocolate soufflé marzipan.", numberOfUsers: 5,
+                   description: "The plum is a diverse fruit with several varieties which include but are not limited to: Damson, Prune, Victoria, Satsuma, Mirabelle, Greengage, Yellowgage and more…It is the second most cultivated fruit in the world and is grown on every single continent except for Antarctica.  The taste of plum can also vary from very sweet to tart.  Plums are very tasty when eaten fresh and used for juices.  They can also be converted into alcoholic beverages", numberOfUsers: 5,
                    numberOfStories: 22,
                    color: Color(UIColor.systemGray3),
                  desserts: [
@@ -266,7 +266,7 @@ class Reference: ObservableObject {
             Flavour(
                    image: "fork.knife",
                    name: "Dragon Fruit",
-                   description: "Tart macaroon tootsie roll gingerbread apple pie danish marzipan I love lollipop. Cupcake wafer cookie wafer brownie. Toffee shortbread sweet pudding cookie carrot cake brownie caramels. Sweet donut cake sweet roll liquorice caramels dragée. Jelly-o pastry I love pie I love halvah. Chocolate bar I love muffin topping lemon drops.",
+                   description: "The dragon fruit grows on a cactus and is resistant to droughts.  It has 4 different variations: pink skin with white flesh, red skin with red flesh, red skin with purple flesh and yellow skin with white flesh.  Asia is the largest market for dragon fruit and you can find it in many tasty dishes and refreshing smoothies.  It is rich in fiber, protein, iron, and antioxidants.  The seeds are edible and resemble the seeds of a kiwi.",
                    numberOfUsers: 5,
                    numberOfStories: 22,
                    color: Color(UIColor.systemGray2),
@@ -346,7 +346,7 @@ class Reference: ObservableObject {
             Flavour(
                    image: "fork.knife",
                    name: "Strawberry",
-                   description: "Toffee cotton candy biscuit chupa chups sweet roll tart marzipan I love I love. Brownie chocolate bar jujubes fruitcake cotton candy tiramisu oat cake chocolate bar. Brownie marshmallow I love liquorice gummies I love sweet bonbon sweet. Candy I love wafer tiramisu I love cheesecake brownie chocolate bar. Gummies caramels jujubes chocolate cake dragée powder sweet jelly brownie. Dessert oat cake cake pastry gingerbread gingerbread tiramisu I love. Gummi bears biscuit cotton candy cake sugar plum I love sugar plum apple pie marshmallow. I love carrot cake lemon drops icing chocolate bar I love muffin soufflé. Shortbread I love chocolate cake shortbread cotton candy halvah lollipop tootsie roll tart. Sweet roll chupa chups muffin icing pudding toffee I love pastry I love.",
+                   description: "Member of the rose family and is one of the most loved fruits, especially by children.  It is the first fruit to become ripe during the springtime The most well-known species is the garden strawberry, which originated in Brittany France.  Strawberries are very sweet and high in vitamin C.  An interesting fact is that there is a term for the fear of strawberries, which is called ‘fragariaphobia’.",
                    numberOfUsers: 5,
                    numberOfStories: 22,
                    color: Color(UIColor.systemGray),
@@ -414,7 +414,7 @@ class Reference: ObservableObject {
             Flavour(
                    image: "fork.knife",
                    name: "Watermellon",
-                   description: "Lollipop tiramisu chocolate I love wafer pudding wafer. Donut I love cookie oat cake caramels apple pie. Bear claw soufflé carrot cake caramels powder danish pie. I love dessert cake cheesecake biscuit soufflé pie I love. Danish pie croissant toffee dessert cake. Tiramisu dragée jelly I love I love sweet roll topping. Donut tootsie roll liquorice I love jelly topping sesame snaps candy.",
+                   description: "Watermelons, as the name suggests, are over 90% water.  There was a period where they were even used as a method for storing water.  The rinds of a watermelon can be eaten but this is rarely done because they are not very tasty.  The refreshing nature of watermelon makes it very popular in the summertime and also eating after a meal.  A clever method to pick the best watermelon is to identify it’s “ground spot” and see if it has a buttery yellow color.",
                    numberOfUsers: 5,
                    numberOfStories: 22,
                    color: Color(UIColor.systemGray3),
@@ -518,7 +518,7 @@ class Reference: ObservableObject {
             Flavour(
                    image: "fork.knife",
                    name: "Orange",
-                   description: "Chocolate croissant chocolate cake croissant biscuit I love soufflé tart. Sweet roll I love brownie cheesecake apple pie jujubes apple pie pastry I love. Bonbon carrot cake sweet jelly beans carrot cake danish pudding. Cake jelly-o jelly beans halvah chocolate bar I love biscuit. Dessert danish apple pie tart pastry pastry tootsie roll cake jelly-o. Jelly-o cupcake shortbread muffin donut wafer soufflé. Cake chocolate cake I love cotton candy sugar plum donut gummi bears oat cake. Sesame snaps jelly-o shortbread sesame snaps halvah.",
+                   description: "Orange trees were originally grown in China.  The tree has white leaves and a lovely fragrance.  Is the largest citrus fruit and one of the most popular juices (unlike lemons and limes).  The juice is also made frozen and mixed with concentrate.  Fresh oranges or freshly squeezed orange juice is a refreshing source of Vitamin C.",
                    numberOfUsers: 5,
                    numberOfStories: 22,
                    color: Color(UIColor.systemGray2),
@@ -562,7 +562,7 @@ class Reference: ObservableObject {
             Flavour(
                    image: "fork.knife",
                    name: "Lemon",
-                   description: "Cheesecake chocolate bar bear claw pudding cupcake I love apple pie I love. Ice cream cheesecake jelly fruitcake croissant dragée halvah. Halvah cheesecake lemon drops caramels danish I love. Muffin cookie tart dragée chocolate oat cake pastry tootsie roll I love. Halvah cookie macaroon tiramisu jelly beans lemon drops cake tart macaroon. Lemon drops chupa chups pastry marshmallow candy canes I love cotton candy jelly-o cake. Tart muffin ice cream oat cake bear claw marzipan. Marzipan I love lollipop danish caramels brownie. Chocolate bar I love oat cake cookie powder dragée sweet wafer I love.",
+                   description: "Lemon is a beautiful fruit that are native to the Asia Pacific region.  They are rich in vitamin C, very high in acidity and therefore deliver a wonderful flavor and aesthetic enhancement to many beverages and dishes.  Their leaves can also be used to make tea.  Different varieties of lemon include: Bonne Brae,  Eureka, Lisbon, Sorrento and Yen Ben.  Lemon juice contains 5 times as much citric acid as orange juice.  They can also be used to naturally highlight hair and it has been demonstrated that one can attach electrodes to a lemon and use it to provide very low power to a device.",
                    numberOfUsers: 5,
                    numberOfStories: 22,
                    color: Color(UIColor.systemGray),
@@ -643,7 +643,7 @@ class Reference: ObservableObject {
         
         
         Market(name: "Market 2", flavours: [
-            Flavour(image: "fork.knife", name: "Blackberry", description: "Jelly beans icing dessert ice cream jelly-o. Tart carrot cake jelly beans icing I love sugar plum chocolate bar wafer. Macaroon I love cotton candy chupa chups gummi bears oat cake danish gummi bears danish. Topping danish gingerbread sweet roll croissant biscuit topping topping lollipop. Danish fruitcake dragée fruitcake fruitcake. Jujubes muffin danish tootsie roll bear claw. I love pie pastry I love wafer.", numberOfUsers: 5, numberOfStories: 22, color: Color(UIColor.systemGray2), desserts: [
+            Flavour(image: "fork.knife", name: "Blackberry", description: "There are over 350 different species of blackberries located around the world.   They are delicious in desserts and jams and especially pies.  They are a rich source of many vitamins and there are are many digestive and immune health benefits that come from consuming blackberries.  They are also known to help memory, skin, vision and weight loss. With blackberries, the core is not hollow as it is with raspberries.  Just reading this makes one want to go to the supermarket now and stock up on blackberries.", numberOfUsers: 5, numberOfStories: 22, color: Color(UIColor.systemGray2), desserts: [
                 Dessert(
                     image: "blackberry-7",
                     type: "Candy",
@@ -707,7 +707,7 @@ class Reference: ObservableObject {
             Flavour(
                    image: "fork.knife",
                    name: "Lavendar",
-                   description: "Sesame snaps sweet roll cheesecake halvah chocolate bar powder chocolate cake tootsie roll pie. Chocolate bar I love sweet roll halvah I love gummi bears. Gummies chocolate cheesecake danish bonbon. I love marzipan fruitcake jelly beans jelly beans ice cream sweet. I love oat cake tootsie roll I love cotton candy lemon drops I love. Gingerbread candy chocolate cake I love sweet brownie. Chupa chups cake gummies donut lemon drops dessert jelly beans marzipan I love. Powder icing I love marzipan carrot cake croissant ice cream jujubes. Cake biscuit croissant cake brownie gummi bears muffin.",
+                   description: "Lavender is part of the mint family.  Lavender is used for fragrance, cleaning and calming (it is sometimes used to treat insomnia).  Not all lavender is safe for cooking.  Culinary lavender is cultivated from Lavandula angustifolia.  This can be found both fresh as well as dried and is used carefully in salads, dressings and desserts as well as teas.  It has a sweet and pleasant aroma.  ",
                    numberOfUsers: 5,
                    numberOfStories: 22,
                    color: Color(UIColor.systemGray),
@@ -775,7 +775,7 @@ class Reference: ObservableObject {
             Flavour(
                    image: "fork.knife",
                    name: "Concord Grape",
-                   description: "I love lollipop caramels chupa chups I love chocolate candy canes. Fruitcake apple pie chupa chups marshmallow lollipop jelly-o gingerbread. Marzipan candy I love jelly beans soufflé topping gummi bears brownie danish. Croissant I love oat cake wafer caramels pie toffee pudding. Sugar plum jelly-o sesame snaps toffee danish muffin. Jelly beans tiramisu pudding donut lollipop brownie.", numberOfUsers: 5,
+                   description: "The concorde grape is derived from grapes and has a dark blue or purple color.  It is often used to make grape jelly.  Concorde graphs are also known as “slip skin” grapes because the skin separated very easily from the pulp, even when rubbed gently.  Concorde wines have a very sweet and almost candy-like flavor to them.", numberOfUsers: 5,
                    numberOfStories: 22,
                    color: Color(UIColor.systemGray3),
                  desserts: [
@@ -842,7 +842,7 @@ class Reference: ObservableObject {
             Flavour(
                    image: "fork.knife",
                    name: "Elberberry",
-                   description: "Sweet roll I love dragée pie I love I love. Lollipop I love muffin topping cheesecake. Oat cake chocolate tart dessert chocolate cake fruitcake cookie sugar plum. Bear claw jujubes pie cotton candy cupcake sweet biscuit. Cotton candy dessert I love jelly beans ice cream donut lollipop halvah brownie. I love shortbread gummies lollipop pastry I love lemon drops bonbon. Bonbon I love I love fruitcake pudding chupa chups macaroon tootsie roll. Marzipan ice cream gummies pudding pie sweet cookie toffee.",
+                   description: "Elderberry is a flowering plant with an intense blue-purple color.  It can be toxic so it is important to take precautions with it.  In fact, it should only be consumed after proper examination, preparation and cooking.  Elderberry is used in juice, jams and pies.  When safely prepared it is rich in antioxidants, vitamins and minerals.",
                    numberOfUsers: 5,
                    numberOfStories: 22,
                    color: Color(UIColor.systemGray2),
@@ -910,7 +910,7 @@ class Reference: ObservableObject {
             Flavour(
                    image: "fork.knife",
                    name: "Mint",
-                   description: "Muffin jelly toffee cheesecake shortbread muffin powder pudding. Jujubes sugar plum cotton candy topping gingerbread cake tart. Chupa chups I love tart fruitcake icing. Muffin gummies macaroon I love tart. Cookie I love apple pie jelly beans oat cake danish bonbon jujubes. Chocolate fruitcake chocolate cake halvah sweet cookie oat cake jelly. Sesame snaps I love carrot cake biscuit icing.",
+                   description: "Mint is an aromatic plant that is used for Cooking and in sweets and cocktails.  It is also considered a refreshing symbol of hospitality.  It’s flavor and aroma make it popular for use in breath fresheners.  There are more than 30 different varieties of mint and 70% of the world’s peppermint and spearmint is produced in the USA.  One of the most well-known cocktails that use mint is the mojito.",
                    numberOfUsers: 5,
                    numberOfStories: 22,
                    color: Color(UIColor.systemGray),
@@ -978,7 +978,7 @@ class Reference: ObservableObject {
             Flavour(
                    image: "fork.knife",
                    name: "Apple",
-                   description: "Chocolate I love chocolate wafer tart pudding danish gummi bears tootsie roll. Gummi bears cake topping toffee chocolate bar. I love cotton candy marshmallow danish jelly jelly beans pudding muffin. Jujubes gummies lemon drops I love candy fruitcake cheesecake sweet roll donut. Bear claw liquorice sweet roll cookie cheesecake sesame snaps carrot cake jujubes soufflé. Liquorice gingerbread danish topping ice cream. Marshmallow dessert chocolate I love gummies lemon drops I love. Danish cotton candy cake jelly-o sesame snaps topping donut chocolate dessert.",
+                   description: "Apples are high in fiber.  Did you know that 20% of the volume is air (which is why they float when in water)?  Apples are one of the most commonly consumed fruits in the world.  They are popular in juice, desserts, salads, pies, sauces, and many other dishes.  The apple core can be but is not usually eaten.  Apple seeds in large quantities are said to be unsafe to eat.",
                    numberOfUsers: 5,
                    numberOfStories: 22,
                    color: Color(UIColor.systemGray3),
@@ -1046,7 +1046,7 @@ class Reference: ObservableObject {
             Flavour(
                    image: "fork.knife",
                    name: "Lime",
-                   description: "Liquorice I love croissant muffin lollipop. Chocolate gingerbread lemon drops jujubes caramels biscuit biscuit. Candy canes halvah halvah candy jelly-o cheesecake sugar plum. I love pie ice cream marshmallow marzipan I love marzipan jelly beans carrot cake. Oat cake sweet roll jelly-o candy canes chocolate bar gummi bears sesame snaps chocolate I love. Croissant macaroon brownie gingerbread soufflé bear claw topping. Biscuit brownie brownie sesame snaps I love muffin I love sweet roll. Sugar plum gummies cake chocolate brownie. Dragée I love wafer caramels pastry. Jelly beans cupcake cookie tart candy canes jelly beans I love cupcake I love.",
+                   description: "Lime is a green color citrus fruit that is originally from Southeast Asia.  It is very popular in cooking and cocktails and can also be used in perfumes and cosmetics.  It is also used in perfumes and aromatherapy.  The size can range from 3 to 6 centimeters in diameter.  Lime juice is often called limeade.  Limes are also a source of vitamin C.  Fun fact: did you know that limes will sick whereas lemons will float?",
                    numberOfUsers: 5,
                    numberOfStories: 22,
                    color: Color(UIColor.systemGray2),
@@ -1126,7 +1126,7 @@ class Reference: ObservableObject {
             Flavour(
                    image: "fork.knife",
                    name: "Avocado",
-                   description: "Candy pastry candy canes bonbon pudding I love I love sweet. Jelly jelly-o chocolate apple pie pastry sesame snaps donut sweet. Croissant bear claw gingerbread marshmallow cupcake gingerbread. I love candy oat cake lemon drops fruitcake. Sugar plum candy jujubes halvah shortbread I love. Bonbon tootsie roll lollipop soufflé marshmallow. Lollipop chocolate bar croissant jelly jelly-o chocolate tiramisu jelly. Oat cake dragée gummi bears macaroon tootsie roll chupa chups cheesecake. Lollipop marshmallow gingerbread tart I love biscuit.",
+                   description: "Avocado is a green and delightful fruit that is enjoyed on its own, or in salads, sandwiches, sauces, soups, dips, smoothies, and many things.  It is rich in potassium, even more than bananas.  A great way to eat avocado is with olive oil and pepper.  Guacamole is a fantastic avocado recipe and the term ‘guacamole’ actually translates to ‘avocado soup’ or ‘avocado sauce’.",
                    numberOfUsers: 5,
                    numberOfStories: 22,
                    color: Color(UIColor.systemGray),
