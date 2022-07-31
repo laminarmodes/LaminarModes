@@ -120,7 +120,7 @@ struct DetailsView: View
                                                 .foregroundColor(chapter?.color ?? Color.black)
                                                 .font(Font.system(.body).bold())
                                                 Spacer(minLength: 0)
-                                                Text("$"+(chapter?.amount ?? "No data"))
+                                                Text("$" + String(format: "%.2f", 37.85 + (Double(chapter?.amount ?? "0.0") ?? 0.0)))
                                                     .multilineTextAlignment(.trailing)
                                             }
                                             

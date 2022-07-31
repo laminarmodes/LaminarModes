@@ -14,16 +14,34 @@ struct BookHeaderLarge: View
     @EnvironmentObject private var reference: Reference
     
     var body: some View {
-        HStack
+        HStack(spacing: 10)
         {
             VStack {
-                Image(systemName: book?.image ?? "person.fill")
-                    .resizable()
-                    .frame(width: 50, height: 50, alignment: .leading)
-                    .foregroundColor(Color.white.opacity(0.9))
+                
+                
+//                Image(systemName: book?.image ?? "person.fill")
+//                    .resizable()
+//                    .frame(width: 50, height: 50, alignment: .leading)
+//                    .foregroundColor(Color.white.opacity(0.9))
+                
+                
+                
+                Rectangle()
+                    .fill(Color.white.opacity(0.9))
+                    .frame(width: 70, height: 70)
+                    .mask(
+
+                        Image(book?.image ?? "ico_blueberry")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 70, alignment: .leading)
+                    )
+                
+                
+                
                 Spacer()
             }
-            .padding()
+            //.padding()
 
             VStack(alignment: .leading)
             {

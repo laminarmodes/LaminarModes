@@ -121,8 +121,8 @@
 		E8EB3646276A4B71000CCF20 /* GlassmorphicBarsCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EB3644276A4B71000CCF20 /* GlassmorphicBarsCards.swift */; };
 		E8EB3648276A4B8A000CCF20 /* GlassmorphicColorBarsCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EB3647276A4B8A000CCF20 /* GlassmorphicColorBarsCards.swift */; };
 		E8EB3649276A4B8A000CCF20 /* GlassmorphicColorBarsCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EB3647276A4B8A000CCF20 /* GlassmorphicColorBarsCards.swift */; };
-		E8EB364B276A4EBF000CCF20 /* NeumorphicChapterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EB364A276A4EBF000CCF20 /* NeumorphicChapterList.swift */; };
-		E8EB364C276A4EBF000CCF20 /* NeumorphicChapterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EB364A276A4EBF000CCF20 /* NeumorphicChapterList.swift */; };
+		E8EB364B276A4EBF000CCF20 /* trashNeumorphicChapterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EB364A276A4EBF000CCF20 /* trashNeumorphicChapterList.swift */; };
+		E8EB364C276A4EBF000CCF20 /* trashNeumorphicChapterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EB364A276A4EBF000CCF20 /* trashNeumorphicChapterList.swift */; };
 		E8EB364E276A4EFA000CCF20 /* NeumorphicChapterListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EB364D276A4EFA000CCF20 /* NeumorphicChapterListRowView.swift */; };
 		E8EB364F276A4EFA000CCF20 /* NeumorphicChapterListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EB364D276A4EFA000CCF20 /* NeumorphicChapterListRowView.swift */; };
 		E8F0A4A1276CB4BC0084A8E6 /* GlassmorphicLazyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F0A4A0276CB4BC0084A8E6 /* GlassmorphicLazyCard.swift */; };
@@ -204,7 +204,7 @@
 		E8EB3641276A4B55000CCF20 /* NeumorphicBarsCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphicBarsCards.swift; sourceTree = "<group>"; };
 		E8EB3644276A4B71000CCF20 /* GlassmorphicBarsCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassmorphicBarsCards.swift; sourceTree = "<group>"; };
 		E8EB3647276A4B8A000CCF20 /* GlassmorphicColorBarsCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassmorphicColorBarsCards.swift; sourceTree = "<group>"; };
-		E8EB364A276A4EBF000CCF20 /* NeumorphicChapterList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphicChapterList.swift; sourceTree = "<group>"; };
+		E8EB364A276A4EBF000CCF20 /* trashNeumorphicChapterList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trashNeumorphicChapterList.swift; sourceTree = "<group>"; };
 		E8EB364D276A4EFA000CCF20 /* NeumorphicChapterListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphicChapterListRowView.swift; sourceTree = "<group>"; };
 		E8F0A4A0276CB4BC0084A8E6 /* GlassmorphicLazyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassmorphicLazyCard.swift; sourceTree = "<group>"; };
 		E8F0A4A3276CB7C30084A8E6 /* GlassmorphicLazyChapters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassmorphicLazyChapters.swift; sourceTree = "<group>"; };
@@ -465,7 +465,6 @@
 				E8DF79582769F05D00B10B38 /* NeumorphicLazyCard.swift */,
 				E8EB3627276A0CD7000CCF20 /* NeumorphicLazyChapters.swift */,
 				E81EE70C276A02BC0040A19D /* BookLazyChaptersNeumorphic.swift */,
-				E81EE710276A03F10040A19D /* BookCardLargeViewNeumorphic.swift */,
 			);
 			path = LazyGrid;
 			sourceTree = "<group>";
@@ -487,7 +486,6 @@
 				E8F0A4A0276CB4BC0084A8E6 /* GlassmorphicLazyCard.swift */,
 				E8F0A4A3276CB7C30084A8E6 /* GlassmorphicLazyChapters.swift */,
 				E8F0A4A6276CC29C0084A8E6 /* BookLazyChaptersGlassmorphic.swift */,
-				E8F0A4A9276CC2F20084A8E6 /* BookCardLargeViewGlassmorphic.swift */,
 			);
 			path = LazyGrid;
 			sourceTree = "<group>";
@@ -511,8 +509,9 @@
 		E8EB363E276A4AE0000CCF20 /* BarsCards */ = {
 			isa = PBXGroup;
 			children = (
+				E81EE710276A03F10040A19D /* BookCardLargeViewNeumorphic.swift */,
 				E8EB3641276A4B55000CCF20 /* NeumorphicBarsCards.swift */,
-				E8EB364A276A4EBF000CCF20 /* NeumorphicChapterList.swift */,
+				E8EB364A276A4EBF000CCF20 /* trashNeumorphicChapterList.swift */,
 				E8EB364D276A4EFA000CCF20 /* NeumorphicChapterListRowView.swift */,
 			);
 			path = BarsCards;
@@ -521,6 +520,7 @@
 		E8EB363F276A4AF0000CCF20 /* BarsCards */ = {
 			isa = PBXGroup;
 			children = (
+				E8F0A4A9276CC2F20084A8E6 /* BookCardLargeViewGlassmorphic.swift */,
 				E8EB3644276A4B71000CCF20 /* GlassmorphicBarsCards.swift */,
 			);
 			path = BarsCards;
@@ -646,7 +646,7 @@
 				E80F325027607BF100689092 /* Path+QuadCurveCustom.swift in Sources */,
 				E81EE711276A03F10040A19D /* BookCardLargeViewNeumorphic.swift in Sources */,
 				E80F322027607B6F00689092 /* BookCarouselHeaderView.swift in Sources */,
-				E8EB364B276A4EBF000CCF20 /* NeumorphicChapterList.swift in Sources */,
+				E8EB364B276A4EBF000CCF20 /* trashNeumorphicChapterList.swift in Sources */,
 				E80F324E27607BF100689092 /* LineCustom.swift in Sources */,
 				E80F325A27607BF100689092 /* LabelViewCustom.swift in Sources */,
 				E80F31FE27607AB700689092 /* BookWithLazyChapters.swift in Sources */,
@@ -719,7 +719,7 @@
 				E81EE712276A03F10040A19D /* BookCardLargeViewNeumorphic.swift in Sources */,
 				E8F0A4AB276CC2F20084A8E6 /* BookCardLargeViewGlassmorphic.swift in Sources */,
 				E80F322127607B6F00689092 /* BookCarouselHeaderView.swift in Sources */,
-				E8EB364C276A4EBF000CCF20 /* NeumorphicChapterList.swift in Sources */,
+				E8EB364C276A4EBF000CCF20 /* trashNeumorphicChapterList.swift in Sources */,
 				E80F324F27607BF100689092 /* LineCustom.swift in Sources */,
 				E80F325B27607BF100689092 /* LabelViewCustom.swift in Sources */,
 				E8F0A4A8276CC29C0084A8E6 /* BookLazyChaptersGlassmorphic.swift in Sources */,
@@ -893,11 +893,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 16;
+				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_TEAM = Y77U888YF6;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -917,11 +917,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 16;
+				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_TEAM = Y77U888YF6;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

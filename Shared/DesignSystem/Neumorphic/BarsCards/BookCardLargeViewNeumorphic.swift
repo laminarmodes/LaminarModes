@@ -1,27 +1,30 @@
 //
-//  ThemeCard.swift
-//  UserStoryMap
+//  BookCardLargeViewNeumorphic.swift
+//  LaminarModes
 //
-//  Created by Anya Traille on 19/1/21.
+//  Created by Anya Traille on 15/12/21.
 //
 
 import SwiftUI
 
-struct BookCardLargeView: View
+struct BookCardLargeViewNeumorphic: View
 {
-    
+
     var book: Flavour?
     @EnvironmentObject private var reference: Reference
-    
+
     var body: some View {
         HStack(spacing: 10)
         {
             VStack {
-
                 
+//                Image(systemName: book?.image ?? "person.fill")
+//                    .resizable()
+//                    .frame(width: 50, height: 50, alignment: .leading)
+//                    .foregroundColor(book?.color ?? Color.gray)
                 
                 Rectangle()
-                    .fill(Color.white.opacity(0.9))
+                    .fill(book?.color ?? Color.gray)
                     .frame(width: 70, height: 70)
                     .mask(
 
@@ -30,33 +33,30 @@ struct BookCardLargeView: View
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 70, alignment: .leading)
                     )
-                    
-                
- 
                 
                 Spacer()
             }
 
-            
+
             VStack(alignment: .leading)
             {
-                Text(book?.name ?? "Book One")
+                Text(book?.name ?? "Book 1")
                     .font(Font.headline.bold())
-                    .foregroundColor(Color.white.opacity(0.9))
+                    .foregroundColor(book?.color ?? Color.gray)
                     .multilineTextAlignment(.leading)
                 Spacer()
-                Text(book?.description ?? "No Data" )
+                Text("Description: \(book?.description ?? "No Data")" )
                     .font(.subheadline)
-                    .foregroundColor(Color.white.opacity(0.9))
+                    .foregroundColor(Color("dark-text"))
                     .multilineTextAlignment(.leading)
                 Spacer()
                 Text("Number of collections: \(book?.numberOfUsers ?? 0)")
                     .font(.footnote)
-                    .foregroundColor(Color.white.opacity(0.9))
+                    .foregroundColor(Color("dark-text"))
                     .multilineTextAlignment(.leading)
                 Text("Number of items: \(book?.numberOfStories ?? 0)")
                     .font(.caption)
-                    .foregroundColor(Color.white.opacity(0.9))
+                    .foregroundColor(Color("dark-text"))
                     .multilineTextAlignment(.leading)
             }
 
@@ -64,35 +64,16 @@ struct BookCardLargeView: View
         .padding()
         .frame(height: 220, alignment: .leading)
         .frame(maxWidth: 600, alignment: .leading)
-        .background(book?.color ?? Color.gray)
+        .background(Color("off-white"))
         .clipShape(RoundedRectangle(cornerRadius: 22))
         .shadow(color: Color.black.opacity(0.2), radius: 10, x: 10, y: 10)
-        //        .shadow(color: book?.color ?? Color.gray.opacity(0.2), radius: 10, x: 10, y: 10)
         .shadow(color: Color.white.opacity(0.7), radius: 10, x: -5, y: -5)
-        
-        
     }
 }
 
-struct BookCardLargeView_Previews: PreviewProvider {
+struct BookCardLargeViewNeumorphic_Previews: PreviewProvider {
     static var previews: some View {
-        BookCardLargeView()
+        BookCardLargeViewNeumorphic()
             .previewLayout(.sizeThatFits)
     }
 }
-
-
-//                Image(systemName: book?.image ?? "person.fill")
-//                    .resizable()
-//                    .frame(width: 50, height: 50, alignment: .leading)
-//                    .foregroundColor(Color.white.opacity(0.9))
-
-
-
-
-//                    Image(book?.image ?? "ico_blueberry")
-//                        .resizable()
-//                        .aspectRatio(contentMode: .fit)
-//                        .frame(width: 50, alignment: .leading)
-
-

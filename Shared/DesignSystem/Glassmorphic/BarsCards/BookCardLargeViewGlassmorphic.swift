@@ -1,5 +1,5 @@
 //
-//  GlassmorphicLazyCard.swift
+//  BookCardLargeViewGlassmorphic.swift
 //  LaminarModes
 //
 //  Created by Anya Traille on 17/12/21.
@@ -7,54 +7,68 @@
 
 import SwiftUI
 
-struct GlassmorphicLazyCard: View
+struct BookCardLargeViewGlassmorphic: View
 {
-    
+
     var book: Flavour?
-    
     @EnvironmentObject private var reference: Reference
-    
-    var body: some View
-    {
-        VStack(alignment: .leading)
+
+    var body: some View {
+        HStack(spacing: 10)
         {
-            HStack {
+            VStack {
+                
                 
                 
 //                Image(systemName: book?.image ?? "person.fill")
 //                    .resizable()
-//                    .frame(width: 25, height: 25, alignment: .leading)
+//                    .frame(width: 50, height: 50, alignment: .leading)
 //                    .foregroundColor(book?.color ?? Color.gray)
                 
                 
                 Rectangle()
                     .fill(book?.color ?? Color.gray)
-                    .frame(width: 25, height: 25)
+                    .frame(width: 70, height: 70)
                     .mask(
 
                         Image(book?.image ?? "ico_blueberry")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .frame(width: 25, alignment: .leading)
+                            .frame(width: 70, alignment: .leading)
                     )
                 
                 
+                
+                Spacer()
+            }
+
+
+            VStack(alignment: .leading)
+            {
                 Text(book?.name ?? "Book 1")
                     .font(Font.headline.bold())
-                    .foregroundColor(book?.color ?? Color.blue)
+                    .foregroundColor(book?.color ?? Color.gray)
+                    .multilineTextAlignment(.leading)
+                Spacer()
+                Text("Description: \(book?.description ?? "No Data")" )
+                    .font(.subheadline)
+                    .foregroundColor(Color("dark-text"))
+                    .multilineTextAlignment(.leading)
+                Spacer()
+                Text("Number of collections: \(book?.numberOfUsers ?? 0)")
+                    .font(.footnote)
+                    .foregroundColor(Color("dark-text"))
+                    .multilineTextAlignment(.leading)
+                Text("Number of items: \(book?.numberOfStories ?? 0)")
+                    .font(.caption)
+                    .foregroundColor(Color("dark-text"))
                     .multilineTextAlignment(.leading)
             }
-            
-            Text("Description: \(book?.description ?? "No Data")" )
-                .font(.subheadline)
-                .foregroundColor(Color("dark-text"))
-                .multilineTextAlignment(.leading)
-            
-            Spacer()
+
         } // HStack
         .padding()
-        .frame(height: 150, alignment: .leading)
-        .frame(maxWidth: .infinity, alignment: .leading)
+        .frame(height: 220, alignment: .leading)
+        .frame(maxWidth: 600, alignment: .leading)
         .background(
             ZStack {
                 
@@ -68,15 +82,15 @@ struct GlassmorphicLazyCard: View
                 .stroke(.linearGradient(colors: [.white.opacity(0.8), .black.opacity(0.2)], startPoint: .top, endPoint: .bottom))
                 .blendMode(.overlay)
         )
-        .frame(height: 150)
+        .frame(height: 220)
         .accentColor(.primary.opacity(0.7))
 //        .shadow(color: Color.white.opacity(0.7), radius: 10, x: -5, y: -5)
     }
 }
 
-struct GlassmorphicLazyCard_Previews: PreviewProvider {
+struct BookCardLargeViewGlassmorphic_Previews: PreviewProvider {
     static var previews: some View {
-        GlassmorphicLazyCard()
+        BookCardLargeViewGlassmorphic()
             .previewLayout(.sizeThatFits)
     }
 }

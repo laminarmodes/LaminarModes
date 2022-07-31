@@ -96,13 +96,13 @@ struct NeumorphicDetailsView: View
                                             {
                                                 Group {
                                                     Image(systemName: "info.circle")
-                                                    Text("Date")
+                                                    Text("Price")
                                                     
                                                 }
                                                 .foregroundColor(chapter?.color ?? Color.black)
                                                 .font(Font.system(.body).bold())
                                                 Spacer(minLength: 0)
-                                                Text(chapter?.dateOfCreation ?? "No data")
+                                                Text("$"+(chapter?.amount ?? "No data"))
                                                     .multilineTextAlignment(.trailing)
                                             }
                                             
@@ -112,13 +112,13 @@ struct NeumorphicDetailsView: View
                                             {
                                                 Group {
                                                     Image(systemName: "info.circle")
-                                                    Text("Time")
+                                                    Text("Highest Bid")
                                                     
                                                 }
                                                 .foregroundColor(chapter?.color ?? Color.black)
                                                 .font(Font.system(.body).bold())
                                                 Spacer(minLength: 0)
-                                                Text(chapter?.itemID ?? "No data")
+                                                Text("$" + String(format: "%.2f", 37.85 + (Double(chapter?.amount ?? "0.0") ?? 0.0)))
                                                     .multilineTextAlignment(.trailing)
                                             }
                                         }

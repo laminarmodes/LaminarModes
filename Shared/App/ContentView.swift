@@ -68,6 +68,11 @@ struct ContentView: View {
                                 .foregroundColor(Color(hue: 0/360, saturation: 0, brightness: 0.30))
                         }
                         HStack {
+                            Image(systemName: "checkmark.square").foregroundColor(Color(hue: 151/360, saturation: 0.71, brightness: 0.72))
+                            Text("Icons").font(.subheadline)
+                                .foregroundColor(Color(hue: 0/360, saturation: 0, brightness: 0.30))
+                        }
+                        HStack {
                             Image(systemName: "exclamationmark.square").foregroundColor(Color(hue: 25/360, saturation: 0.71, brightness: 1))
                             Text("Layouts").font(.subheadline)
                                 .foregroundColor(Color(hue: 0/360, saturation: 0, brightness: 0.30))
@@ -77,12 +82,6 @@ struct ContentView: View {
                             Text("Animations").font(.subheadline)
                                 .foregroundColor(Color(hue: 0/360, saturation: 0, brightness: 0.30))
                         }
-                        HStack {
-                            Image(systemName: "dot.square").foregroundColor(.red)
-                            Text("Icons").font(.subheadline)
-                                .foregroundColor(Color(hue: 0/360, saturation: 0, brightness: 0.30))
-                        }
-                        
                         HStack {
                             Image(systemName: "dot.square").foregroundColor(.red)
                             Text("Text Fields").font(.subheadline)

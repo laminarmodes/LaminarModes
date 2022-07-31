@@ -19,10 +19,24 @@ struct NeumorphicLazyCard: View
         VStack(alignment: .leading)
         {
             HStack {
-                Image(systemName: book?.image ?? "person.fill")
-                    .resizable()
-                    .frame(width: 25, height: 25, alignment: .leading)
-                    .foregroundColor(book?.color ?? Color.gray)
+                
+                
+                
+//                Image(systemName: book?.image ?? "person.fill")
+//                    .resizable()
+//                    .frame(width: 25, height: 25, alignment: .leading)
+//                    .foregroundColor(book?.color ?? Color.gray)
+                
+                Rectangle()
+                    .fill(book?.color ?? Color.gray)
+                    .frame(width: 25, height: 25)
+                    .mask(
+
+                        Image(book?.image ?? "ico_blueberry")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 25, alignment: .leading)
+                    )
                 
                 Text(book?.name ?? "Book 1")
                     .font(Font.headline.bold())

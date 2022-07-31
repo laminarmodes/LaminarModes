@@ -60,7 +60,7 @@ struct ChapterCardSmallView: View
                     Text("Last Bid")
                         .font(Font.caption.smallCaps())
                         .foregroundColor(textColors)
-                    Text("$"+(chapter?.amount ?? "No data"))
+                    Text("$" + String(format: "%.2f", 37.85 + (Double(chapter?.amount ?? "0.0") ?? 0.0)))
                         .font(Font.footnote)
                         .multilineTextAlignment(.trailing)
                         .foregroundColor(textColors)

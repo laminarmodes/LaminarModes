@@ -62,10 +62,16 @@ struct ChapterCardSmallHeightInfiniteWidthView: View {
             
             HStack {
                 Spacer()
+                
+                
                 Image(chapter?.image ?? "frozen-sorbet-1")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: imageWidth)
+                
+                
+                
+                
                 Spacer()
             }
                 
@@ -88,12 +94,15 @@ struct ChapterCardSmallHeightInfiniteWidthView: View {
                     Text("Last Bid")
                         .font(Font.caption.smallCaps())
                         .foregroundColor(textColors)
-                    Text("$"+(chapter?.amount ?? "No data"))
+//                    Text("$" + "\( 37.85 + (Double(chapter?.amount ?? "0.0") ?? 0.0)   )")
+                    Text("$" + String(format: "%.2f", 37.85 + (Double(chapter?.amount ?? "0.0") ?? 0.0)))
                         .font(Font.footnote)
                         .multilineTextAlignment(.trailing)
                         .foregroundColor(textColors)
                         .lineLimit(2)
                 }
+                
+                
             }
             //Spacer()
         }

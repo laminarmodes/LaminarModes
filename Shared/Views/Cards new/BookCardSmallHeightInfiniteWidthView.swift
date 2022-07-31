@@ -19,10 +19,26 @@ struct BookCardSmallHeightInfiniteWidthView: View
         VStack(alignment: .leading)
         {
             HStack {
-                Image(systemName: book?.image ?? "person.fill")
-                    .resizable()
-                    .frame(width: 25, height: 25, alignment: .leading)
-                    .foregroundColor(Color.white.opacity(0.9))
+                
+                
+                
+//                Image(book?.image ?? "person.fill")
+//                    .resizable()
+//                    .frame(width: 25, height: 25, alignment: .leading)
+//                    .foregroundColor(Color.white.opacity(0.9))
+                
+                Rectangle()
+                    .fill(Color.white.opacity(0.9))
+                    .frame(width: 25, height: 25)
+                    .mask(
+
+                        Image(book?.image ?? "ico_blueberry")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 25, alignment: .leading)
+                    )
+                
+                
                 
                 Text(book?.name ?? "Book 1")
                     .font(Font.headline.bold())
@@ -30,7 +46,7 @@ struct BookCardSmallHeightInfiniteWidthView: View
                     .multilineTextAlignment(.leading)
             }
             
-            Text("Description: \(book?.description ?? "No Data")" )
+            Text(book?.description ?? "No Data" )
                 .font(.subheadline)
                 .foregroundColor(Color.white.opacity(0.9))
                 .multilineTextAlignment(.leading)

@@ -57,7 +57,7 @@ struct NeumorphicBarsCards: View
                     {
                         ForEach(reference.flavours.reversed(), id: \.uniqueID) { item in
                             
-                            NavigationLink( destination: NeumorphicChapterList(libraryID: libraryID, bookID: item.uniqueID, theme: item).environmentObject(reference))
+                            NavigationLink( destination: ChapterList(libraryID: libraryID, bookID: item.uniqueID, theme: item).environmentObject(reference))
                             {
                                 HStack
                                 {
