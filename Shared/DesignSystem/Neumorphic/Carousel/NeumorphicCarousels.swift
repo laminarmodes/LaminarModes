@@ -15,11 +15,19 @@ struct NeumorphicCarousels: View {
     
     @State private var addingChapter = false
     @State private var editingChapter = false
+    
+    
     @State private var roleInput = ""
     @State private var descriptionInpt = ""
     @State private var date = Date()
     @State private var priorityInput = ""
     @State private var detailsInput = ""
+    
+    @State private var itemInput = ""
+    @State private var amountInput = ""
+    @State private var dateOfCreationInput = ""
+    @State private var itemIDInput = ""
+    
     @State var showModal = false
     @State var currentChapter: Dessert?
     @State var currentBook: Flavour?
@@ -167,6 +175,7 @@ struct NeumorphicCarousels: View {
     {
         if (addingChapter)
         {
+
             AddChapterView(
                 libraryID: libraryID,
                 bookID: themeID,
@@ -174,10 +183,13 @@ struct NeumorphicCarousels: View {
                 descriptionInput: $descriptionInpt,
                 detailsInput: $detailsInput,
                 priorityInput: $priorityInput,
-                addingChapter: $addingChapter,
-                chapterColor: currentBook?.color)
-                .environmentObject(reference)
-                .zIndex(2)
+                itemInput: $itemInput,
+                amountInput: $amountInput,
+                dateOfCreationInput: $dateOfCreationInput,
+                itemIDInput: $itemIDInput,
+                addingChapter: $addingChapter)
+            .environmentObject(reference)
+            .zIndex(2)
         }
     }
     

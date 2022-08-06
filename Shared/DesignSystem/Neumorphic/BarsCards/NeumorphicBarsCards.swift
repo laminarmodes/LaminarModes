@@ -73,7 +73,7 @@ struct NeumorphicBarsCards: View
                     } // VStack
                 } // SCrollView
             }
-            .navigationTitle("Neumorphism")
+            .navigationTitle("Theme 1")
         }
         
     }

@@ -55,6 +55,7 @@ struct GlassmorphicView: View {
                 Image("blob-background-gray")
                     .resizable()
                     .scaledToFill()
+                    .edgesIgnoringSafeArea(.all)
             )
     }
 }

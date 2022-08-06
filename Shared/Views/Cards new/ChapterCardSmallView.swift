@@ -35,7 +35,7 @@ struct ChapterCardSmallView: View
             
 //            HStack {
 //                Spacer()
-                Image(chapter?.image ?? "frozen-sorbet-1")
+            Image(uiImage: chapter?.image ?? UIImage(named: "frozen-sorbet-1")!)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: imageWidth)

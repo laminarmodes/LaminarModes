@@ -81,7 +81,7 @@ class Reference: ObservableObject {
         Market(name: "Market 1", flavours: [
             Flavour(image: "ico_blueberry", name: "Blueberry", description: "Blueberries are one of the few foods that have a naturally blue color (from the anthocyanin pigment).  They can take on a green, red and purple color before they become blue and ripe.  In the northern hemisphere, they harvest during the May to August time period and one blueberry bush can grow over 6,000 blueberries each year.  This fruit is very small and ranges from only 5-16mm in diameter.  Blueberries are used fresh, frozen, or juiced and are very popular in breakfast foods and desserts.  Blueberries are very well known for their antioxidants and also contain fiber and vitamin C", numberOfUsers: 5, numberOfStories: 22, color: Color(UIColor.systemGray2), desserts: [
                 Dessert(
-                    image: "blueberry-7",
+                    image: UIImage(named: "blueberry-7")!,
                     type: "Candy",
                     description: "Blueberry flavor candy",
                     date: "",
@@ -93,7 +93,7 @@ class Reference: ObservableObject {
                     dateOfCreation: "Nov 20, 2021",
                     itemID: "#2GA34"),
                 Dessert(
-                    image: "blueberry-6",
+                    image: UIImage(named: "blueberry-6")!,
                     type: "Smoothie",
                     description: "Blueberry flavor smoothie",
                     date: "",
@@ -105,7 +105,7 @@ class Reference: ObservableObject {
                     dateOfCreation: "5 Oct 2020",
                     itemID: "#154A7"),
                 Dessert(
-                    image: "blueberry-5",
+                    image: UIImage(named: "blueberry-5")!,
                     type: "Crushed Ice",
                     description: "Blueberry flavor crushed ice",
                     date: "",
@@ -125,7 +125,7 @@ class Reference: ObservableObject {
                    color: Color(UIColor.systemGray),
                  desserts: [
                     Dessert(
-                        image: "rasberry-6",
+                        image: UIImage(named: "rasberry-6")!,
                         type: "Smoothie",
                         description: "Raspberry flavor smoothie",
                         date: "",
@@ -137,7 +137,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#1GD4D"),
                     Dessert(
-                        image: "rasberry-5",
+                        image: UIImage(named: "rasberry-5")!,
                         type: "Crushed Ice",
                         description: "Raspberry flavor crushed ice",
                         date: "",
@@ -149,7 +149,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#124AS"),
                     Dessert(
-                        image: "rasberry-4",
+                        image: UIImage(named: "rasberry-4")!,
                         type: "Doughnuts",
                         description: "Raspberry flavor doughnuts",
                         date: "",
@@ -161,7 +161,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#48WA7"),
                     Dessert(
-                        image: "rasberry-3",
+                        image: UIImage(named: "rasberry-3")!,
                         type: "Ice Lolly",
                         description: "Raspberry flavor ice lolly",
                         date: "",
@@ -173,7 +173,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#1242"),
                     Dessert(
-                        image: "rasberry-8",
+                        image: UIImage(named: "rasberry-8")!,
                         type: "Cake",
                         description: "Raspberry flavor cake",
                         date: "",
@@ -185,7 +185,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#124A7"),
                     Dessert(
-                        image: "rasberry-2",
+                        image: UIImage(named: "rasberry-2")!,
                         type: "Ice Cream",
                         description: "Raspberry flavor ice cream",
                         date: "",
@@ -197,7 +197,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#12MA7"),
                     Dessert(
-                        image: "rasberry-1",
+                        image: UIImage(named: "rasberry-1")!,
                         type: "Sorbet",
                         description: "Raspberry flavor sorbet",
                         date: "",
@@ -216,7 +216,7 @@ class Reference: ObservableObject {
                    color: Color(UIColor.systemGray3),
                  desserts: [
                     Dessert(
-                        image: "plum-1",
+                        image: UIImage(named: "plum-1")!,
                         type: "Sorbet",
                         description: "Plum flavor sorbet",
                         date: "",
@@ -228,7 +228,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#02UJE"),
                     Dessert(
-                        image: "plum-8",
+                        image: UIImage(named: "plum-8")!,
                         type: "Cake",
                         description: "Plum flavor cake",
                         date: "",
@@ -240,7 +240,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "982HR"),
                     Dessert(
-                        image: "plum-4",
+                        image: UIImage(named: "plum-4")!,
                         type: "Doughnuts",
                         description: "Plum flavor doughnuts",
                         date: "",
@@ -252,7 +252,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#ZCA72"),
                     Dessert(
-                        image: "plum-5",
+                        image: UIImage(named: "plum-5")!,
                         type: "Crushed Ice",
                         description: "Plum flavor crushed ice",
                         date: "",
@@ -272,7 +272,7 @@ class Reference: ObservableObject {
                    color: Color(UIColor.systemGray2),
                  desserts: [
                     Dessert(
-                        image: "dragonfruit-8",
+                        image: UIImage(named: "dragonfruit-8")!,
                         type: "Cake",
                         description: "Dragon fruit flavor dragon fruit",
                         date: "",
@@ -284,7 +284,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "093U2"),
                     Dessert(
-                        image: "dragonfruit-6",
+                        image: UIImage(named: "dragonfruit-6")!,
                         type: "Smoothie",
                         description: "Dragon fruit flavor smoothie",
                         date: "",
@@ -296,7 +296,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#SG12L"),
                     Dessert(
-                        image: "dragonfruit-4",
+                        image: UIImage(named: "dragonfruit-4")!,
                         type: "Cookies",
                         description: "Dragon fruit flavor cookies",
                         date: "",
@@ -308,7 +308,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#L9OL2"),
                     Dessert(
-                        image: "dragonfruit-3",
+                        image: UIImage(named: "dragonfruit-3")!,
                         type: "Ice Lolly",
                         description: "Dragon fruit ice lolly",
                         date: "",
@@ -320,7 +320,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#091LM"),
                     Dessert(
-                        image: "dragonfruit-2",
+                        image: UIImage(named: "dragonfruit-2")!,
                         type: "Ice Cream",
                         description: "Dragon fruit ice cream",
                         date: "",
@@ -332,7 +332,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#2905N"),
                     Dessert(
-                        image: "dragonfruit-1",
+                        image: UIImage(named: "dragonfruit-1")!,
                         type: "Sorbet",
                         description: "Dragon fruit sorbet",
                         date: "",
@@ -352,7 +352,7 @@ class Reference: ObservableObject {
                    color: Color(UIColor.systemGray),
                  desserts: [
                     Dessert(
-                        image: "strawberry-8",
+                        image: UIImage(named: "strawberry-8")!,
                         type: "Cake",
                         description: "Strawberry flavor cake",
                         date: "",
@@ -364,7 +364,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#BNSK7"),
                     Dessert(
-                        image: "strawberry-3",
+                        image: UIImage(named: "strawberry-3")!,
                         type: "Ice Lolly",
                         description: "Strawberry flavor ice lolly",
                         date: "",
@@ -376,7 +376,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#0PL2Y"),
                     Dessert(
-                        image: "strawberry-1",
+                        image: UIImage(named: "strawberry-1")!,
                         type: "Sorbet",
                         description: "Strawberry flavor sorbet",
                         date: "",
@@ -388,7 +388,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#124A7"),
                     Dessert(
-                        image: "strawberry-2",
+                        image: UIImage(named: "strawberry-2")!,
                         type: "Ice Cream",
                         description: "Strawberry flavor ice cream",
                         date: "",
@@ -400,7 +400,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#67QLO"),
                     Dessert(
-                        image: "strawberry-4",
+                        image: UIImage(named: "strawberry-4")!,
                         type: "Doughnuts",
                         description: "Strawberry flavor doughnuts",
                         date: "",
@@ -420,7 +420,7 @@ class Reference: ObservableObject {
                    color: Color(UIColor.systemGray3),
                  desserts: [
                     Dessert(
-                        image: "watermellon-1",
+                        image: UIImage(named: "watermellon-1")!,
                         type: "Sorbet",
                         description: "Watermelon flavor sorbet",
                         date: "",
@@ -432,7 +432,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#98IKM"),
                     Dessert(
-                        image: "watermellon-2",
+                        image: UIImage(named: "watermellon-2")!,
                         type: "Ice Cream",
                         description: "Watermelon flavor ice cream",
                         date: "",
@@ -444,7 +444,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#980OL"),
                     Dessert(
-                        image: "watermelon-3",
+                        image: UIImage(named: "watermellon-3")!,
                         type: "Ice Lolly",
                         description: "Watermellon flavor ice lolly",
                         date: "",
@@ -456,7 +456,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#901NH"),
                     Dessert(
-                        image: "watermellon-4",
+                        image: UIImage(named: "watermellon-4")!,
                         type: "Doughnuts",
                         description: "Watermelon flavor doughnuts",
                         date: "",
@@ -468,7 +468,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#98NHE"),
                     Dessert(
-                        image: "watermellon-5",
+                        image: UIImage(named: "watermellon-5")!,
                         type: "Crushed Ice",
                         description: "Watermelon flavor crushed ice",
                         date: "",
@@ -480,7 +480,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#0LQVF"),
                     Dessert(
-                        image: "watermellon-6",
+                        image: UIImage(named: "watermellon-6")!,
                         type: "Smoothie",
                         description: "Watermelon flavor smoothie",
                         date: "",
@@ -492,7 +492,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#MLIJ9"),
                     Dessert(
-                        image: "watermellon-7",
+                        image: UIImage(named: "watermellon-7")!,
                         type: "Candy",
                         description: "Watermelon flavor candy",
                         date: "",
@@ -504,7 +504,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#482WY"),
                     Dessert(
-                        image: "watermellon-8",
+                        image: UIImage(named: "watermellon-8")!,
                         type: "Cake",
                         description: "Watermelon flavor cake",
                         date: "",
@@ -524,7 +524,7 @@ class Reference: ObservableObject {
                    color: Color(UIColor.systemGray2),
                  desserts: [
                     Dessert(
-                        image: "orange-1",
+                        image: UIImage(named: "orange-1")!,
                         type: "Sorbet",
                         description: "Orange flavor sorbet",
                         date: "",
@@ -536,7 +536,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#5T71W7"),
                     Dessert(
-                        image: "orange-2",
+                        image: UIImage(named: "orange-2")!,
                         type: "Ice Cream",
                         description: "Orange flavor ice cream",
                         date: "",
@@ -548,7 +548,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#1ET98"),
                     Dessert(
-                        image: "orange-3",
+                        image: UIImage(named: "orange-3")!,
                         type: "Ice Lolly",
                         description: "Orange flavor ice lolly",
                         date: "",
@@ -568,7 +568,7 @@ class Reference: ObservableObject {
                    color: Color(UIColor.systemGray),
                  desserts: [
                     Dessert(
-                        image: "lemon-5",
+                        image: UIImage(named: "lemon-5")!,
                         type: "Crushed Ice",
                         description: "Lemon flavor crushed ice",
                         date: "",
@@ -580,7 +580,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#12A7T"),
                     Dessert(
-                        image: "lemon-4",
+                        image: UIImage(named: "lemon-4")!,
                         type: "Cookies",
                         description: "Lemon flavor cookies",
                         date: "",
@@ -592,7 +592,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#134RF"),
                     Dessert(
-                        image: "lemon-3",
+                        image: UIImage(named: "lemon-3")!,
                         type: "Ice Lolly",
                         description: "Lemon flavor ice lolly",
                         date: "",
@@ -604,7 +604,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#1ET67"),
                     Dessert(
-                        image: "lemon-2",
+                        image: UIImage(named: "lemon-2")!,
                         type: "Ice Cream",
                         description: "Lemon flavor ice cream",
                         date: "",
@@ -616,7 +616,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#4A73H"),
                     Dessert(
-                        image: "lemon-1",
+                        image: UIImage(named: "lemon-1")!,
                         type: "Sorbet",
                         description: "Lemon flavor sorbet",
                         date: "",
@@ -645,7 +645,7 @@ class Reference: ObservableObject {
         Market(name: "Market 2", flavours: [
             Flavour(image: "ico_blackberry", name: "Blackberry", description: "There are over 350 different species of blackberries located around the world.   They are delicious in desserts and jams and especially pies.  They are a rich source of many vitamins and there are are many digestive and immune health benefits that come from consuming blackberries.  They are also known to help memory, skin, vision and weight loss. With blackberries, the core is not hollow as it is with raspberries.  Just reading this makes one want to go to the supermarket now and stock up on blackberries.", numberOfUsers: 5, numberOfStories: 22, color: Color(UIColor.systemGray2), desserts: [
                 Dessert(
-                    image: "blackberry-7",
+                    image: UIImage(named: "blackberry-7")!,
                     type: "Candy",
                     description: "Blackberry flavor candy",
                     date: "",
@@ -657,7 +657,7 @@ class Reference: ObservableObject {
                     dateOfCreation: "Nov 20, 2021",
                     itemID: "#U19OW"),
                 Dessert(
-                    image: "blackberry-3",
+                    image: UIImage(named: "blackberry-3")!,
                     type: "Ice Lolly",
                     description: "Blackberry flavor ice lolly",
                     date: "",
@@ -669,7 +669,7 @@ class Reference: ObservableObject {
                     dateOfCreation: "5 Oct 2020",
                     itemID: "#6NGHW"),
                 Dessert(
-                    image: "blackberry-5",
+                    image: UIImage(named: "blackberry-5")!,
                     type: "Crushed Ice",
                     description: "Blackberry flavor crushed ice",
                     date: "",
@@ -681,7 +681,7 @@ class Reference: ObservableObject {
                     dateOfCreation: "5 Oct 2020",
                     itemID: "#LO10Q"),
                 Dessert(
-                    image: "blackberry-1",
+                    image: UIImage(named: "blackberry-1")!,
                     type: "Sorbet",
                     description: "Blackberry flavor sorbet",
                     date: "",
@@ -693,7 +693,7 @@ class Reference: ObservableObject {
                     dateOfCreation: "Nov 20, 2021",
                     itemID: "#I0L27"),
                 Dessert(
-                    image: "blackberry-8",
+                    image: UIImage(named: "blackberry-8")!,
                     type: "Cake",
                     description: "Blackberry flavor cake",
                     date: "",
@@ -713,7 +713,7 @@ class Reference: ObservableObject {
                    color: Color(UIColor.systemGray),
                  desserts: [
                     Dessert(
-                        image: "lavendar-5",
+                        image: UIImage(named: "lavendar-5")!,
                         type: "Crushed Ice",
                         description: "Lavendar flavor crushed ice",
                         date: "",
@@ -725,7 +725,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#0OL1H"),
                     Dessert(
-                        image: "lavendar-4",
+                        image: UIImage(named: "lavendar-4")!,
                         type: "Doughnuts",
                         description: "Lavendar flavor doughnuts",
                         date: "",
@@ -737,7 +737,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#NJK0O"),
                     Dessert(
-                        image: "lavendar-3",
+                        image: UIImage(named: "lavendar-3")!,
                         type: "Ice Lolly",
                         description: "Lavendar flavor ice lolly",
                         date: "",
@@ -749,7 +749,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#OL2WS"),
                     Dessert(
-                        image: "lavendar-2",
+                        image: UIImage(named: "lavendar-2")!,
                         type: "Ice Cream",
                         description: "Lavendar flavor ice cream",
                         date: "",
@@ -761,7 +761,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#N0OL1"),
                     Dessert(
-                        image: "lavendar-1",
+                        image: UIImage(named: "lavendar-1")!,
                         type: "Sorbet",
                         description: "Lavendar flavor sorbet",
                         date: "",
@@ -780,7 +780,7 @@ class Reference: ObservableObject {
                    color: Color(UIColor.systemGray3),
                  desserts: [
                     Dessert(
-                        image: "concordegrape-7",
+                        image: UIImage(named: "concordegrape-7")!,
                         type: "Candy",
                         description: "Grape flavor candy",
                         date: "",
@@ -792,7 +792,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#MLP08"),
                     Dessert(
-                        image: "concordegrape-3",
+                        image: UIImage(named: "concordegrape-3")!,
                         type: "Ice Lolly",
                         description: "Grape flavor ice lolly",
                         date: "",
@@ -804,7 +804,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#KP07Y"),
                     Dessert(
-                        image: "concordegrape-2",
+                        image: UIImage(named: "concordegrape-2")!,
                         type: "Ice Cream",
                         description: "Grape flavor ice cream",
                         date: "",
@@ -816,7 +816,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#KP0L1"),
                     Dessert(
-                        image: "concordegrape-1",
+                        image: UIImage(named: "concordegrape-1")!,
                         type: "Sorbet",
                         description: "Grape flavor sorbet",
                         date: "",
@@ -828,7 +828,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#NJOL2"),
                     Dessert(
-                        image: "concordegrape-4",
+                        image: UIImage(named: "concordegrape-4")!,
                         type: "Doughnuts",
                         description: "Grape flavor doughnuts",
                         date: "",
@@ -848,7 +848,7 @@ class Reference: ObservableObject {
                    color: Color(UIColor.systemGray2),
                  desserts: [
                     Dessert(
-                        image: "elderberry-2",
+                        image: UIImage(named: "elderberry-2")!,
                         type: "Ice Cream",
                         description: "Elderberry flavor ice cream",
                         date: "",
@@ -860,7 +860,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#O09IK"),
                     Dessert(
-                        image: "elderberry-1",
+                        image: UIImage(named: "elderberry-1")!,
                         type: "Sorbet",
                         description: "Elderberry flavor sorbet",
                         date: "",
@@ -872,7 +872,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#MLOPB"),
                     Dessert(
-                        image: "elderberry-6",
+                        image: UIImage(named: "elderberry-6")!,
                         type: "Smoothie",
                         description: "Elderberry flavor smoothie",
                         date: "",
@@ -884,7 +884,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#BVA65"),
                     Dessert(
-                        image: "elderberry-7",
+                        image: UIImage(named: "elderberry-7")!,
                         type: "Candy",
                         description: "Elderberry flavor candy",
                         date: "",
@@ -896,7 +896,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#ML0L2"),
                     Dessert(
-                        image: "elderberry-8",
+                        image: UIImage(named: "elderberry-8")!,
                         type: "Cake",
                         description: "Elderberry flavor cake",
                         date: "",
@@ -916,7 +916,7 @@ class Reference: ObservableObject {
                    color: Color(UIColor.systemGray),
                  desserts: [
                     Dessert(
-                        image: "mint-3",
+                        image: UIImage(named: "mint-3")!,
                         type: "Ice Lolly",
                         description: "Mint flavor ice lolly",
                         date: "",
@@ -928,7 +928,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#9LQBF"),
                     Dessert(
-                        image: "mint-1",
+                        image: UIImage(named: "mint-1")!,
                         type: "Sorbet",
                         description: "Mint flavor sorbet",
                         date: "",
@@ -940,7 +940,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#SL09O"),
                     Dessert(
-                        image: "mint-2",
+                        image: UIImage(named: "mint-2")!,
                         type: "Ice Cream",
                         description: "Mint flavor ice cream",
                         date: "",
@@ -952,7 +952,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#NZ3RF"),
                     Dessert(
-                        image: "mint-5",
+                        image: UIImage(named: "mint-5")!,
                         type: "Crushed Ice",
                         description: "Mint flavor crushed ice",
                         date: "",
@@ -964,7 +964,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#P0OQS"),
                     Dessert(
-                        image: "mint-8",
+                        image: UIImage(named: "mint-8")!,
                         type: "Cake",
                         description: "Mint flavor cake",
                         date: "",
@@ -984,7 +984,7 @@ class Reference: ObservableObject {
                    color: Color(UIColor.systemGray3),
                  desserts: [
                     Dessert(
-                        image: "apple-4",
+                        image: UIImage(named: "apple-4")!,
                         type: "Cookies",
                         description: "Apple flavor cookies",
                         date: "",
@@ -996,7 +996,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#MK0FE"),
                     Dessert(
-                        image: "apple-3",
+                        image: UIImage(named: "apple-3")!,
                         type: "Ice Lolly",
                         description: "Apple flavor ice lolly",
                         date: "",
@@ -1008,7 +1008,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#A0P3H"),
                     Dessert(
-                        image: "apple-2",
+                        image: UIImage(named: "apple-2")!,
                         type: "Ice Cream",
                         description: "Apple flavor ice cream",
                         date: "",
@@ -1020,7 +1020,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#H0PRD"),
                     Dessert(
-                        image: "apple-8",
+                        image: UIImage(named: "apple-8")!,
                         type: "Cake",
                         description: "Apple flavor cake",
                         date: "",
@@ -1032,7 +1032,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#MLO4F"),
                     Dessert(
-                        image: "apple-1",
+                        image: UIImage(named: "apple-1")!,
                         type: "Sorbet",
                         description: "Apple flavor sorbet",
                         date: "",
@@ -1052,7 +1052,7 @@ class Reference: ObservableObject {
                    color: Color(UIColor.systemGray2),
                  desserts: [
                     Dessert(
-                        image: "lime-7",
+                        image: UIImage(named: "lime-7")!,
                         type: "Candy",
                         description: "Lime flavor candy",
                         date: "",
@@ -1064,7 +1064,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#LFHHY"),
                     Dessert(
-                        image: "lime-8",
+                        image: UIImage(named: "lime-8")!,
                         type: "Cake",
                         description: "Lime flavor cake",
                         date: "",
@@ -1076,7 +1076,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#L0IFG"),
                     Dessert(
-                        image: "lime-6",
+                        image: UIImage(named: "lime-6")!,
                         type: "Smoothie",
                         description: "Lime flavor smoothie",
                         date: "",
@@ -1088,7 +1088,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#NDH6U"),
                     Dessert(
-                        image: "lime-1",
+                        image: UIImage(named: "lime-1")!,
                         type: "Sorbet",
                         description: "Lime flavor sorbet",
                         date: "",
@@ -1100,7 +1100,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#PL95J"),
                     Dessert(
-                        image: "lime-4",
+                        image: UIImage(named: "lime-4")!,
                         type: "Doughnuts",
                         description: "Lime flavor doughnuts",
                         date: "",
@@ -1112,7 +1112,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#MLVZU"),
                     Dessert(
-                        image: "lime-2",
+                        image: UIImage(named: "lime-2")!,
                         type: "Ice Cream",
                         description: "Lime flavor ice cream",
                         date: "",
@@ -1132,7 +1132,7 @@ class Reference: ObservableObject {
                    color: Color(UIColor.systemGray),
                  desserts: [
                     Dessert(
-                        image: "avocado-4",
+                        image: UIImage(named: "avocado-4")!,
                         type: "Doughnuts",
                         description: "Avocado flavor doughnuts",
                         date: "",
@@ -1144,7 +1144,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#MJ987"),
                     Dessert(
-                        image: "avocado-5",
+                        image: UIImage(named: "avocado-5")!,
                         type: "Crushed Ice",
                         description: "Avocado flavor crushed ice",
                         date: "",
@@ -1156,7 +1156,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#LFD83"),
                     Dessert(
-                        image: "avocado-6",
+                        image: UIImage(named: "avocado-6")!,
                         type: "Smoothie",
                         description: "Avocado flavor smoothie",
                         date: "",
@@ -1168,7 +1168,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#EGHMF"),
                     Dessert(
-                        image: "avocado-7",
+                        image: UIImage(named: "avocado-7")!,
                         type: "Candy",
                         description: "Avocado flavor candy",
                         date: "",
@@ -1180,7 +1180,7 @@ class Reference: ObservableObject {
                         dateOfCreation: "Nov 20, 2021",
                         itemID: "#M90WD"),
                     Dessert(
-                        image: "avocado-8",
+                        image: UIImage(named: "avocado-8")!,
                         type: "Cake",
                         description: "Avocado flavor cake",
                         date: "",
@@ -1290,7 +1290,7 @@ class Reference: ObservableObject {
         return libraries[readIndexLibraries].flavours[readIndexBooks]
     }
     
-    func addChapter(image: String, role: String, description: String, date: String, priority: String, details: String, color: Color?)
+    func addChapter(image: UIImage, role: String, description: String, date: String, priority: String, details: String, color: Color?, item: String, amount: String, dateOfCreation: String, itemID: String)
     {
         
         var readIndexLibraries = 0
@@ -1315,8 +1315,12 @@ class Reference: ObservableObject {
         }
         
         let bookCurrent = libraries[readIndexLibraries].flavours[readIndexBooks]
-        let newChapter = Dessert(image: image, type: role, description: description, date: date, priority: priority, details: details, color: bookCurrent.color)
+        let newChapter = Dessert(image: image, type: role, description: description, date: date, priority: priority, details: details, color: bookCurrent.color,
+                                 item: item, amount: amount, dateOfCreation: dateOfCreation, itemID: itemID)
         libraries[readIndexLibraries].flavours[readIndexBooks].desserts.append(newChapter)
+        
+        
+        
         
     }
     

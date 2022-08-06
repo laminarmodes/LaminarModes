@@ -102,6 +102,8 @@
 		E81EE711276A03F10040A19D /* BookCardLargeViewNeumorphic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81EE710276A03F10040A19D /* BookCardLargeViewNeumorphic.swift */; };
 		E81EE712276A03F10040A19D /* BookCardLargeViewNeumorphic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81EE710276A03F10040A19D /* BookCardLargeViewNeumorphic.swift */; };
 		E834E8D028409EE90044E9AF /* ColorThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E834E8CF28409EE90044E9AF /* ColorThemeView.swift */; };
+		E8CE304F289D51D1000709BB /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CE304E289D51D1000709BB /* ImagePicker.swift */; };
+		E8CE3050289D51D1000709BB /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CE304E289D51D1000709BB /* ImagePicker.swift */; };
 		E8DF79592769F05D00B10B38 /* NeumorphicLazyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DF79582769F05D00B10B38 /* NeumorphicLazyCard.swift */; };
 		E8DF795A2769F05D00B10B38 /* NeumorphicLazyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DF79582769F05D00B10B38 /* NeumorphicLazyCard.swift */; };
 		E8E4F7F0276B90C100087BED /* NeumorphicDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E4F7EF276B90C100087BED /* NeumorphicDetailsView.swift */; };
@@ -194,6 +196,7 @@
 		E81EE70C276A02BC0040A19D /* BookLazyChaptersNeumorphic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookLazyChaptersNeumorphic.swift; sourceTree = "<group>"; };
 		E81EE710276A03F10040A19D /* BookCardLargeViewNeumorphic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCardLargeViewNeumorphic.swift; sourceTree = "<group>"; };
 		E834E8CF28409EE90044E9AF /* ColorThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorThemeView.swift; sourceTree = "<group>"; };
+		E8CE304E289D51D1000709BB /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		E8DF79582769F05D00B10B38 /* NeumorphicLazyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphicLazyCard.swift; sourceTree = "<group>"; };
 		E8E4F7EF276B90C100087BED /* NeumorphicDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphicDetailsView.swift; sourceTree = "<group>"; };
 		E8EB3627276A0CD7000CCF20 /* NeumorphicLazyChapters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphicLazyChapters.swift; sourceTree = "<group>"; };
@@ -328,6 +331,7 @@
 				E80F324527607BF000689092 /* LineCustom.swift */,
 				E80F324827607BF000689092 /* MultiLineChartViewCustom.swift */,
 				E80F324627607BF000689092 /* Path+QuadCurveCustom.swift */,
+				E8CE304E289D51D1000709BB /* ImagePicker.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -686,6 +690,7 @@
 				E803C61A26BE9FBC00C41AA6 /* LaminarModesApp.swift in Sources */,
 				E80F323727607B8300689092 /* GradientTextField.swift in Sources */,
 				E80F31EB27607A9800689092 /* UITrendsView.swift in Sources */,
+				E8CE304F289D51D1000709BB /* ImagePicker.swift in Sources */,
 				E80F323327607B8300689092 /* GradientLargeTextField.swift in Sources */,
 				E80F320027607AB700689092 /* GlassmorphicView.swift in Sources */,
 				E803C68726BEB11400C41AA6 /* VisualEffectBlur.swift in Sources */,
@@ -752,6 +757,7 @@
 				E8EB3637276A4751000CCF20 /* NeumorphicCardSmallView.swift in Sources */,
 				E80F325D27607BF100689092 /* BarChartCellCustom.swift in Sources */,
 				E803C61926BE9FBC00C41AA6 /* LaminarModes.xcdatamodeld in Sources */,
+				E8CE3050289D51D1000709BB /* ImagePicker.swift in Sources */,
 				E803C61F26BE9FBC00C41AA6 /* Persistence.swift in Sources */,
 				E80F31FB27607AB700689092 /* NeumorphicView.swift in Sources */,
 				E80F31FD27607AB700689092 /* DetailsView.swift in Sources */,
@@ -893,7 +899,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 18;
+				CURRENT_PROJECT_VERSION = 20;
 				DEVELOPMENT_TEAM = Y77U888YF6;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
@@ -917,7 +923,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 18;
+				CURRENT_PROJECT_VERSION = 20;
 				DEVELOPMENT_TEAM = Y77U888YF6;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;

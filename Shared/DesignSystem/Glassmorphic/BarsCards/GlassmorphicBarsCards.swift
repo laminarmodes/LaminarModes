@@ -64,12 +64,13 @@ struct GlassmorphicBarsCards: View
                     } // VStack
                 } // SCrollView
             }
-            .navigationTitle("Glassmorphism")
+            .navigationTitle("Theme 2")
         } //: ZStack
         .background(
             Image("blob-background-gray")
                 .resizable()
                 .scaledToFill()
+                .edgesIgnoringSafeArea(.all)
         )
     }
 }

@@ -35,7 +35,7 @@ struct AddBookView: View {
                         .foregroundColor(Color.primary.opacity(0.7))
                         .font(.headline)
                     
-                    GradientTextField(editingTextField: $editingBookNameTextField, textfieldString: $bookNameInput, iconBounce: $bookIconBounce, textfieldPlaceholder: "Name", textfieldIconString: "at")
+                    GradientTextField(editingTextField: $editingBookNameTextField, textfieldString: $bookNameInput, iconBounce: $bookIconBounce, textfieldPlaceholder: "Flavor", textfieldIconString: "fork.knife")
                 }
                 
                 Group {
@@ -43,7 +43,7 @@ struct AddBookView: View {
                         .foregroundColor(Color.primary.opacity(0.7))
                         .font(.headline)
                     
-                    GradientTextField(editingTextField: $editingBookDescriptionInput, textfieldString: $bookDescriptionInput, iconBounce: $descriptionIconBounce, textfieldPlaceholder: "Description", textfieldIconString: "at")
+                    GradientTextField(editingTextField: $editingBookDescriptionInput, textfieldString: $bookDescriptionInput, iconBounce: $descriptionIconBounce, textfieldPlaceholder: "Description", textfieldIconString: "book.fill")
                 }
                 
                 Button(action: {

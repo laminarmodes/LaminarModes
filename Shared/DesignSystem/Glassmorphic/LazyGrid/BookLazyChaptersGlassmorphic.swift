@@ -63,11 +63,12 @@ struct BookLazyChaptersGlassmorphic: View {
                 }
             }
         }
-        .navigationTitle("Glassmorphism")
+        .navigationTitle("Theme 1")
         .background(
             Image("blob-background-gray")
                 .resizable()
                 .scaledToFill()
+                .edgesIgnoringSafeArea(.all)
         )
         
     }

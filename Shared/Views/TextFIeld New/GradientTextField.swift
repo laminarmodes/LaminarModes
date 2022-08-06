@@ -23,10 +23,14 @@ struct GradientTextField: View
     var body: some View
     {
         
-        TextField(textfieldPlaceholder, text: $textfieldString)
+        HStack {
+            Image(systemName: textfieldIconString)
+                .foregroundColor(Color.gray)
+            TextField(textfieldPlaceholder, text: $textfieldString)
+        }
         //.padding(.bottom, 4)
         Divider()
-            .padding(.bottom, 10)
+            .padding(.bottom, 30)
     }
 }
 

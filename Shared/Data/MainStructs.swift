@@ -8,7 +8,6 @@
 import Foundation
 import SwiftUI
 
-// MARK: - Main Structs
 struct Market {
     var name: String
     var flavours: [Flavour]
@@ -27,7 +26,7 @@ struct Flavour {
 }
 
 struct Dessert {
-    var image: String
+    var image: UIImage
     var type: String
     var description: String
     var date: String

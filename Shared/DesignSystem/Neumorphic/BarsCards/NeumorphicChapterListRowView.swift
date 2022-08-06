@@ -19,7 +19,7 @@ struct NeumorphicChapterListRowView: View {
         
         HStack {
 //            Image(systemName: "person.fill")
-            Image(chapter?.image ?? "Vector")
+            Image(uiImage: chapter?.image ?? UIImage(named: "frozen-sorbet-1")!)
                 .resizable()
                 .scaledToFit()
                 .foregroundColor(Color.white)

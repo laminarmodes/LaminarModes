@@ -58,7 +58,9 @@ struct BookWithLazyChapters: View {
             }
             Spacer()
         } //: VStack
-        .navigationTitle(reference.findBookById(inputThemeId: bookID).name).foregroundColor(reference.findBookById(inputThemeId: bookID).color ?? Color.gray)
+        //.navigationTitle(reference.findBookById(inputThemeId: bookID).name).foregroundColor(reference.findBookById(inputThemeId: bookID).color ?? Color.gray)
+        .navigationTitle("Default Theme")
+        
         .onAppear() {
             DispatchQueue.main.async {
                 self.reference.referenceBookID = self.bookID

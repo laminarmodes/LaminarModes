@@ -30,7 +30,10 @@ public struct BarChartCellCustom : View {
             .onAppear(){
                 self.scaleValue = self.value
             }
-        .animation(Animation.spring().delay(self.touchLocation < 0 ?  Double(self.index) * 0.04 : 0))
+            .animation(.spring(), value: self.touchLocation < 0 ?  Double(self.index) * 0.04 : 0)
+        //.animation(Animation.spring().delay(self.touchLocation < 0 ?  Double(self.index) * 0.04 : 0))
+        
+            
     }
 }
 

@@ -44,7 +44,7 @@ struct NeumorphicLazyCard: View
                     .multilineTextAlignment(.leading)
             }
             
-            Text("Description: \(book?.description ?? "No Data")" )
+            Text("\(book?.description ?? "No Data")" )
                 .font(.subheadline)
                 .foregroundColor(Color("dark-text"))
                 .multilineTextAlignment(.leading)
