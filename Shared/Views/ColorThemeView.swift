@@ -23,12 +23,6 @@ struct ColorThemeView: View {
                     .foregroundColor(Color.white.opacity(0.9))
 
         }
-//        .padding([.top, .trailing], 16)
-//        .frame(width: .infinity, height: 60)
-//        .background(themeBackground ?? Color.gray)
-//        .clipShape(RoundedRectangle(cornerRadius: 15))
-//        .shadow(color: Color.black.opacity(0.2), radius: 10, x: 10, y: 10)
-//        .shadow(color: Color.white.opacity(0.7), radius: 10, x: -5, y: -5)
         .padding(20)
         .frame(maxWidth: .infinity)
         .background(themeBackground)

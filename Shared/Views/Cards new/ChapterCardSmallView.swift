@@ -33,14 +33,10 @@ struct ChapterCardSmallView: View
                 .background(chapter?.color ?? Color.gray)
                 .clipShape(RoundedRectangle(cornerRadius: 16))
             
-//            HStack {
-//                Spacer()
             Image(uiImage: chapter?.image ?? UIImage(named: "frozen-sorbet-1")!)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: imageWidth)
-//                Spacer()
-//            }
             
             HStack {
                 VStack(alignment: .leading) {
@@ -71,12 +67,8 @@ struct ChapterCardSmallView: View
         }
         .padding(.top, 20)
         .padding([.leading, .trailing], (frameWidth - imageWidth)/2)
-        
         .frame(width: frameWidth, height: frameHeight)
-        .background(chapter?.color?.opacity(0.3) ?? Color.gray.opacity(0.6))
-        .clipShape(RoundedRectangle(cornerRadius: 15))
-        .shadow(color: Color.black.opacity(0.2), radius: 10, x: 10, y: 10)
-        .shadow(color: Color.white.opacity(0.7), radius: 10, x: -5, y: -5)
+        .cardStyle(backgroundColor: chapter?.color?.opacity(0.3) ?? Color.gray.opacity(0.6))
     }
 }
 

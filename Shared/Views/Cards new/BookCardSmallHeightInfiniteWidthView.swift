@@ -9,7 +9,6 @@ import SwiftUI
 
 struct BookCardSmallHeightInfiniteWidthView: View
 {
-    
     var book: Flavour?
     
     @EnvironmentObject private var reference: Reference
@@ -19,49 +18,29 @@ struct BookCardSmallHeightInfiniteWidthView: View
         VStack(alignment: .leading)
         {
             HStack {
-                
-                
-                
-//                Image(book?.image ?? "person.fill")
-//                    .resizable()
-//                    .frame(width: 25, height: 25, alignment: .leading)
-//                    .foregroundColor(Color.white.opacity(0.9))
-                
                 Rectangle()
                     .fill(Color.white.opacity(0.9))
                     .frame(width: 25, height: 25)
                     .mask(
-
                         Image(book?.image ?? "ico_blueberry")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 25, alignment: .leading)
                     )
-                
-                
-                
+
                 Text(book?.name ?? "Book 1")
-                    .font(Font.headline.bold())
-                    .foregroundColor(Color.white.opacity(0.9))
-                    .multilineTextAlignment(.leading)
+                    .textStyle(font: Font.headline.bold())
             }
             
             Text(book?.description ?? "No Data" )
-                .font(.subheadline)
-                .foregroundColor(Color.white.opacity(0.9))
-                .multilineTextAlignment(.leading)
+                .textStyle(font: .subheadline)
             
             Spacer()
         } // HStack
         .padding()
         .frame(height: 150, alignment: .leading)
         .frame(maxWidth: .infinity, alignment: .leading)
-        .background(book?.color ?? Color.gray)
-        .clipShape(RoundedRectangle(cornerRadius: 22))
-//        .shadow(color: book?.color ?? Color.gray.opacity(0.2), radius: 10, x: 10, y: 10)
-//        .shadow(color: Color.white.opacity(0.7), radius: 10, x: -5, y: -5)
-        .shadow(color: Color.black.opacity(0.2), radius: 10, x: 10, y: 10)
-        .shadow(color: Color.white.opacity(0.7), radius: 10, x: -5, y: -5)
+        .cardStyle(backgroundColor: book?.color ?? Color.gray)
     }
 }
 
